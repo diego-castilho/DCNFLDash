@@ -21,11 +21,12 @@
      têm largura fixa, e é isso que mantém campanha, placar e selos alinhados na mesma
      vertical em todos os jogos da rodada. */
   --col-hora:86px;
-  --col-liga:104px;
-  --col-destaque:104px;
-  --col-canais:180px;
+  --col-resultado:62px;
+  --col-liga:100px;
+  --col-destaque:100px;
+  --col-canais:172px;
   --col-camp:56px;   /* campanha e posição, dentro do confronto */
-  --col-placar:30px;
+  --linha-time:28px; /* altura de cada linha de time — o resultado se alinha a ela */
 }
 
 *{box-sizing:border-box}
@@ -251,7 +252,7 @@ img{max-width:100%}
    cartões — que é exatamente o que faltava na versão anterior. */
 .jogo,.cab-grade{
   display:grid;
-  grid-template-columns:var(--col-hora) minmax(0,1fr) var(--col-liga) var(--col-destaque) var(--col-canais);
+  grid-template-columns:var(--col-hora) minmax(0,1fr) var(--col-resultado) var(--col-liga) var(--col-destaque) var(--col-canais);
   gap:14px;align-items:center;
 }
 .jogo{
@@ -265,9 +266,10 @@ img{max-width:100%}
 }
 /* As sub-colunas do cabeçalho repetem exatamente a grade de .time — qualquer
    diferença aqui desalinha os rótulos em relação aos números que eles nomeiam. */
-.cab-grade .conf{display:grid;grid-template-columns:24px minmax(0,1fr) var(--col-camp) var(--col-placar);gap:9px}
+.cab-grade .conf{display:grid;grid-template-columns:24px minmax(0,1fr) var(--col-camp);gap:9px}
 .cab-grade .conf span:first-child{grid-column:1/3}
-.cab-grade .conf .c,.cab-grade .conf .p{text-align:right;white-space:nowrap}
+.cab-grade .conf .c{text-align:right;white-space:nowrap}
+.cab-grade .r{text-align:center;color:var(--texto2)}
 .cab-grade .cn{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .cab-grade .cn span:last-child{padding-left:10px}
 .jogo.pit{border-color:#4A3B10;background:linear-gradient(90deg,var(--ouro-fraco) 0%,var(--carta) 42%)}
@@ -286,17 +288,30 @@ img{max-width:100%}
 .jogo .quando .e.vivo{color:var(--verde)}
 .jogo .quando .e.fim{color:var(--texto2)}
 .mat{min-width:0}
-/* Confronto dividido em quatro sub-colunas fixas: escudo, nome, campanha e placar.
-   É o que faz campanha e placar caírem na mesma vertical em todos os cartões. */
+/* Confronto dividido em sub-colunas fixas: escudo, nome e campanha. */
 .time{
-  display:grid;grid-template-columns:24px minmax(0,1fr) var(--col-camp) var(--col-placar);
-  align-items:center;gap:9px;padding:2px 0;min-width:0;
+  display:grid;grid-template-columns:24px minmax(0,1fr) var(--col-camp);
+  align-items:center;gap:9px;min-width:0;height:var(--linha-time);
 }
 .time img,.time .vazio{width:24px;height:24px;object-fit:contain}
 .time .nm{font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.time .pt{
-  text-align:right;font-variant-numeric:tabular-nums;font-size:15px;font-weight:600;color:var(--texto2);
+
+/* ---- resultado --------------------------------------------------------
+   Bloco próprio, em corpo grande, com as duas linhas alinhadas às do confronto.
+   O vencedor fica claro; o perdedor recua. */
+.resultado{
+  display:grid;grid-template-rows:repeat(2,var(--linha-time));
+  align-items:center;justify-items:center;
+  background:var(--carta2);border-radius:9px;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.04);
+  font-variant-numeric:tabular-nums;
 }
+.resultado .p{font-size:19px;font-weight:700;color:var(--texto3);line-height:1;letter-spacing:-.02em}
+.resultado .p.ganhou{color:var(--texto);font-weight:800}
+.resultado.vazio{background:none;box-shadow:none}
+.resultado.vazio .p{font-size:14px;color:var(--texto3);opacity:.35;font-weight:500}
+.jogo.pit .resultado{background:rgba(255,182,18,.1);box-shadow:inset 0 0 0 1px rgba(255,182,18,.18)}
+.jogo.pit .resultado.vazio{background:none;box-shadow:none}
 .time.venceu .nm{font-weight:650}
 .time.venceu .pt{color:var(--texto)}
 .time.perdeu{color:var(--texto3)}
@@ -343,8 +358,17 @@ img{max-width:100%}
 .sem .sub-adv{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:7px}
 .sem .sub-adv .clas{margin-left:0}
 .sem .dt{font-size:12px;color:var(--texto2);font-variant-numeric:tabular-nums}
-.sem .res{margin-top:7px;font-size:12.5px;font-weight:600}
-.sem .res.v{color:var(--verde)} .sem .res.d{color:var(--vermelho)}
+/* Mesmo princípio do cartão da grade: o resultado é bloco, não linha de texto. */
+.sem .res{
+  margin-top:9px;display:flex;align-items:baseline;gap:7px;
+  background:var(--carta2);border-radius:8px;padding:6px 9px;
+}
+.sem .res .rot{font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--texto3)}
+.sem .res .pl{font-size:17px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.02em;margin-left:auto}
+.sem .res.v{box-shadow:inset 0 0 0 1px rgba(61,220,132,.28)}
+.sem .res.v .pl,.sem .res.v .rot{color:var(--verde)}
+.sem .res.d{box-shadow:inset 0 0 0 1px rgba(255,92,92,.24)}
+.sem .res.d .pl,.sem .res.d .rot{color:var(--vermelho)}
 .sem .linha-tv{display:flex;align-items:center;gap:7px;margin-top:7px}
 .sem .linha-tv .rot{font-size:9px;letter-spacing:.1em;color:var(--texto3);width:22px;flex:none}
 .sem .linha-tv .txt{font-size:11.5px;color:var(--texto3)}
@@ -395,7 +419,7 @@ img{max-width:100%}
 
 /* ---- telas médias ----------------------------------------------------- */
 @media (max-width:1060px){
-  :root{--col-liga:94px;--col-destaque:92px;--col-canais:164px;--col-camp:48px}
+  :root{--col-liga:92px;--col-destaque:90px;--col-canais:158px;--col-camp:48px;--col-resultado:56px}
   .clas .pos{display:none}
   .pct img{height:22px;max-width:74px}
   .pct .sigla{font-size:15px}
@@ -405,16 +429,17 @@ img{max-width:100%}
    A tabela vira cartão: confronto em cima, e liga, destaque e transmissão
    dividindo a linha de baixo. */
 @media (max-width:720px){
-  :root{--col-hora:72px;--col-camp:52px}
+  :root{--col-hora:72px;--col-camp:52px;--col-resultado:58px}
   body{padding:0 12px 48px}
   .cab-grade{display:none}
-  .jogo{grid-template-columns:var(--col-hora) minmax(0,1fr);row-gap:10px}
+  /* O resultado continua ao lado do confronto: é o que se olha primeiro. */
+  .jogo{grid-template-columns:var(--col-hora) minmax(0,1fr) var(--col-resultado);row-gap:10px;gap:10px}
   .jogo .liga{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;gap:6px;
-    padding-left:calc(var(--col-hora) + 14px)}
+    padding-left:calc(var(--col-hora) + 10px)}
   .jogo .destaque{grid-column:1/-1;justify-content:flex-start;
-    padding-left:calc(var(--col-hora) + 14px)}
+    padding-left:calc(var(--col-hora) + 10px)}
   .jogo.primetime .destaque{order:-1}
-  .chs{grid-column:1/-1;padding-left:calc(var(--col-hora) + 14px)}
+  .chs{grid-column:1/-1;padding-left:calc(var(--col-hora) + 10px)}
   .chs .col{flex-direction:row;flex-wrap:wrap;align-items:center}
   .hero-lado{width:100%}
   .hero-info{flex:1}

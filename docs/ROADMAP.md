@@ -58,7 +58,18 @@
 - **Selos uniformes**: mesma caixa para todos, e uma marca por selo — logo, desenho ou
   texto, nunca logo e texto juntos.
 
-## Próximo — v0.6.0
+## Pronto — v0.6.0
+
+- **Resultado virou coluna própria**, com rótulo "Resultado" no cabeçalho. Antes os pontos
+  ficavam espremidos entre a campanha e a liga — o dado mais importante do cartão era o
+  menos visível. Agora são dois números em corpo grande num bloco só, alinhados com as
+  linhas do confronto, com o vencedor destacado e o perdedor recuado.
+- Jogo do Pittsburgh tem o bloco de resultado tingido de dourado.
+- Nos cards da temporada o resultado também virou bloco, com a mesma lógica.
+- No celular o resultado fica ao lado do confronto, e não empurrado para baixo: é o que
+  se olha primeiro.
+
+## Próximo — v0.7.0
 
 **Tarefa agendada do Claude para a grade brasileira.** É o que falta para o ciclo fechar.
 Terça e quinta de manhã, seguindo [OPERACAO.md](OPERACAO.md) e a regra de validação de

@@ -367,12 +367,22 @@ function semanaCorrente() {
   return s || temporada.semanas[temporada.semanas.length - 1];
 }
 
-function linhaTime(sigla, pts, venceu, perdeu, mostrarPts) {
+function linhaTime(sigla, venceu, perdeu) {
   return `<div class="time ${venceu ? "venceu" : ""} ${perdeu ? "perdeu" : ""}">
     ${sigla ? escudo(sigla) : `<span class="vazio"></span>`}
     <span class="nm">${sigla ? time(sigla).apelido : "a definir"}</span>
     ${sigla ? classificacaoDe(sigla) : `<span class="clas"></span>`}
-    <span class="pt">${mostrarPts ? pts : ""}</span>
+  </div>`;
+}
+
+/* O resultado ganhou coluna própria: espremido entre campanha e liga, ele era o
+   dado mais importante do cartão e o menos visível. Aqui os dois números ficam num
+   bloco só, em corpo grande, alinhados com as duas linhas do confronto. */
+function colunaResultado(j, fim, vV, vM) {
+  if (!fim) return `<div class="resultado vazio"><span class="p">–</span><span class="p">–</span></div>`;
+  return `<div class="resultado">
+    <span class="p ${vV ? "ganhou" : ""}">${j.placar.visitante}</span>
+    <span class="p ${vM ? "ganhou" : ""}">${j.placar.mandante}</span>
   </div>`;
 }
 
@@ -381,7 +391,8 @@ function linhaTime(sigla, pts, venceu, perdeu, mostrarPts) {
 const CABECALHO_GRADE = `
   <div class="cab-grade" aria-hidden="true">
     <span>Horário</span>
-    <span class="conf"><span>Confronto</span><span class="c">Camp.</span><span class="p">Pts</span></span>
+    <span class="conf"><span>Confronto</span><span class="c">Camp.</span></span>
+    <span class="r">Resultado</span>
     <span>Liga</span>
     <span>Destaque</span>
     <span class="cn"><span>Brasil</span><span>EUA</span></span>
@@ -419,10 +430,11 @@ function cartaoJogo(j) {
   return `<div class="jogo ${ehMeu ? "pit" : ""} ${semTv ? "semtv" : ""} ${estado === "andamento" ? "vivo" : ""} ${j.pacote ? "primetime" : ""}" data-br="${semTv ? 0 : 1}" ${estiloPacote}>
     <div class="quando"><span class="h">${j.horarioAConfirmar ? "--:--" : hora(j.kickoff)}</span>${estadoTxt}</div>
     <div class="mat">
-      ${linhaTime(j.visitante, fim ? j.placar.visitante : "", vV, fim && !vV, fim)}
-      ${linhaTime(j.mandante, fim ? j.placar.mandante : "", vM, fim && !vM, fim)}
+      ${linhaTime(j.visitante, vV, fim && !vV)}
+      ${linhaTime(j.mandante, vM, fim && !vM)}
       ${etiquetas ? `<div class="etqs">${etiquetas}</div>` : ""}
     </div>
+    ${colunaResultado(j, fim, vV, vM)}
     <div class="liga">${j.aDefinir ? "" : colunaLiga(j.visitante, j.mandante)}</div>
     <div class="destaque">${seloPacote(j.pacote, "grande")}</div>
     <div class="chs">
@@ -515,7 +527,9 @@ $("#soBr").addEventListener("change", filtrar);
         <div class="adv">${escudo(adv)} <span class="nm">${time(adv).apelido}</span></div>
         <div class="sub-adv">${seloLiga(adv, times[adv]?.conferencia === times[ME].conferencia && times[adv]?.divisao === times[ME].divisao)} ${classificacaoDe(adv)}</div>
         <div class="dt">${j.horarioAConfirmar ? "data a definir" : `${dia(j.kickoff).split("-").reverse().slice(0, 2).join("/")} · ${hora(j.kickoff)}`}</div>
-        ${fim ? `<div class="res ${meu > dele ? "v" : "d"}">${meu > dele ? "Vitória" : "Derrota"} ${meu} x ${dele}</div>` : ""}
+        ${fim ? `<div class="res ${meu > dele ? "v" : "d"}">
+          <span class="rot">${meu > dele ? "Vitória" : "Derrota"}</span>
+          <span class="pl">${meu} x ${dele}</span></div>` : ""}
         ${tv}${eua}
       </div>`);
   }
