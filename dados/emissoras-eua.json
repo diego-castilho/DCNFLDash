@@ -1,0 +1,13 @@
+{
+  "_leia": "Catálogo das emissoras americanas. 'marca' é a marca tipográfica usada por padrão; se existir o arquivo indicado em 'logo' dentro de site/, o painel usa a imagem no lugar. Para trocar por um logo oficial, basta salvar o arquivo nesse caminho — nenhum código muda.",
+  "cbs":      { "nome": "CBS",          "marca": "CBS",         "cor": "#3E9BEA", "logo": "assets/emissoras/cbs.webp" },
+  "fox":      { "nome": "FOX",          "marca": "FOX",         "cor": "#5B8DF0", "logo": "assets/emissoras/fox.webp" },
+  "nbc":      { "nome": "NBC",          "marca": "NBC",         "cor": "#FDB827", "logo": "assets/emissoras/nbc.webp" },
+  "abc":      { "nome": "ABC",          "marca": "ABC",         "cor": "#D8DEE9", "logo": "assets/emissoras/abc.webp" },
+  "espn":     { "nome": "ESPN",         "marca": "ESPN",        "cor": "#FF4B54", "logo": "assets/emissoras/espn.webp" },
+  "prime":    { "nome": "Prime Video",  "marca": "prime video", "cor": "#3DC7F5", "logo": "assets/emissoras/prime.webp" },
+  "nflnet":   { "nome": "NFL Network",  "marca": "NFL NET",     "cor": "#6FA8E8", "logo": "assets/emissoras/nflnet.webp" },
+  "netflix":  { "nome": "Netflix",      "marca": "NETFLIX",     "cor": "#FF5A62", "logo": "assets/emissoras/netflix.webp" },
+  "peacock":  { "nome": "Peacock",      "marca": "peacock",     "cor": "#B58BF0", "logo": "assets/emissoras/peacock.webp" },
+  "nflplus":  { "nome": "NFL+",         "marca": "NFL+",        "cor": "#4ED28C", "logo": "assets/emissoras/nflplus.webp" }
+}

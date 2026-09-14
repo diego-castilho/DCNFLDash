@@ -35,7 +35,9 @@ Reescrito inteiro a cada sync. Nunca editar à mão — a próxima execução so
           "placar": { "visitante": 13, "mandante": 20 },
           "parcial": null,          // texto, só quando estado === "andamento"
           "local": { "estadio": "Acrisure Stadium", "cidade": "Pittsburgh", "uf": "PA", "pais": "USA" },
-          "emissoraEua": "FOX",
+          "emissoraEua": "FOX",             // texto cru, como a ESPN devolve
+          "emissoras": ["fox"],             // chaves de dados/emissoras-eua.json
+          "pacote": null,                   // TNF | SNF | MNF | null
           "nota": ""
         }
       ]
@@ -68,6 +70,26 @@ A única parte editada por pesquisa. Chave: `"<semana>:<visitante>@<mandante>"`.
 saber *de onde veio* e *quando foi checado*, e o que permite auditar um canal errado sem
 adivinhar quem o escreveu.
 
+## `emissoras-eua.json`
+
+Catálogo das emissoras americanas, para quando o Diego assiste de fora do Brasil. Cada
+entrada tem `nome`, `marca` (a marca tipográfica desenhada pelo painel), `cor` e `logo`.
+
+O campo `logo` aponta para `site/assets/emissoras/<chave>.webp`, um arquivo que **pode não
+existir** — e normalmente não existe. Nesse caso o `onerror` da imagem some com ela e a
+marca tipográfica aparece no lugar. Para passar a usar o logo oficial de qualquer emissora,
+basta salvar o arquivo nesse caminho; nenhuma linha de código muda.
+
+## Pacotes de prime time
+
+`pacote` é calculado no sync por `pacoteDe()` em `scripts/lib/comum.mjs` e vale TNF, SNF,
+MNF ou nada. Uma definição só, usada em dois lugares: a marca que aparece no cartão do jogo
+e a regra fixa que decide o canal brasileiro. Antes eram duas implementações da mesma ideia
+em arquivos diferentes — que é como elas começam a divergir.
+
+A regra do TNF exige **quinta-feira e Prime Video**, não só Prime Video: o jogo de Black
+Friday também é do Prime nos EUA e não tem detentor definido no Brasil.
+
 ## Por que cada regra de validação existe
 
 Nenhuma delas é hipotética. Todas correspondem a uma falha real, observada no painel v1 ou
@@ -85,6 +107,8 @@ no primeiro sync.
 | `confirmado` exige `fonte` | canal sem procedência não é confirmação, é lembrança |
 | `totalJogos` bate com os jogos presentes | resposta parcial da API não pode passar por temporada completa |
 | `verificadoEm` obrigatório, aviso se > 2 dias | o painel v1 podia ficar dias parado sem nenhum sinal |
+| emissora americana precisa existir no catálogo | um nome novo da ESPN ("NFL+", "Peacock") passaria despercebido e sumiria do painel |
+| `pacote` só pode ser TNF, SNF ou MNF | valor solto aqui vira canal brasileiro errado, porque a regra fixa lê este campo |
 
 ### Por que dois carimbos de tempo
 

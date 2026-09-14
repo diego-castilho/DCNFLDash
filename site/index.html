@@ -16,7 +16,7 @@
     <img src="assets/escudos/pit.webp" alt="" width="34" height="34">
     <div>
       <h1>DCNFLDash</h1>
-      <p>Temporada 2026/27 · onde assistir no Brasil</p>
+      <p>Temporada 2026/27 · onde assistir no Brasil e nos EUA</p>
     </div>
   </div>
   <div class="frescor" id="frescor" title="quando os dados foram sincronizados pela última vez"></div>
@@ -36,7 +36,8 @@
         <div class="hero-cd"><strong id="heroContagem">—</strong><span id="heroContagemRot">para o kickoff</span></div>
         <dl class="hero-info">
           <div><dt>Quando</dt><dd id="heroQuando">—</dd></div>
-          <div><dt>Onde assistir</dt><dd id="heroOnde">—</dd></div>
+          <div><dt>No Brasil</dt><dd id="heroOnde">—</dd></div>
+          <div><dt>Nos EUA</dt><dd id="heroEua">—</dd></div>
           <div><dt>Local</dt><dd id="heroLocal">—</dd></div>
         </dl>
       </div>
@@ -48,22 +49,30 @@
     <div class="numeros" id="numeros"></div>
   </section>
 
-  <!-- CORRIDA DA AFC -------------------------------------------------------->
+  <!-- CORRIDA DOS PLAYOFFS -------------------------------------------------->
   <section class="bloco">
     <div class="cab">
-      <h2>Corrida da AFC</h2>
+      <h2>Corrida dos playoffs</h2>
       <p>Calculado a partir dos jogos já encerrados. Critérios de desempate simplificados — ver documentação.</p>
     </div>
-    <div class="afc">
+    <div class="conf">
       <div class="card">
         <h3>AFC Norte</h3>
         <table class="tab" id="tabDivisao"></table>
       </div>
       <div class="card">
-        <h3>Classificação para os playoffs</h3>
-        <ol class="seeds" id="seeds"></ol>
+        <h3>AFC · classificação</h3>
+        <ol class="seeds" id="seedsAfc"></ol>
       </div>
       <div class="card">
+        <h3>NFC · líderes de divisão</h3>
+        <table class="tab" id="tabNfc"></table>
+      </div>
+      <div class="card">
+        <h3>NFC · classificação</h3>
+        <ol class="seeds" id="seedsNfc"></ol>
+      </div>
+      <div class="card largo">
         <h3>De olho nesta rodada</h3>
         <p class="sub" id="deOlhoSub"></p>
         <ul class="olho" id="deOlho"></ul>
@@ -85,7 +94,7 @@
   <section class="bloco">
     <div class="cab">
       <h2>Temporada do Pittsburgh</h2>
-      <p>Os 17 jogos da temporada regular, com o que já está confirmado na TV brasileira.</p>
+      <p>Os 17 jogos da temporada regular, com o canal brasileiro e a emissora americana de cada um.</p>
     </div>
     <div class="temporada" id="temporada"></div>
   </section>
@@ -104,6 +113,11 @@
   <section class="bloco">
     <div class="cab"><h2>Onde cada canal transmite</h2></div>
     <div class="canais" id="canais"></div>
+    <div class="cab eua-cab">
+      <h2>Emissoras nos EUA</h2>
+      <p>Aparecem em cada jogo para quando você estiver viajando.</p>
+    </div>
+    <div class="emissoras" id="emissoras"></div>
   </section>
 
   <!-- O QUE MUDOU ----------------------------------------------------------->

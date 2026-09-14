@@ -3,7 +3,6 @@
 
 :root{
   --fundo:#0B0D11;
-  --fundo2:#12151C;
   --carta:#161A23;
   --carta2:#1D222D;
   --linha:#252B38;
@@ -18,6 +17,10 @@
   --azul:#5AA9FF;
   --r:14px;
   --sombra:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.28);
+  /* Largura da coluna de canais. É ela que mantém o placar de todos os jogos
+     alinhado na mesma vertical, independente de quantos selos o jogo tem. */
+  --col-canais:184px;
+  --col-hora:88px;
 }
 
 *{box-sizing:border-box}
@@ -62,9 +65,43 @@ img{max-width:100%}
 .cab{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px}
 .cab h2{font-size:17px}
 .cab p{margin:0;color:var(--texto3);font-size:12.5px;max-width:62ch}
+.cab.eua-cab{margin-top:26px}
 .card{background:var(--carta);border:1px solid var(--linha);border-radius:var(--r);padding:16px}
 .card h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--texto2);margin-bottom:12px}
 .sub{margin:-6px 0 10px;color:var(--texto3);font-size:12px}
+
+/* ---- selos de canal (Brasil) ------------------------------------------ */
+.ch{display:inline-flex;align-items:center;gap:5px;border-radius:7px;padding:5px 8px;font-size:11.5px;background:var(--carta2)}
+.ch img{height:15px;width:auto}
+.ch svg{flex:none}
+.ch .wm{font-style:normal;font-weight:700;font-size:10px;letter-spacing:.04em}
+.ch.plana{font-weight:800;font-size:11px;letter-spacing:.08em;padding:5px 9px;border:1px solid rgba(255,255,255,.16)}
+.ch.tbd{color:var(--texto3);border:1px dashed var(--linha);background:none}
+.selos{display:inline-flex;gap:5px;flex-wrap:wrap;align-items:center}
+
+/* ---- selos de emissora (EUA) ------------------------------------------
+   Marca tipográfica por padrão; se o arquivo de imagem existir em
+   site/assets/emissoras/, a <img> carrega e a marca some (ver o seletor +). */
+.eua{
+  display:inline-flex;align-items:center;gap:4px;
+  border:1px solid color-mix(in srgb, var(--c) 40%, transparent);
+  border-radius:6px;padding:3px 6px;line-height:1;
+}
+.eua img{height:13px;width:auto}
+.eua img + .wm{display:none}
+.eua .wm{font-style:normal;font-weight:700;font-size:9.5px;letter-spacing:.07em;color:var(--c);white-space:nowrap}
+.eua.grande{padding:7px 11px}
+.eua.grande img{height:18px}
+.eua.grande .wm{font-size:12px}
+.emissoras{display:flex;gap:8px;flex-wrap:wrap}
+
+/* ---- selo de pacote (TNF/SNF/MNF) ------------------------------------- */
+.pct{
+  display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.1em;
+  color:var(--c);border:1px solid color-mix(in srgb, var(--c) 45%, transparent);
+  background:color-mix(in srgb, var(--c) 12%, transparent);
+  border-radius:5px;padding:2px 5px;line-height:1.4;vertical-align:middle;
+}
 
 /* ---- hero ------------------------------------------------------------- */
 .hero{
@@ -76,18 +113,18 @@ img{max-width:100%}
 .hero-topo .rot{font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ouro)}
 .hero-topo h2{font-size:20px;margin-top:3px}
 .hero-corpo{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-top:18px}
-.hero-mat{display:flex;align-items:center;gap:14px;flex:1 1 320px}
+.hero-mat{display:flex;align-items:center;gap:14px;flex:1 1 300px}
 .hero-time{display:flex;align-items:center;gap:10px}
 .hero-time img{width:44px;height:44px;object-fit:contain}
 .hero-time .nm{font-weight:650;font-size:15px}
 .hero-time .sg{color:var(--texto3);font-size:11.5px;letter-spacing:.06em}
-.hero-vs{color:var(--texto3);font-size:15px}
+.hero-vs{color:var(--texto3);font-size:13px}
 .hero-lado{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
 .hero-cd{text-align:center;min-width:104px}
 .hero-cd strong{display:block;font-size:26px;font-variant-numeric:tabular-nums;letter-spacing:-.03em}
 .hero-cd span{color:var(--texto3);font-size:11.5px}
-.hero-info{margin:0;display:grid;gap:10px}
-.hero-info div{display:grid;gap:1px}
+.hero-info{margin:0;display:grid;gap:9px}
+.hero-info div{display:grid;gap:2px}
 .hero-info dt{color:var(--texto3);font-size:11px;text-transform:uppercase;letter-spacing:.07em}
 .hero-info dd{margin:0;font-size:13.5px}
 
@@ -98,14 +135,17 @@ img{max-width:100%}
 .num span{color:var(--texto3);font-size:11.5px;line-height:1.35;display:block;margin-top:3px}
 .num .bom{color:var(--verde)} .num .mau{color:var(--vermelho)} .num .neutro{color:var(--ouro)}
 
-/* ---- AFC -------------------------------------------------------------- */
-.afc{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+/* ---- classificação ----------------------------------------------------- */
+.conf{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.conf .largo{grid-column:1/-1}
 .tab{width:100%;border-collapse:collapse;font-size:13.5px}
 .tab th{text-align:right;font-weight:500;color:var(--texto3);font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding-bottom:6px}
 .tab th:first-child{text-align:left}
 .tab td{padding:7px 0;border-top:1px solid var(--linha);text-align:right;font-variant-numeric:tabular-nums}
-.tab td:first-child{text-align:left;display:flex;align-items:center;gap:8px}
-.tab img{width:20px;height:20px;object-fit:contain}
+.tab td:first-child{text-align:left}
+.tab td:first-child,.tab td.lider{display:flex;align-items:center;gap:8px}
+.tab td.dv{color:var(--texto3);font-size:12px;display:table-cell;text-align:left}
+.tab img{width:20px;height:20px;object-fit:contain;flex:none}
 .tab tr.pit td{color:var(--ouro);font-weight:600}
 .seeds{margin:0;padding:0;list-style:none;counter-reset:s}
 .seeds li{
@@ -121,11 +161,12 @@ img{max-width:100%}
 .seeds li.pit::before{background:var(--ouro);color:#111}
 .seeds li.pit{color:var(--ouro);font-weight:600}
 .seeds li.corte{border-top:1px dashed var(--texto3)}
-.seeds img{width:20px;height:20px;object-fit:contain}
-.seeds .rec{margin-left:auto;color:var(--texto3);font-variant-numeric:tabular-nums;font-size:12.5px}
-.olho{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.seeds img{width:20px;height:20px;object-fit:contain;flex:none}
+.seeds .tn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.seeds .rec{margin-left:auto;color:var(--texto3);font-variant-numeric:tabular-nums;font-size:12.5px;padding-left:8px}
+.olho{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px}
 .olho li{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--texto2)}
-.olho img{width:18px;height:18px;object-fit:contain}
+.olho img{width:18px;height:18px;object-fit:contain;flex:none}
 
 /* ---- semanas ---------------------------------------------------------- */
 .semanas{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;scrollbar-width:thin}
@@ -147,9 +188,13 @@ img{max-width:100%}
 .dia .ln{flex:1;height:1px;background:var(--linha)}
 .dia .ct{color:var(--texto3);font-size:11.5px}
 
-/* ---- jogo ------------------------------------------------------------- */
+/* ---- jogo -------------------------------------------------------------
+   Três colunas de largura previsível. A do meio é a única elástica, então o
+   placar (encostado na borda direita dela) cai na mesma vertical em todos os
+   cartões — que é exatamente o que faltava na versão anterior. */
 .jogo{
-  display:grid;grid-template-columns:92px 1fr auto;gap:14px;align-items:center;
+  display:grid;grid-template-columns:var(--col-hora) minmax(0,1fr) var(--col-canais);
+  gap:14px;align-items:center;
   background:var(--carta);border:1px solid var(--linha);border-radius:12px;
   padding:11px 14px;margin-bottom:7px;
 }
@@ -161,43 +206,46 @@ img{max-width:100%}
 .jogo .quando .e{font-size:11px;color:var(--texto3);display:block}
 .jogo .quando .e.vivo{color:var(--verde)}
 .jogo .quando .e.fim{color:var(--texto2)}
-.time{display:flex;align-items:center;gap:9px;padding:2px 0}
-.time img{width:24px;height:24px;object-fit:contain}
-.time .nm{font-size:14px}
-.time .pt{margin-left:auto;font-variant-numeric:tabular-nums;font-size:15px;font-weight:600;color:var(--texto2)}
+.mat{min-width:0}
+.time{display:flex;align-items:center;gap:9px;padding:2px 0;min-width:0}
+.time img,.time .vazio{width:24px;height:24px;object-fit:contain;flex:none}
+.time .nm{font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.time .pt{
+  margin-left:auto;padding-left:10px;flex:none;width:30px;text-align:right;
+  font-variant-numeric:tabular-nums;font-size:15px;font-weight:600;color:var(--texto2);
+}
 .time.venceu .nm{font-weight:650}
 .time.venceu .pt{color:var(--texto)}
 .time.perdeu{color:var(--texto3)}
 .time.perdeu img{filter:grayscale(1);opacity:.65}
-.etq{margin-top:3px;font-size:11px;color:var(--texto3)}
-.chs{display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:flex-end;max-width:210px}
-.ch{display:inline-flex;align-items:center;gap:5px;border-radius:7px;padding:5px 8px;font-size:11.5px;background:var(--carta2)}
-.ch img{height:15px;width:auto}
-.ch.tbd{color:var(--texto3);border:1px dashed var(--linha);background:none}
-.ch.texto{font-weight:600}
+.etqs{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:4px}
+.etq{font-size:11px;color:var(--texto3)}
+.chs{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+.chs-br,.chs-eua{display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
 
 /* ---- temporada -------------------------------------------------------- */
-.temporada{display:grid;grid-template-columns:repeat(auto-fill,minmax(184px,1fr));gap:9px}
+.temporada{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:9px}
 .sem{background:var(--carta);border:1px solid var(--linha);border-radius:12px;padding:12px;border-top:3px solid var(--linha)}
 .sem.ok{border-top-color:var(--verde)}
 .sem.risco{border-top-color:var(--ouro)}
 .sem.fora{border-top-color:var(--vermelho)}
 .sem.duvida{border-top-color:var(--texto3)}
 .sem.bye{opacity:.5}
-.sem .n{font-size:11px;color:var(--texto3);text-transform:uppercase;letter-spacing:.06em}
+.sem .n{font-size:11px;color:var(--texto3);text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .sem .adv{display:flex;align-items:center;gap:8px;margin:7px 0 6px;font-size:14px;font-weight:600}
-.sem .adv img{width:24px;height:24px;object-fit:contain}
+.sem .adv img{width:24px;height:24px;object-fit:contain;flex:none}
 .sem .dt{font-size:12px;color:var(--texto2);font-variant-numeric:tabular-nums}
 .sem .res{margin-top:7px;font-size:12.5px;font-weight:600}
 .sem .res.v{color:var(--verde)} .sem .res.d{color:var(--vermelho)}
-.sem .tv{margin-top:6px;font-size:11.5px;color:var(--texto3)}
-.sem.ok .tv{color:var(--verde)} .sem.fora .tv{color:var(--vermelho)}
+.sem .tv{margin-top:8px}
+.sem .tv.txt{font-size:11.5px;color:var(--texto3)}
+.sem.fora .tv.txt{color:var(--vermelho)}
+.sem .eua-linha{margin-top:6px;opacity:.85}
 
 /* ---- radar ------------------------------------------------------------ */
 .radar{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
 .rad{background:var(--carta);border:1px solid var(--linha);border-radius:var(--r);padding:14px}
-.rad .top{display:flex;align-items:center;gap:8px;height:22px;margin-bottom:9px}
-.rad .top img{height:17px;width:auto}
+.rad .top{display:flex;align-items:center;gap:8px;min-height:26px;margin-bottom:9px}
 .rad .top .nome{font-size:12.5px;font-weight:600}
 .rad b{font-size:21px;font-variant-numeric:tabular-nums}
 .rad span{color:var(--texto3);font-size:11.5px;display:block;margin-top:2px}
@@ -212,8 +260,7 @@ img{max-width:100%}
 /* ---- canais ----------------------------------------------------------- */
 .canais{display:grid;grid-template-columns:repeat(auto-fit,minmax(214px,1fr));gap:10px}
 .canal{background:var(--carta);border:1px solid var(--linha);border-radius:var(--r);padding:15px}
-.canal .mk{height:20px;display:flex;align-items:center;margin-bottom:10px}
-.canal .mk img{height:20px;width:auto}
+.canal .mk{min-height:26px;display:flex;align-items:center;margin-bottom:10px}
 .canal p{margin:0 0 10px;font-size:12.5px;color:var(--texto2);line-height:1.5}
 .tagv,.tagn{font-size:11px;border-radius:6px;padding:3px 7px}
 .tagv{background:#123322;color:var(--verde)}
@@ -238,11 +285,18 @@ img{max-width:100%}
   color:var(--texto3);font-size:12px}
 .rodape p{margin:0 0 4px}
 
+/* ---- telas médias ----------------------------------------------------- */
+@media (max-width:900px){
+  :root{--col-canais:150px}
+}
+
 /* ---- celular ---------------------------------------------------------- */
 @media (max-width:640px){
+  :root{--col-hora:72px}
   body{padding:0 12px 48px}
-  .jogo{grid-template-columns:70px 1fr;gap:10px}
-  .chs{grid-column:1/-1;justify-content:flex-start;max-width:none;padding-left:80px}
+  .jogo{grid-template-columns:var(--col-hora) minmax(0,1fr);row-gap:8px}
+  .chs{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;
+       align-items:center;padding-left:calc(var(--col-hora) + 14px);gap:6px}
   .hero-lado{width:100%}
   .hero-info{flex:1}
 }
