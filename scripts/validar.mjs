@@ -30,14 +30,18 @@ let finais = 0, agendados = 0, andamento = 0;
 
 for (const s of temporada.semanas) {
   for (const j of s.jogos) {
-    const ref = `${j.rotulo} ${j.visitante} @ ${j.mandante}`;
+    const ref = j.aDefinir ? `${j.rotulo} (confronto a definir)` : `${j.rotulo} ${j.visitante} @ ${j.mandante}`;
 
     if (ids.has(j.id)) erro(`id de jogo duplicado: ${j.id} (${ref})`);
     ids.add(j.id);
     chavesJogo.add(`${j.fase}:${j.semana}:${j.visitante}@${j.mandante}`);
 
-    if (!times[j.visitante]) erro(`sigla desconhecida "${j.visitante}" em ${ref}`);
-    if (!times[j.mandante]) erro(`sigla desconhecida "${j.mandante}" em ${ref}`);
+    if (!j.aDefinir) {
+      if (!times[j.visitante]) erro(`sigla desconhecida "${j.visitante}" em ${ref}`);
+      if (!times[j.mandante]) erro(`sigla desconhecida "${j.mandante}" em ${ref}`);
+    } else if (j.estado !== "agendado") {
+      erro(`${ref} está sem times mas o estado é "${j.estado}"`);
+    }
     if (Number.isNaN(Date.parse(j.kickoff))) erro(`kickoff inválido em ${ref}: ${j.kickoff}`);
     if (!["agendado", "andamento", "final", "adiado"].includes(j.estado)) erro(`estado inválido em ${ref}: ${j.estado}`);
 

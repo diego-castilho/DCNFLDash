@@ -38,14 +38,23 @@ function normalizarJogo(ev, fase, semana) {
   if (!casa || !fora) return null;
 
   const estado = estadoDe(comp.status);
+  // Os confrontos de playoff existem no calendário antes de haver classificados:
+  // a ESPN devolve "TBD" nos dois lados. O jogo é mantido (a data e a janela de
+  // transmissão importam), mas sem time — ver docs/DADOS.md.
+  const aDefinir = fora.team.abbreviation === "TBD" || casa.team.abbreviation === "TBD";
   const jogo = {
     id: ev.id,
     fase,
     semana,
     rotulo: fase === "playoffs" ? (NOMES_PLAYOFF[semana] || `Playoffs ${semana}`) : `Semana ${semana}`,
-    visitante: sigla(fora.team.abbreviation),
-    mandante: sigla(casa.team.abbreviation),
+    aDefinir,
+    visitante: aDefinir ? null : sigla(fora.team.abbreviation),
+    mandante: aDefinir ? null : sigla(casa.team.abbreviation),
     kickoff: ev.date,                    // ISO em UTC — a conversão para Brasília é feita no painel
+    // A NFL publica alguns jogos de fim de temporada sem horário fechado ("Flex Game:
+    // 12/26 or 12/27"). A ESPN marca esses com timeValid=false e devolve um horário
+    // de fachada — o painel precisa mostrar "data a definir", não o horário falso.
+    horarioAConfirmar: comp.timeValid === false,
     estado,                              // agendado | andamento | final | adiado
     placar: null,
     parcial: null,
@@ -67,6 +76,8 @@ function normalizarJogo(ev, fase, semana) {
   return jogo;
 }
 
+const refJogo = j => j.aDefinir ? `${j.rotulo} (a definir)` : `${j.visitante} @ ${j.mandante}`;
+
 function compararComAnterior(anterior, novos) {
   if (!anterior) return [];
   const antes = new Map();
@@ -75,12 +86,12 @@ function compararComAnterior(anterior, novos) {
   const mudancas = [];
   for (const j of novos) {
     const a = antes.get(j.id);
-    if (!a) { mudancas.push({ tipo: "jogo novo", id: j.id, jogo: `${j.visitante} @ ${j.mandante}`, rotulo: j.rotulo }); continue; }
+    if (!a) { mudancas.push({ tipo: "jogo novo", id: j.id, jogo: refJogo(j), rotulo: j.rotulo }); continue; }
     if (a.kickoff !== j.kickoff) {
-      mudancas.push({ tipo: "horário alterado", id: j.id, jogo: `${j.visitante} @ ${j.mandante}`, rotulo: j.rotulo, de: a.kickoff, para: j.kickoff });
+      mudancas.push({ tipo: "horário alterado", id: j.id, jogo: refJogo(j), rotulo: j.rotulo, de: a.kickoff, para: j.kickoff });
     }
     if (a.estado !== "final" && j.estado === "final") {
-      mudancas.push({ tipo: "placar final", id: j.id, jogo: `${j.visitante} @ ${j.mandante}`, rotulo: j.rotulo, placar: `${j.placar.visitante} x ${j.placar.mandante}` });
+      mudancas.push({ tipo: "placar final", id: j.id, jogo: refJogo(j), rotulo: j.rotulo, placar: `${j.placar.visitante} x ${j.placar.mandante}` });
     }
   }
   return mudancas;
@@ -96,7 +107,7 @@ for (const { seasontype, semanas: qtd, fase } of FASES) {
     const dados = await buscarJson(url);
     const jogos = (dados.events || []).map(ev => normalizarJogo(ev, fase, n)).filter(Boolean);
     if (!jogos.length) continue;
-    jogos.sort((a, b) => a.kickoff.localeCompare(b.kickoff) || a.mandante.localeCompare(b.mandante));
+    jogos.sort((a, b) => a.kickoff.localeCompare(b.kickoff) || (a.mandante || "").localeCompare(b.mandante || ""));
     semanas.push({
       fase, numero: n,
       rotulo: jogos[0].rotulo,
@@ -115,11 +126,13 @@ const mudancas = compararComAnterior(anterior, todos);
 const saida = { temporada: TEMPORADA, atualizadoEm: agoraIso(), fonte: "ESPN scoreboard API", totalJogos: todos.length, semanas };
 gravarJson("dados/temporada.json", saida);
 
+// O arquivo é sempre gravado, mesmo vazio: o painel o consome direto e um 404
+// no console é ruído que esconde erro de verdade.
+const log = lerJson("dados/mudancas.json", { entradas: [] });
 if (mudancas.length) {
-  const log = lerJson("dados/mudancas.json", { entradas: [] });
   log.entradas.unshift({ quando: agoraIso(), origem: "sync-espn", mudancas });
   log.entradas = log.entradas.slice(0, 200);
-  gravarJson("dados/mudancas.json", log);
 }
+gravarJson("dados/mudancas.json", log);
 
 console.log(`\n${todos.length} jogos gravados · ${mudancas.length} mudanças registradas`);
