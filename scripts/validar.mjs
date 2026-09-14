@@ -5,7 +5,8 @@
  * As regras existem porque cada uma delas já falhou na versão anterior do
  * painel (ver docs/DADOS.md > "Por que cada regra existe").
  */
-import { lerJson } from "./lib/comum.mjs";
+import { existsSync } from "node:fs";
+import { RAIZ, lerJson } from "./lib/comum.mjs";
 
 const erros = [];
 const avisos = [];
@@ -17,6 +18,8 @@ const times = lerJson("dados/times.json");
 const canais = lerJson("dados/canais.json");
 const gradeBr = lerJson("dados/canais-br.json");
 const emissoras = lerJson("dados/emissoras-eua.json");
+const pacotes = lerJson("dados/pacotes.json");
+const conferencias = lerJson("dados/conferencias.json");
 
 if (!temporada) erro("dados/temporada.json não existe ou não é JSON válido");
 if (!times) erro("dados/times.json não existe ou não é JSON válido");
@@ -84,6 +87,17 @@ for (const [chave, g] of Object.entries(gradeBr.jogos || {})) {
   if (Number.isNaN(Date.parse(g.checadoEm))) erro(`${ref} tem checadoEm inválido "${g.checadoEm}"`);
   if (g.confianca === "confirmado" && !g.fonte) erro(`${ref} está confirmado mas não diz a fonte`);
   if (g.confianca === "provavel") aviso(`${ref} está marcado como provável — revisar antes da rodada`);
+}
+
+// ---- arquivos de logo --------------------------------------------------
+// Logo que falta não é erro: o painel desenha a marca tipográfica no lugar. Mas é
+// bom saber, porque quase sempre significa que alguém mexeu no caminho sem querer.
+for (const [nome, catalogo] of [["emissora", emissoras], ["pacote", pacotes], ["conferência", conferencias]]) {
+  for (const [chave, item] of Object.entries(catalogo || {})) {
+    if (chave.startsWith("_") || !item?.logo) continue;
+    if (!existsSync(`${RAIZ}/site/${item.logo}`)) aviso(`${nome} ${chave}: arquivo ${item.logo} não existe — segue com a marca tipográfica`);
+    else if (!item.licenca) aviso(`${nome} ${chave}: logo sem licença registrada no catálogo`);
+  }
 }
 
 // ---- catálogos ---------------------------------------------------------

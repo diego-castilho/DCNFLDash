@@ -1,0 +1,26 @@
+{
+  "TNF": {
+    "nome": "Thursday Night Football",
+    "marca": "TNF",
+    "cor": "#3DC7F5",
+    "logo": ""
+  },
+  "SNF": {
+    "nome": "Sunday Night Football",
+    "marca": "SNF",
+    "cor": "#FDB827",
+    "logo": "assets/pacotes/snf.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:NBC_Sunday_Night_Football_logo_2022.svg",
+    "inverter": true
+  },
+  "MNF": {
+    "nome": "Monday Night Football",
+    "marca": "MNF",
+    "cor": "#FF6B6B",
+    "logo": "assets/pacotes/mnf.png",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:ESPN_Monday_Night_Football_logo.png",
+    "inverter": false
+  }
+}

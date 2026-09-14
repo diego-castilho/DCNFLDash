@@ -26,16 +26,18 @@ export const agoraIso = () => new Date().toISOString();
 export const diaBrasilia = iso =>
   new Date(iso).toLocaleDateString("sv-SE", { timeZone: "America/Sao_Paulo" });
 
-export async function buscarJson(url, tentativas = 3) {
+export async function buscarJson(url, tentativas = 4) {
   let ultimoErro;
   for (let i = 0; i < tentativas; i++) {
     try {
       const r = await fetch(url, { headers: { "User-Agent": "DCNFLDash/1.0 (+github.com/diego-castilho/DCNFLDash)" } });
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      if (!r.ok) throw Object.assign(new Error(`HTTP ${r.status}`), { status: r.status });
       return await r.json();
     } catch (e) {
       ultimoErro = e;
-      await new Promise(r => setTimeout(r, 1500 * (i + 1)));
+      // 429 é limite de taxa: esperar pouco só gasta outra tentativa à toa.
+      const espera = e.status === 429 ? 15000 * (i + 1) : 1500 * (i + 1);
+      await new Promise(r => setTimeout(r, espera));
     }
   }
   throw new Error(`falha ao buscar ${url}: ${ultimoErro.message}`);

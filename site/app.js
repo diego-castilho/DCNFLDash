@@ -13,11 +13,13 @@ const DURACAO = 3.4 * 36e5;                  // duração estimada de um jogo
 const FUSO = "America/Sao_Paulo";
 const $ = s => document.querySelector(s);
 
-const [temporada, times, canais, emissoras, gradeBr, mudancas] = await Promise.all([
+const [temporada, times, canais, emissoras, pacotes, conferencias, gradeBr, mudancas] = await Promise.all([
   fetch("dados/temporada.json").then(r => r.json()),
   fetch("dados/times.json").then(r => r.json()),
   fetch("dados/canais.json").then(r => r.json()),
   fetch("dados/emissoras-eua.json").then(r => r.json()),
+  fetch("dados/pacotes.json").then(r => r.json()),
+  fetch("dados/conferencias.json").then(r => r.json()),
   fetch("dados/canais-br.json").then(r => r.json()),
   fetch("dados/mudancas.json").then(r => r.json()).catch(() => ({ entradas: [] }))
 ]);
@@ -63,20 +65,54 @@ function selo(chave) {
   return `<span class="ch plana" title="${c.nome}" style="background:${c.cor};color:${c.corTexto}">${c.marca || c.nome}</span>`;
 }
 
+/* As emissoras americanas vêm do Commons e a maioria é preta sobre transparente —
+   invisível num fundo escuro. Por isso cada uma vai num chip claro, como num guia de
+   TV impresso; as poucas que já são claras ganham `fundo: "escuro"` no catálogo. */
 function seloEua(chave) {
   const e = emissoras[chave];
   if (!e) return "";
-  return `<span class="eua" title="${e.nome} · transmissão nos EUA" style="--c:${e.cor}">
+  return `<span class="eua ${e.fundo === "escuro" ? "escuro" : "claro"}" title="${e.nome} · transmissão nos EUA" style="--c:${e.cor}">
     <img src="${e.logo}" alt="${e.nome}" onerror="this.remove()"><i class="wm">${e.marca}</i></span>`;
 }
 
-const PACOTES = {
-  TNF: { nome: "Thursday Night Football", cor: "#3DC7F5" },
-  SNF: { nome: "Sunday Night Football", cor: "#FDB827" },
-  MNF: { nome: "Monday Night Football", cor: "#FF6B6B" }
-};
-const seloPacote = p => PACOTES[p]
-  ? `<span class="pct" title="${PACOTES[p].nome}" style="--c:${PACOTES[p].cor}">${p}</span>` : "";
+/* TNF, SNF e MNF: mesma pílula para os três, com o logo oficial quando existe e as
+   três letras quando não existe. O jogo inteiro também ganha a cor do pacote na
+   borda — é o que deixa um jogo de prime time saltar aos olhos na lista. */
+function seloPacote(p, tamanho) {
+  const d = pacotes[p];
+  if (!d) return "";
+  const conteudo = d.logo
+    ? `<img src="${d.logo}" alt="${d.nome}" onerror="this.replaceWith(document.createTextNode('${p}'))">`
+    : `<i class="wm">${d.marca}</i>`;
+  return `<span class="pct ${tamanho || ""} ${d.logo ? "com-logo" : ""} ${d.inverter ? "inv" : ""}" title="${d.nome}" style="--c:${d.cor}">${conteudo}</span>`;
+}
+
+/* Conferência e divisão do confronto: mesma divisão é clássico de rivalidade, mesma
+   conferência mexe no desempate, e interconferência não mexe em nada — vale distinguir. */
+function seloConfronto(a, b) {
+  const ta = times[a], tb = times[b];
+  if (!ta || !tb) return "";
+  const marca = c => conferencias[c]?.logo
+    ? `<img src="${conferencias[c].logo}" alt="${c}" onerror="this.replaceWith(document.createTextNode('${c}'))">`
+    : `<i class="wm">${c}</i>`;
+  if (ta.conferencia !== tb.conferencia) {
+    return `<span class="conf-chip dupla" title="Jogo interconferência">
+      ${marca(ta.conferencia)}<span class="x">×</span>${marca(tb.conferencia)}</span>`;
+  }
+  const mesmaDiv = ta.divisao === tb.divisao;
+  return `<span class="conf-chip ${mesmaDiv ? "divisao" : ""}" style="--c:${conferencias[ta.conferencia]?.cor || "#888"}"
+    title="${mesmaDiv ? "Jogo de divisão" : "Jogo de conferência"}">
+    ${marca(ta.conferencia)}<span class="rot">${ta.conferencia} ${mesmaDiv ? ta.divisao : ""}</span></span>`;
+}
+
+/** Cartaz e posição na conferência, para aparecer ao lado do nome do time. */
+function classificacaoDe(sigla) {
+  const t = TAB[sigla];
+  if (!t || !t.jogos) return "";
+  const conf = times[sigla]?.conferencia;
+  const pos = conf ? SEEDS[conf].findIndex(x => x.sigla === sigla) + 1 : 0;
+  return `<span class="clas"><span class="cartaz">${t.cartaz}</span>${pos ? `<span class="pos">${pos}º</span>` : ""}</span>`;
+}
 
 /* ---------- grade brasileira ------------------------------------------- */
 const chaveJogo = j => `${j.fase || "regular"}:${j.semana}:${j.visitante}@${j.mandante}`;
@@ -190,10 +226,13 @@ function situacao(j) {
 
   const casa = alvo.mandante === ME;
   const adv = casa ? alvo.visitante : alvo.mandante;
-  const bloco = s => `<div class="hero-time">${escudo(s)}<div><div class="nm">${time(s).apelido}</div><div class="sg">${s}</div></div></div>`;
+  const bloco = s => `<div class="hero-time">${escudo(s)}<div>
+      <div class="nm">${time(s).apelido}</div>
+      <div class="sg">${s} ${classificacaoDe(s)}</div></div></div>`;
   $("#heroMat").innerHTML = bloco(ME) + `<span class="hero-vs">${casa ? "recebe" : "visita"}</span>` + bloco(adv);
 
-  $("#heroRotulo").innerHTML = `${alvo.rotulo} · ${casa ? "em Pittsburgh" : "fora de casa"} ${seloPacote(alvo.pacote)}`;
+  $("#heroRotulo").innerHTML = `${alvo.rotulo} · ${casa ? "em Pittsburgh" : "fora de casa"}`;
+  $("#heroSelos").innerHTML = seloPacote(alvo.pacote, "grande") + seloConfronto(ME, adv);
   $("#heroQuando").textContent = alvo.horarioAConfirmar
     ? `${alvo.nota || "data ainda não fechada"}`
     : `${cap(dataLonga(alvo.kickoff))} · ${hora(alvo.kickoff)} (Brasília)`;
@@ -326,6 +365,7 @@ function linhaTime(sigla, pts, venceu, perdeu, mostrarPts) {
   return `<div class="time ${venceu ? "venceu" : ""} ${perdeu ? "perdeu" : ""}">
     ${sigla ? escudo(sigla) : `<span class="vazio"></span>`}
     <span class="nm">${sigla ? time(sigla).apelido : "a definir"}</span>
+    ${sigla ? classificacaoDe(sigla) : ""}
     <span class="pt">${mostrarPts ? pts : ""}</span>
   </div>`;
 }
@@ -354,11 +394,14 @@ function cartaoJogo(j) {
 
   const etiquetas = [
     seloPacote(j.pacote),
+    j.aDefinir ? "" : seloConfronto(j.visitante, j.mandante),
     j.nota ? `<span class="etq">${j.nota}</span>` : "",
     j.local.pais !== "USA" ? `<span class="etq">${j.local.cidade}, fora dos EUA</span>` : ""
   ].filter(Boolean).join("");
 
-  return `<div class="jogo ${ehMeu ? "pit" : ""} ${semTv ? "semtv" : ""} ${estado === "andamento" ? "vivo" : ""}" data-br="${semTv ? 0 : 1}">
+  const estiloPacote = j.pacote && pacotes[j.pacote] ? `style="--pc:${pacotes[j.pacote].cor}"` : "";
+
+  return `<div class="jogo ${ehMeu ? "pit" : ""} ${semTv ? "semtv" : ""} ${estado === "andamento" ? "vivo" : ""} ${j.pacote ? "primetime" : ""}" data-br="${semTv ? 0 : 1}" ${estiloPacote}>
     <div class="quando"><span class="h">${j.horarioAConfirmar ? "--:--" : hora(j.kickoff)}</span>${estadoTxt}</div>
     <div class="mat">
       ${linhaTime(j.visitante, fim ? j.placar.visitante : "", vV, fim && !vV, fim)}
@@ -366,8 +409,8 @@ function cartaoJogo(j) {
       ${etiquetas ? `<div class="etqs">${etiquetas}</div>` : ""}
     </div>
     <div class="chs">
-      <div class="chs-br">${selosBr}${gamepass}</div>
-      ${selosEua ? `<div class="chs-eua" title="transmissão nos EUA">${selosEua}</div>` : ""}
+      <div class="col br">${selosBr}${gamepass}</div>
+      <div class="col eua">${selosEua || `<span class="vazio-eua">—</span>`}</div>
     </div>
   </div>`;
 }
@@ -391,6 +434,7 @@ function renderSemana(s) {
       <h3>${d === "a definir" ? "Data a definir" : cap(dataLonga(jogos[0].kickoff))}</h3>
       <span class="ln"></span>
       <span class="ct">${jogos.length} ${jogos.length > 1 ? "jogos" : "jogo"}</span>
+      <span class="rotulos"><span>Brasil</span><span>EUA</span></span>
     </div>
     ${jogos.map(cartaoJogo).join("")}`).join("");
   filtrar();
@@ -445,14 +489,15 @@ $("#soBr").addEventListener("change", filtrar);
     const meu = fim ? (casa ? j.placar.mandante : j.placar.visitante) : null;
     const dele = fim ? (casa ? j.placar.visitante : j.placar.mandante) : null;
     const tv = s.canais.length
-      ? `<div class="tv selos">${s.canais.map(selo).join("")}</div>`
-      : `<div class="tv txt">${s.texto}</div>`;
+      ? `<div class="linha-tv"><span class="rot">BR</span><span class="selos">${s.canais.map(selo).join("")}</span></div>`
+      : `<div class="linha-tv"><span class="rot">BR</span><span class="txt">${s.texto}</span></div>`;
     const eua = (j.emissoras || []).length
-      ? `<div class="tv selos eua-linha" title="transmissão nos EUA">${j.emissoras.map(seloEua).join("")}</div>` : "";
+      ? `<div class="linha-tv"><span class="rot">EUA</span><span class="selos">${j.emissoras.map(seloEua).join("")}</span></div>` : "";
     cartoes.push(`
-      <div class="sem ${s.classe}">
-        <div class="n">Semana ${n} · ${casa ? "em casa" : "fora"} ${seloPacote(j.pacote)}</div>
-        <div class="adv">${escudo(adv)} ${time(adv).apelido}</div>
+      <div class="sem ${s.classe} ${j.pacote ? "primetime" : ""}" ${j.pacote && pacotes[j.pacote] ? `style="--pc:${pacotes[j.pacote].cor}"` : ""}>
+        <div class="n"><span>Semana ${n} · ${casa ? "em casa" : "fora"}</span> ${seloPacote(j.pacote)}</div>
+        <div class="adv">${escudo(adv)} <span class="nm">${time(adv).apelido}</span></div>
+        <div class="sub-adv">${seloConfronto(ME, adv)} ${classificacaoDe(adv)}</div>
         <div class="dt">${j.horarioAConfirmar ? "data a definir" : `${dia(j.kickoff).split("-").reverse().slice(0, 2).join("/")} · ${hora(j.kickoff)}`}</div>
         ${fim ? `<div class="res ${meu > dele ? "v" : "d"}">${meu > dele ? "Vitória" : "Derrota"} ${meu} x ${dele}</div>` : ""}
         ${tv}${eua}
@@ -510,9 +555,20 @@ $("#canais").innerHTML = Object.entries(canais).map(([k, c]) => `
   </div>`).join("");
 
 $("#emissoras").innerHTML = Object.entries(emissoras).filter(([k]) => k[0] !== "_").map(([k, e]) => `
-  <span class="eua grande" title="${e.nome}" style="--c:${e.cor}">
+  <span class="eua grande ${e.fundo === "escuro" ? "escuro" : "claro"}" title="${e.nome}" style="--c:${e.cor}">
     <img src="${e.logo}" alt="${e.nome}" onerror="this.remove()"><i class="wm">${e.marca}</i>
   </span>`).join("");
+
+/* Crédito de origem dos arquivos baixados — a licença de cada um está no catálogo. */
+(function creditos() {
+  const comLicenca = [...Object.values(emissoras), ...Object.values(pacotes), ...Object.values(conferencias)]
+    .filter(x => x && x.licenca);
+  if (!comLicenca.length) return;
+  const licencas = [...new Set(comLicenca.map(x => x.licenca))].join(", ");
+  $("#creditos").innerHTML = `Logos de emissoras, pacotes e conferências: ${comLicenca.length} arquivos do
+    <a href="https://commons.wikimedia.org">Wikimedia Commons</a> (${licencas}). As marcas pertencem aos
+    respectivos titulares e aparecem aqui apenas para identificar quem transmite cada jogo.`;
+})();
 
 /* ---------- o que mudou --------------------------------------------------- */
 (function log() {
