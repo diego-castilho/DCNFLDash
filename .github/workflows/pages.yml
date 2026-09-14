@@ -26,12 +26,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+
       - name: Montar o site
-        run: |
-          mkdir -p _site
-          cp -r site/* _site/
-          mkdir -p _site/dados
-          cp dados/*.json _site/dados/
+        run: node scripts/montar.mjs
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

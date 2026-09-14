@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "2026-09-13",
+  "atualizadoEm": "2026-09-14",
   "jogos": {
     "1:NE@SEA": {
       "semana": 1,
@@ -180,6 +180,578 @@
       "fonte": "painel v1 (migração)",
       "url": "",
       "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "4:PIT@CLE": {
+      "fase": "regular",
+      "semana": 4,
+      "visitante": "PIT",
+      "mandante": "CLE",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "4:DET@CAR": {
+      "fase": "regular",
+      "semana": 4,
+      "visitante": "DET",
+      "mandante": "CAR",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "4:ATL@NO": {
+      "fase": "regular",
+      "semana": 4,
+      "visitante": "ATL",
+      "mandante": "NO",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "5:TB@DAL": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "TB",
+      "mandante": "DAL",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "5:BAL@ATL": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "BAL",
+      "mandante": "ATL",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "5:BUF@LAR": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "BUF",
+      "mandante": "LAR",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "6:SEA@DEN": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "SEA",
+      "mandante": "DEN",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "6:DAL@GB": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "DAL",
+      "mandante": "GB",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "6:WAS@SF": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "WAS",
+      "mandante": "SF",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "7:NE@CHI": {
+      "fase": "regular",
+      "semana": 7,
+      "visitante": "NE",
+      "mandante": "CHI",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "7:KC@SEA": {
+      "fase": "regular",
+      "semana": 7,
+      "visitante": "KC",
+      "mandante": "SEA",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "7:DAL@PHI": {
+      "fase": "regular",
+      "semana": 7,
+      "visitante": "DAL",
+      "mandante": "PHI",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "8:CAR@GB": {
+      "fase": "regular",
+      "semana": 8,
+      "visitante": "CAR",
+      "mandante": "GB",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "8:PHI@WAS": {
+      "fase": "regular",
+      "semana": 8,
+      "visitante": "PHI",
+      "mandante": "WAS",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "8:CHI@SEA": {
+      "fase": "regular",
+      "semana": 8,
+      "visitante": "CHI",
+      "mandante": "SEA",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "9:JAX@BAL": {
+      "fase": "regular",
+      "semana": 9,
+      "visitante": "JAX",
+      "mandante": "BAL",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "9:TB@CHI": {
+      "fase": "regular",
+      "semana": 9,
+      "visitante": "TB",
+      "mandante": "CHI",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "9:BUF@MIN": {
+      "fase": "regular",
+      "semana": 9,
+      "visitante": "BUF",
+      "mandante": "MIN",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "10:WAS@NYG": {
+      "fase": "regular",
+      "semana": 10,
+      "visitante": "WAS",
+      "mandante": "NYG",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "10:PIT@CIN": {
+      "fase": "regular",
+      "semana": 10,
+      "visitante": "PIT",
+      "mandante": "CIN",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "10:LAC@BAL": {
+      "fase": "regular",
+      "semana": 10,
+      "visitante": "LAC",
+      "mandante": "BAL",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "11:IND@HOU": {
+      "fase": "regular",
+      "semana": 11,
+      "visitante": "IND",
+      "mandante": "HOU",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "11:MIN@SF": {
+      "fase": "regular",
+      "semana": 11,
+      "visitante": "MIN",
+      "mandante": "SF",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "11:CIN@WAS": {
+      "fase": "regular",
+      "semana": 11,
+      "visitante": "CIN",
+      "mandante": "WAS",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "12:GB@LAR": {
+      "fase": "regular",
+      "semana": 12,
+      "visitante": "GB",
+      "mandante": "LAR",
+      "canais": [
+        "netflix"
+      ],
+      "fonte": "regra fixa · Netflix transmite globalmente",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "12:NE@LAC": {
+      "fase": "regular",
+      "semana": 12,
+      "visitante": "NE",
+      "mandante": "LAC",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "12:CAR@TB": {
+      "fase": "regular",
+      "semana": 12,
+      "visitante": "CAR",
+      "mandante": "TB",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "13:KC@LAR": {
+      "fase": "regular",
+      "semana": 13,
+      "visitante": "KC",
+      "mandante": "LAR",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "13:HOU@PIT": {
+      "fase": "regular",
+      "semana": 13,
+      "visitante": "HOU",
+      "mandante": "PIT",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "13:DAL@SEA": {
+      "fase": "regular",
+      "semana": 13,
+      "visitante": "DAL",
+      "mandante": "SEA",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "14:MIN@NE": {
+      "fase": "regular",
+      "semana": 14,
+      "visitante": "MIN",
+      "mandante": "NE",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "14:BUF@GB": {
+      "fase": "regular",
+      "semana": 14,
+      "visitante": "BUF",
+      "mandante": "GB",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "14:PIT@JAX": {
+      "fase": "regular",
+      "semana": 14,
+      "visitante": "PIT",
+      "mandante": "JAX",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "15:SF@LAC": {
+      "fase": "regular",
+      "semana": 15,
+      "visitante": "SF",
+      "mandante": "LAC",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "15:DET@MIN": {
+      "fase": "regular",
+      "semana": 15,
+      "visitante": "DET",
+      "mandante": "MIN",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "15:NE@KC": {
+      "fase": "regular",
+      "semana": 15,
+      "visitante": "NE",
+      "mandante": "KC",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "16:HOU@PHI": {
+      "fase": "regular",
+      "semana": 16,
+      "visitante": "HOU",
+      "mandante": "PHI",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "16:GB@CHI": {
+      "fase": "regular",
+      "semana": 16,
+      "visitante": "GB",
+      "mandante": "CHI",
+      "canais": [
+        "netflix"
+      ],
+      "fonte": "regra fixa · Netflix transmite globalmente",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "16:BUF@DEN": {
+      "fase": "regular",
+      "semana": 16,
+      "visitante": "BUF",
+      "mandante": "DEN",
+      "canais": [
+        "netflix"
+      ],
+      "fonte": "regra fixa · Netflix transmite globalmente",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "16:JAX@DAL": {
+      "fase": "regular",
+      "semana": 16,
+      "visitante": "JAX",
+      "mandante": "DAL",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "16:NYG@DET": {
+      "fase": "regular",
+      "semana": 16,
+      "visitante": "NYG",
+      "mandante": "DET",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "17:BAL@CIN": {
+      "fase": "regular",
+      "semana": 17,
+      "visitante": "BAL",
+      "mandante": "CIN",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "17:PHI@SF": {
+      "fase": "regular",
+      "semana": 17,
+      "visitante": "PHI",
+      "mandante": "SF",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "17:HOU@GB": {
+      "fase": "regular",
+      "semana": 17,
+      "visitante": "HOU",
+      "mandante": "GB",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "regra fixa · Monday Night · pacote da ESPN",
+      "url": "",
+      "checadoEm": "2026-09-14",
       "confianca": "confirmado"
     }
   }
