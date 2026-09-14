@@ -16,11 +16,13 @@ const temporada = lerJson("dados/temporada.json");
 const times = lerJson("dados/times.json");
 const canais = lerJson("dados/canais.json");
 const gradeBr = lerJson("dados/canais-br.json");
+const emissoras = lerJson("dados/emissoras-eua.json");
 
 if (!temporada) erro("dados/temporada.json não existe ou não é JSON válido");
 if (!times) erro("dados/times.json não existe ou não é JSON válido");
 if (!canais) erro("dados/canais.json não existe ou não é JSON válido");
 if (!gradeBr) erro("dados/canais-br.json não existe ou não é JSON válido");
+if (!emissoras) erro("dados/emissoras-eua.json não existe ou não é JSON válido");
 if (erros.length) { console.error(erros.map(e => `ERRO  ${e}`).join("\n")); process.exit(1); }
 
 // ---- temporada ---------------------------------------------------------
@@ -52,6 +54,9 @@ for (const s of temporada.semanas) {
     if (j.parcial && j.estado !== "andamento") erro(`${ref} tem parcial mas o estado é "${j.estado}"`);
     if (j.placar && (!Number.isInteger(j.placar.visitante) || !Number.isInteger(j.placar.mandante)))
       erro(`placar não inteiro em ${ref}`);
+
+    for (const e of j.emissoras || []) if (!emissoras[e]) erro(`emissora americana desconhecida "${e}" em ${ref}`);
+    if (j.pacote && !["TNF", "SNF", "MNF"].includes(j.pacote)) erro(`pacote inválido em ${ref}: ${j.pacote}`);
 
     if (j.estado === "final") finais++;
     else if (j.estado === "andamento") andamento++;

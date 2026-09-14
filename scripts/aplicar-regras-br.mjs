@@ -18,23 +18,20 @@
  */
 import { lerJson, gravarJson, agoraIso } from "./lib/comum.mjs";
 
-const FUSO = "America/Sao_Paulo";
 const temporada = lerJson("dados/temporada.json");
 const grade = lerJson("dados/canais-br.json", { atualizadoEm: "", jogos: {} });
 
-const diaSemana = iso => new Date(iso).toLocaleDateString("en-US", { timeZone: FUSO, weekday: "short" });
-const horaBr = iso => Number(new Date(iso).toLocaleString("en-US", { timeZone: FUSO, hour: "2-digit", hour12: false }));
+// O pacote (TNF/SNF/MNF) já vem calculado do sync, em scripts/lib/comum.mjs —
+// a mesma definição serve para a marca no painel e para a regra de canal aqui.
+const POR_PACOTE = {
+  TNF: { canais: ["sportv"], regra: "Thursday Night · pacote do SporTV" },
+  SNF: { canais: ["sportv"], regra: "Sunday Night · pacote do SporTV" },
+  MNF: { canais: ["espn"],   regra: "Monday Night · pacote da ESPN" }
+};
 
 function regraPara(j) {
-  const e = j.emissoraEua || "";
-  const d = diaSemana(j.kickoff);
-  const h = horaBr(j.kickoff);
-
-  if (/netflix/i.test(e)) return { canais: ["netflix"], regra: "Netflix transmite globalmente" };
-  if (d === "Thu" && /prime video/i.test(e)) return { canais: ["sportv"], regra: "Thursday Night · pacote do SporTV" };
-  if (d === "Sun" && h >= 20 && /nbc/i.test(e)) return { canais: ["sportv"], regra: "Sunday Night · pacote do SporTV" };
-  if (d === "Mon" && /^(espn|abc)/i.test(e)) return { canais: ["espn"], regra: "Monday Night · pacote da ESPN" };
-  return null;
+  if ((j.emissoras || []).includes("netflix")) return { canais: ["netflix"], regra: "Netflix transmite globalmente" };
+  return POR_PACOTE[j.pacote] || null;
 }
 
 let novos = 0, mantidos = 0;

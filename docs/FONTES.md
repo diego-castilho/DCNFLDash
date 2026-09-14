@@ -25,6 +25,8 @@ Campos que importam e não são óbvios:
 - `competitors[].team.abbreviation` — vem `"TBD"` nos dois lados nos jogos de playoff
   antes de haver classificados. Vira `aDefinir: true`.
 - Washington aparece como `WSH`; o painel usa `WAS`. O alias está em `scripts/lib/comum.mjs`.
+- `competitions[0].broadcasts[0].names` — a emissora nos EUA. Vira chave do catálogo em
+  `dados/emissoras-eua.json` e também alimenta a detecção de TNF/SNF/MNF.
 
 ## Grade brasileira
 
