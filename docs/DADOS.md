@@ -9,7 +9,8 @@ Reescrito inteiro a cada sync. Nunca editar à mão — a próxima execução so
 ```json
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-14T03:52:11.004Z",
+  "atualizadoEm": "2026-09-14T03:52:11.004Z",   // quando o conteúdo mudou pela última vez
+  "verificadoEm": "2026-09-14",                 // dia em que o sync rodou e conferiu
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -83,7 +84,17 @@ no primeiro sync.
 | jogo da grade br tem que existir na temporada | pega entrada de temporada anterior e confronto que mudou por flex |
 | `confirmado` exige `fonte` | canal sem procedência não é confirmação, é lembrança |
 | `totalJogos` bate com os jogos presentes | resposta parcial da API não pode passar por temporada completa |
-| aviso se `atualizadoEm` > 48h | o painel v1 podia ficar dias parado sem nenhum sinal |
+| `verificadoEm` obrigatório, aviso se > 2 dias | o painel v1 podia ficar dias parado sem nenhum sinal |
+
+### Por que dois carimbos de tempo
+
+`atualizadoEm` responde "o dado mudou quando?" e `verificadoEm` responde "o sync rodou
+quando?". São perguntas diferentes: numa terça sem jogo nada muda, e isso é o esperado — o
+que seria alarmante é o sync ter parado de rodar. O selo do painel usa `verificadoEm`.
+
+A separação tem um efeito prático: como `atualizadoEm` só se mexe quando o conteúdo muda, o
+sync de 30 em 30 minutos não gera commit só porque o relógio andou. Commita quando algo
+muda de verdade — ou uma vez por dia, quando `verificadoEm` vira.
 
 ## Classificação: o que é calculado e onde é aproximado
 

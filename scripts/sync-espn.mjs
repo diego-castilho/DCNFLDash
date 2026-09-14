@@ -13,7 +13,7 @@
  * Toda alteração de horário, data ou confronto é registrada em dados/mudancas.json,
  * que é o que alimenta o bloco "o que mudou" do painel e o resumo da tarefa.
  */
-import { TEMPORADA, sigla, lerJson, gravarJson, agoraIso, buscarJson } from "./lib/comum.mjs";
+import { TEMPORADA, sigla, lerJson, gravarJson, agoraIso, diaBrasilia, buscarJson } from "./lib/comum.mjs";
 
 const BASE = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard";
 const FASES = [
@@ -123,7 +123,21 @@ for (const { seasontype, semanas: qtd, fase } of FASES) {
 if (todos.length < 200) throw new Error(`temporada incompleta (${todos.length} jogos) — abortando para não sobrescrever dados bons`);
 
 const mudancas = compararComAnterior(anterior, todos);
-const saida = { temporada: TEMPORADA, atualizadoEm: agoraIso(), fonte: "ESPN scoreboard API", totalJogos: todos.length, semanas };
+
+// Dois carimbos com propósitos diferentes:
+//   atualizadoEm — quando o CONTEÚDO mudou pela última vez
+//   verificadoEm — o dia em que o sync rodou e confirmou que está tudo certo
+// Sem essa separação o sync gera commit a cada 30 minutos só porque o relógio
+// andou. Com ela, commita quando algo muda — ou uma vez por dia, no máximo.
+const mudouConteudo = !anterior || JSON.stringify(anterior.semanas) !== JSON.stringify(semanas);
+const saida = {
+  temporada: TEMPORADA,
+  atualizadoEm: mudouConteudo ? agoraIso() : anterior.atualizadoEm,
+  verificadoEm: diaBrasilia(agoraIso()),
+  fonte: "ESPN scoreboard API",
+  totalJogos: todos.length,
+  semanas
+};
 gravarJson("dados/temporada.json", saida);
 
 // O arquivo é sempre gravado, mesmo vazio: o painel o consome direto e um 404
@@ -135,4 +149,4 @@ if (mudancas.length) {
 }
 gravarJson("dados/mudancas.json", log);
 
-console.log(`\n${todos.length} jogos gravados · ${mudancas.length} mudanças registradas`);
+console.log(`\n${todos.length} jogos · ${mudouConteudo ? "conteúdo alterado" : "nada mudou"} · ${mudancas.length} mudança(s) registrada(s)`);
