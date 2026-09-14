@@ -1,13 +1,21 @@
 # Logos das emissoras americanas
 
-Esta pasta está vazia de propósito. O painel desenha marcas tipográficas nas cores de
-cada emissora, definidas em `dados/emissoras-eua.json`.
+Os arquivos aqui foram baixados do Wikimedia Commons por `scripts/baixar-logos.mjs`, que
+só aceita arquivos em domínio público ou sob licença livre. A licença e a URL de origem de
+cada um ficam registradas em `dados/emissoras-eua.json`.
 
-Para usar o logo oficial de qualquer uma delas, salve o arquivo aqui com o nome que o
-catálogo indica no campo `logo` — por exemplo `cbs.webp` — e o painel passa a usar a
-imagem automaticamente, sem mudar nenhuma linha de código. Se o arquivo não existir, a
-marca tipográfica continua aparecendo.
+Duas emissoras não têm arquivo — NFL Network e NFL+ não têm logo com licença livre no
+Commons. Para elas o painel desenha a marca tipográfica, que é o comportamento padrão
+quando o arquivo não existe.
 
-Formatos aceitos: qualquer coisa que o navegador renderize (`.webp`, `.png`, `.svg`).
-Altura de exibição: 13 px. Prefira imagens com fundo transparente e versão clara, já que
-o painel é escuro.
+Para trocar qualquer logo, substitua o arquivo mantendo o caminho que o catálogo indica
+em `logo`, ou aponte o catálogo para o novo caminho. Formato: qualquer coisa que o
+navegador renderize (`.svg`, `.png`, `.webp`). Altura de exibição: 15 px no cartão do jogo,
+20 px na lista do rodapé.
+
+Os logos aparecem em chips claros porque a maioria é arte preta sobre transparente e
+sumiria no fundo escuro do painel. Um logo que já seja claro deve receber
+`"fundo": "escuro"` no catálogo para ganhar chip escuro.
+
+As marcas pertencem aos respectivos titulares e aparecem aqui apenas para identificar
+quem transmite cada jogo.

@@ -76,6 +76,26 @@ data de publicação visível.
 | Jogos internacionais e Black Friday | caso a caso, às vezes sem detentor no Brasil |
 | Playoffs | dezembro/janeiro, junto com a definição dos classificados |
 
+## Logos
+
+Baixados do **Wikimedia Commons** por `scripts/baixar-logos.mjs`, e não de uma busca de
+imagens qualquer, por um motivo prático: o Commons publica a licença de cada arquivo de
+forma legível por máquina. O script lê essa licença, só aceita domínio público ou licença
+livre, e grava licença e URL de origem no catálogo. Quem abrir o repositório consegue
+verificar a procedência de cada arquivo sem depender de memória de ninguém.
+
+Doze arquivos vieram por esse caminho: oito emissoras americanas, os logos do Sunday Night
+e do Monday Night, e os escudos da AFC e da NFC. O que não tem licença livre no Commons —
+NFL Network, NFL+ e o Thursday Night — continua como marca tipográfica desenhada no painel.
+
+Os escudos dos times e os logos dos canais brasileiros vieram do painel v1, extraídos do
+base64 embutido nele.
+
+**Por que arquivo e não base64:** o navegador cacheia o arquivo entre visitas, os JSONs
+continuam legíveis, o diff do git continua pequeno e trocar um logo é substituir um arquivo.
+Foi justamente o base64 dentro do HTML que fez o painel v1 pesar 154 KB, dos quais ~95% eram
+imagem que ninguém conseguia editar.
+
 ## O que é regra fixa e não precisa de pesquisa
 
 Aplicado automaticamente por `scripts/aplicar-regras-br.mjs`:

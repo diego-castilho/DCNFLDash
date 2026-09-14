@@ -1,13 +1,79 @@
 {
-  "_leia": "Catálogo das emissoras americanas. 'marca' é a marca tipográfica usada por padrão; se existir o arquivo indicado em 'logo' dentro de site/, o painel usa a imagem no lugar. Para trocar por um logo oficial, basta salvar o arquivo nesse caminho — nenhum código muda.",
-  "cbs":      { "nome": "CBS",          "marca": "CBS",         "cor": "#3E9BEA", "logo": "assets/emissoras/cbs.webp" },
-  "fox":      { "nome": "FOX",          "marca": "FOX",         "cor": "#5B8DF0", "logo": "assets/emissoras/fox.webp" },
-  "nbc":      { "nome": "NBC",          "marca": "NBC",         "cor": "#FDB827", "logo": "assets/emissoras/nbc.webp" },
-  "abc":      { "nome": "ABC",          "marca": "ABC",         "cor": "#D8DEE9", "logo": "assets/emissoras/abc.webp" },
-  "espn":     { "nome": "ESPN",         "marca": "ESPN",        "cor": "#FF4B54", "logo": "assets/emissoras/espn.webp" },
-  "prime":    { "nome": "Prime Video",  "marca": "prime video", "cor": "#3DC7F5", "logo": "assets/emissoras/prime.webp" },
-  "nflnet":   { "nome": "NFL Network",  "marca": "NFL NET",     "cor": "#6FA8E8", "logo": "assets/emissoras/nflnet.webp" },
-  "netflix":  { "nome": "Netflix",      "marca": "NETFLIX",     "cor": "#FF5A62", "logo": "assets/emissoras/netflix.webp" },
-  "peacock":  { "nome": "Peacock",      "marca": "peacock",     "cor": "#B58BF0", "logo": "assets/emissoras/peacock.webp" },
-  "nflplus":  { "nome": "NFL+",         "marca": "NFL+",        "cor": "#4ED28C", "logo": "assets/emissoras/nflplus.webp" }
+  "_leia": "Catálogo das emissoras americanas. logo vazio significa que não há arquivo com licença livre disponível — o painel desenha a marca tipográfica do campo marca. Licença e origem de cada arquivo baixado ficam registradas aqui. Ver site/assets/emissoras/LEIA-ME.md.",
+  "cbs": {
+    "nome": "CBS",
+    "marca": "CBS",
+    "cor": "#3E9BEA",
+    "logo": "assets/emissoras/cbs.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:CBS_2018.svg"
+  },
+  "fox": {
+    "nome": "FOX",
+    "marca": "FOX",
+    "cor": "#5B8DF0",
+    "logo": "assets/emissoras/fox.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:Fox_Broadcasting_Company_logo_(2019).svg"
+  },
+  "nbc": {
+    "nome": "NBC",
+    "marca": "NBC",
+    "cor": "#FDB827",
+    "logo": "assets/emissoras/nbc.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:NBC_logo_2022.svg"
+  },
+  "abc": {
+    "nome": "ABC",
+    "marca": "ABC",
+    "cor": "#D8DEE9",
+    "logo": "assets/emissoras/abc.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:ABC-2021-LOGO.svg"
+  },
+  "espn": {
+    "nome": "ESPN",
+    "marca": "ESPN",
+    "cor": "#FF4B54",
+    "logo": "assets/emissoras/espn.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:ESPN_wordmark.svg"
+  },
+  "prime": {
+    "nome": "Prime Video",
+    "marca": "prime video",
+    "cor": "#3DC7F5",
+    "logo": "assets/emissoras/prime.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:Prime_Video_logo_(2024).svg"
+  },
+  "nflnet": {
+    "nome": "NFL Network",
+    "marca": "NFL NET",
+    "cor": "#6FA8E8",
+    "logo": ""
+  },
+  "netflix": {
+    "nome": "Netflix",
+    "marca": "NETFLIX",
+    "cor": "#FF5A62",
+    "logo": "assets/emissoras/netflix.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:Netflix_logo.svg"
+  },
+  "peacock": {
+    "nome": "Peacock",
+    "marca": "peacock",
+    "cor": "#B58BF0",
+    "logo": "assets/emissoras/peacock.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:NBCUniversal_Peacock_Logo_(2026).svg"
+  },
+  "nflplus": {
+    "nome": "NFL+",
+    "marca": "NFL+",
+    "cor": "#4ED28C",
+    "logo": ""
+  }
 }

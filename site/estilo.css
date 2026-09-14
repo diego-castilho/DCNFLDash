@@ -75,33 +75,66 @@ img{max-width:100%}
 .ch img{height:15px;width:auto}
 .ch svg{flex:none}
 .ch .wm{font-style:normal;font-weight:700;font-size:10px;letter-spacing:.04em}
-.ch.plana{font-weight:800;font-size:11px;letter-spacing:.08em;padding:5px 9px;border:1px solid rgba(255,255,255,.16)}
+.ch.plana{font-weight:700;font-size:11px;letter-spacing:.06em;padding:5px 9px}
 .ch.tbd{color:var(--texto3);border:1px dashed var(--linha);background:none}
 .selos{display:inline-flex;gap:5px;flex-wrap:wrap;align-items:center}
 
 /* ---- selos de emissora (EUA) ------------------------------------------
-   Marca tipográfica por padrão; se o arquivo de imagem existir em
-   site/assets/emissoras/, a <img> carrega e a marca some (ver o seletor +). */
+   Os logos vêm do Commons e quase todos são pretos sobre transparente. Num painel
+   escuro eles desapareceriam, então cada um vai num chip claro — que é como um guia
+   de TV impresso sempre resolveu isso. Os poucos logos claros usam .escuro. */
 .eua{
-  display:inline-flex;align-items:center;gap:4px;
-  border:1px solid color-mix(in srgb, var(--c) 40%, transparent);
-  border-radius:6px;padding:3px 6px;line-height:1;
+  display:inline-flex;align-items:center;justify-content:center;gap:4px;
+  border-radius:5px;padding:3px 7px;line-height:1;min-height:21px;
 }
-.eua img{height:13px;width:auto}
+.eua.claro{background:#EFF1F5;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.eua.escuro{background:#14161C;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.eua img{height:15px;width:auto;max-width:78px;object-fit:contain}
 .eua img + .wm{display:none}
-.eua .wm{font-style:normal;font-weight:700;font-size:9.5px;letter-spacing:.07em;color:var(--c);white-space:nowrap}
-.eua.grande{padding:7px 11px}
-.eua.grande img{height:18px}
+.eua .wm{font-style:normal;font-weight:800;font-size:9.5px;letter-spacing:.07em;white-space:nowrap}
+.eua.claro .wm{color:#15181F}
+.eua.escuro .wm{color:var(--c)}
+.eua.grande{padding:8px 12px;min-height:34px}
+.eua.grande img{height:20px;max-width:110px}
 .eua.grande .wm{font-size:12px}
-.emissoras{display:flex;gap:8px;flex-wrap:wrap}
+.emissoras{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.creditos{margin:12px 0 0;color:var(--texto3);font-size:11.5px;line-height:1.5;max-width:76ch}
 
-/* ---- selo de pacote (TNF/SNF/MNF) ------------------------------------- */
+/* ---- selo de pacote (TNF/SNF/MNF) -------------------------------------
+   Mesma pílula para os três: o logo oficial quando existe, as três letras quando
+   não existe. Um brilho suave na cor do pacote dá a eles o ar de "jogo da noite". */
 .pct{
-  display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.1em;
-  color:var(--c);border:1px solid color-mix(in srgb, var(--c) 45%, transparent);
-  background:color-mix(in srgb, var(--c) 12%, transparent);
-  border-radius:5px;padding:2px 5px;line-height:1.4;vertical-align:middle;
+  display:inline-flex;align-items:center;justify-content:center;
+  border-radius:6px;padding:3px 7px;line-height:1;min-height:20px;
+  border:1px solid color-mix(in srgb, var(--c) 45%, transparent);
+  background:linear-gradient(180deg,
+    color-mix(in srgb, var(--c) 20%, transparent),
+    color-mix(in srgb, var(--c) 7%, transparent));
+  box-shadow:0 0 12px -4px var(--c);
 }
+.pct .wm{font-style:normal;font-weight:800;font-size:9.5px;letter-spacing:.12em;color:var(--c)}
+.pct img{height:16px;width:auto;max-width:92px;object-fit:contain}
+/* Arte preta sobre transparente some no fundo escuro; quem precisa disso está
+   marcado com `inverter` no catálogo, e só esses viram claro. */
+.pct.inv img{filter:invert(1) brightness(1.75)}
+.pct.grande{padding:5px 10px;min-height:30px}
+.pct.grande img{height:22px;max-width:110px}
+.pct.grande .wm{font-size:12px}
+
+/* ---- conferência / divisão -------------------------------------------- */
+.conf-chip{
+  display:inline-flex;align-items:center;gap:5px;
+  background:var(--carta2);border-radius:6px;padding:3px 7px;line-height:1;min-height:20px;
+}
+.conf-chip img{height:13px;width:auto}
+.conf-chip .rot,.conf-chip .wm{
+  font-style:normal;font-size:9.5px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--texto2);white-space:nowrap;
+}
+.conf-chip.divisao{background:color-mix(in srgb, var(--c) 16%, transparent);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb, var(--c) 34%, transparent)}
+.conf-chip.divisao .rot{color:var(--texto)}
+.conf-chip .x{color:var(--texto3);font-size:10px}
 
 /* ---- hero ------------------------------------------------------------- */
 .hero{
@@ -112,6 +145,9 @@ img{max-width:100%}
 .hero.vivo{border-left-color:var(--verde)}
 .hero-topo .rot{font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ouro)}
 .hero-topo h2{font-size:20px;margin-top:3px}
+.hero-selos{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.hero-time .sg{display:flex;align-items:center;gap:6px}
+.hero-time .clas{margin-left:0}
 .hero-corpo{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-top:18px}
 .hero-mat{display:flex;align-items:center;gap:14px;flex:1 1 300px}
 .hero-time{display:flex;align-items:center;gap:10px}
@@ -200,6 +236,13 @@ img{max-width:100%}
 }
 .jogo.pit{border-color:#4A3B10;background:linear-gradient(90deg,var(--ouro-fraco) 0%,var(--carta) 42%)}
 .jogo.vivo{border-color:#1E5B3A}
+/* Jogo de prime time: faixa e clarão na cor do pacote. Serve para achar TNF, SNF e
+   MNF de relance numa lista de dezesseis jogos. */
+.jogo.primetime{
+  border-left:3px solid var(--pc);
+  background:linear-gradient(100deg, color-mix(in srgb, var(--pc) 11%, var(--carta)) 0%, var(--carta) 38%);
+}
+.jogo.pit.primetime{background:linear-gradient(100deg, color-mix(in srgb, var(--pc) 16%, var(--ouro-fraco)) 0%, var(--carta) 46%)}
 .jogo.semtv{opacity:.62}
 .jogo .quando{font-variant-numeric:tabular-nums}
 .jogo .quando .h{font-size:15px;font-weight:600}
@@ -218,10 +261,30 @@ img{max-width:100%}
 .time.venceu .pt{color:var(--texto)}
 .time.perdeu{color:var(--texto3)}
 .time.perdeu img{filter:grayscale(1);opacity:.65}
-.etqs{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:4px}
+.etqs{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:5px}
 .etq{font-size:11px;color:var(--texto3)}
-.chs{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
-.chs-br,.chs-eua{display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+/* Classificação ao lado do time: cartaz e posição na conferência. */
+.clas{display:inline-flex;align-items:center;gap:5px;margin-left:8px;flex:none}
+.clas .cartaz{font-size:11px;color:var(--texto3);font-variant-numeric:tabular-nums}
+.clas .pos{
+  font-size:9.5px;font-weight:700;color:var(--texto2);background:var(--carta2);
+  border-radius:4px;padding:1px 4px;font-variant-numeric:tabular-nums;
+}
+.time.venceu .clas .cartaz{color:var(--texto2)}
+
+/* Duas colunas: canais do Brasil à esquerda, emissoras dos EUA à direita.
+   Quando há mais de um selo, eles empilham em vez de brigar por largura. */
+.chs{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:start}
+.chs .col{display:flex;flex-direction:column;gap:4px;align-items:flex-start;min-width:0}
+.chs .col.eua{padding-left:10px;border-left:1px solid var(--linha)}
+.vazio-eua{color:var(--texto3);font-size:11px;padding:3px 0}
+/* Rótulos das duas colunas, no cabeçalho do dia, alinhados com elas. */
+.dia .rotulos{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+  width:var(--col-canais);flex:none;
+  font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--texto3);
+}
+.dia .rotulos span:last-child{padding-left:10px}
 
 /* ---- temporada -------------------------------------------------------- */
 .temporada{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:9px}
@@ -231,16 +294,20 @@ img{max-width:100%}
 .sem.fora{border-top-color:var(--vermelho)}
 .sem.duvida{border-top-color:var(--texto3)}
 .sem.bye{opacity:.5}
-.sem .n{font-size:11px;color:var(--texto3);text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-.sem .adv{display:flex;align-items:center;gap:8px;margin:7px 0 6px;font-size:14px;font-weight:600}
+.sem.primetime{box-shadow:inset 3px 0 0 var(--pc)}
+.sem .n{font-size:11px;color:var(--texto3);text-transform:uppercase;letter-spacing:.06em;
+  display:flex;align-items:center;justify-content:space-between;gap:6px}
+.sem .adv{display:flex;align-items:center;gap:8px;margin:8px 0 5px;font-size:14px;font-weight:600}
 .sem .adv img{width:24px;height:24px;object-fit:contain;flex:none}
+.sem .sub-adv{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:7px}
+.sem .sub-adv .clas{margin-left:0}
 .sem .dt{font-size:12px;color:var(--texto2);font-variant-numeric:tabular-nums}
 .sem .res{margin-top:7px;font-size:12.5px;font-weight:600}
 .sem .res.v{color:var(--verde)} .sem .res.d{color:var(--vermelho)}
-.sem .tv{margin-top:8px}
-.sem .tv.txt{font-size:11.5px;color:var(--texto3)}
-.sem.fora .tv.txt{color:var(--vermelho)}
-.sem .eua-linha{margin-top:6px;opacity:.85}
+.sem .linha-tv{display:flex;align-items:center;gap:7px;margin-top:7px}
+.sem .linha-tv .rot{font-size:9px;letter-spacing:.1em;color:var(--texto3);width:22px;flex:none}
+.sem .linha-tv .txt{font-size:11.5px;color:var(--texto3)}
+.sem.fora .linha-tv .txt{color:var(--vermelho)}
 
 /* ---- radar ------------------------------------------------------------ */
 .radar{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
@@ -286,17 +353,19 @@ img{max-width:100%}
 .rodape p{margin:0 0 4px}
 
 /* ---- telas médias ----------------------------------------------------- */
-@media (max-width:900px){
-  :root{--col-canais:150px}
+@media (max-width:1000px){
+  :root{--col-canais:176px}
+  .clas .pos{display:none}
 }
 
 /* ---- celular ---------------------------------------------------------- */
 @media (max-width:640px){
-  :root{--col-hora:72px}
+  :root{--col-hora:72px;--col-canais:100%}
   body{padding:0 12px 48px}
-  .jogo{grid-template-columns:var(--col-hora) minmax(0,1fr);row-gap:8px}
-  .chs{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;
-       align-items:center;padding-left:calc(var(--col-hora) + 14px);gap:6px}
+  .jogo{grid-template-columns:var(--col-hora) minmax(0,1fr);row-gap:9px}
+  .chs{grid-column:1/-1;padding-left:calc(var(--col-hora) + 14px)}
+  .chs .col{flex-direction:row;flex-wrap:wrap;align-items:center}
+  .dia .rotulos{display:none}
   .hero-lado{width:100%}
   .hero-info{flex:1}
 }

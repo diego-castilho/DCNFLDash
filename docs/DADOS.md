@@ -80,6 +80,16 @@ existir** — e normalmente não existe. Nesse caso o `onerror` da imagem some c
 marca tipográfica aparece no lugar. Para passar a usar o logo oficial de qualquer emissora,
 basta salvar o arquivo nesse caminho; nenhuma linha de código muda.
 
+## `pacotes.json` e `conferencias.json`
+
+Catálogos pequenos, mesma estrutura do de emissoras: nome, marca tipográfica, cor, caminho
+do logo, licença e origem. O de pacotes tem ainda `inverter`, que diz se a arte é preta e
+precisa ser clareada para aparecer no fundo escuro do painel — o logo do Sunday Night
+precisa, o do Monday Night não.
+
+O TNF não tem logo com licença livre no Commons e fica só com a marca tipográfica. As três
+pílulas têm o mesmo formato, então a linha continua uniforme com ou sem logo.
+
 ## Pacotes de prime time
 
 `pacote` é calculado no sync por `pacoteDe()` em `scripts/lib/comum.mjs` e vale TNF, SNF,
