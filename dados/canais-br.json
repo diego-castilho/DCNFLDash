@@ -1,0 +1,186 @@
+{
+  "atualizadoEm": "2026-09-13",
+  "jogos": {
+    "1:NE@SEA": {
+      "semana": 1,
+      "visitante": "NE",
+      "mandante": "SEA",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "1:SF@LAR": {
+      "semana": 1,
+      "visitante": "SF",
+      "mandante": "LAR",
+      "canais": [
+        "netflix"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "1:BUF@HOU": {
+      "semana": 1,
+      "visitante": "BUF",
+      "mandante": "HOU",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "1:BAL@IND": {
+      "semana": 1,
+      "visitante": "BAL",
+      "mandante": "IND",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "1:GB@MIN": {
+      "semana": 1,
+      "visitante": "GB",
+      "mandante": "MIN",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "1:WAS@PHI": {
+      "semana": 1,
+      "visitante": "WAS",
+      "mandante": "PHI",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "1:DAL@NYG": {
+      "semana": 1,
+      "visitante": "DAL",
+      "mandante": "NYG",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "1:DEN@KC": {
+      "semana": 1,
+      "visitante": "DEN",
+      "mandante": "KC",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "2:DET@BUF": {
+      "semana": 2,
+      "visitante": "DET",
+      "mandante": "BUF",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "2:IND@KC": {
+      "semana": 2,
+      "visitante": "IND",
+      "mandante": "KC",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "2:NYG@LAR": {
+      "semana": 2,
+      "visitante": "NYG",
+      "mandante": "LAR",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "3:ATL@GB": {
+      "semana": 3,
+      "visitante": "ATL",
+      "mandante": "GB",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "3:BAL@DAL": {
+      "semana": 3,
+      "visitante": "BAL",
+      "mandante": "DAL",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "3:LAR@DEN": {
+      "semana": 3,
+      "visitante": "LAR",
+      "mandante": "DEN",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    },
+    "3:PHI@CHI": {
+      "semana": 3,
+      "visitante": "PHI",
+      "mandante": "CHI",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "painel v1 (migração)",
+      "url": "",
+      "checadoEm": "2026-09-13",
+      "confianca": "confirmado"
+    }
+  }
+}

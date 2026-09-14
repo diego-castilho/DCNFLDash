@@ -1,0 +1,165 @@
+[
+  {
+    "n": 1,
+    "adv": "ATL",
+    "casa": true,
+    "dt": "13/09 · 14:00",
+    "status": "fora",
+    "st": "ficou fora da TV brasileira",
+    "iso": "2026-09-13T14:00:00-03:00",
+    "res": {
+      "v": true,
+      "p": "20 x 13"
+    }
+  },
+  {
+    "n": 2,
+    "adv": "NE",
+    "casa": false,
+    "dt": "20/09 · 14:00",
+    "status": "risco",
+    "st": "depende da escolha",
+    "iso": "2026-09-20T14:00:00-03:00"
+  },
+  {
+    "n": 3,
+    "adv": "CIN",
+    "casa": true,
+    "dt": "27/09 · 14:00",
+    "status": "risco",
+    "st": "depende da escolha",
+    "iso": "2026-09-27T14:00:00-03:00"
+  },
+  {
+    "n": 4,
+    "adv": "CLE",
+    "casa": false,
+    "dt": "01/10 · 21:15",
+    "status": "ok",
+    "st": "SporTV",
+    "iso": "2026-10-01T21:15:00-03:00"
+  },
+  {
+    "n": 5,
+    "adv": "IND",
+    "casa": true,
+    "dt": "11/10 · 14:00",
+    "status": "risco",
+    "st": "depende da escolha",
+    "iso": "2026-10-11T14:00:00-03:00"
+  },
+  {
+    "n": 6,
+    "adv": "TB",
+    "casa": false,
+    "dt": "18/10 · 14:00",
+    "status": "risco",
+    "st": "depende da escolha",
+    "iso": "2026-10-18T14:00:00-03:00"
+  },
+  {
+    "n": 7,
+    "adv": "NO",
+    "casa": true,
+    "dt": "25/10 · 10:30",
+    "status": "duvida",
+    "st": "Paris · sem detentor",
+    "iso": "2026-10-25T10:30:00-03:00"
+  },
+  {
+    "n": 8,
+    "adv": "CLE",
+    "casa": true,
+    "dt": "01/11 · 15:00",
+    "status": "risco",
+    "st": "depende da escolha",
+    "iso": "2026-11-01T15:00:00-03:00"
+  },
+  {
+    "n": 9,
+    "adv": "",
+    "casa": true,
+    "dt": "semana livre",
+    "status": "bye",
+    "st": ""
+  },
+  {
+    "n": 10,
+    "adv": "CIN",
+    "casa": false,
+    "dt": "15/11 · 22:20",
+    "status": "ok",
+    "st": "SporTV",
+    "iso": "2026-11-15T22:20:00-03:00"
+  },
+  {
+    "n": 11,
+    "adv": "PHI",
+    "casa": false,
+    "dt": "22/11 · 18:25",
+    "status": "risco",
+    "st": "depende da escolha",
+    "iso": "2026-11-22T18:25:00-03:00"
+  },
+  {
+    "n": 12,
+    "adv": "DEN",
+    "casa": true,
+    "dt": "27/11 · 17:00",
+    "status": "duvida",
+    "st": "Black Friday · sem detentor",
+    "iso": "2026-11-27T17:00:00-03:00"
+  },
+  {
+    "n": 13,
+    "adv": "HOU",
+    "casa": true,
+    "dt": "06/12 · 22:20",
+    "status": "ok",
+    "st": "SporTV",
+    "iso": "2026-12-06T22:20:00-03:00"
+  },
+  {
+    "n": 14,
+    "adv": "JAX",
+    "casa": false,
+    "dt": "14/12 · 22:15",
+    "status": "ok",
+    "st": "ESPN",
+    "iso": "2026-12-14T22:15:00-03:00"
+  },
+  {
+    "n": 15,
+    "adv": "BAL",
+    "casa": true,
+    "dt": "20/12 · 15:00",
+    "status": "risco",
+    "st": "depende da escolha",
+    "iso": "2026-12-20T15:00:00-03:00"
+  },
+  {
+    "n": 16,
+    "adv": "CAR",
+    "casa": true,
+    "dt": "data a definir",
+    "status": "risco",
+    "st": "horário não anunciado"
+  },
+  {
+    "n": 17,
+    "adv": "TEN",
+    "casa": false,
+    "dt": "03/01 · 15:00",
+    "status": "risco",
+    "st": "depende da escolha",
+    "iso": "2027-01-03T15:00:00-03:00"
+  },
+  {
+    "n": 18,
+    "adv": "BAL",
+    "casa": false,
+    "dt": "data a definir",
+    "status": "risco",
+    "st": "horário não anunciado"
+  }
+]
