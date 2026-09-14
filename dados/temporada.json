@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-14T03:57:07.116Z",
+  "atualizadoEm": "2026-09-14T04:20:54.332Z",
   "verificadoEm": "2026-09-14",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -35,6 +35,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -60,6 +64,10 @@
             "pais": "Australia"
           },
           "emissoraEua": "Netflix",
+          "emissoras": [
+            "netflix"
+          ],
+          "pacote": null,
           "nota": "NFL Melbourne Game"
         },
         {
@@ -85,6 +93,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -110,6 +122,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -135,6 +151,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -160,6 +180,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -185,6 +209,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -210,6 +238,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -235,6 +267,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -260,6 +296,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -285,6 +325,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -310,6 +354,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -335,6 +383,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -360,6 +412,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -385,6 +441,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -407,6 +467,11 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN/ABC",
+          "emissoras": [
+            "espn",
+            "abc"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -438,6 +503,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -460,6 +529,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -482,6 +555,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -504,6 +581,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -526,6 +607,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -548,6 +633,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -570,6 +659,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -592,6 +685,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -614,6 +711,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -636,6 +737,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -658,6 +763,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -680,6 +789,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -702,6 +815,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -724,6 +841,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -746,6 +867,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -768,6 +893,11 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN/ABC",
+          "emissoras": [
+            "espn",
+            "abc"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -799,6 +929,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -821,6 +955,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -843,6 +981,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -865,6 +1007,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -887,6 +1033,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -909,6 +1059,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -931,6 +1085,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -953,6 +1111,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -975,6 +1137,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -997,6 +1163,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1019,6 +1189,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1041,6 +1215,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1063,6 +1241,10 @@
             "pais": "Brazil"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": "NFL Rio Game"
         },
         {
@@ -1085,6 +1267,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1107,6 +1293,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -1129,6 +1319,11 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN/ABC",
+          "emissoras": [
+            "espn",
+            "abc"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -1160,6 +1355,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -1182,6 +1381,10 @@
             "pais": "England"
           },
           "emissoraEua": "NFL Net",
+          "emissoras": [
+            "nflnet"
+          ],
+          "pacote": null,
           "nota": "NFL London Games"
         },
         {
@@ -1204,6 +1407,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1226,6 +1433,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1248,6 +1459,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1270,6 +1485,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1292,6 +1511,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1314,6 +1537,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1336,6 +1563,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1358,6 +1589,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1380,6 +1615,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1402,6 +1641,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1424,6 +1667,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1446,6 +1693,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1468,6 +1719,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -1490,6 +1745,10 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN",
+          "emissoras": [
+            "espn"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -1521,6 +1780,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -1543,6 +1806,10 @@
             "pais": "England"
           },
           "emissoraEua": "NFL Net",
+          "emissoras": [
+            "nflnet"
+          ],
+          "pacote": null,
           "nota": "NFL London Games"
         },
         {
@@ -1565,6 +1832,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1587,6 +1858,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1609,6 +1884,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1631,6 +1910,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1653,6 +1936,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1675,6 +1962,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1697,6 +1988,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1719,6 +2014,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1741,6 +2040,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1763,6 +2066,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1785,6 +2092,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1807,6 +2118,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -1829,6 +2144,11 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN/ABC",
+          "emissoras": [
+            "espn",
+            "abc"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -1860,6 +2180,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -1882,6 +2206,10 @@
             "pais": "England"
           },
           "emissoraEua": "NFL Net",
+          "emissoras": [
+            "nflnet"
+          ],
+          "pacote": null,
           "nota": "NFL London Games"
         },
         {
@@ -1904,6 +2232,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1926,6 +2258,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1948,6 +2284,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1970,6 +2310,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -1992,6 +2336,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2014,6 +2362,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2036,6 +2388,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2058,6 +2414,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2080,6 +2440,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2102,6 +2466,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2124,6 +2492,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -2146,6 +2518,11 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN/ABC",
+          "emissoras": [
+            "espn",
+            "abc"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -2177,6 +2554,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -2199,6 +2580,10 @@
             "pais": "France"
           },
           "emissoraEua": "NFL Net",
+          "emissoras": [
+            "nflnet"
+          ],
+          "pacote": null,
           "nota": "NFL Paris Game"
         },
         {
@@ -2221,6 +2606,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2243,6 +2632,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2265,6 +2658,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2287,6 +2684,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2309,6 +2710,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2331,6 +2736,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2353,6 +2762,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2375,6 +2788,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2397,6 +2814,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2419,6 +2840,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2441,6 +2866,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -2463,6 +2892,11 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN/ABC",
+          "emissoras": [
+            "espn",
+            "abc"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -2494,6 +2928,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -2516,6 +2954,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2538,6 +2980,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2560,6 +3006,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2582,6 +3032,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2604,6 +3058,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2626,6 +3084,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2648,6 +3110,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2670,6 +3136,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2692,6 +3162,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2714,6 +3188,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2736,6 +3214,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2758,6 +3240,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -2780,6 +3266,10 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN",
+          "emissoras": [
+            "espn"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -2811,6 +3301,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -2833,6 +3327,10 @@
             "pais": "Spain"
           },
           "emissoraEua": "NFL Net",
+          "emissoras": [
+            "nflnet"
+          ],
+          "pacote": null,
           "nota": "NFL Madrid Game"
         },
         {
@@ -2855,6 +3353,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2877,6 +3379,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2899,6 +3405,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2921,6 +3431,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2943,6 +3457,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2965,6 +3483,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -2987,6 +3509,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3009,6 +3535,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3031,6 +3561,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3053,6 +3587,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3075,6 +3613,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3097,6 +3639,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -3119,6 +3665,11 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN/ABC",
+          "emissoras": [
+            "espn",
+            "abc"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -3150,6 +3701,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -3172,6 +3727,10 @@
             "pais": "Germany"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": "NFL Munich Game"
         },
         {
@@ -3194,6 +3753,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3216,6 +3779,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3238,6 +3805,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3260,6 +3831,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3282,6 +3857,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3304,6 +3883,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3326,6 +3909,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3348,6 +3935,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3370,6 +3961,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3392,6 +3987,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3414,6 +4013,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -3436,6 +4039,10 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN",
+          "emissoras": [
+            "espn"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -3467,6 +4074,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -3489,6 +4100,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3511,6 +4126,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3533,6 +4152,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3555,6 +4178,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3577,6 +4204,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3599,6 +4230,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3621,6 +4256,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3643,6 +4282,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3665,6 +4308,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3687,6 +4334,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3709,6 +4360,10 @@
             "pais": "Mexico"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": "NFL Mexico City Game"
         },
         {
@@ -3731,6 +4386,10 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN",
+          "emissoras": [
+            "espn"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -3762,6 +4421,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Netflix",
+          "emissoras": [
+            "netflix"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3784,6 +4447,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3806,6 +4473,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3828,6 +4499,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3850,6 +4525,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3872,6 +4551,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3894,6 +4577,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3916,6 +4603,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3938,6 +4629,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3960,6 +4655,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -3982,6 +4681,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4004,6 +4707,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4026,6 +4733,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4048,6 +4759,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4070,6 +4785,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -4092,6 +4811,10 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN",
+          "emissoras": [
+            "espn"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -4123,6 +4846,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -4145,6 +4872,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4167,6 +4898,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4189,6 +4924,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4211,6 +4950,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4233,6 +4976,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4255,6 +5002,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4277,6 +5028,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4299,6 +5054,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4321,6 +5080,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4343,6 +5106,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4365,6 +5132,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4387,6 +5158,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -4409,6 +5184,11 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN/ABC",
+          "emissoras": [
+            "espn",
+            "abc"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -4440,6 +5220,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -4462,6 +5246,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4484,6 +5272,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4506,6 +5298,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4528,6 +5324,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4550,6 +5350,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4572,6 +5376,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4594,6 +5402,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4616,6 +5428,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4638,6 +5454,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4660,6 +5480,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4682,6 +5506,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4704,6 +5532,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4726,6 +5558,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -4748,6 +5584,10 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN",
+          "emissoras": [
+            "espn"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -4779,6 +5619,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -4801,6 +5645,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4823,6 +5671,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4845,6 +5697,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4867,6 +5723,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4889,6 +5749,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4911,6 +5775,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4933,6 +5801,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4955,6 +5827,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4977,6 +5853,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -4999,6 +5879,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5021,6 +5905,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5043,6 +5931,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5065,6 +5957,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5087,6 +5983,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -5109,6 +6009,11 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN/ABC",
+          "emissoras": [
+            "espn",
+            "abc"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -5140,6 +6045,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -5162,6 +6071,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Netflix",
+          "emissoras": [
+            "netflix"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5184,6 +6097,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Netflix",
+          "emissoras": [
+            "netflix"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5206,6 +6123,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5228,6 +6149,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 12/26 or 12/27"
         },
         {
@@ -5250,6 +6173,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 12/26 or 12/27"
         },
         {
@@ -5272,6 +6197,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 12/26 or 12/27"
         },
         {
@@ -5294,6 +6221,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 12/26 or 12/27"
         },
         {
@@ -5316,6 +6245,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5338,6 +6271,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5360,6 +6297,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5382,6 +6323,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5404,6 +6349,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5426,6 +6375,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5448,6 +6401,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -5470,6 +6427,10 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN",
+          "emissoras": [
+            "espn"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -5501,6 +6462,10 @@
             "pais": "USA"
           },
           "emissoraEua": "Prime Video",
+          "emissoras": [
+            "prime"
+          ],
+          "pacote": "TNF",
           "nota": ""
         },
         {
@@ -5523,6 +6488,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/2 or 1/3"
         },
         {
@@ -5545,6 +6512,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/2 or 1/3"
         },
         {
@@ -5567,6 +6536,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/2 or 1/3"
         },
         {
@@ -5589,6 +6560,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/2 or 1/3"
         },
         {
@@ -5611,6 +6584,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5633,6 +6610,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5655,6 +6636,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5677,6 +6662,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5699,6 +6688,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5721,6 +6714,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5743,6 +6740,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5765,6 +6766,10 @@
             "pais": "USA"
           },
           "emissoraEua": "CBS",
+          "emissoras": [
+            "cbs"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5787,6 +6792,10 @@
             "pais": "USA"
           },
           "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
           "nota": ""
         },
         {
@@ -5809,6 +6818,10 @@
             "pais": "USA"
           },
           "emissoraEua": "NBC",
+          "emissoras": [
+            "nbc"
+          ],
+          "pacote": "SNF",
           "nota": ""
         },
         {
@@ -5831,6 +6844,10 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN",
+          "emissoras": [
+            "espn"
+          ],
+          "pacote": "MNF",
           "nota": ""
         }
       ]
@@ -5862,6 +6879,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -5884,6 +6903,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -5906,6 +6927,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -5928,6 +6951,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -5950,6 +6975,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -5972,6 +6999,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -5994,6 +7023,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -6016,6 +7047,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -6038,6 +7071,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -6060,6 +7095,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -6082,6 +7119,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -6104,6 +7143,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -6126,6 +7167,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -6148,6 +7191,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -6170,6 +7215,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         },
         {
@@ -6192,6 +7239,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Flex Game: 1/9 or 1/10"
         }
       ]
@@ -6223,6 +7272,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Wild Card Playoffs"
         },
         {
@@ -6245,6 +7296,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Wild Card Playoffs"
         },
         {
@@ -6267,6 +7320,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Wild Card Playoffs"
         },
         {
@@ -6289,6 +7344,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Wild Card Playoffs"
         },
         {
@@ -6311,6 +7368,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Wild Card Playoffs"
         },
         {
@@ -6333,6 +7392,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Wild Card Playoffs"
         }
       ]
@@ -6364,6 +7425,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Divisional Playoffs"
         },
         {
@@ -6386,6 +7449,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Divisional Playoffs"
         },
         {
@@ -6408,6 +7473,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Divisional Playoffs"
         },
         {
@@ -6430,6 +7497,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "Divisional Playoffs"
         }
       ]
@@ -6461,6 +7530,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "NFC Championship"
         },
         {
@@ -6483,6 +7554,8 @@
             "pais": "USA"
           },
           "emissoraEua": "",
+          "emissoras": [],
+          "pacote": null,
           "nota": "AFC Championship"
         }
       ]
@@ -6514,6 +7587,11 @@
             "pais": "USA"
           },
           "emissoraEua": "ESPN/ABC",
+          "emissoras": [
+            "espn",
+            "abc"
+          ],
+          "pacote": null,
           "nota": "Super Bowl LXI"
         }
       ]

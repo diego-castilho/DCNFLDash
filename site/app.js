@@ -13,16 +13,19 @@ const DURACAO = 3.4 * 36e5;                  // duração estimada de um jogo
 const FUSO = "America/Sao_Paulo";
 const $ = s => document.querySelector(s);
 
-const [temporada, times, canais, gradeBr, mudancas] = await Promise.all([
+const [temporada, times, canais, emissoras, gradeBr, mudancas] = await Promise.all([
   fetch("dados/temporada.json").then(r => r.json()),
   fetch("dados/times.json").then(r => r.json()),
   fetch("dados/canais.json").then(r => r.json()),
+  fetch("dados/emissoras-eua.json").then(r => r.json()),
   fetch("dados/canais-br.json").then(r => r.json()),
   fetch("dados/mudancas.json").then(r => r.json()).catch(() => ({ entradas: [] }))
 ]);
 
 const JOGOS = temporada.semanas.flatMap(s => s.jogos);
 const ME = "PIT";
+const MINHA_CONF = "AFC";
+const MINHA_DIV = "Norte";
 
 /* ---------- utilidades ------------------------------------------------- */
 const time = s => times[s] || { sigla: s, apelido: s, escudo: "", cor: "#2E3440", corTexto: "#fff" };
@@ -46,6 +49,35 @@ function estadoVisual(j) {
   return "agendado";
 }
 
+/* ---------- marcas de canal --------------------------------------------- */
+/* Três formas de representar um canal, nesta ordem de preferência:
+   imagem → caminho SVG embutido → marca tipográfica. A imagem tem prioridade e
+   cai para a marca sozinha se o arquivo não existir (ver o onerror). */
+function selo(chave) {
+  const c = canais[chave];
+  if (!c) return "";
+  if (c.logo) return `<span class="ch" title="${c.nome}"><img src="${c.logo}" alt="${c.nome}"></span>`;
+  if (c.svg) return `<span class="ch" title="${c.nome}" style="background:${c.cor}22">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="${c.cor}" aria-hidden="true"><path d="${c.svg}"/></svg>
+      <i class="wm" style="color:${c.cor}">${c.marca || c.nome}</i></span>`;
+  return `<span class="ch plana" title="${c.nome}" style="background:${c.cor};color:${c.corTexto}">${c.marca || c.nome}</span>`;
+}
+
+function seloEua(chave) {
+  const e = emissoras[chave];
+  if (!e) return "";
+  return `<span class="eua" title="${e.nome} · transmissão nos EUA" style="--c:${e.cor}">
+    <img src="${e.logo}" alt="${e.nome}" onerror="this.remove()"><i class="wm">${e.marca}</i></span>`;
+}
+
+const PACOTES = {
+  TNF: { nome: "Thursday Night Football", cor: "#3DC7F5" },
+  SNF: { nome: "Sunday Night Football", cor: "#FDB827" },
+  MNF: { nome: "Monday Night Football", cor: "#FF6B6B" }
+};
+const seloPacote = p => PACOTES[p]
+  ? `<span class="pct" title="${PACOTES[p].nome}" style="--c:${PACOTES[p].cor}">${p}</span>` : "";
+
 /* ---------- grade brasileira ------------------------------------------- */
 const chaveJogo = j => `${j.fase || "regular"}:${j.semana}:${j.visitante}@${j.mandante}`;
 const mapaBr = new Map();
@@ -54,13 +86,6 @@ for (const g of Object.values(gradeBr.jogos || {})) {
 }
 const brDe = j => mapaBr.get(chaveJogo(j)) || null;
 const temTvBr = j => !!brDe(j)?.canais?.length;
-
-function selo(chave) {
-  const c = canais[chave];
-  if (!c) return "";
-  if (c.logo) return `<span class="ch" title="${c.nome}"><img src="${c.logo}" alt="${c.nome}"></span>`;
-  return `<span class="ch texto" style="background:${c.cor};color:${c.corTexto}">${c.nome}</span>`;
-}
 
 /* ---------- selo de frescor -------------------------------------------- */
 /* O que interessa aqui é "o sync está vivo?", e não "o dado mudou?". Numa terça
@@ -92,9 +117,8 @@ function campanhas() {
     if (!a || !b) continue;
     const pa = j.placar.visitante, pb = j.placar.mandante;
     a.pf += pa; a.pc += pb; b.pf += pb; b.pc += pa;
-    const mesmaDiv = times[j.visitante].divisao === times[j.mandante].divisao
-      && times[j.visitante].conferencia === times[j.mandante].conferencia;
     const mesmaConf = times[j.visitante].conferencia === times[j.mandante].conferencia;
+    const mesmaDiv = mesmaConf && times[j.visitante].divisao === times[j.mandante].divisao;
     if (pa === pb) {
       a.e++; b.e++;
     } else {
@@ -133,11 +157,11 @@ function seedsDaConferencia(conf) {
   for (const x of doGrupo) (porDivisao[times[x.sigla].divisao] ||= []).push(x);
   const campeoes = Object.values(porDivisao).map(l => [...l].sort(ordenar)[0]).sort(ordenar);
   const resto = doGrupo.filter(x => !campeoes.includes(x)).sort(ordenar);
-  return [...campeoes, ...resto.slice(0, 3)].concat(resto.slice(3));
+  return [...campeoes, ...resto];
 }
 
-const SEEDS_AFC = seedsDaConferencia("AFC");
-const MEU_SEED = SEEDS_AFC.findIndex(x => x.sigla === ME) + 1;
+const SEEDS = { AFC: seedsDaConferencia("AFC"), NFC: seedsDaConferencia("NFC") };
+const MEU_SEED = SEEDS[MINHA_CONF].findIndex(x => x.sigla === ME) + 1;
 
 /* ---------- meus jogos --------------------------------------------------- */
 const MEUS = JOGOS.filter(j => j.fase === "regular" && (j.visitante === ME || j.mandante === ME))
@@ -150,11 +174,12 @@ const BYE = (() => {
 
 function situacao(j) {
   const br = brDe(j);
-  if (br) return { classe: "ok", texto: br.canais.map(c => canais[c]?.nome || c).join(" · ") };
+  if (br) return { classe: "ok", canais: br.canais, texto: br.canais.map(c => canais[c]?.nome || c).join(" · ") };
   const passou = Date.now() > Date.parse(j.kickoff) + DURACAO;
-  if (passou) return { classe: "fora", texto: "ficou fora da TV brasileira" };
-  if (j.local.pais !== "USA" || /NFL Net/i.test(j.emissoraEua)) return { classe: "duvida", texto: "sem detentor definido no Brasil" };
-  return { classe: "risco", texto: "depende da escolha da rodada" };
+  if (passou) return { classe: "fora", canais: [], texto: "ficou fora da TV brasileira" };
+  if (j.local.pais !== "USA" || (j.emissoras || []).includes("nflnet"))
+    return { classe: "duvida", canais: [], texto: "sem detentor definido no Brasil" };
+  return { classe: "risco", canais: [], texto: "depende da escolha da rodada" };
 }
 
 /* ---------- hero --------------------------------------------------------- */
@@ -166,21 +191,21 @@ function situacao(j) {
   const casa = alvo.mandante === ME;
   const adv = casa ? alvo.visitante : alvo.mandante;
   const bloco = s => `<div class="hero-time">${escudo(s)}<div><div class="nm">${time(s).apelido}</div><div class="sg">${s}</div></div></div>`;
-  $("#heroMat").innerHTML = casa
-    ? bloco(ME) + `<span class="hero-vs">recebe</span>` + bloco(adv)
-    : bloco(ME) + `<span class="hero-vs">visita</span>` + bloco(adv);
+  $("#heroMat").innerHTML = bloco(ME) + `<span class="hero-vs">${casa ? "recebe" : "visita"}</span>` + bloco(adv);
 
-  $("#heroRotulo").textContent = `${alvo.rotulo} · ${casa ? "em Pittsburgh" : "fora de casa"}`;
+  $("#heroRotulo").innerHTML = `${alvo.rotulo} · ${casa ? "em Pittsburgh" : "fora de casa"} ${seloPacote(alvo.pacote)}`;
   $("#heroQuando").textContent = alvo.horarioAConfirmar
     ? `${alvo.nota || "data ainda não fechada"}`
     : `${cap(dataLonga(alvo.kickoff))} · ${hora(alvo.kickoff)} (Brasília)`;
   $("#heroLocal").textContent = [alvo.local.estadio, alvo.local.cidade].filter(Boolean).join(" · ");
 
-  const s = situacao(alvo);
   const br = brDe(alvo);
   $("#heroOnde").innerHTML = br
-    ? br.canais.map(selo).join(" ") + ` <span style="color:var(--texto3);font-size:12px">${br.fonte ? "· " + br.fonte : ""}</span>`
-    : `<span style="color:var(--texto2)">${s.texto}</span>`;
+    ? `<span class="selos">${br.canais.map(selo).join("")}</span>`
+    : `<span style="color:var(--texto2)">${situacao(alvo).texto}</span>`;
+  $("#heroEua").innerHTML = (alvo.emissoras || []).length
+    ? `<span class="selos">${alvo.emissoras.map(seloEua).join("")}</span>`
+    : `<span style="color:var(--texto3)">—</span>`;
 
   const tick = () => {
     const falta = Date.parse(alvo.kickoff) - Date.now();
@@ -227,27 +252,51 @@ function situacao(j) {
     <div class="num"><b>${jogados.length}/${MEUS.length}</b><span>jogos disputados</span></div>`;
 })();
 
-/* ---------- corrida da AFC ----------------------------------------------- */
-(function afc() {
-  const norte = Object.values(TAB)
-    .filter(x => times[x.sigla].conferencia === "AFC" && times[x.sigla].divisao === "Norte")
+/* ---------- corrida dos playoffs ----------------------------------------- */
+function tabelaDivisao(conf, divisao) {
+  const linhas = Object.values(TAB)
+    .filter(x => times[x.sigla].conferencia === conf && times[x.sigla].divisao === divisao)
     .sort(ordenar);
-
-  $("#tabDivisao").innerHTML = `
+  return `
     <tr><th>Time</th><th>V-D</th><th>Div</th><th>Saldo</th></tr>
-    ${norte.map(x => `
+    ${linhas.map(x => `
       <tr class="${x.sigla === ME ? "pit" : ""}">
         <td>${escudo(x.sigla)} ${time(x.sigla).apelido}</td>
         <td>${x.cartaz}</td>
         <td>${x.divV}-${x.divD}</td>
         <td>${x.saldo > 0 ? "+" : ""}${x.saldo}</td>
       </tr>`).join("")}`;
+}
 
-  $("#seeds").innerHTML = SEEDS_AFC.slice(0, 10).map((x, i) => `
+function listaSeeds(conf) {
+  return SEEDS[conf].slice(0, 10).map((x, i) => `
     <li class="${x.sigla === ME ? "pit" : ""} ${i === 7 ? "corte" : ""}">
-      ${escudo(x.sigla)} ${time(x.sigla).apelido}
+      ${escudo(x.sigla)} <span class="tn">${time(x.sigla).apelido}</span>
       <span class="rec">${x.cartaz}</span>
     </li>`).join("");
+}
+
+function liderancasDaConferencia(conf) {
+  const porDivisao = {};
+  for (const x of Object.values(TAB).filter(t => times[t.sigla].conferencia === conf)) {
+    (porDivisao[times[x.sigla].divisao] ||= []).push(x);
+  }
+  return `
+    <tr><th>Divisão</th><th>Líder</th><th>V-D</th></tr>
+    ${["Norte", "Sul", "Leste", "Oeste"].map(d => {
+      const lider = [...(porDivisao[d] || [])].sort(ordenar)[0];
+      if (!lider) return "";
+      return `<tr><td class="dv">${conf} ${d}</td>
+        <td class="lider">${escudo(lider.sigla)} ${time(lider.sigla).apelido}</td>
+        <td>${lider.cartaz}</td></tr>`;
+    }).join("")}`;
+}
+
+(function classificacao() {
+  $("#tabDivisao").innerHTML = tabelaDivisao(MINHA_CONF, MINHA_DIV);
+  $("#seedsAfc").innerHTML = listaSeeds("AFC");
+  $("#seedsNfc").innerHTML = listaSeeds("NFC");
+  $("#tabNfc").innerHTML = liderancasDaConferencia("NFC");
 
   // De olho: jogos da rodada corrente entre times da AFC com campanha vizinha à minha.
   const s = semanaCorrente();
@@ -275,9 +324,9 @@ function semanaCorrente() {
 
 function linhaTime(sigla, pts, venceu, perdeu, mostrarPts) {
   return `<div class="time ${venceu ? "venceu" : ""} ${perdeu ? "perdeu" : ""}">
-    ${sigla ? escudo(sigla) : `<span style="width:24px"></span>`}
+    ${sigla ? escudo(sigla) : `<span class="vazio"></span>`}
     <span class="nm">${sigla ? time(sigla).apelido : "a definir"}</span>
-    ${mostrarPts ? `<span class="pt">${pts}</span>` : ""}
+    <span class="pt">${mostrarPts ? pts : ""}</span>
   </div>`;
 }
 
@@ -289,6 +338,7 @@ function cartaoJogo(j) {
   const vV = fim && j.placar.visitante > j.placar.mandante;
   const vM = fim && j.placar.mandante > j.placar.visitante;
   const ehMeu = j.visitante === ME || j.mandante === ME;
+  const passou = Date.now() > Date.parse(j.kickoff) + DURACAO;
 
   const estadoTxt =
     estado === "andamento" ? `<span class="e vivo"><span class="pulso"></span> ${j.parcial || "ao vivo"}</span>`
@@ -297,20 +347,28 @@ function cartaoJogo(j) {
     : j.horarioAConfirmar ? `<span class="e">a confirmar</span>`
     : `<span class="e">Brasília</span>`;
 
-  const passou = Date.now() > Date.parse(j.kickoff) + DURACAO;
-  const selos = br ? br.canais.map(selo).join("")
+  const selosBr = br ? br.canais.map(selo).join("")
     : `<span class="ch tbd">${passou ? "sem TV brasileira" : "a definir"}</span>`;
   const gamepass = !br || !br.canais.includes("gamepass") ? selo("gamepass") : "";
+  const selosEua = (j.emissoras || []).map(seloEua).join("");
+
+  const etiquetas = [
+    seloPacote(j.pacote),
+    j.nota ? `<span class="etq">${j.nota}</span>` : "",
+    j.local.pais !== "USA" ? `<span class="etq">${j.local.cidade}, fora dos EUA</span>` : ""
+  ].filter(Boolean).join("");
 
   return `<div class="jogo ${ehMeu ? "pit" : ""} ${semTv ? "semtv" : ""} ${estado === "andamento" ? "vivo" : ""}" data-br="${semTv ? 0 : 1}">
     <div class="quando"><span class="h">${j.horarioAConfirmar ? "--:--" : hora(j.kickoff)}</span>${estadoTxt}</div>
-    <div>
+    <div class="mat">
       ${linhaTime(j.visitante, fim ? j.placar.visitante : "", vV, fim && !vV, fim)}
       ${linhaTime(j.mandante, fim ? j.placar.mandante : "", vM, fim && !vM, fim)}
-      ${j.nota ? `<div class="etq">${j.nota}</div>` : ""}
-      ${j.local.pais !== "USA" ? `<div class="etq">${j.local.cidade}, fora dos EUA</div>` : ""}
+      ${etiquetas ? `<div class="etqs">${etiquetas}</div>` : ""}
     </div>
-    <div class="chs">${selos}${gamepass}</div>
+    <div class="chs">
+      <div class="chs-br">${selosBr}${gamepass}</div>
+      ${selosEua ? `<div class="chs-eua" title="transmissão nos EUA">${selosEua}</div>` : ""}
+    </div>
   </div>`;
 }
 
@@ -386,13 +444,18 @@ $("#soBr").addEventListener("change", filtrar);
     const fim = j.estado === "final";
     const meu = fim ? (casa ? j.placar.mandante : j.placar.visitante) : null;
     const dele = fim ? (casa ? j.placar.visitante : j.placar.mandante) : null;
+    const tv = s.canais.length
+      ? `<div class="tv selos">${s.canais.map(selo).join("")}</div>`
+      : `<div class="tv txt">${s.texto}</div>`;
+    const eua = (j.emissoras || []).length
+      ? `<div class="tv selos eua-linha" title="transmissão nos EUA">${j.emissoras.map(seloEua).join("")}</div>` : "";
     cartoes.push(`
       <div class="sem ${s.classe}">
-        <div class="n">Semana ${n} · ${casa ? "em casa" : "fora"}</div>
+        <div class="n">Semana ${n} · ${casa ? "em casa" : "fora"} ${seloPacote(j.pacote)}</div>
         <div class="adv">${escudo(adv)} ${time(adv).apelido}</div>
         <div class="dt">${j.horarioAConfirmar ? "data a definir" : `${dia(j.kickoff).split("-").reverse().slice(0, 2).join("/")} · ${hora(j.kickoff)}`}</div>
         ${fim ? `<div class="res ${meu > dele ? "v" : "d"}">${meu > dele ? "Vitória" : "Derrota"} ${meu} x ${dele}</div>` : ""}
-        <div class="tv">${s.texto}</div>
+        ${tv}${eua}
       </div>`);
   }
   $("#temporada").innerHTML = cartoes.join("");
@@ -413,7 +476,7 @@ $("#soBr").addEventListener("change", filtrar);
     .filter(([k]) => k !== "gamepass")
     .map(([k, c]) => `
       <div class="rad">
-        <div class="top">${c.logo ? `<img src="${c.logo}" alt="${c.nome}">` : `<span class="nome">${c.nome}</span>`}</div>
+        <div class="top">${selo(k)}</div>
         <b>${contagem[k] || 0}</b><span>jogos do Steelers</span>
         <div class="barra"><i style="width:${Math.round((contagem[k] || 0) / total * 100)}%"></i></div>
       </div>`);
@@ -439,12 +502,17 @@ $("#soBr").addEventListener("change", filtrar);
 })();
 
 /* ---------- canais -------------------------------------------------------- */
-$("#canais").innerHTML = Object.values(canais).map(c => `
+$("#canais").innerHTML = Object.entries(canais).map(([k, c]) => `
   <div class="canal">
-    <div class="mk">${c.logo ? `<img src="${c.logo}" alt="${c.nome}">` : `<strong>${c.nome}</strong>`}</div>
+    <div class="mk">${selo(k)}</div>
     <p>${c.onde}</p>
     ${c.assinado ? `<span class="tagv">você já assina</span>` : `<span class="tagn">não assinado</span>`}
   </div>`).join("");
+
+$("#emissoras").innerHTML = Object.entries(emissoras).filter(([k]) => k[0] !== "_").map(([k, e]) => `
+  <span class="eua grande" title="${e.nome}" style="--c:${e.cor}">
+    <img src="${e.logo}" alt="${e.nome}" onerror="this.remove()"><i class="wm">${e.marca}</i>
+  </span>`).join("");
 
 /* ---------- o que mudou --------------------------------------------------- */
 (function log() {

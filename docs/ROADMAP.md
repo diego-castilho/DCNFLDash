@@ -19,7 +19,19 @@
 - **Selo de frescor.** Verde, âmbar ou vermelho conforme a idade do último sync — falha
   silenciosa virou falha visível.
 
-## Próximo — v0.3.0
+## Pronto — v0.3.0
+
+- **Placares numa coluna só.** O cartão do jogo passou a ter largura previsível nas colunas
+  das pontas, então o placar cai na mesma vertical em todos os jogos.
+- **Emissora americana em cada jogo**, para assistir viajando. Marcas tipográficas nas cores
+  de cada rede, com troca automática por imagem se o arquivo existir (ver DADOS.md).
+- **TNF, SNF e MNF marcados** no cartão do jogo, no hero e nos cards da temporada — a mesma
+  definição que decide o canal brasileiro.
+- **Corrida da NFC** ao lado da AFC, com líderes de divisão e seeding.
+- **Netflix e Game Pass com marca própria** (DAZN, no caso do Game Pass) em vez de texto.
+- **Cards da temporada com logo** em vez do nome do canal escrito.
+
+## Próximo — v0.4.0
 
 **Tarefa agendada do Claude para a grade brasileira.** É o que falta para o ciclo fechar.
 Terça e quinta de manhã, seguindo [OPERACAO.md](OPERACAO.md) e a regra de validação de

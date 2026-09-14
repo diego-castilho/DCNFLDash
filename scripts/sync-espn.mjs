@@ -13,7 +13,7 @@
  * Toda alteração de horário, data ou confronto é registrada em dados/mudancas.json,
  * que é o que alimenta o bloco "o que mudou" do painel e o resumo da tarefa.
  */
-import { TEMPORADA, sigla, lerJson, gravarJson, agoraIso, diaBrasilia, buscarJson } from "./lib/comum.mjs";
+import { TEMPORADA, sigla, lerJson, gravarJson, agoraIso, diaBrasilia, buscarJson, emissorasDe, pacoteDe } from "./lib/comum.mjs";
 
 const BASE = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard";
 const FASES = [
@@ -65,6 +65,11 @@ function normalizarJogo(ev, fase, semana) {
       pais: comp.venue?.address?.country || "USA"
     },
     emissoraEua: (comp.broadcasts?.[0]?.names || []).join("/"),
+    // Chaves do catálogo dados/emissoras-eua.json — para o painel mostrar a marca
+    // da emissora americana, útil quando o Diego assiste de fora do Brasil.
+    emissoras: emissorasDe((comp.broadcasts?.[0]?.names || []).join("/")),
+    // TNF | SNF | MNF — decide tanto a marca no painel quanto a regra fixa da grade brasileira
+    pacote: pacoteDe(ev.date, (comp.broadcasts?.[0]?.names || []).join("/")),
     nota: comp.notes?.[0]?.headline || ""
   };
 

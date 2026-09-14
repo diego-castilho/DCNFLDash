@@ -40,3 +40,34 @@ export async function buscarJson(url, tentativas = 3) {
   }
   throw new Error(`falha ao buscar ${url}: ${ultimoErro.message}`);
 }
+
+/* ---------------------------------------------------------------------------
+   Emissoras dos EUA e pacotes de prime time
+   --------------------------------------------------------------------------- */
+
+/** A ESPN devolve o nome comercial; aqui ele vira uma chave estável do catálogo. */
+const ALIAS_EMISSORA = {
+  "cbs": "cbs", "fox": "fox", "nbc": "nbc", "abc": "abc", "espn": "espn",
+  "espn+": "espn", "espn2": "espn", "prime video": "prime", "amazon prime video": "prime",
+  "nfl net": "nflnet", "nfl network": "nflnet", "netflix": "netflix",
+  "peacock": "peacock", "nfl+": "nflplus"
+};
+export const emissorasDe = bruto =>
+  (bruto || "").split("/").map(s => ALIAS_EMISSORA[s.trim().toLowerCase()])
+    .filter(Boolean).filter((v, i, a) => a.indexOf(v) === i);
+
+/**
+ * Pacote de prime time do jogo, se houver.
+ * O dia da semana é em Brasília; é o mesmo dia dos EUA nesses horários.
+ * O jogo de Black Friday também é do Prime Video nos EUA e NÃO é TNF — por isso
+ * a regra exige quinta-feira, e não apenas a emissora.
+ */
+export function pacoteDe(kickoffIso, emissoraBruta) {
+  const emissoras = emissorasDe(emissoraBruta);
+  const d = new Date(kickoffIso).toLocaleDateString("en-US", { timeZone: "America/Sao_Paulo", weekday: "short" });
+  const h = Number(new Date(kickoffIso).toLocaleString("en-US", { timeZone: "America/Sao_Paulo", hour: "2-digit", hour12: false }));
+  if (d === "Thu" && emissoras.includes("prime")) return "TNF";
+  if (d === "Sun" && h >= 20 && emissoras.includes("nbc")) return "SNF";
+  if (d === "Mon" && (emissoras.includes("espn") || emissoras.includes("abc"))) return "MNF";
+  return null;
+}
