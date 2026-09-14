@@ -126,11 +126,13 @@ const mudancas = compararComAnterior(anterior, todos);
 const saida = { temporada: TEMPORADA, atualizadoEm: agoraIso(), fonte: "ESPN scoreboard API", totalJogos: todos.length, semanas };
 gravarJson("dados/temporada.json", saida);
 
+// O arquivo é sempre gravado, mesmo vazio: o painel o consome direto e um 404
+// no console é ruído que esconde erro de verdade.
+const log = lerJson("dados/mudancas.json", { entradas: [] });
 if (mudancas.length) {
-  const log = lerJson("dados/mudancas.json", { entradas: [] });
   log.entradas.unshift({ quando: agoraIso(), origem: "sync-espn", mudancas });
   log.entradas = log.entradas.slice(0, 200);
-  gravarJson("dados/mudancas.json", log);
 }
+gravarJson("dados/mudancas.json", log);
 
 console.log(`\n${todos.length} jogos gravados · ${mudancas.length} mudanças registradas`);
