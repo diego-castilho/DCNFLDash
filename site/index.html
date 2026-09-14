@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DCNFLDash · Temporada 2026/27</title>
+<meta name="description" content="Calendário, placares e transmissão brasileira da temporada 2026/27 da NFL, com foco no Pittsburgh Steelers.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="assets/escudos/pit.webp">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="marca">
+    <img src="assets/escudos/pit.webp" alt="" width="34" height="34">
+    <div>
+      <h1>DCNFLDash</h1>
+      <p>Temporada 2026/27 · onde assistir no Brasil</p>
+    </div>
+  </div>
+  <div class="frescor" id="frescor" title="quando os dados foram sincronizados pela última vez"></div>
+</header>
+
+<main>
+
+  <!-- PRÓXIMO JOGO DO PITTSBURGH ------------------------------------------->
+  <section class="hero" id="hero" hidden>
+    <div class="hero-topo">
+      <span class="rot" id="heroRotulo"></span>
+      <h2 id="heroTitulo">Próximo jogo</h2>
+    </div>
+    <div class="hero-corpo">
+      <div class="hero-mat" id="heroMat"></div>
+      <div class="hero-lado">
+        <div class="hero-cd"><strong id="heroContagem">—</strong><span id="heroContagemRot">para o kickoff</span></div>
+        <dl class="hero-info">
+          <div><dt>Quando</dt><dd id="heroQuando">—</dd></div>
+          <div><dt>Onde assistir</dt><dd id="heroOnde">—</dd></div>
+          <div><dt>Local</dt><dd id="heroLocal">—</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS --------------------------------------------------------------->
+  <section class="bloco">
+    <div class="numeros" id="numeros"></div>
+  </section>
+
+  <!-- CORRIDA DA AFC -------------------------------------------------------->
+  <section class="bloco">
+    <div class="cab">
+      <h2>Corrida da AFC</h2>
+      <p>Calculado a partir dos jogos já encerrados. Critérios de desempate simplificados — ver documentação.</p>
+    </div>
+    <div class="afc">
+      <div class="card">
+        <h3>AFC Norte</h3>
+        <table class="tab" id="tabDivisao"></table>
+      </div>
+      <div class="card">
+        <h3>Classificação para os playoffs</h3>
+        <ol class="seeds" id="seeds"></ol>
+      </div>
+      <div class="card">
+        <h3>De olho nesta rodada</h3>
+        <p class="sub" id="deOlhoSub"></p>
+        <ul class="olho" id="deOlho"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRADE DA RODADA ------------------------------------------------------->
+  <section class="bloco">
+    <div class="cab">
+      <h2>Grade da rodada</h2>
+      <label class="filtro"><input type="checkbox" id="soBr"> só jogos com transmissão brasileira</label>
+    </div>
+    <nav class="semanas" id="semanas" role="tablist"></nav>
+    <div id="grade"></div>
+  </section>
+
+  <!-- TEMPORADA DO STEELERS ------------------------------------------------->
+  <section class="bloco">
+    <div class="cab">
+      <h2>Temporada do Pittsburgh</h2>
+      <p>Os 17 jogos da temporada regular, com o que já está confirmado na TV brasileira.</p>
+    </div>
+    <div class="temporada" id="temporada"></div>
+  </section>
+
+  <!-- RADAR DE TRANSMISSÃO -------------------------------------------------->
+  <section class="bloco">
+    <div class="cab">
+      <h2>Radar de transmissão</h2>
+      <p>Quem tem pegado os jogos do Steelers e quando a grade da próxima rodada costuma sair.</p>
+    </div>
+    <div class="radar" id="radar"></div>
+    <div class="janela" id="janela"></div>
+  </section>
+
+  <!-- CANAIS ---------------------------------------------------------------->
+  <section class="bloco">
+    <div class="cab"><h2>Onde cada canal transmite</h2></div>
+    <div class="canais" id="canais"></div>
+  </section>
+
+  <!-- O QUE MUDOU ----------------------------------------------------------->
+  <section class="bloco">
+    <div class="cab">
+      <h2>O que mudou</h2>
+      <p>Últimas alterações registradas pelo sync automático.</p>
+    </div>
+    <ul class="mudancas" id="mudancas"></ul>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <p>Dados de confronto, horário e placar: ESPN. Grade brasileira: verificada manualmente a cada rodada.</p>
+  <p>Criado por Diego Castilho · <a href="https://github.com/diego-castilho/DCNFLDash">github.com/diego-castilho/DCNFLDash</a></p>
+</footer>
+
+<script src="app.js" type="module"></script>
+</body>
+</html>

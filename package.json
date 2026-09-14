@@ -7,8 +7,10 @@
   "scripts": {
     "sync": "node scripts/sync-espn.mjs",
     "validar": "node scripts/validar.mjs",
-    "servir": "node --run servir:site",
-    "servir:site": "cd site && python3 -m http.server 8788"
+    "montar": "node scripts/montar.mjs",
+    "servir": "node scripts/montar.mjs && cd _site && python3 -m http.server 8788"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }
