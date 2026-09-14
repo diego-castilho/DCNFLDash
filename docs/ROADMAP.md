@@ -44,7 +44,21 @@
   divisão, de conferência ou interconferência se distinguem de relance.
 - **Classificação ao lado do time**: cartaz da temporada e posição na conferência.
 
-## Próximo — v0.5.0
+## Pronto — v0.5.0
+
+- **O cartão do jogo virou tabela.** Sete colunas de largura fixa — horário, confronto,
+  campanha, pontos, liga, destaque, transmissão — com cabeçalho nomeando cada uma uma vez
+  por rodada. Campanha, placar e selos caem na mesma vertical em todos os jogos.
+- **Destaque de prime time em coluna própria**, no meio do cartão e em tamanho grande. O
+  TNF, que não tem logo livre, ganhou marca desenhada com o mesmo peso visual.
+- **Liga padronizada**: sempre conferência e divisão, uma linha por time, alinhada com as
+  linhas do confronto. Antes a divisão aparecia só quando os dois times eram da mesma, o
+  que dava a impressão de informação faltando.
+- **Netflix com um arquivo só** para Brasil e EUA, e na marca atual.
+- **Selos uniformes**: mesma caixa para todos, e uma marca por selo — logo, desenho ou
+  texto, nunca logo e texto juntos.
+
+## Próximo — v0.6.0
 
 **Tarefa agendada do Claude para a grade brasileira.** É o que falta para o ciclo fechar.
 Terça e quinta de manhã, seguindo [OPERACAO.md](OPERACAO.md) e a regra de validação de

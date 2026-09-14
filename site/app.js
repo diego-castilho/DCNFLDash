@@ -58,10 +58,10 @@ function estadoVisual(j) {
 function selo(chave) {
   const c = canais[chave];
   if (!c) return "";
+  // Uma marca por selo: logo OU desenho OU texto, nunca logo e texto juntos.
   if (c.logo) return `<span class="ch" title="${c.nome}"><img src="${c.logo}" alt="${c.nome}"></span>`;
   if (c.svg) return `<span class="ch" title="${c.nome}" style="background:${c.cor}22">
-      <svg viewBox="0 0 24 24" width="14" height="14" fill="${c.cor}" aria-hidden="true"><path d="${c.svg}"/></svg>
-      <i class="wm" style="color:${c.cor}">${c.marca || c.nome}</i></span>`;
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="${c.cor}" aria-hidden="true"><path d="${c.svg}"/></svg></span>`;
   return `<span class="ch plana" title="${c.nome}" style="background:${c.cor};color:${c.corTexto}">${c.marca || c.nome}</span>`;
 }
 
@@ -75,34 +75,40 @@ function seloEua(chave) {
     <img src="${e.logo}" alt="${e.nome}" onerror="this.remove()"><i class="wm">${e.marca}</i></span>`;
 }
 
-/* TNF, SNF e MNF: mesma pílula para os três, com o logo oficial quando existe e as
-   três letras quando não existe. O jogo inteiro também ganha a cor do pacote na
-   borda — é o que deixa um jogo de prime time saltar aos olhos na lista. */
+/* TNF, SNF e MNF ganham coluna própria no meio do cartão, em tamanho grande: é a
+   informação que diz "esse é O jogo da noite", e espremida num canto ela não dizia nada.
+   Quem tem logo oficial mostra o logo; o TNF, que não tem versão livre, ganha uma marca
+   desenhada aqui com o mesmo peso visual. */
 function seloPacote(p, tamanho) {
   const d = pacotes[p];
   if (!d) return "";
   const conteudo = d.logo
     ? `<img src="${d.logo}" alt="${d.nome}" onerror="this.replaceWith(document.createTextNode('${p}'))">`
-    : `<i class="wm">${d.marca}</i>`;
-  return `<span class="pct ${tamanho || ""} ${d.logo ? "com-logo" : ""} ${d.inverter ? "inv" : ""}" title="${d.nome}" style="--c:${d.cor}">${conteudo}</span>`;
+    : `<span class="desenhada"><i class="sigla">${d.marca}</i><i class="linha"></i><i class="noite">night</i></span>`;
+  return `<span class="pct ${tamanho || ""} ${d.logo ? "com-logo" : "sem-logo"} ${d.inverter ? "inv" : ""}"
+    title="${d.nome}" style="--c:${d.cor}">${conteudo}</span>`;
 }
 
-/* Conferência e divisão do confronto: mesma divisão é clássico de rivalidade, mesma
-   conferência mexe no desempate, e interconferência não mexe em nada — vale distinguir. */
-function seloConfronto(a, b) {
-  const ta = times[a], tb = times[b];
-  if (!ta || !tb) return "";
-  const marca = c => conferencias[c]?.logo
-    ? `<img src="${conferencias[c].logo}" alt="${c}" onerror="this.replaceWith(document.createTextNode('${c}'))">`
-    : `<i class="wm">${c}</i>`;
-  if (ta.conferencia !== tb.conferencia) {
-    return `<span class="conf-chip dupla" title="Jogo interconferência">
-      ${marca(ta.conferencia)}<span class="x">×</span>${marca(tb.conferencia)}</span>`;
-  }
-  const mesmaDiv = ta.divisao === tb.divisao;
-  return `<span class="conf-chip ${mesmaDiv ? "divisao" : ""}" style="--c:${conferencias[ta.conferencia]?.cor || "#888"}"
-    title="${mesmaDiv ? "Jogo de divisão" : "Jogo de conferência"}">
-    ${marca(ta.conferencia)}<span class="rot">${ta.conferencia} ${mesmaDiv ? ta.divisao : ""}</span></span>`;
+/* Liga de um time: SEMPRE conferência e divisão, no mesmo formato em todo lugar do
+   painel. A versão anterior mostrava a divisão só quando os dois times eram da mesma —
+   o que dava a impressão de que faltava informação em metade dos cartões. */
+function seloLiga(sigla, destaque) {
+  const t = times[sigla];
+  if (!t) return "";
+  const conf = conferencias[t.conferencia] || {};
+  const marca = conf.logo
+    ? `<img src="${conf.logo}" alt="${t.conferencia}" onerror="this.replaceWith(document.createTextNode('${t.conferencia}'))">`
+    : `<i class="wm">${t.conferencia}</i>`;
+  return `<span class="liga-chip ${destaque ? "destaque" : ""}" style="--c:${conf.cor || "#888"}"
+    title="${t.conferencia} ${t.divisao}${destaque ? " · jogo de divisão" : ""}">
+    ${marca}<span class="rot">${t.divisao}</span></span>`;
+}
+
+/** Coluna de liga do cartão: uma linha por time, alinhada com as linhas do confronto. */
+function colunaLiga(a, b) {
+  if (!times[a] || !times[b]) return "";
+  const mesmaDivisao = times[a].conferencia === times[b].conferencia && times[a].divisao === times[b].divisao;
+  return seloLiga(a, mesmaDivisao) + seloLiga(b, mesmaDivisao);
 }
 
 /** Cartaz e posição na conferência, para aparecer ao lado do nome do time. */
@@ -232,7 +238,7 @@ function situacao(j) {
   $("#heroMat").innerHTML = bloco(ME) + `<span class="hero-vs">${casa ? "recebe" : "visita"}</span>` + bloco(adv);
 
   $("#heroRotulo").innerHTML = `${alvo.rotulo} · ${casa ? "em Pittsburgh" : "fora de casa"}`;
-  $("#heroSelos").innerHTML = seloPacote(alvo.pacote, "grande") + seloConfronto(ME, adv);
+  $("#heroSelos").innerHTML = seloPacote(alvo.pacote, "grande") + seloLiga(ME) + seloLiga(adv);
   $("#heroQuando").textContent = alvo.horarioAConfirmar
     ? `${alvo.nota || "data ainda não fechada"}`
     : `${cap(dataLonga(alvo.kickoff))} · ${hora(alvo.kickoff)} (Brasília)`;
@@ -365,10 +371,21 @@ function linhaTime(sigla, pts, venceu, perdeu, mostrarPts) {
   return `<div class="time ${venceu ? "venceu" : ""} ${perdeu ? "perdeu" : ""}">
     ${sigla ? escudo(sigla) : `<span class="vazio"></span>`}
     <span class="nm">${sigla ? time(sigla).apelido : "a definir"}</span>
-    ${sigla ? classificacaoDe(sigla) : ""}
+    ${sigla ? classificacaoDe(sigla) : `<span class="clas"></span>`}
     <span class="pt">${mostrarPts ? pts : ""}</span>
   </div>`;
 }
+
+/* Cabeçalho de colunas: o cartão do jogo é uma tabela disfarçada, e nomear as colunas
+   uma vez no topo evita ter que adivinhar o que é cada número. */
+const CABECALHO_GRADE = `
+  <div class="cab-grade" aria-hidden="true">
+    <span>Horário</span>
+    <span class="conf"><span>Confronto</span><span class="c">Camp.</span><span class="p">Pts</span></span>
+    <span>Liga</span>
+    <span>Destaque</span>
+    <span class="cn"><span>Brasil</span><span>EUA</span></span>
+  </div>`;
 
 function cartaoJogo(j) {
   const estado = estadoVisual(j);
@@ -393,8 +410,6 @@ function cartaoJogo(j) {
   const selosEua = (j.emissoras || []).map(seloEua).join("");
 
   const etiquetas = [
-    seloPacote(j.pacote),
-    j.aDefinir ? "" : seloConfronto(j.visitante, j.mandante),
     j.nota ? `<span class="etq">${j.nota}</span>` : "",
     j.local.pais !== "USA" ? `<span class="etq">${j.local.cidade}, fora dos EUA</span>` : ""
   ].filter(Boolean).join("");
@@ -408,6 +423,8 @@ function cartaoJogo(j) {
       ${linhaTime(j.mandante, fim ? j.placar.mandante : "", vM, fim && !vM, fim)}
       ${etiquetas ? `<div class="etqs">${etiquetas}</div>` : ""}
     </div>
+    <div class="liga">${j.aDefinir ? "" : colunaLiga(j.visitante, j.mandante)}</div>
+    <div class="destaque">${seloPacote(j.pacote, "grande")}</div>
     <div class="chs">
       <div class="col br">${selosBr}${gamepass}</div>
       <div class="col eua">${selosEua || `<span class="vazio-eua">—</span>`}</div>
@@ -429,12 +446,11 @@ function renderSemana(s) {
       : "";
   const nota = recado ? `<div class="nota"><span>→</span><span>${recado}</span></div>` : "";
 
-  $("#grade").innerHTML = nota + Object.entries(porDia).map(([d, jogos]) => `
+  $("#grade").innerHTML = nota + CABECALHO_GRADE + Object.entries(porDia).map(([d, jogos]) => `
     <div class="dia">
       <h3>${d === "a definir" ? "Data a definir" : cap(dataLonga(jogos[0].kickoff))}</h3>
       <span class="ln"></span>
       <span class="ct">${jogos.length} ${jogos.length > 1 ? "jogos" : "jogo"}</span>
-      <span class="rotulos"><span>Brasil</span><span>EUA</span></span>
     </div>
     ${jogos.map(cartaoJogo).join("")}`).join("");
   filtrar();
@@ -497,7 +513,7 @@ $("#soBr").addEventListener("change", filtrar);
       <div class="sem ${s.classe} ${j.pacote ? "primetime" : ""}" ${j.pacote && pacotes[j.pacote] ? `style="--pc:${pacotes[j.pacote].cor}"` : ""}>
         <div class="n"><span>Semana ${n} · ${casa ? "em casa" : "fora"}</span> ${seloPacote(j.pacote)}</div>
         <div class="adv">${escudo(adv)} <span class="nm">${time(adv).apelido}</span></div>
-        <div class="sub-adv">${seloConfronto(ME, adv)} ${classificacaoDe(adv)}</div>
+        <div class="sub-adv">${seloLiga(adv, times[adv]?.conferencia === times[ME].conferencia && times[adv]?.divisao === times[ME].divisao)} ${classificacaoDe(adv)}</div>
         <div class="dt">${j.horarioAConfirmar ? "data a definir" : `${dia(j.kickoff).split("-").reverse().slice(0, 2).join("/")} · ${hora(j.kickoff)}`}</div>
         ${fim ? `<div class="res ${meu > dele ? "v" : "d"}">${meu > dele ? "Vitória" : "Derrota"} ${meu} x ${dele}</div>` : ""}
         ${tv}${eua}
