@@ -1,0 +1,14 @@
+{
+  "name": "dcnfldash",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Painel da temporada 2026/27 da NFL com foco no Pittsburgh Steelers e nos canais brasileiros",
+  "scripts": {
+    "sync": "node scripts/sync-espn.mjs",
+    "validar": "node scripts/validar.mjs",
+    "servir": "node --run servir:site",
+    "servir:site": "cd site && python3 -m http.server 8788"
+  },
+  "engines": { "node": ">=20" }
+}

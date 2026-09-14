@@ -1,0 +1,59 @@
+name: Sync ESPN
+
+# POR QUÊ: placar, horário e confronto são informação determinística — vêm de uma
+# API e não podem depender de alguém (ou de um modelo) transcrever à mão.
+# QUANDO: de 30 em 30 minutos nas janelas de jogo, e uma vez por dia no resto.
+# ONDE: no GitHub, não na máquina do Diego — o painel não pode depender do Mac ligado.
+
+on:
+  schedule:
+    - cron: "*/30 16-23 * * 0"   # domingo, 13h às 20h de Brasília
+    - cron: "*/30 0-6 * * 1"     # madrugada de domingo para segunda (SNF)
+    - cron: "*/30 23 * * 1"      # segunda à noite (MNF)
+    - cron: "*/30 0-6 * * 2"     # madrugada de segunda para terça (fim do MNF)
+    - cron: "0 11 * * *"         # varredura diária, 8h de Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+
+      - name: Buscar dados da ESPN
+        run: node scripts/sync-espn.mjs
+
+      - name: Validar antes de gravar
+        run: node scripts/validar.mjs
+
+      - name: Commitar se algo mudou
+        run: |
+          git config user.name "dcnfldash-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet -- dados/; then
+            echo "nada mudou"
+            exit 0
+          fi
+          resumo=$(node -e "
+            const l=require('./dados/mudancas.json');
+            const e=l.entradas[0];
+            const m=e.mudancas;
+            const p=m.filter(x=>x.tipo==='placar final').length;
+            const h=m.filter(x=>x.tipo==='horário alterado').length;
+            const n=m.filter(x=>x.tipo==='jogo novo').length;
+            console.log([p&&p+' placar(es)',h&&h+' horário(s)',n&&n+' jogo(s) novo(s)'].filter(Boolean).join(', ')||'ajustes');
+          ")
+          git add dados/
+          git commit -m "dados: sync ESPN — $resumo"
+          git push

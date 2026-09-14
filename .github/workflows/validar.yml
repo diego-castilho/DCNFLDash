@@ -1,0 +1,19 @@
+name: Validar dados
+
+# POR QUÊ: é o portão que impede um dado ruim de chegar ao painel.
+# QUANDO: em todo push e em todo PR, nas duas branches de longa vida.
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: node scripts/validar.mjs

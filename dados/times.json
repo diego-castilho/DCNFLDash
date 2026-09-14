@@ -1,0 +1,290 @@
+{
+  "ARI": {
+    "sigla": "ARI",
+    "apelido": "Cardinals",
+    "cor": "#97233F",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/ari.webp",
+    "conferencia": "NFC",
+    "divisao": "Oeste"
+  },
+  "ATL": {
+    "sigla": "ATL",
+    "apelido": "Falcons",
+    "cor": "#A71930",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/atl.webp",
+    "conferencia": "NFC",
+    "divisao": "Sul"
+  },
+  "BAL": {
+    "sigla": "BAL",
+    "apelido": "Ravens",
+    "cor": "#241773",
+    "corTexto": "#9E7C0C",
+    "escudo": "assets/escudos/bal.webp",
+    "conferencia": "AFC",
+    "divisao": "Norte"
+  },
+  "BUF": {
+    "sigla": "BUF",
+    "apelido": "Bills",
+    "cor": "#00338D",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/buf.webp",
+    "conferencia": "AFC",
+    "divisao": "Leste"
+  },
+  "CAR": {
+    "sigla": "CAR",
+    "apelido": "Panthers",
+    "cor": "#0085CA",
+    "corTexto": "#111",
+    "escudo": "assets/escudos/car.webp",
+    "conferencia": "NFC",
+    "divisao": "Sul"
+  },
+  "CHI": {
+    "sigla": "CHI",
+    "apelido": "Bears",
+    "cor": "#0B162A",
+    "corTexto": "#E64100",
+    "escudo": "assets/escudos/chi.webp",
+    "conferencia": "NFC",
+    "divisao": "Norte"
+  },
+  "CIN": {
+    "sigla": "CIN",
+    "apelido": "Bengals",
+    "cor": "#FB4F14",
+    "corTexto": "#111",
+    "escudo": "assets/escudos/cin.webp",
+    "conferencia": "AFC",
+    "divisao": "Norte"
+  },
+  "CLE": {
+    "sigla": "CLE",
+    "apelido": "Browns",
+    "cor": "#FF3C00",
+    "corTexto": "#111",
+    "escudo": "assets/escudos/cle.webp",
+    "conferencia": "AFC",
+    "divisao": "Norte"
+  },
+  "DAL": {
+    "sigla": "DAL",
+    "apelido": "Cowboys",
+    "cor": "#002244",
+    "corTexto": "#B0B7BC",
+    "escudo": "assets/escudos/dal.webp",
+    "conferencia": "NFC",
+    "divisao": "Leste"
+  },
+  "DEN": {
+    "sigla": "DEN",
+    "apelido": "Broncos",
+    "cor": "#002244",
+    "corTexto": "#FB4F14",
+    "escudo": "assets/escudos/den.webp",
+    "conferencia": "AFC",
+    "divisao": "Oeste"
+  },
+  "DET": {
+    "sigla": "DET",
+    "apelido": "Lions",
+    "cor": "#0076B6",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/det.webp",
+    "conferencia": "NFC",
+    "divisao": "Norte"
+  },
+  "GB": {
+    "sigla": "GB",
+    "apelido": "Packers",
+    "cor": "#203731",
+    "corTexto": "#FFB612",
+    "escudo": "assets/escudos/gb.webp",
+    "conferencia": "NFC",
+    "divisao": "Norte"
+  },
+  "HOU": {
+    "sigla": "HOU",
+    "apelido": "Texans",
+    "cor": "#03202F",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/hou.webp",
+    "conferencia": "AFC",
+    "divisao": "Sul"
+  },
+  "IND": {
+    "sigla": "IND",
+    "apelido": "Colts",
+    "cor": "#002C5F",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/ind.webp",
+    "conferencia": "AFC",
+    "divisao": "Sul"
+  },
+  "JAX": {
+    "sigla": "JAX",
+    "apelido": "Jaguars",
+    "cor": "#006778",
+    "corTexto": "#D7A22A",
+    "escudo": "assets/escudos/jax.webp",
+    "conferencia": "AFC",
+    "divisao": "Sul"
+  },
+  "KC": {
+    "sigla": "KC",
+    "apelido": "Chiefs",
+    "cor": "#E31837",
+    "corTexto": "#FFB612",
+    "escudo": "assets/escudos/kc.webp",
+    "conferencia": "AFC",
+    "divisao": "Oeste"
+  },
+  "LV": {
+    "sigla": "LV",
+    "apelido": "Raiders",
+    "cor": "#000000",
+    "corTexto": "#A5ACAF",
+    "escudo": "assets/escudos/lv.webp",
+    "conferencia": "AFC",
+    "divisao": "Oeste"
+  },
+  "LAC": {
+    "sigla": "LAC",
+    "apelido": "Chargers",
+    "cor": "#007BC7",
+    "corTexto": "#FFC20E",
+    "escudo": "assets/escudos/lac.webp",
+    "conferencia": "AFC",
+    "divisao": "Oeste"
+  },
+  "LAR": {
+    "sigla": "LAR",
+    "apelido": "Rams",
+    "cor": "#003594",
+    "corTexto": "#FFD100",
+    "escudo": "assets/escudos/lar.webp",
+    "conferencia": "NFC",
+    "divisao": "Oeste"
+  },
+  "MIA": {
+    "sigla": "MIA",
+    "apelido": "Dolphins",
+    "cor": "#008E97",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/mia.webp",
+    "conferencia": "AFC",
+    "divisao": "Leste"
+  },
+  "MIN": {
+    "sigla": "MIN",
+    "apelido": "Vikings",
+    "cor": "#4F2683",
+    "corTexto": "#FFC62F",
+    "escudo": "assets/escudos/min.webp",
+    "conferencia": "NFC",
+    "divisao": "Norte"
+  },
+  "NE": {
+    "sigla": "NE",
+    "apelido": "Patriots",
+    "cor": "#002244",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/ne.webp",
+    "conferencia": "AFC",
+    "divisao": "Leste"
+  },
+  "NO": {
+    "sigla": "NO",
+    "apelido": "Saints",
+    "cor": "#D3BC8D",
+    "corTexto": "#111",
+    "escudo": "assets/escudos/no.webp",
+    "conferencia": "NFC",
+    "divisao": "Sul"
+  },
+  "NYG": {
+    "sigla": "NYG",
+    "apelido": "Giants",
+    "cor": "#0B2265",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/nyg.webp",
+    "conferencia": "NFC",
+    "divisao": "Leste"
+  },
+  "NYJ": {
+    "sigla": "NYJ",
+    "apelido": "Jets",
+    "cor": "#003F2D",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/nyj.webp",
+    "conferencia": "AFC",
+    "divisao": "Leste"
+  },
+  "PHI": {
+    "sigla": "PHI",
+    "apelido": "Eagles",
+    "cor": "#004C54",
+    "corTexto": "#A5ACAF",
+    "escudo": "assets/escudos/phi.webp",
+    "conferencia": "NFC",
+    "divisao": "Leste"
+  },
+  "PIT": {
+    "sigla": "PIT",
+    "apelido": "Steelers",
+    "cor": "#000000",
+    "corTexto": "#FFB612",
+    "escudo": "assets/escudos/pit.webp",
+    "conferencia": "AFC",
+    "divisao": "Norte"
+  },
+  "SF": {
+    "sigla": "SF",
+    "apelido": "49ers",
+    "cor": "#AA0000",
+    "corTexto": "#B3995D",
+    "escudo": "assets/escudos/sf.webp",
+    "conferencia": "NFC",
+    "divisao": "Oeste"
+  },
+  "SEA": {
+    "sigla": "SEA",
+    "apelido": "Seahawks",
+    "cor": "#002244",
+    "corTexto": "#69BE28",
+    "escudo": "assets/escudos/sea.webp",
+    "conferencia": "NFC",
+    "divisao": "Oeste"
+  },
+  "TB": {
+    "sigla": "TB",
+    "apelido": "Buccaneers",
+    "cor": "#A71930",
+    "corTexto": "#fff",
+    "escudo": "assets/escudos/tb.webp",
+    "conferencia": "NFC",
+    "divisao": "Sul"
+  },
+  "TEN": {
+    "sigla": "TEN",
+    "apelido": "Titans",
+    "cor": "#4495D2",
+    "corTexto": "#111",
+    "escudo": "assets/escudos/ten.webp",
+    "conferencia": "AFC",
+    "divisao": "Sul"
+  },
+  "WAS": {
+    "sigla": "WAS",
+    "apelido": "Commanders",
+    "cor": "#5A1414",
+    "corTexto": "#FFB612",
+    "escudo": "assets/escudos/was.webp",
+    "conferencia": "NFC",
+    "divisao": "Leste"
+  }
+}
