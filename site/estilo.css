@@ -17,10 +17,15 @@
   --azul:#5AA9FF;
   --r:14px;
   --sombra:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.28);
-  /* Largura da coluna de canais. É ela que mantém o placar de todos os jogos
-     alinhado na mesma vertical, independente de quantos selos o jogo tem. */
-  --col-canais:184px;
-  --col-hora:88px;
+  /* O cartão do jogo é uma tabela disfarçada: todas as colunas, menos a do confronto,
+     têm largura fixa, e é isso que mantém campanha, placar e selos alinhados na mesma
+     vertical em todos os jogos da rodada. */
+  --col-hora:86px;
+  --col-liga:104px;
+  --col-destaque:104px;
+  --col-canais:180px;
+  --col-camp:56px;   /* campanha e posição, dentro do confronto */
+  --col-placar:30px;
 }
 
 *{box-sizing:border-box}
@@ -71,12 +76,16 @@ img{max-width:100%}
 .sub{margin:-6px 0 10px;color:var(--texto3);font-size:12px}
 
 /* ---- selos de canal (Brasil) ------------------------------------------ */
-.ch{display:inline-flex;align-items:center;gap:5px;border-radius:7px;padding:5px 8px;font-size:11.5px;background:var(--carta2)}
-.ch img{height:15px;width:auto}
+/* Mesma caixa para todos os selos de canal, com ou sem logo — é o que faz a coluna
+   do Brasil ficar tão regular quanto a dos EUA. */
+.ch{
+  display:inline-flex;align-items:center;justify-content:center;
+  border-radius:6px;padding:4px 8px;min-height:23px;font-size:11.5px;background:var(--carta2);
+}
+.ch img{height:15px;width:auto;max-width:78px;object-fit:contain}
 .ch svg{flex:none}
-.ch .wm{font-style:normal;font-weight:700;font-size:10px;letter-spacing:.04em}
-.ch.plana{font-weight:700;font-size:11px;letter-spacing:.06em;padding:5px 9px}
-.ch.tbd{color:var(--texto3);border:1px dashed var(--linha);background:none}
+.ch.plana{font-weight:800;font-size:10.5px;letter-spacing:.09em;border:1px solid rgba(255,255,255,.16)}
+.ch.tbd{color:var(--texto3);border:1px dashed var(--linha);background:none;font-size:11px}
 .selos{display:inline-flex;gap:5px;flex-wrap:wrap;align-items:center}
 
 /* ---- selos de emissora (EUA) ------------------------------------------
@@ -103,38 +112,50 @@ img{max-width:100%}
 /* ---- selo de pacote (TNF/SNF/MNF) -------------------------------------
    Mesma pílula para os três: o logo oficial quando existe, as três letras quando
    não existe. Um brilho suave na cor do pacote dá a eles o ar de "jogo da noite". */
+.destaque{display:flex;align-items:center;justify-content:center;min-width:0}
 .pct{
   display:inline-flex;align-items:center;justify-content:center;
-  border-radius:6px;padding:3px 7px;line-height:1;min-height:20px;
+  border-radius:8px;padding:6px 10px;line-height:1;
   border:1px solid color-mix(in srgb, var(--c) 45%, transparent);
   background:linear-gradient(180deg,
-    color-mix(in srgb, var(--c) 20%, transparent),
-    color-mix(in srgb, var(--c) 7%, transparent));
-  box-shadow:0 0 12px -4px var(--c);
+    color-mix(in srgb, var(--c) 22%, transparent),
+    color-mix(in srgb, var(--c) 8%, transparent));
+  box-shadow:0 0 18px -6px var(--c), inset 0 1px 0 color-mix(in srgb, var(--c) 25%, transparent);
 }
-.pct .wm{font-style:normal;font-weight:800;font-size:9.5px;letter-spacing:.12em;color:var(--c)}
-.pct img{height:16px;width:auto;max-width:92px;object-fit:contain}
+.pct img{height:26px;width:auto;max-width:82px;object-fit:contain}
 /* Arte preta sobre transparente some no fundo escuro; quem precisa disso está
    marcado com `inverter` no catálogo, e só esses viram claro. */
 .pct.inv img{filter:invert(1) brightness(1.75)}
-.pct.grande{padding:5px 10px;min-height:30px}
-.pct.grande img{height:22px;max-width:110px}
-.pct.grande .wm{font-size:12px}
 
-/* ---- conferência / divisão -------------------------------------------- */
-.conf-chip{
-  display:inline-flex;align-items:center;gap:5px;
-  background:var(--carta2);border-radius:6px;padding:3px 7px;line-height:1;min-height:20px;
+/* O Thursday Night não tem logo com licença livre, então ganha uma marca desenhada
+   com o mesmo peso visual dos outros dois — a coluna não pode ter um buraco. */
+.pct .desenhada{display:grid;justify-items:center;gap:2px}
+.pct .sigla{font-style:normal;font-weight:900;font-size:17px;letter-spacing:.06em;color:var(--c);line-height:1}
+.pct .linha{display:block;width:26px;height:1px;background:color-mix(in srgb, var(--c) 60%, transparent)}
+.pct .noite{font-style:normal;font-size:7.5px;letter-spacing:.22em;text-transform:uppercase;color:color-mix(in srgb, var(--c) 78%, transparent)}
+
+.pct.grande img{height:28px;max-width:88px}
+.hero-selos .pct{padding:7px 12px}
+
+/* ---- liga: conferência + divisão --------------------------------------
+   Sempre no mesmo formato — escudo da conferência e nome da divisão. Uma linha por
+   time, alinhada com as linhas do confronto. */
+.liga{display:flex;flex-direction:column;gap:4px;min-width:0}
+.liga-chip{
+  display:flex;align-items:center;gap:6px;
+  background:var(--carta2);border-radius:6px;padding:3px 7px;line-height:1;min-height:22px;
 }
-.conf-chip img{height:13px;width:auto}
-.conf-chip .rot,.conf-chip .wm{
+.liga-chip img{height:14px;width:auto;flex:none}
+.liga-chip .rot,.liga-chip .wm{
   font-style:normal;font-size:9.5px;font-weight:700;letter-spacing:.08em;
   text-transform:uppercase;color:var(--texto2);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;
 }
-.conf-chip.divisao{background:color-mix(in srgb, var(--c) 16%, transparent);
-  box-shadow:inset 0 0 0 1px color-mix(in srgb, var(--c) 34%, transparent)}
-.conf-chip.divisao .rot{color:var(--texto)}
-.conf-chip .x{color:var(--texto3);font-size:10px}
+.liga-chip.destaque{
+  background:color-mix(in srgb, var(--c) 18%, transparent);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb, var(--c) 36%, transparent);
+}
+.liga-chip.destaque .rot{color:var(--texto)}
 
 /* ---- hero ------------------------------------------------------------- */
 .hero{
@@ -228,12 +249,27 @@ img{max-width:100%}
    Três colunas de largura previsível. A do meio é a única elástica, então o
    placar (encostado na borda direita dela) cai na mesma vertical em todos os
    cartões — que é exatamente o que faltava na versão anterior. */
-.jogo{
-  display:grid;grid-template-columns:var(--col-hora) minmax(0,1fr) var(--col-canais);
+.jogo,.cab-grade{
+  display:grid;
+  grid-template-columns:var(--col-hora) minmax(0,1fr) var(--col-liga) var(--col-destaque) var(--col-canais);
   gap:14px;align-items:center;
+}
+.jogo{
   background:var(--carta);border:1px solid var(--linha);border-radius:12px;
   padding:11px 14px;margin-bottom:7px;
 }
+/* Cabeçalho das colunas: aparece uma vez por rodada, em cima da lista. */
+.cab-grade{
+  padding:0 15px 6px;margin-top:4px;
+  font-size:9.5px;text-transform:uppercase;letter-spacing:.11em;color:var(--texto3);
+}
+/* As sub-colunas do cabeçalho repetem exatamente a grade de .time — qualquer
+   diferença aqui desalinha os rótulos em relação aos números que eles nomeiam. */
+.cab-grade .conf{display:grid;grid-template-columns:24px minmax(0,1fr) var(--col-camp) var(--col-placar);gap:9px}
+.cab-grade .conf span:first-child{grid-column:1/3}
+.cab-grade .conf .c,.cab-grade .conf .p{text-align:right;white-space:nowrap}
+.cab-grade .cn{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cab-grade .cn span:last-child{padding-left:10px}
 .jogo.pit{border-color:#4A3B10;background:linear-gradient(90deg,var(--ouro-fraco) 0%,var(--carta) 42%)}
 .jogo.vivo{border-color:#1E5B3A}
 /* Jogo de prime time: faixa e clarão na cor do pacote. Serve para achar TNF, SNF e
@@ -250,12 +286,16 @@ img{max-width:100%}
 .jogo .quando .e.vivo{color:var(--verde)}
 .jogo .quando .e.fim{color:var(--texto2)}
 .mat{min-width:0}
-.time{display:flex;align-items:center;gap:9px;padding:2px 0;min-width:0}
-.time img,.time .vazio{width:24px;height:24px;object-fit:contain;flex:none}
+/* Confronto dividido em quatro sub-colunas fixas: escudo, nome, campanha e placar.
+   É o que faz campanha e placar caírem na mesma vertical em todos os cartões. */
+.time{
+  display:grid;grid-template-columns:24px minmax(0,1fr) var(--col-camp) var(--col-placar);
+  align-items:center;gap:9px;padding:2px 0;min-width:0;
+}
+.time img,.time .vazio{width:24px;height:24px;object-fit:contain}
 .time .nm{font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .time .pt{
-  margin-left:auto;padding-left:10px;flex:none;width:30px;text-align:right;
-  font-variant-numeric:tabular-nums;font-size:15px;font-weight:600;color:var(--texto2);
+  text-align:right;font-variant-numeric:tabular-nums;font-size:15px;font-weight:600;color:var(--texto2);
 }
 .time.venceu .nm{font-weight:650}
 .time.venceu .pt{color:var(--texto)}
@@ -264,7 +304,8 @@ img{max-width:100%}
 .etqs{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:5px}
 .etq{font-size:11px;color:var(--texto3)}
 /* Classificação ao lado do time: cartaz e posição na conferência. */
-.clas{display:inline-flex;align-items:center;gap:5px;margin-left:8px;flex:none}
+.clas{display:inline-flex;align-items:center;justify-content:flex-end;gap:5px}
+.time .clas{padding-right:2px}
 .clas .cartaz{font-size:11px;color:var(--texto3);font-variant-numeric:tabular-nums}
 .clas .pos{
   font-size:9.5px;font-weight:700;color:var(--texto2);background:var(--carta2);
@@ -278,13 +319,6 @@ img{max-width:100%}
 .chs .col{display:flex;flex-direction:column;gap:4px;align-items:flex-start;min-width:0}
 .chs .col.eua{padding-left:10px;border-left:1px solid var(--linha)}
 .vazio-eua{color:var(--texto3);font-size:11px;padding:3px 0}
-/* Rótulos das duas colunas, no cabeçalho do dia, alinhados com elas. */
-.dia .rotulos{
-  display:grid;grid-template-columns:1fr 1fr;gap:10px;
-  width:var(--col-canais);flex:none;
-  font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--texto3);
-}
-.dia .rotulos span:last-child{padding-left:10px}
 
 /* ---- temporada -------------------------------------------------------- */
 .temporada{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:9px}
@@ -296,7 +330,14 @@ img{max-width:100%}
 .sem.bye{opacity:.5}
 .sem.primetime{box-shadow:inset 3px 0 0 var(--pc)}
 .sem .n{font-size:11px;color:var(--texto3);text-transform:uppercase;letter-spacing:.06em;
-  display:flex;align-items:center;justify-content:space-between;gap:6px}
+  display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:26px}
+/* No card da temporada o selo do pacote divide espaço com o número da semana,
+   então vai um pouco menor que na grade. */
+.sem .pct{padding:4px 8px}
+.sem .pct img{height:19px;max-width:64px}
+.sem .pct .sigla{font-size:13px}
+.sem .pct .noite{font-size:6.5px}
+.sem .pct .linha{width:20px}
 .sem .adv{display:flex;align-items:center;gap:8px;margin:8px 0 5px;font-size:14px;font-weight:600}
 .sem .adv img{width:24px;height:24px;object-fit:contain;flex:none}
 .sem .sub-adv{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:7px}
@@ -353,19 +394,28 @@ img{max-width:100%}
 .rodape p{margin:0 0 4px}
 
 /* ---- telas médias ----------------------------------------------------- */
-@media (max-width:1000px){
-  :root{--col-canais:176px}
+@media (max-width:1060px){
+  :root{--col-liga:94px;--col-destaque:92px;--col-canais:164px;--col-camp:48px}
   .clas .pos{display:none}
+  .pct img{height:22px;max-width:74px}
+  .pct .sigla{font-size:15px}
 }
 
-/* ---- celular ---------------------------------------------------------- */
-@media (max-width:640px){
-  :root{--col-hora:72px;--col-canais:100%}
+/* ---- celular ----------------------------------------------------------
+   A tabela vira cartão: confronto em cima, e liga, destaque e transmissão
+   dividindo a linha de baixo. */
+@media (max-width:720px){
+  :root{--col-hora:72px;--col-camp:52px}
   body{padding:0 12px 48px}
-  .jogo{grid-template-columns:var(--col-hora) minmax(0,1fr);row-gap:9px}
+  .cab-grade{display:none}
+  .jogo{grid-template-columns:var(--col-hora) minmax(0,1fr);row-gap:10px}
+  .jogo .liga{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;gap:6px;
+    padding-left:calc(var(--col-hora) + 14px)}
+  .jogo .destaque{grid-column:1/-1;justify-content:flex-start;
+    padding-left:calc(var(--col-hora) + 14px)}
+  .jogo.primetime .destaque{order:-1}
   .chs{grid-column:1/-1;padding-left:calc(var(--col-hora) + 14px)}
   .chs .col{flex-direction:row;flex-wrap:wrap;align-items:center}
-  .dia .rotulos{display:none}
   .hero-lado{width:100%}
   .hero-info{flex:1}
 }

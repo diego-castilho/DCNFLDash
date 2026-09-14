@@ -29,7 +29,7 @@ const ALVOS = [
   { catalogo: "dados/emissoras-eua.json", chave: "abc",     pasta: "assets/emissoras", titulo: "File:ABC-2021-LOGO.svg" },
   { catalogo: "dados/emissoras-eua.json", chave: "espn",    pasta: "assets/emissoras", titulo: "File:ESPN wordmark.svg" },
   { catalogo: "dados/emissoras-eua.json", chave: "prime",   pasta: "assets/emissoras", titulo: "File:Prime Video logo (2024).svg" },
-  { catalogo: "dados/emissoras-eua.json", chave: "netflix", pasta: "assets/emissoras", titulo: "File:Netflix logo.svg" },
+  { catalogo: "dados/emissoras-eua.json", chave: "netflix", pasta: "assets/emissoras", titulo: "File:Netflix 2015 logo.svg" },
   { catalogo: "dados/emissoras-eua.json", chave: "peacock", pasta: "assets/emissoras", titulo: "File:NBCUniversal Peacock Logo (2026).svg" },
   // pacotes de prime time (o TNF não tem logo livre no Commons — fica a marca desenhada)
   { catalogo: "dados/pacotes.json",       chave: "SNF",     pasta: "assets/pacotes",   titulo: "File:NBC Sunday Night Football logo 2022.svg" },

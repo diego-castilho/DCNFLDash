@@ -144,6 +144,16 @@ aproximação acima acerta na esmagadora maioria dos casos, mas **pode divergir 
 oficial em empates finos, especialmente no fim da temporada.** Quando a diferença importar
 de verdade, a fonte é a classificação oficial da NFL.
 
+## Um logo, um lugar
+
+Netflix aparece como canal brasileiro e como emissora americana. Eram dois arquivos
+diferentes — e um deles era a marca antiga. Agora os dois catálogos apontam para o mesmo
+`assets/emissoras/netflix.svg`. A regra vale para qualquer marca que exista dos dois lados:
+um arquivo só, referenciado por quem precisar.
+
+Cada selo mostra **uma** marca: logo, ou desenho, ou texto. Nunca logo e texto juntos —
+era o que fazia o selo da Netflix ficar com cara de rascunho.
+
 ## Escudos e logos
 
 Extraídos do painel v1 (`scripts/extrair-legado.mjs`) para `site/assets/`, como arquivos
