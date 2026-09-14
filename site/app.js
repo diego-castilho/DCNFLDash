@@ -63,15 +63,18 @@ function selo(chave) {
 }
 
 /* ---------- selo de frescor -------------------------------------------- */
+/* O que interessa aqui é "o sync está vivo?", e não "o dado mudou?". Numa terça
+   sem jogo nada muda, e isso é normal — o alarme é o sync ter parado de rodar. */
 (function frescor() {
-  const horas = (Date.now() - Date.parse(temporada.atualizadoEm)) / 36e5;
   const el = $("#frescor");
-  const quando = new Date(temporada.atualizadoEm)
+  const dias = temporada.verificadoEm ? diasAte(`${temporada.verificadoEm}T12:00:00-03:00`) * -1 : 99;
+  const mudou = new Date(temporada.atualizadoEm)
     .toLocaleString("pt-BR", { timeZone: FUSO, day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" });
-  el.textContent = horas < 1.5 ? `sincronizado agora · ${quando}`
-    : horas < 24 ? `sincronizado há ${Math.round(horas)}h · ${quando}`
-    : `sem sincronizar há ${Math.round(horas / 24)} dia(s) · ${quando}`;
-  el.className = "frescor" + (horas > 72 ? " parado" : horas > 30 ? " velho" : "");
+  el.textContent = dias <= 0 ? `verificado hoje · dados de ${mudou}`
+    : dias === 1 ? `verificado ontem · dados de ${mudou}`
+    : `sem verificar há ${dias} dias · dados de ${mudou}`;
+  el.className = "frescor" + (dias > 3 ? " parado" : dias > 1 ? " velho" : "");
+  el.title = `última verificação: ${temporada.verificadoEm || "desconhecida"} · última alteração de dados: ${mudou}`;
 })();
 
 /* ---------- campanha e classificação ------------------------------------ */

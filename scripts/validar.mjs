@@ -63,8 +63,9 @@ if (Number.isNaN(Date.parse(temporada.atualizadoEm))) erro("temporada.atualizado
 if (temporada.totalJogos !== ids.size) erro(`totalJogos (${temporada.totalJogos}) não bate com os jogos presentes (${ids.size})`);
 if (ids.size < 270) aviso(`só ${ids.size} jogos na temporada — esperado ~285 com playoffs`);
 
-const idadeHoras = (Date.now() - Date.parse(temporada.atualizadoEm)) / 36e5;
-if (idadeHoras > 48) aviso(`temporada.json foi sincronizado há ${Math.round(idadeHoras)}h — o sync pode estar quebrado`);
+if (!temporada.verificadoEm) erro("temporada.json não tem verificadoEm — de que execução do sync veio?");
+const idadeDias = (Date.now() - Date.parse(temporada.verificadoEm + "T12:00:00-03:00")) / 864e5;
+if (idadeDias > 2) aviso(`o sync não roda há ${Math.round(idadeDias)} dia(s) — verificar o workflow`);
 
 // ---- grade brasileira --------------------------------------------------
 for (const [chave, g] of Object.entries(gradeBr.jogos || {})) {

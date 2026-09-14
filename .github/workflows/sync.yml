@@ -47,12 +47,12 @@ jobs:
           fi
           resumo=$(node -e "
             const l=require('./dados/mudancas.json');
-            const e=l.entradas[0];
-            const m=e.mudancas;
-            const p=m.filter(x=>x.tipo==='placar final').length;
-            const h=m.filter(x=>x.tipo==='horário alterado').length;
-            const n=m.filter(x=>x.tipo==='jogo novo').length;
-            console.log([p&&p+' placar(es)',h&&h+' horário(s)',n&&n+' jogo(s) novo(s)'].filter(Boolean).join(', ')||'ajustes');
+            const e=(l.entradas||[])[0];
+            const recente = e && (Date.now()-Date.parse(e.quando) < 36e5);
+            const m = recente ? e.mudancas : [];
+            const c = t => m.filter(x=>x.tipo===t).length;
+            const p=[[c('placar final'),'placar(es)'],[c('horário alterado'),'horário(s)'],[c('jogo novo'),'jogo(s) novo(s)']];
+            console.log(p.filter(x=>x[0]).map(x=>x.join(' ')).join(', ') || 'verificação diária');
           ")
           git add dados/
           git commit -m "dados: sync ESPN — $resumo"
