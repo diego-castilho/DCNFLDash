@@ -31,7 +31,20 @@
 - **Netflix e Game Pass com marca própria** (DAZN, no caso do Game Pass) em vez de texto.
 - **Cards da temporada com logo** em vez do nome do canal escrito.
 
-## Próximo — v0.4.0
+## Pronto — v0.4.0
+
+- **Duas colunas de transmissão** em cada jogo: canais do Brasil à esquerda, emissoras dos
+  EUA à direita, com rótulo no cabeçalho do dia. Vários canais empilham em vez de brigar
+  por largura.
+- **Logos de verdade**, baixados do Wikimedia Commons com verificação de licença
+  (`scripts/baixar-logos.mjs`) — oito emissoras americanas, SNF, MNF, AFC e NFC.
+- **Cards de prime time estilizados**: faixa e clarão na cor do pacote, com o logo oficial
+  dentro da pílula quando existe.
+- **Conferência e divisão** em cada confronto, com os escudos da AFC e da NFC — jogo de
+  divisão, de conferência ou interconferência se distinguem de relance.
+- **Classificação ao lado do time**: cartaz da temporada e posição na conferência.
+
+## Próximo — v0.5.0
 
 **Tarefa agendada do Claude para a grade brasileira.** É o que falta para o ciclo fechar.
 Terça e quinta de manhã, seguindo [OPERACAO.md](OPERACAO.md) e a regra de validação de

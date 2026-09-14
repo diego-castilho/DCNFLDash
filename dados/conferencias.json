@@ -1,0 +1,16 @@
+{
+  "AFC": {
+    "nome": "American Football Conference",
+    "cor": "#E03A3E",
+    "logo": "assets/ligas/afc.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:American_Football_Conference_logo.svg"
+  },
+  "NFC": {
+    "nome": "National Football Conference",
+    "cor": "#5A8BD6",
+    "logo": "assets/ligas/nfc.svg",
+    "licenca": "Public domain",
+    "origem": "https://commons.wikimedia.org/wiki/File:National_Football_Conference_logo.svg"
+  }
+}
