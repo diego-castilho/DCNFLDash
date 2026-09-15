@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-14T04:20:54.332Z",
+  "atualizadoEm": "2026-09-15T01:03:35.314Z",
   "verificadoEm": "2026-09-14",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -457,9 +457,9 @@
           "mandante": "KC",
           "kickoff": "2026-09-15T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "11:04 - 2nd",
           "local": {
             "estadio": "Arrowhead Stadium",
             "cidade": "Kansas City",
