@@ -24,6 +24,8 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    outputs:
+      mudou: ${{ steps.commit.outputs.mudou }}
     steps:
       - uses: actions/checkout@v4
         with: { ref: main }
@@ -38,13 +40,16 @@ jobs:
         run: node scripts/validar.mjs
 
       - name: Commitar se algo mudou
+        id: commit
         run: |
           git config user.name "dcnfldash-bot"
           git config user.email "actions@github.com"
           if git diff --quiet -- dados/; then
             echo "nada mudou"
+            echo "mudou=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          echo "mudou=true" >> "$GITHUB_OUTPUT"
           resumo=$(node -e "
             const l=require('./dados/mudancas.json');
             const e=(l.entradas||[])[0];
@@ -57,3 +62,14 @@ jobs:
           git add dados/
           git commit -m "dados: sync ESPN — $resumo"
           git push
+
+  # O push acima é feito com o GITHUB_TOKEN e por isso não dispara o workflow de
+  # publicação sozinho. Chamamos ele aqui, explicitamente.
+  publicar:
+    needs: sync
+    if: needs.sync.outputs.mudou == 'true'
+    uses: ./.github/workflows/pages.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
