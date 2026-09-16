@@ -69,6 +69,16 @@
 - No celular o resultado fica ao lado do confronto, e não empurrado para baixo: é o que
   se olha primeiro.
 
+## Corrigido — v0.6.1
+
+- **O sync voltou a publicar.** Push feito pelo `GITHUB_TOKEN` de uma Action não dispara
+  outros workflows, então o sync commitava dados novos e o painel no ar ficava parado no dia
+  anterior — sem erro nenhum para avisar. Agora o sync chama a publicação explicitamente.
+- **Dispatch com `publicar=true`** republica o painel sem mexer em dados.
+- **O painel revalida os dados ao abrir**, em vez de aceitar a cópia em cache do navegador:
+  logo depois de um sync, dava para ver dados de até dez minutos atrás e confundir isso com
+  sync quebrado.
+
 ## Próximo — v0.7.0
 
 **Tarefa agendada do Claude para a grade brasileira.** É o que falta para o ciclo fechar.

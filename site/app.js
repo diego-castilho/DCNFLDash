@@ -13,15 +13,25 @@ const DURACAO = 3.4 * 36e5;                  // duração estimada de um jogo
 const FUSO = "America/Sao_Paulo";
 const $ = s => document.querySelector(s);
 
+/* cache: "no-cache" força o navegador a revalidar com o servidor antes de usar a
+   cópia guardada. Sem isso o painel podia mostrar dados de até dez minutos atrás
+   (o cache do GitHub Pages) logo depois de um sync — e ninguém consegue distinguir
+   "cache velho" de "sync quebrado" olhando a tela. Revalidação é barata: quando
+   nada mudou o servidor responde 304, sem corpo. */
+const buscarDados = (arquivo, padrao) =>
+  fetch(`dados/${arquivo}`, { cache: "no-cache" })
+    .then(r => r.json())
+    .catch(e => { if (padrao === undefined) throw e; return padrao; });
+
 const [temporada, times, canais, emissoras, pacotes, conferencias, gradeBr, mudancas] = await Promise.all([
-  fetch("dados/temporada.json").then(r => r.json()),
-  fetch("dados/times.json").then(r => r.json()),
-  fetch("dados/canais.json").then(r => r.json()),
-  fetch("dados/emissoras-eua.json").then(r => r.json()),
-  fetch("dados/pacotes.json").then(r => r.json()),
-  fetch("dados/conferencias.json").then(r => r.json()),
-  fetch("dados/canais-br.json").then(r => r.json()),
-  fetch("dados/mudancas.json").then(r => r.json()).catch(() => ({ entradas: [] }))
+  buscarDados("temporada.json"),
+  buscarDados("times.json"),
+  buscarDados("canais.json"),
+  buscarDados("emissoras-eua.json"),
+  buscarDados("pacotes.json"),
+  buscarDados("conferencias.json"),
+  buscarDados("canais-br.json"),
+  buscarDados("mudancas.json", { entradas: [] })
 ]);
 
 const JOGOS = temporada.semanas.flatMap(s => s.jogos);

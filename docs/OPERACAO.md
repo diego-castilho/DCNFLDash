@@ -19,6 +19,14 @@ isso à mão.
 | `*/30 0-6 * * 2` | madrugada seg→ter | fim do Monday Night |
 | `0 11 * * *` | todo dia, 8h | varredura geral: flex, novos horários, playoffs |
 
+**Publicação:** o próprio workflow chama o de publicação quando há mudança. Isso é
+obrigatório, não conveniência: **push feito com o `GITHUB_TOKEN` de uma Action não dispara
+outros workflows** — é regra do GitHub, para evitar recursão infinita. Sem a chamada
+explícita o sync commita dados novos e o painel no ar continua parado, sem nenhum erro em
+lugar nenhum para avisar. Foi exatamente o que aconteceu entre 14 e 15 de setembro de 2026.
+
+Para republicar sem mexer em dados: `gh workflow run "Sync ESPN" -f publicar=true`.
+
 **Como:** busca as 18 semanas e as 5 fases de playoff, reescreve `dados/temporada.json`,
 registra o que mudou em `dados/mudancas.json`, roda o validador e só então commita. Se o
 validador reprovar, **nada é commitado** — o painel fica um ciclo desatualizado em vez de
@@ -73,6 +81,7 @@ humano decidir.
 | Sync falha na busca | API fora do ar ou bloqueando | o script já tenta 3 vezes; se persistir, esperar o próximo ciclo |
 | Jogo com placar errado | placar gravado antes do fim | conferir `estado`; o validador deveria ter pego — se não pegou, falta uma regra |
 | Canal errado no painel | anúncio de temporada anterior | corrigir `canais-br.json`, e reforçar a regra de data em FONTES.md |
+| Painel publicado sem atualizar, mas `dados/` em main está em dia | o sync commitou e a publicação não rodou | `gh workflow run "Sync ESPN" -f publicar=true` republica na hora; ver a nota abaixo sobre o GITHUB_TOKEN |
 | Painel publicado sem atualizar | workflow do Pages | `gh run list --workflow="Publicar painel"` |
 
 Ordem de investigação, sempre: **primeiro o JSON, depois o script, por último o painel.**
