@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-14T04:20:54.332Z",
-  "verificadoEm": "2026-09-14",
+  "atualizadoEm": "2026-09-15T03:26:03.633Z",
+  "verificadoEm": "2026-09-15",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -457,8 +457,11 @@
           "mandante": "KC",
           "kickoff": "2026-09-15T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 31
+          },
           "parcial": null,
           "local": {
             "estadio": "Arrowhead Stadium",

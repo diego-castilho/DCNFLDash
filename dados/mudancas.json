@@ -1,3 +1,17 @@
 {
-  "entradas": []
+  "entradas": [
+    {
+      "quando": "2026-09-15T03:26:03.635Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872931",
+          "jogo": "DEN @ KC",
+          "rotulo": "Semana 1",
+          "placar": "10 x 31"
+        }
+      ]
+    }
+  ]
 }
