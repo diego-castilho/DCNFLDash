@@ -1,11 +1,18 @@
 name: Publicar painel
 
 # POR QUÊ: o painel precisa abrir do celular sem depender de nenhuma máquina.
-# QUANDO: a cada push em main — inclusive os commits de dados feitos pelo sync.
+# QUANDO: a cada push humano em main, e — via workflow_call — logo depois de o sync
+# commitar dados novos.
+#
+# ATENÇÃO, e é a razão de existir o workflow_call: push feito pelo GITHUB_TOKEN de
+# uma Action NÃO dispara outros workflows. É regra do GitHub, para evitar recursão
+# infinita. Sem isso, o sync commitava dados novos e o painel publicado continuava
+# parado no dia anterior, sem nenhum erro em lugar nenhum.
 
 on:
   push:
     branches: [main]
+  workflow_call:
   workflow_dispatch:
 
 permissions:
