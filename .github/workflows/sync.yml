@@ -13,6 +13,11 @@ on:
     - cron: "*/30 0-6 * * 2"     # madrugada de segunda para terça (fim do MNF)
     - cron: "0 11 * * *"         # varredura diária, 8h de Brasília
   workflow_dispatch:
+    inputs:
+      publicar:
+        description: "Publicar o painel mesmo que os dados não tenham mudado"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -67,7 +72,7 @@ jobs:
   # publicação sozinho. Chamamos ele aqui, explicitamente.
   publicar:
     needs: sync
-    if: needs.sync.outputs.mudou == 'true'
+    if: needs.sync.outputs.mudou == 'true' || inputs.publicar
     uses: ./.github/workflows/pages.yml
     permissions:
       contents: read
