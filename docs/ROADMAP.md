@@ -79,6 +79,12 @@
   logo depois de um sync, dava para ver dados de até dez minutos atrás e confundir isso com
   sync quebrado.
 
+## Corrigido — v0.6.4
+
+- **A publicação chamada pelo sync publicava a versão antiga.** O checkout usava o SHA do
+  evento, que é o commit anterior ao que o sync acabou de fazer. Agora faz checkout de
+  `main`, e o log diz qual `verificadoEm` e qual commit foram ao ar.
+
 ## Próximo — v0.7.0
 
 **Tarefa agendada do Claude para a grade brasileira.** É o que falta para o ciclo fechar.
