@@ -27,6 +27,13 @@ lugar nenhum para avisar. Foi exatamente o que aconteceu entre 14 e 15 de setemb
 
 Para republicar sem mexer em dados: `gh workflow run "Sync ESPN" -f publicar=true`.
 
+**Segunda armadilha, encontrada logo depois da primeira:** o workflow de publicação faz
+checkout de `main` explicitamente, e não do SHA do evento. Chamado pelo sync, o SHA do run
+é o de *antes* do commit de dados — sem o `ref: main` o deploy publica exatamente a versão
+que o sync acabou de substituir. O painel fica um ciclo inteiro atrás, para sempre, com tudo
+verde no Actions. O passo "Conferir o que vai ao ar" imprime no log o `verificadoEm` e o
+commit publicados, justamente para essa divergência nunca mais ser invisível.
+
 **Como:** busca as 18 semanas e as 5 fases de playoff, reescreve `dados/temporada.json`,
 registra o que mudou em `dados/mudancas.json`, roda o validador e só então commita. Se o
 validador reprovar, **nada é commitado** — o painel fica um ciclo desatualizado em vez de

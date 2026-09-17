@@ -31,13 +31,29 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      # ref: main explícito, e não o SHA do evento. Quando este workflow é chamado
+      # pelo sync, o SHA do run é o de ANTES do commit de dados — sem isto o deploy
+      # publica exatamente a versão que o sync acabou de substituir, e o painel fica
+      # um ciclo atrás para sempre, com tudo verde no Actions.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
 
       - name: Montar o site
         run: node scripts/montar.mjs
+
+      # Deixa no log o que está indo ao ar. Se algum dia o painel publicado divergir
+      # do repositório de novo, esta linha diz na hora qual das duas pontas errou.
+      - name: Conferir o que vai ao ar
+        run: |
+          node -e "
+            const t = require('./_site/dados/temporada.json');
+            console.log('publicando: verificadoEm ' + t.verificadoEm + ' · atualizadoEm ' + t.atualizadoEm);
+          "
+          git log -1 --format='commit publicado: %h %s'
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
