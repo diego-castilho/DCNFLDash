@@ -1,19 +1,27 @@
 name: Sync ESPN
 
-# POR QUÊ: placar, horário e confronto são informação determinística — vêm de uma
-# API e não podem depender de alguém (ou de um modelo) transcrever à mão.
-# QUANDO: de 30 em 30 minutos nas janelas de jogo, e uma vez por dia no resto.
+# POR QUÊ: placar, horário, confronto e canal brasileiro são informação publicada —
+# nada disso deveria depender de alguém (ou de um modelo) transcrever à mão.
+# QUANDO: de 30 em 30 minutos, sempre.
 # ONDE: no GitHub, não na máquina do Diego — o painel não pode depender do Mac ligado.
+#
+# A versão anterior tinha uma janela por tipo de jogo (domingo, Sunday Night, Monday
+# Night) e deixava de fora 27 jogos da temporada: as quintas de Thursday Night e
+# Thanksgiving, as sextas de Black Friday e Natal, os sábados e as quartas de abertura.
+# Manter calendário à mão é errar de novo no primeiro jogo em dia estranho. Agora roda
+# sempre, e quem ficou esperto foi o script: no modo incremental ele busca só as semanas
+# com jogo por perto — uma ou duas requisições por execução em vez de vinte e três.
 
 on:
   schedule:
-    - cron: "*/30 16-23 * * 0"   # domingo, 13h às 20h de Brasília
-    - cron: "*/30 0-6 * * 1"     # madrugada de domingo para segunda (SNF)
-    - cron: "*/30 23 * * 1"      # segunda à noite (MNF)
-    - cron: "*/30 0-6 * * 2"     # madrugada de segunda para terça (fim do MNF)
-    - cron: "0 11 * * *"         # varredura diária, 8h de Brasília
+    - cron: "*/30 * * * *"       # incremental, o tempo todo
+    - cron: "0 11 * * *"         # varredura completa, 8h de Brasília
   workflow_dispatch:
     inputs:
+      completo:
+        description: "Varredura completa das 23 semanas (em vez do modo incremental)"
+        type: boolean
+        default: false
       publicar:
         description: "Publicar o painel mesmo que os dados não tenham mudado"
         type: boolean
@@ -38,8 +46,14 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
 
-      - name: Buscar dados da ESPN
-        run: node scripts/sync-espn.mjs
+      - name: Buscar placares e horários (ESPN)
+        run: node scripts/sync-espn.mjs ${{ (github.event.schedule == '0 11 * * *' || inputs.completo) && '--completo' || '' }}
+
+      - name: Descobrir o canal brasileiro (agenda do ge)
+        run: node scripts/sync-grade-br.mjs
+
+      - name: Preencher o que é regra fixa da temporada
+        run: node scripts/aplicar-regras-br.mjs
 
       - name: Validar antes de gravar
         run: node scripts/validar.mjs
@@ -59,9 +73,9 @@ jobs:
             const l=require('./dados/mudancas.json');
             const e=(l.entradas||[])[0];
             const recente = e && (Date.now()-Date.parse(e.quando) < 36e5);
-            const m = recente ? e.mudancas : [];
+            const m = (l.entradas||[]).filter(x=>Date.now()-Date.parse(x.quando) < 36e5).flatMap(x=>x.mudancas);
             const c = t => m.filter(x=>x.tipo===t).length;
-            const p=[[c('placar final'),'placar(es)'],[c('horário alterado'),'horário(s)'],[c('jogo novo'),'jogo(s) novo(s)']];
+            const p=[[c('placar final'),'placar(es)'],[c('canal confirmado'),'canal(is)'],[c('canal alterado'),'canal(is) alterado(s)'],[c('horário alterado'),'horário(s)'],[c('jogo novo'),'jogo(s) novo(s)']];
             console.log(p.filter(x=>x[0]).map(x=>x.join(' ')).join(', ') || 'verificação diária');
           ")
           git add dados/

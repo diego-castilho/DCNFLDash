@@ -9,15 +9,20 @@ O que roda, quando, por quê, e o que fazer quando falha.
 **Por quê:** placar, horário e confronto são fato publicado; ninguém deveria transcrever
 isso à mão.
 
-**Quando:**
+**Quando:** de 30 em 30 minutos, sempre (`*/30 * * * *`), mais uma varredura completa
+diária às 11h UTC (8h de Brasília).
 
-| Cron (UTC) | Em Brasília | Cobre |
-|---|---|---|
-| `*/30 16-23 * * 0` | domingo, 13h–20h | janela principal de jogos |
-| `*/30 0-6 * * 1` | madrugada dom→seg | fim dos jogos da tarde e o Sunday Night |
-| `*/30 23 * * 1` | segunda, 20h | início do Monday Night |
-| `*/30 0-6 * * 2` | madrugada seg→ter | fim do Monday Night |
-| `0 11 * * *` | todo dia, 8h | varredura geral: flex, novos horários, playoffs |
+O desenho anterior tinha uma janela por tipo de jogo e deixava de fora 27 jogos da
+temporada — as quintas de Thursday Night e Thanksgiving, as sextas de Black Friday e Natal,
+os sábados e as quartas de abertura. Calendário mantido à mão erra de novo no primeiro jogo
+em dia estranho.
+
+**Dois modos:** no incremental (padrão) o script busca só as semanas com jogo numa janela
+de −2 a +8 dias — uma ou duas requisições por execução. Na varredura completa busca as 23
+semanas, e é ela que pega flex, horário anunciado e confronto de playoff definido.
+
+Cron do GitHub é melhor esforço, não relógio: o agendamento das 8h já rodou às 12h13.
+Rodando de 30 em 30 minutos isso deixa de importar.
 
 **Publicação:** o próprio workflow chama o de publicação quando há mudança. Isso é
 obrigatório, não conveniência: **push feito com o `GITHUB_TOKEN` de uma Action não dispara
@@ -42,14 +47,27 @@ ficar errado.
 **Salvaguarda:** o script aborta se vier menos de 200 jogos. Uma resposta parcial da API
 não pode apagar uma temporada boa.
 
-### 2. Regras fixas da grade brasileira — `scripts/aplicar-regras-br.mjs`
+### 2. Grade brasileira — `scripts/sync-grade-br.mjs`
+
+**Por quê:** descobrir em que canal cada jogo passa no Brasil era a única parte que
+dependia de alguém procurar. Não depende mais: a agenda do ge publica isso em JSON
+estruturado (ver [FONTES.md](FONTES.md)).
+
+**Quando:** em toda execução do sync, junto com os placares.
+
+**Como:** lê a agenda, confere cada confronto contra `temporada.json`, grava em
+`canais-br.json` com fonte e data da checagem, e registra a descoberta em
+`mudancas.json` — que é o que faz "Steelers × Patriots → SporTV" aparecer no bloco
+"O que mudou" do painel.
+
+### 3. Regras fixas da grade brasileira — `scripts/aplicar-regras-br.mjs`
 
 **Por quê:** 44 jogos da temporada têm canal definido por contrato e não precisam de busca.
 
 **Quando:** manualmente, ou junto da tarefa da grade brasileira. É idempotente e nunca
 sobrescreve uma entrada de origem manual.
 
-### 3. Publicação — `.github/workflows/pages.yml`
+### 4. Publicação — `.github/workflows/pages.yml`
 
 Roda a cada push em `main`, inclusive nos commits do próprio sync. Monta `_site/` com
 `scripts/montar.mjs` — o mesmo script do ambiente local, para que os dois não divirjam.
@@ -87,7 +105,8 @@ humano decidir.
 | Sync falha na validação | a ESPN mudou algum campo, ou dado inconsistente | rodar `node scripts/sync-espn.mjs` local e ler o erro do validador |
 | Sync falha na busca | API fora do ar ou bloqueando | o script já tenta 3 vezes; se persistir, esperar o próximo ciclo |
 | Jogo com placar errado | placar gravado antes do fim | conferir `estado`; o validador deveria ter pego — se não pegou, falta uma regra |
-| Canal errado no painel | anúncio de temporada anterior | corrigir `canais-br.json`, e reforçar a regra de data em FONTES.md |
+| Canal errado no painel | a agenda do ge mudou de formato, ou o jogo foi remanejado | rodar `node scripts/sync-grade-br.mjs` e ler a saída; entrada manual sempre vence a automática |
+| Nenhum canal sendo descoberto | a agenda do ge mudou a estrutura do JSON | o script avisa "nenhum jogo da NFL na janela"; conferir `liveWatchSources` na página |
 | Painel publicado sem atualizar, mas `dados/` em main está em dia | o sync commitou e a publicação não rodou | `gh workflow run "Sync ESPN" -f publicar=true` republica na hora; ver a nota abaixo sobre o GITHUB_TOKEN |
 | Painel publicado sem atualizar | workflow do Pages | `gh run list --workflow="Publicar painel"` |
 
