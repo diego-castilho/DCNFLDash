@@ -611,6 +611,15 @@ $("#emissoras").innerHTML = Object.entries(emissoras).filter(([k]) => k[0] !== "
 })();
 
 /* ---------- o que mudou --------------------------------------------------- */
+/* O log recebe três tipos de novidade — placar, canal e horário — e cada um traz um
+   detalhe de formato diferente. O horário é o único que vem em ISO. */
+function detalheDaMudanca(m) {
+  if (m.placar) return ` — ${m.placar}`;
+  if (m.canais) return ` — ${m.canais}${m.de ? ` (era ${m.de})` : ""}`;
+  if (m.para) return ` — de ${hora(m.de)} para ${hora(m.para)}`;
+  return "";
+}
+
 (function log() {
   const itens = (mudancas.entradas || []).flatMap(e =>
     e.mudancas.map(m => ({ quando: e.quando, ...m }))).slice(0, 12);
@@ -618,7 +627,7 @@ $("#emissoras").innerHTML = Object.entries(emissoras).filter(([k]) => k[0] !== "
     ? itens.map(m => `<li>
         <span class="q">${new Date(m.quando).toLocaleDateString("pt-BR", { timeZone: FUSO, day: "2-digit", month: "2-digit" })}</span>
         <span class="t">${m.tipo}</span>
-        <span>${m.jogo}${m.placar ? ` — ${m.placar}` : ""}${m.de ? ` — de ${hora(m.de)} para ${hora(m.para)}` : ""}</span>
+        <span>${m.jogo}${detalheDaMudanca(m)}</span>
       </li>`).join("")
     : `<li><span>Nenhuma alteração registrada ainda.</span></li>`;
 })();

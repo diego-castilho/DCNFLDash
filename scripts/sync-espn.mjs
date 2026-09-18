@@ -103,14 +103,45 @@ function compararComAnterior(anterior, novos) {
 }
 
 const anterior = lerJson("dados/temporada.json");
+
+/* Dois modos. A varredura COMPLETA busca as 23 semanas e é quem pega flex, horário
+   anunciado e confronto de playoff definido — roda uma vez por dia. O modo padrão é
+   INCREMENTAL: busca só as semanas com jogo numa janela curta em torno de hoje.
+   É o que permite rodar de meia em meia hora sem martelar a API da ESPN: uma ou duas
+   requisições por execução em vez de vinte e três. */
+const COMPLETO = process.argv.includes("--completo") || !anterior;
+const JANELA_ANTES = 2 * 864e5;   // jogo que acabou de acontecer ainda pode receber placar
+const JANELA_DEPOIS = 8 * 864e5;  // jogo que está chegando ainda pode mudar de horário
+
+function semanaGuardada(fase, n) {
+  return anterior?.semanas.find(s => s.fase === fase && s.numero === n) || null;
+}
+
+function precisaBuscar(fase, n) {
+  if (COMPLETO) return true;
+  const s = semanaGuardada(fase, n);
+  if (!s) return true;
+  const agora = Date.now();
+  return s.jogos.some(j => {
+    const t = Date.parse(j.kickoff);
+    return j.estado === "andamento" || (t > agora - JANELA_ANTES && t < agora + JANELA_DEPOIS);
+  });
+}
+
 const semanas = [];
-const todos = [];
+let buscadas = 0;
 
 for (const { seasontype, semanas: qtd, fase } of FASES) {
   for (let n = 1; n <= qtd; n++) {
+    if (!precisaBuscar(fase, n)) {
+      const guardada = semanaGuardada(fase, n);
+      if (guardada) semanas.push(guardada);
+      continue;
+    }
     const url = `${BASE}?dates=${TEMPORADA}&seasontype=${seasontype}&week=${n}`;
     const dados = await buscarJson(url);
     const jogos = (dados.events || []).map(ev => normalizarJogo(ev, fase, n)).filter(Boolean);
+    buscadas++;
     if (!jogos.length) continue;
     jogos.sort((a, b) => a.kickoff.localeCompare(b.kickoff) || (a.mandante || "").localeCompare(b.mandante || ""));
     semanas.push({
@@ -120,11 +151,11 @@ for (const { seasontype, semanas: qtd, fase } of FASES) {
       fim: jogos[jogos.length - 1].kickoff,
       jogos
     });
-    todos.push(...jogos);
     process.stdout.write(`${fase} ${n}: ${jogos.length} jogos\n`);
   }
 }
 
+const todos = semanas.flatMap(s => s.jogos);
 if (todos.length < 200) throw new Error(`temporada incompleta (${todos.length} jogos) — abortando para não sobrescrever dados bons`);
 
 const mudancas = compararComAnterior(anterior, todos);
@@ -154,4 +185,4 @@ if (mudancas.length) {
 }
 gravarJson("dados/mudancas.json", log);
 
-console.log(`\n${todos.length} jogos · ${mudouConteudo ? "conteúdo alterado" : "nada mudou"} · ${mudancas.length} mudança(s) registrada(s)`);
+console.log(`\n${COMPLETO ? "varredura completa" : "incremental"}: ${buscadas} semana(s) buscada(s) · ${todos.length} jogos · ${mudouConteudo ? "conteúdo alterado" : "nada mudou"} · ${mudancas.length} mudança(s) registrada(s)`);

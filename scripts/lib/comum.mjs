@@ -73,3 +73,22 @@ export function pacoteDe(kickoffIso, emissoraBruta) {
   if (d === "Mon" && (emissoras.includes("espn") || emissoras.includes("abc"))) return "MNF";
   return null;
 }
+
+/** Como buscarJson, mas devolve o corpo em texto — para páginas HTML. */
+export async function buscarTexto(url, tentativas = 4) {
+  let ultimoErro;
+  for (let i = 0; i < tentativas; i++) {
+    try {
+      const r = await fetch(url, {
+        signal: AbortSignal.timeout(25000),
+        headers: { "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) DCNFLDash/1.0" }
+      });
+      if (!r.ok) throw Object.assign(new Error(`HTTP ${r.status}`), { status: r.status });
+      return await r.text();
+    } catch (e) {
+      ultimoErro = e;
+      await new Promise(r => setTimeout(r, 2000 * (i + 1)));
+    }
+  }
+  throw new Error(`falha ao buscar ${url}: ${ultimoErro.message}`);
+}

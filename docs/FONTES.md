@@ -30,7 +30,30 @@ Campos que importam e não são óbvios:
 
 ## Grade brasileira
 
-Não existe API. A informação sai em anúncios dispersos durante a semana.
+**Agenda do ge** — `https://ge.globo.com/agenda/`
+
+A página traz, embutido no HTML, o JSON que alimenta a agenda esportiva. Para cada jogo
+da NFL ele tem os dois times (com a sigla no nome do arquivo do escudo), a rodada, data e
+hora de Brasília, e — o que importa — `liveWatchSources`: a lista de onde assistir, com
+SporTV, ge TV e Disney+ (que é como a ESPN Brasil aparece ali).
+
+É a grade dos próprios detentores, publicada de forma estruturada. Nada de interpretar
+texto de notícia, nada de modelo adivinhando: `scripts/sync-grade-br.mjs` lê, confere cada
+confronto contra `temporada.json` e grava. Um jogo que ainda não foi anunciado
+simplesmente não tem `liveWatchSources` — que é exatamente o "a definir" do painel.
+
+**Limite:** a agenda cobre uma janela de cinco dias a partir de hoje. Como a escolha dos
+jogos de domingo à tarde sai entre terça e quinta, rodar todo dia pega tudo com folga.
+Fora dessa janela quem responde são as regras fixas da temporada.
+
+**Precedência ao gravar:** confirmação manual > agenda do ge > regra fixa. O script nunca
+sobrescreve o que uma pessoa confirmou à mão.
+
+### Se a agenda do ge sair do ar
+
+O que vem abaixo era o plano original — pesquisa manual em notícia — e continua valendo
+como recurso de emergência. A armadilha descrita aqui é real e foi o motivo de procurar
+uma fonte estruturada em primeiro lugar.
 
 ### A regra que não pode ser quebrada
 

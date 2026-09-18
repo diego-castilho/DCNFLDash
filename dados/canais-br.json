@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "2026-09-14",
+  "atualizadoEm": "2026-09-18",
   "jogos": {
     "1:NE@SEA": {
       "semana": 1,
@@ -752,6 +752,59 @@
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
       "checadoEm": "2026-09-14",
+      "confianca": "confirmado"
+    },
+    "2:PIT@NE": {
+      "fase": "regular",
+      "semana": 2,
+      "visitante": "PIT",
+      "mandante": "NE",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-09-18",
+      "confianca": "confirmado"
+    },
+    "2:MIN@CHI": {
+      "fase": "regular",
+      "semana": 2,
+      "visitante": "MIN",
+      "mandante": "CHI",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-09-18",
+      "confianca": "confirmado"
+    },
+    "2:JAX@DEN": {
+      "fase": "regular",
+      "semana": 2,
+      "visitante": "JAX",
+      "mandante": "DEN",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-09-18",
+      "confianca": "confirmado"
+    },
+    "2:WAS@DAL": {
+      "fase": "regular",
+      "semana": 2,
+      "visitante": "WAS",
+      "mandante": "DAL",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-09-18",
       "confianca": "confirmado"
     }
   }
