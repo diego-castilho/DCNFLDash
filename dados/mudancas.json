@@ -1,6 +1,49 @@
 {
   "entradas": [
     {
+      "quando": "2026-09-18T04:17:13.851Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Steelers @ Patriots",
+          "rotulo": "Semana 2",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Vikings @ Bears",
+          "rotulo": "Semana 2",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Jaguars @ Broncos",
+          "rotulo": "Semana 2",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Commanders @ Cowboys",
+          "rotulo": "Semana 2",
+          "canais": "espn"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-18T04:15:58.551Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872932",
+          "jogo": "DET @ BUF",
+          "rotulo": "Semana 2",
+          "placar": "31 x 41"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-15T03:26:03.635Z",
       "origem": "sync-espn",
       "mudancas": [

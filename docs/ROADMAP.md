@@ -85,12 +85,18 @@
   evento, que é o commit anterior ao que o sync acabou de fazer. Agora faz checkout de
   `main`, e o log diz qual `verificadoEm` e qual commit foram ao ar.
 
-## Próximo — v0.7.0
+## Pronto — v0.7.0
 
-**Tarefa agendada do Claude para a grade brasileira.** É o que falta para o ciclo fechar.
-Terça e quinta de manhã, seguindo [OPERACAO.md](OPERACAO.md) e a regra de validação de
-fonte de [FONTES.md](FONTES.md). Precisa ser criada presa ao Mac, porque depende do `gh`
-autenticado para commitar.
+- **A grade brasileira virou automática.** A agenda do ge publica, em JSON estruturado,
+  quais jogos passam no SporTV, na ge TV e na ESPN. `sync-grade-br.mjs` lê isso a cada
+  execução. A tarefa agendada do Claude, que era o plano desde o começo, deixou de ser
+  necessária — e com ela some o risco de um modelo confundir a grade de 2025 com a de 2026.
+- **O sync passou a rodar de 30 em 30 minutos, sempre.** As janelas por tipo de jogo
+  deixavam 27 jogos de fora (quintas, sextas, sábados e quartas). Para isso não custar
+  caro na API, o script ganhou modo incremental: busca só as semanas com jogo por perto.
+- **As descobertas de canal entram no "O que mudou"** do painel, junto com os placares.
+
+## Próximo — v0.8.0
 
 **Pós-jogo do Steelers.** Box score resumido do último jogo — jardas, turnovers, líderes de
 passe, corrida e recepção — a partir do endpoint `summary` da ESPN. É a melhoria que tira o
