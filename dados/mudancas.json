@@ -1,6 +1,61 @@
 {
   "entradas": [
     {
+      "quando": "2026-09-20T22:00:29.493Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872933",
+          "jogo": "CAR @ ATL",
+          "rotulo": "Semana 2",
+          "placar": "34 x 3"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872938",
+          "jogo": "NO @ BAL",
+          "rotulo": "Semana 2",
+          "placar": "24 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872937",
+          "jogo": "MIN @ CHI",
+          "rotulo": "Semana 2",
+          "placar": "9 x 3"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872934",
+          "jogo": "CIN @ HOU",
+          "rotulo": "Semana 2",
+          "placar": "20 x 6"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872946",
+          "jogo": "PIT @ NE",
+          "rotulo": "Semana 2",
+          "placar": "3 x 20"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872936",
+          "jogo": "GB @ NYJ",
+          "rotulo": "Semana 2",
+          "placar": "20 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872939",
+          "jogo": "PHI @ TEN",
+          "rotulo": "Semana 2",
+          "placar": "24 x 20"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-18T04:17:13.851Z",
       "origem": "sync-grade-br",
       "mudancas": [
