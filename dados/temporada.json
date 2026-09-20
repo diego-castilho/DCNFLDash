@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-20T17:04:51.143Z",
+  "atualizadoEm": "2026-09-20T19:34:14.271Z",
   "verificadoEm": "2026-09-20",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -527,7 +527,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "15:00 - 1st",
+          "parcial": "15:00 - 4th",
           "local": {
             "estadio": "Mercedes-Benz Stadium",
             "cidade": "Atlanta",
@@ -553,7 +553,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "13:35 - 1st",
+          "parcial": "4:13 - 4th",
           "local": {
             "estadio": "M&T Bank Stadium",
             "cidade": "Baltimore",
@@ -579,7 +579,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "14:04 - 1st",
+          "parcial": "7:15 - 4th",
           "local": {
             "estadio": "Soldier Field",
             "cidade": "Chicago",
@@ -605,7 +605,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "14:47 - 1st",
+          "parcial": "12:21 - 4th",
           "local": {
             "estadio": "Reliant Stadium",
             "cidade": "Houston",
@@ -631,7 +631,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "14:17 - 1st",
+          "parcial": "10:09 - 4th",
           "local": {
             "estadio": "Gillette Stadium",
             "cidade": "Foxborough",
@@ -657,7 +657,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "15:00 - 1st",
+          "parcial": "13:26 - 4th",
           "local": {
             "estadio": "MetLife Stadium",
             "cidade": "East Rutherford",
@@ -683,7 +683,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "14:18 - 1st",
+          "parcial": "12:00 - 4th",
           "local": {
             "estadio": "Raymond James Stadium",
             "cidade": "Tampa",
@@ -709,7 +709,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "14:18 - 1st",
+          "parcial": "6:00 - 4th",
           "local": {
             "estadio": "Nissan Stadium",
             "cidade": "Nashville",
