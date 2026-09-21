@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-09-21T05:10:22.322Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872945",
+          "jogo": "IND @ KC",
+          "rotulo": "Semana 2",
+          "placar": "30 x 33"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-21T00:19:44.584Z",
       "origem": "sync-espn",
       "mudancas": [
