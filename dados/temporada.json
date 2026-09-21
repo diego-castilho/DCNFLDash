@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-20T22:00:29.491Z",
+  "atualizadoEm": "2026-09-21T00:19:44.582Z",
   "verificadoEm": "2026-09-20",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -699,9 +699,12 @@
           "mandante": "TB",
           "kickoff": "2026-09-20T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "Delayed",
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 19
+          },
+          "parcial": null,
           "local": {
             "estadio": "Raymond James Stadium",
             "cidade": "Tampa",
@@ -754,9 +757,12 @@
           "mandante": "DEN",
           "kickoff": "2026-09-20T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "4:58 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 13,
+            "mandante": 20
+          },
+          "parcial": null,
           "local": {
             "estadio": "Empower Field at Mile High",
             "cidade": "Denver",
@@ -780,9 +786,12 @@
           "mandante": "LAC",
           "kickoff": "2026-09-20T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "8:21 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 14
+          },
+          "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
             "cidade": "Inglewood",
@@ -806,9 +815,12 @@
           "mandante": "ARI",
           "kickoff": "2026-09-20T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "Halftime",
+          "estado": "final",
+          "placar": {
+            "visitante": 31,
+            "mandante": 7
+          },
+          "parcial": null,
           "local": {
             "estadio": "State Farm Stadium",
             "cidade": "Glendale",
@@ -832,9 +844,12 @@
           "mandante": "DAL",
           "kickoff": "2026-09-20T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "Halftime",
+          "estado": "final",
+          "placar": {
+            "visitante": 20,
+            "mandante": 37
+          },
+          "parcial": null,
           "local": {
             "estadio": "AT&T Stadium",
             "cidade": "Arlington",
@@ -858,9 +873,12 @@
           "mandante": "SF",
           "kickoff": "2026-09-20T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "10:49 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 13,
+            "mandante": 35
+          },
+          "parcial": null,
           "local": {
             "estadio": "Levi's Stadium",
             "cidade": "Santa Clara",

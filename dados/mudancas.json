@@ -1,6 +1,54 @@
 {
   "entradas": [
     {
+      "quando": "2026-09-21T00:19:44.584Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872935",
+          "jogo": "CLE @ TB",
+          "rotulo": "Semana 2",
+          "placar": "23 x 19"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872940",
+          "jogo": "JAX @ DEN",
+          "rotulo": "Semana 2",
+          "placar": "13 x 20"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872941",
+          "jogo": "LV @ LAC",
+          "rotulo": "Semana 2",
+          "placar": "26 x 14"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872943",
+          "jogo": "SEA @ ARI",
+          "rotulo": "Semana 2",
+          "placar": "31 x 7"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872944",
+          "jogo": "WAS @ DAL",
+          "rotulo": "Semana 2",
+          "placar": "20 x 37"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872942",
+          "jogo": "MIA @ SF",
+          "rotulo": "Semana 2",
+          "placar": "13 x 35"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-20T22:00:29.493Z",
       "origem": "sync-espn",
       "mudancas": [
