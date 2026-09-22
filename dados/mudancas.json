@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-09-22T07:49:05.651Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872947",
+          "jogo": "NYG @ LAR",
+          "rotulo": "Semana 2",
+          "placar": "6 x 28"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-21T05:10:22.322Z",
       "origem": "sync-espn",
       "mudancas": [

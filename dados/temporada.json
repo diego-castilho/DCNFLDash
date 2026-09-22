@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-22T02:12:38.775Z",
-  "verificadoEm": "2026-09-21",
+  "atualizadoEm": "2026-09-22T07:49:05.650Z",
+  "verificadoEm": "2026-09-22",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -931,9 +931,12 @@
           "mandante": "LAR",
           "kickoff": "2026-09-22T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "8:53 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 6,
+            "mandante": 28
+          },
+          "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
             "cidade": "Inglewood",
