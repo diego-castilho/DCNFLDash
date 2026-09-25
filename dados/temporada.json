@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-22T07:49:05.650Z",
+  "atualizadoEm": "2026-09-25T02:15:39.873Z",
   "verificadoEm": "2026-09-24",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -970,9 +970,9 @@
           "mandante": "GB",
           "kickoff": "2026-09-25T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "8:42 - 3rd",
           "local": {
             "estadio": "Lambeau Field",
             "cidade": "Green Bay",
