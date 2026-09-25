@@ -1,6 +1,43 @@
 {
   "entradas": [
     {
+      "quando": "2026-09-25T08:00:00.620Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chargers @ Bills",
+          "rotulo": "Semana 3",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Bengals @ Steelers",
+          "rotulo": "Semana 3",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Vikings @ Buccaneers",
+          "rotulo": "Semana 3",
+          "canais": "espn"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-25T07:59:57.217Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872948",
+          "jogo": "ATL @ GB",
+          "rotulo": "Semana 3",
+          "placar": "35 x 14"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-22T07:49:05.651Z",
       "origem": "sync-espn",
       "mudancas": [

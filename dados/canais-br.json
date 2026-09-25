@@ -806,6 +806,45 @@
       "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-09-23",
       "confianca": "confirmado"
+    },
+    "3:LAC@BUF": {
+      "fase": "regular",
+      "semana": 3,
+      "visitante": "LAC",
+      "mandante": "BUF",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-09-25",
+      "confianca": "confirmado"
+    },
+    "3:CIN@PIT": {
+      "fase": "regular",
+      "semana": 3,
+      "visitante": "CIN",
+      "mandante": "PIT",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-09-25",
+      "confianca": "confirmado"
+    },
+    "3:MIN@TB": {
+      "fase": "regular",
+      "semana": 3,
+      "visitante": "MIN",
+      "mandante": "TB",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-09-25",
+      "confianca": "confirmado"
     }
   }
 }
