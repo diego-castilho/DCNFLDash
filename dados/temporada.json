@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-27T19:23:12.915Z",
+  "atualizadoEm": "2026-09-27T22:23:46.397Z",
   "verificadoEm": "2026-09-27",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -999,9 +999,12 @@
           "mandante": "BUF",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "14:51 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 16,
+            "mandante": 24
+          },
+          "parcial": null,
           "local": {
             "estadio": "Highmark Stadium",
             "cidade": "Orchard Park",
@@ -1025,9 +1028,12 @@
           "mandante": "CLE",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "3:17 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 18,
+            "mandante": 21
+          },
+          "parcial": null,
           "local": {
             "estadio": "Huntington Bank Field",
             "cidade": "Cleveland",
@@ -1051,9 +1057,12 @@
           "mandante": "DET",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "11:17 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 31
+          },
+          "parcial": null,
           "local": {
             "estadio": "Ford Field",
             "cidade": "Detroit",
@@ -1077,9 +1086,12 @@
           "mandante": "IND",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "12:54 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 19
+          },
+          "parcial": null,
           "local": {
             "estadio": "Lucas Oil Stadium",
             "cidade": "Indianapolis",
@@ -1103,9 +1115,12 @@
           "mandante": "JAX",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "0:50 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 6,
+            "mandante": 35
+          },
+          "parcial": null,
           "local": {
             "estadio": "EverBank Stadium",
             "cidade": "Jacksonville",
@@ -1129,9 +1144,12 @@
           "mandante": "MIA",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "12:17 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 10
+          },
+          "parcial": null,
           "local": {
             "estadio": "Hard Rock Stadium",
             "cidade": "Miami Gardens",
@@ -1155,9 +1173,12 @@
           "mandante": "NYG",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "11:28 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 7,
+            "mandante": 12
+          },
+          "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
             "cidade": "East Rutherford",
@@ -1181,9 +1202,12 @@
           "mandante": "PIT",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:11 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 27,
+            "mandante": 30
+          },
+          "parcial": null,
           "local": {
             "estadio": "Acrisure Stadium",
             "cidade": "Pittsburgh",
@@ -1207,9 +1231,12 @@
           "mandante": "WAS",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "6:05 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 31,
+            "mandante": 33
+          },
+          "parcial": null,
           "local": {
             "estadio": "Northwest Stadium",
             "cidade": "Landover",
@@ -1233,9 +1260,9 @@
           "mandante": "SF",
           "kickoff": "2026-09-27T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "1:44 - 3rd",
           "local": {
             "estadio": "Levi's Stadium",
             "cidade": "Santa Clara",
@@ -1259,9 +1286,9 @@
           "mandante": "TB",
           "kickoff": "2026-09-27T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "5:58 - 3rd",
           "local": {
             "estadio": "Raymond James Stadium",
             "cidade": "Tampa",
@@ -1285,9 +1312,9 @@
           "mandante": "DAL",
           "kickoff": "2026-09-27T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "7:04 - 3rd",
           "local": {
             "estadio": "Maracanã Stadium",
             "cidade": "Rio De Janeiro",
@@ -1311,9 +1338,9 @@
           "mandante": "NO",
           "kickoff": "2026-09-27T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "6:40 - 3rd",
           "local": {
             "estadio": "Caesars Superdome",
             "cidade": "New Orleans",

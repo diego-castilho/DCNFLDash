@@ -1,6 +1,75 @@
 {
   "entradas": [
     {
+      "quando": "2026-09-27T22:23:46.399Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872953",
+          "jogo": "LAC @ BUF",
+          "rotulo": "Semana 3",
+          "placar": "16 x 24"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872949",
+          "jogo": "CAR @ CLE",
+          "rotulo": "Semana 3",
+          "placar": "18 x 21"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872954",
+          "jogo": "NYJ @ DET",
+          "rotulo": "Semana 3",
+          "placar": "24 x 31"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872951",
+          "jogo": "HOU @ IND",
+          "rotulo": "Semana 3",
+          "placar": "17 x 19"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872957",
+          "jogo": "NE @ JAX",
+          "rotulo": "Semana 3",
+          "placar": "6 x 35"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872952",
+          "jogo": "KC @ MIA",
+          "rotulo": "Semana 3",
+          "placar": "24 x 10"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872956",
+          "jogo": "TEN @ NYG",
+          "rotulo": "Semana 3",
+          "placar": "7 x 12"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872950",
+          "jogo": "CIN @ PIT",
+          "rotulo": "Semana 3",
+          "placar": "27 x 30"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872955",
+          "jogo": "SEA @ WAS",
+          "rotulo": "Semana 3",
+          "placar": "31 x 33"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-25T08:00:00.620Z",
       "origem": "sync-grade-br",
       "mudancas": [
