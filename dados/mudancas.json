@@ -1,6 +1,40 @@
 {
   "entradas": [
     {
+      "quando": "2026-09-28T00:57:22.388Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872958",
+          "jogo": "ARI @ SF",
+          "rotulo": "Semana 3",
+          "placar": "30 x 36"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872959",
+          "jogo": "MIN @ TB",
+          "rotulo": "Semana 3",
+          "placar": "23 x 16"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872960",
+          "jogo": "BAL @ DAL",
+          "rotulo": "Semana 3",
+          "placar": "34 x 31"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872961",
+          "jogo": "LV @ NO",
+          "rotulo": "Semana 3",
+          "placar": "35 x 27"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-27T22:23:46.399Z",
       "origem": "sync-espn",
       "mudancas": [

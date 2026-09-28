@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-27T22:23:46.397Z",
+  "atualizadoEm": "2026-09-28T00:57:22.386Z",
   "verificadoEm": "2026-09-27",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1260,9 +1260,12 @@
           "mandante": "SF",
           "kickoff": "2026-09-27T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:44 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 36
+          },
+          "parcial": null,
           "local": {
             "estadio": "Levi's Stadium",
             "cidade": "Santa Clara",
@@ -1286,9 +1289,12 @@
           "mandante": "TB",
           "kickoff": "2026-09-27T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "5:58 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 16
+          },
+          "parcial": null,
           "local": {
             "estadio": "Raymond James Stadium",
             "cidade": "Tampa",
@@ -1312,9 +1318,12 @@
           "mandante": "DAL",
           "kickoff": "2026-09-27T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "7:04 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 31
+          },
+          "parcial": null,
           "local": {
             "estadio": "Maracanã Stadium",
             "cidade": "Rio De Janeiro",
@@ -1338,9 +1347,12 @@
           "mandante": "NO",
           "kickoff": "2026-09-27T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "6:40 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 35,
+            "mandante": 27
+          },
+          "parcial": null,
           "local": {
             "estadio": "Caesars Superdome",
             "cidade": "New Orleans",
@@ -1364,9 +1376,9 @@
           "mandante": "DEN",
           "kickoff": "2026-09-28T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "2:13 - 1st",
           "local": {
             "estadio": "Empower Field at Mile High",
             "cidade": "Denver",
