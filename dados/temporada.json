@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-28T00:57:22.386Z",
-  "verificadoEm": "2026-09-27",
+  "atualizadoEm": "2026-09-28T06:15:14.274Z",
+  "verificadoEm": "2026-09-28",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -1376,9 +1376,12 @@
           "mandante": "DEN",
           "kickoff": "2026-09-28T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "2:13 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 30
+          },
+          "parcial": null,
           "local": {
             "estadio": "Empower Field at Mile High",
             "cidade": "Denver",

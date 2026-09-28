@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-09-28T06:15:14.276Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872962",
+          "jogo": "LAR @ DEN",
+          "rotulo": "Semana 3",
+          "placar": "26 x 30"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-28T00:57:22.388Z",
       "origem": "sync-espn",
       "mudancas": [
