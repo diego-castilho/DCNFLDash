@@ -188,10 +188,11 @@
       "visitante": "PIT",
       "mandante": "CLE",
       "canais": [
-        "sportv"
+        "sportv",
+        "getv"
       ],
-      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
-      "url": "",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-09-29",
       "confianca": "confirmado"
     },

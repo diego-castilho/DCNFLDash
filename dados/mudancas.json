@@ -1,6 +1,32 @@
 {
   "entradas": [
     {
+      "quando": "2026-09-29T06:22:29.622Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Steelers @ Browns",
+          "rotulo": "Semana 4",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-29T06:22:28.210Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872963",
+          "jogo": "PHI @ CHI",
+          "rotulo": "Semana 3",
+          "placar": "7 x 27"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-28T06:15:14.276Z",
       "origem": "sync-espn",
       "mudancas": [
