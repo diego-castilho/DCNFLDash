@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-28T06:15:14.274Z",
+  "atualizadoEm": "2026-09-29T00:42:57.278Z",
   "verificadoEm": "2026-09-28",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1405,9 +1405,9 @@
           "mandante": "CHI",
           "kickoff": "2026-09-29T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "1:51 - 1st",
           "local": {
             "estadio": "Soldier Field",
             "cidade": "Chicago",
