@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-29T06:22:28.208Z",
+  "atualizadoEm": "2026-09-30T16:34:43.309Z",
   "verificadoEm": "2026-09-30",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1912,6 +1912,32 @@
           "nota": "NFL London Games"
         },
         {
+          "id": "401872990",
+          "fase": "regular",
+          "semana": 5,
+          "rotulo": "Semana 5",
+          "aDefinir": false,
+          "visitante": "CHI",
+          "mandante": "GB",
+          "kickoff": "2026-10-11T17:00Z",
+          "horarioAConfirmar": false,
+          "estado": "agendado",
+          "placar": null,
+          "parcial": null,
+          "local": {
+            "estadio": "Lambeau Field",
+            "cidade": "Green Bay",
+            "uf": "WI",
+            "pais": "USA"
+          },
+          "emissoraEua": "FOX",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
+          "nota": ""
+        },
+        {
           "id": "401872982",
           "fase": "regular",
           "semana": 5,
@@ -2136,32 +2162,6 @@
             "estadio": "State Farm Stadium",
             "cidade": "Glendale",
             "uf": "AZ",
-            "pais": "USA"
-          },
-          "emissoraEua": "FOX",
-          "emissoras": [
-            "fox"
-          ],
-          "pacote": null,
-          "nota": ""
-        },
-        {
-          "id": "401872990",
-          "fase": "regular",
-          "semana": 5,
-          "rotulo": "Semana 5",
-          "aDefinir": false,
-          "visitante": "CHI",
-          "mandante": "GB",
-          "kickoff": "2026-10-11T20:25Z",
-          "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
-          "parcial": null,
-          "local": {
-            "estadio": "Lambeau Field",
-            "cidade": "Green Bay",
-            "uf": "WI",
             "pais": "USA"
           },
           "emissoraEua": "FOX",
