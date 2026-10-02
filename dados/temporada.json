@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-01T17:12:58.955Z",
+  "atualizadoEm": "2026-10-02T01:00:56.779Z",
   "verificadoEm": "2026-10-01",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1444,9 +1444,9 @@
           "mandante": "CLE",
           "kickoff": "2026-10-02T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "12:14 - 2nd",
           "local": {
             "estadio": "Huntington Bank Field",
             "cidade": "Cleveland",
