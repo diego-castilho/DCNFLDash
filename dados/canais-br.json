@@ -853,7 +853,8 @@
       "visitante": "IND",
       "mandante": "WAS",
       "canais": [
-        "sportv"
+        "sportv",
+        "getv"
       ],
       "fonte": "agenda ge.globo",
       "url": "https://ge.globo.com/agenda/",
