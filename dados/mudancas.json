@@ -1,6 +1,56 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-02T07:08:10.197Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Colts @ Commanders",
+          "rotulo": "Semana 4",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Patriots @ Bills",
+          "rotulo": "Semana 4",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Broncos @ 49ers",
+          "rotulo": "Semana 4",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chargers @ Seahawks",
+          "rotulo": "Semana 4",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Lions @ Panthers",
+          "rotulo": "Semana 4",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-02T07:08:06.705Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872964",
+          "jogo": "PIT @ CLE",
+          "rotulo": "Semana 4",
+          "placar": "24 x 27"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-30T16:34:43.311Z",
       "origem": "sync-espn",
       "mudancas": [
