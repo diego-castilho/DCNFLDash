@@ -217,8 +217,8 @@
       "canais": [
         "espn"
       ],
-      "fonte": "regra fixa · Monday Night · pacote da ESPN",
-      "url": "",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-10-03",
       "confianca": "confirmado"
     },

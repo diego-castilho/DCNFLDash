@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-03T07:12:40.269Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Falcons @ Saints",
+          "rotulo": "Semana 4",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-02T18:57:34.664Z",
       "origem": "sync-grade-br",
       "mudancas": [
