@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-04T14:28:48.492Z",
+  "atualizadoEm": "2026-10-04T15:35:33.005Z",
   "verificadoEm": "2026-10-04",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1475,7 +1475,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "9:59 - 2nd",
+          "parcial": "10:39 - 3rd",
           "local": {
             "estadio": "Tottenham Hotspur Stadium",
             "cidade": "London",
