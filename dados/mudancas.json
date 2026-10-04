@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-04T18:16:33.375Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872965",
+          "jogo": "IND @ WAS",
+          "rotulo": "Semana 4",
+          "placar": "30 x 13"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-03T07:12:40.269Z",
       "origem": "sync-grade-br",
       "mudancas": [
