@@ -1,6 +1,68 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-04T21:41:54.079Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872973",
+          "jogo": "TEN @ BAL",
+          "rotulo": "Semana 4",
+          "placar": "18 x 24"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872971",
+          "jogo": "NE @ BUF",
+          "rotulo": "Semana 4",
+          "placar": "29 x 26"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872972",
+          "jogo": "NYJ @ CHI",
+          "rotulo": "Semana 4",
+          "placar": "12 x 23"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872969",
+          "jogo": "JAX @ CIN",
+          "rotulo": "Semana 4",
+          "placar": "22 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872967",
+          "jogo": "DAL @ HOU",
+          "rotulo": "Semana 4",
+          "placar": "34 x 30"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872966",
+          "jogo": "ARI @ NYG",
+          "rotulo": "Semana 4",
+          "placar": "24 x 36"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872970",
+          "jogo": "LAR @ PHI",
+          "rotulo": "Semana 4",
+          "placar": "24 x 20"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872968",
+          "jogo": "GB @ TB",
+          "rotulo": "Semana 4",
+          "placar": "17 x 14"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-04T18:16:33.375Z",
       "origem": "sync-espn",
       "mudancas": [

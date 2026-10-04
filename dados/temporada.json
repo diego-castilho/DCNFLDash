@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-04T18:16:33.373Z",
+  "atualizadoEm": "2026-10-04T21:41:54.077Z",
   "verificadoEm": "2026-10-04",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1502,9 +1502,12 @@
           "mandante": "BAL",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:33 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 18,
+            "mandante": 24
+          },
+          "parcial": null,
           "local": {
             "estadio": "M&T Bank Stadium",
             "cidade": "Baltimore",
@@ -1528,9 +1531,12 @@
           "mandante": "BUF",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:00 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 29,
+            "mandante": 26
+          },
+          "parcial": null,
           "local": {
             "estadio": "Highmark Stadium",
             "cidade": "Orchard Park",
@@ -1554,9 +1560,12 @@
           "mandante": "CHI",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:44 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 12,
+            "mandante": 23
+          },
+          "parcial": null,
           "local": {
             "estadio": "Soldier Field",
             "cidade": "Chicago",
@@ -1580,9 +1589,12 @@
           "mandante": "CIN",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:27 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 22,
+            "mandante": 17
+          },
+          "parcial": null,
           "local": {
             "estadio": "Paycor Stadium",
             "cidade": "Cincinnati",
@@ -1606,9 +1618,12 @@
           "mandante": "HOU",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "2:00 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 30
+          },
+          "parcial": null,
           "local": {
             "estadio": "Reliant Stadium",
             "cidade": "Houston",
@@ -1632,9 +1647,12 @@
           "mandante": "NYG",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "3:09 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 36
+          },
+          "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
             "cidade": "East Rutherford",
@@ -1658,9 +1676,12 @@
           "mandante": "PHI",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "2:00 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 20
+          },
+          "parcial": null,
           "local": {
             "estadio": "Lincoln Financial Field",
             "cidade": "Philadelphia",
@@ -1684,9 +1705,12 @@
           "mandante": "TB",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:51 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 14
+          },
+          "parcial": null,
           "local": {
             "estadio": "Raymond James Stadium",
             "cidade": "Tampa",
@@ -1710,9 +1734,9 @@
           "mandante": "MIN",
           "kickoff": "2026-10-04T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "Halftime",
           "local": {
             "estadio": "U.S. Bank Stadium",
             "cidade": "Minneapolis",
@@ -1736,9 +1760,9 @@
           "mandante": "LV",
           "kickoff": "2026-10-04T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "0:28 - 2nd",
           "local": {
             "estadio": "Allegiant Stadium",
             "cidade": "Las Vegas",
@@ -1762,9 +1786,9 @@
           "mandante": "SEA",
           "kickoff": "2026-10-04T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "4:21 - 2nd",
           "local": {
             "estadio": "Lumen Field",
             "cidade": "Seattle",
@@ -1788,9 +1812,9 @@
           "mandante": "SF",
           "kickoff": "2026-10-04T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "1:00 - 2nd",
           "local": {
             "estadio": "Levi's Stadium",
             "cidade": "Santa Clara",
