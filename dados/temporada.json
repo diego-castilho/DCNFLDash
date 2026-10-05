@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-04T21:41:54.077Z",
+  "atualizadoEm": "2026-10-05T00:17:28.202Z",
   "verificadoEm": "2026-10-04",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1734,9 +1734,12 @@
           "mandante": "MIN",
           "kickoff": "2026-10-04T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "Halftime",
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 15
+          },
+          "parcial": null,
           "local": {
             "estadio": "U.S. Bank Stadium",
             "cidade": "Minneapolis",
@@ -1760,9 +1763,12 @@
           "mandante": "LV",
           "kickoff": "2026-10-04T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "0:28 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 27
+          },
+          "parcial": null,
           "local": {
             "estadio": "Allegiant Stadium",
             "cidade": "Las Vegas",
@@ -1786,9 +1792,12 @@
           "mandante": "SEA",
           "kickoff": "2026-10-04T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "4:21 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 30
+          },
+          "parcial": null,
           "local": {
             "estadio": "Lumen Field",
             "cidade": "Seattle",
@@ -1812,9 +1821,12 @@
           "mandante": "SF",
           "kickoff": "2026-10-04T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:00 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 14,
+            "mandante": 24
+          },
+          "parcial": null,
           "local": {
             "estadio": "Levi's Stadium",
             "cidade": "Santa Clara",

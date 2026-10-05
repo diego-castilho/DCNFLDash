@@ -1,6 +1,40 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-05T00:17:28.205Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872974",
+          "jogo": "MIA @ MIN",
+          "rotulo": "Semana 4",
+          "placar": "10 x 15"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872976",
+          "jogo": "KC @ LV",
+          "rotulo": "Semana 4",
+          "placar": "30 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872977",
+          "jogo": "LAC @ SEA",
+          "rotulo": "Semana 4",
+          "placar": "23 x 30"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872975",
+          "jogo": "DEN @ SF",
+          "rotulo": "Semana 4",
+          "placar": "14 x 24"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-04T21:41:54.079Z",
       "origem": "sync-espn",
       "mudancas": [
