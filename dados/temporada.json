@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-05T00:17:28.202Z",
-  "verificadoEm": "2026-10-04",
+  "atualizadoEm": "2026-10-05T05:58:07.288Z",
+  "verificadoEm": "2026-10-05",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -1850,8 +1850,11 @@
           "mandante": "CAR",
           "kickoff": "2026-10-05T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 32
+          },
           "parcial": null,
           "local": {
             "estadio": "Bank of America Stadium",

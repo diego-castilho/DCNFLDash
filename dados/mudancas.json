@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-05T05:58:07.291Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872978",
+          "jogo": "DET @ CAR",
+          "rotulo": "Semana 4",
+          "placar": "26 x 32"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-05T00:17:28.205Z",
       "origem": "sync-espn",
       "mudancas": [
