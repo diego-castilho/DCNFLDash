@@ -1,6 +1,32 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-06T08:15:47.748Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Buccaneers @ Cowboys",
+          "rotulo": "Semana 5",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-06T08:15:45.459Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872979",
+          "jogo": "ATL @ NO",
+          "rotulo": "Semana 4",
+          "placar": "45 x 24"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-05T05:58:07.291Z",
       "origem": "sync-espn",
       "mudancas": [
