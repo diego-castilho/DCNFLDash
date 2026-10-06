@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-05T19:27:15.696Z",
+  "atualizadoEm": "2026-10-06T01:48:05.696Z",
   "verificadoEm": "2026-10-05",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1879,9 +1879,9 @@
           "mandante": "NO",
           "kickoff": "2026-10-06T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "1:55 - 2nd",
           "local": {
             "estadio": "Caesars Superdome",
             "cidade": "New Orleans",
