@@ -901,6 +901,73 @@
       "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-10-06",
       "confianca": "confirmado"
+    },
+    "5:PHI@JAX": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "PHI",
+      "mandante": "JAX",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-09",
+      "confianca": "confirmado"
+    },
+    "5:CHI@GB": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "CHI",
+      "mandante": "GB",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-09",
+      "confianca": "confirmado"
+    },
+    "5:LV@NE": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "LV",
+      "mandante": "NE",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-09",
+      "confianca": "confirmado"
+    },
+    "5:DEN@LAC": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "DEN",
+      "mandante": "LAC",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-09",
+      "confianca": "confirmado"
+    },
+    "5:SF@SEA": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "SF",
+      "mandante": "SEA",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-09",
+      "confianca": "confirmado"
     }
   }
 }

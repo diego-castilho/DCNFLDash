@@ -1,6 +1,55 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-09T08:06:54.797Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Eagles @ Jaguars",
+          "rotulo": "Semana 5",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Bears @ Packers",
+          "rotulo": "Semana 5",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Raiders @ Patriots",
+          "rotulo": "Semana 5",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Broncos @ Chargers",
+          "rotulo": "Semana 5",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "49ers @ Seahawks",
+          "rotulo": "Semana 5",
+          "canais": "sportv, getv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-09T08:06:53.507Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872980",
+          "jogo": "TB @ DAL",
+          "rotulo": "Semana 5",
+          "placar": "24 x 16"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-06T08:15:47.748Z",
       "origem": "sync-grade-br",
       "mudancas": [
