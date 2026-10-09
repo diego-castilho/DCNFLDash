@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-06T08:15:45.456Z",
+  "atualizadoEm": "2026-10-09T01:31:49.983Z",
   "verificadoEm": "2026-10-08",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1917,9 +1917,9 @@
           "mandante": "DAL",
           "kickoff": "2026-10-09T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "1:52 - 2nd",
           "local": {
             "estadio": "AT&T Stadium",
             "cidade": "Arlington",
