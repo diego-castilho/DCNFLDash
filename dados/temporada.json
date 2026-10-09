@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-09T08:06:53.504Z",
+  "atualizadoEm": "2026-10-09T17:15:26.558Z",
   "verificadoEm": "2026-10-09",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -3041,7 +3041,7 @@
             "uf": "PA",
             "pais": "USA"
           },
-          "emissoraEua": "ESPN/ABC",
+          "emissoraEua": "ESPN/ABC/Disney+",
           "emissoras": [
             "espn",
             "abc"
@@ -7736,7 +7736,7 @@
             "uf": "CA",
             "pais": "USA"
           },
-          "emissoraEua": "ESPN/ABC",
+          "emissoraEua": "ESPN/ABC/Disney+",
           "emissoras": [
             "espn",
             "abc"
