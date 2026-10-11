@@ -1,6 +1,40 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-11T23:46:19.479Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872988",
+          "jogo": "NYG @ WAS",
+          "rotulo": "Semana 5",
+          "placar": "27 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872989",
+          "jogo": "DEN @ LAC",
+          "rotulo": "Semana 5",
+          "placar": "23 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872991",
+          "jogo": "DET @ ARI",
+          "rotulo": "Semana 5",
+          "placar": "45 x 21"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872992",
+          "jogo": "SF @ SEA",
+          "rotulo": "Semana 5",
+          "placar": "32 x 29"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-11T20:25:01.272Z",
       "origem": "sync-espn",
       "mudancas": [

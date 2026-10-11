@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-11T20:25:01.270Z",
+  "atualizadoEm": "2026-10-11T23:46:19.477Z",
   "verificadoEm": "2026-10-11",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -2178,9 +2178,12 @@
           "mandante": "WAS",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "8:05 - OT",
+          "estado": "final",
+          "placar": {
+            "visitante": 27,
+            "mandante": 27
+          },
+          "parcial": null,
           "local": {
             "estadio": "Northwest Stadium",
             "cidade": "Landover",
@@ -2204,9 +2207,12 @@
           "mandante": "LAC",
           "kickoff": "2026-10-11T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "6:53 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 17
+          },
+          "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
             "cidade": "Inglewood",
@@ -2230,8 +2236,11 @@
           "mandante": "ARI",
           "kickoff": "2026-10-11T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 45,
+            "mandante": 21
+          },
           "parcial": null,
           "local": {
             "estadio": "State Farm Stadium",
@@ -2256,8 +2265,11 @@
           "mandante": "SEA",
           "kickoff": "2026-10-11T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 32,
+            "mandante": 29
+          },
           "parcial": null,
           "local": {
             "estadio": "Lumen Field",
