@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-09T17:15:26.558Z",
+  "atualizadoEm": "2026-10-11T16:21:53.777Z",
   "verificadoEm": "2026-10-11",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1946,9 +1946,9 @@
           "mandante": "JAX",
           "kickoff": "2026-10-11T13:30Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "14:13 - 4th",
           "local": {
             "estadio": "Tottenham Hotspur Stadium",
             "cidade": "London",
