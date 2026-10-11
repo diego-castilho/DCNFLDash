@@ -1,6 +1,68 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-11T20:25:01.272Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872981",
+          "jogo": "PHI @ JAX",
+          "rotulo": "Semana 5",
+          "placar": "17 x 19"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872990",
+          "jogo": "CHI @ GB",
+          "rotulo": "Semana 5",
+          "placar": "7 x 31"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872982",
+          "jogo": "CIN @ MIA",
+          "rotulo": "Semana 5",
+          "placar": "31 x 24"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872986",
+          "jogo": "LV @ NE",
+          "rotulo": "Semana 5",
+          "placar": "17 x 45"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872987",
+          "jogo": "MIN @ NO",
+          "rotulo": "Semana 5",
+          "placar": "23 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872983",
+          "jogo": "CLE @ NYJ",
+          "rotulo": "Semana 5",
+          "placar": "12 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872985",
+          "jogo": "IND @ PIT",
+          "rotulo": "Semana 5",
+          "placar": "22 x 34"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872984",
+          "jogo": "HOU @ TEN",
+          "rotulo": "Semana 5",
+          "placar": "26 x 3"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-09T08:06:54.797Z",
       "origem": "sync-grade-br",
       "mudancas": [

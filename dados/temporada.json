@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-11T16:28:23.352Z",
+  "atualizadoEm": "2026-10-11T20:25:01.270Z",
   "verificadoEm": "2026-10-11",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -1946,9 +1946,12 @@
           "mandante": "JAX",
           "kickoff": "2026-10-11T13:30Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "12:57 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 19
+          },
+          "parcial": null,
           "local": {
             "estadio": "Tottenham Hotspur Stadium",
             "cidade": "London",
@@ -1972,8 +1975,11 @@
           "mandante": "GB",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 7,
+            "mandante": 31
+          },
           "parcial": null,
           "local": {
             "estadio": "Lambeau Field",
@@ -1998,8 +2004,11 @@
           "mandante": "MIA",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 31,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "Hard Rock Stadium",
@@ -2024,8 +2033,11 @@
           "mandante": "NE",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 45
+          },
           "parcial": null,
           "local": {
             "estadio": "Gillette Stadium",
@@ -2050,8 +2062,11 @@
           "mandante": "NO",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "Caesars Superdome",
@@ -2076,8 +2091,11 @@
           "mandante": "NYJ",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 12,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -2102,8 +2120,11 @@
           "mandante": "PIT",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 22,
+            "mandante": 34
+          },
           "parcial": null,
           "local": {
             "estadio": "Acrisure Stadium",
@@ -2128,8 +2149,11 @@
           "mandante": "TEN",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 3
+          },
           "parcial": null,
           "local": {
             "estadio": "Nissan Stadium",
@@ -2154,9 +2178,9 @@
           "mandante": "WAS",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "8:05 - OT",
           "local": {
             "estadio": "Northwest Stadium",
             "cidade": "Landover",
@@ -2180,9 +2204,9 @@
           "mandante": "LAC",
           "kickoff": "2026-10-11T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "6:53 - 1st",
           "local": {
             "estadio": "SoFi Stadium",
             "cidade": "Inglewood",
