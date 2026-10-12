@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-11T23:46:19.477Z",
-  "verificadoEm": "2026-10-11",
+  "atualizadoEm": "2026-10-12T03:02:47.360Z",
+  "verificadoEm": "2026-10-12",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -2294,9 +2294,9 @@
           "mandante": "ATL",
           "kickoff": "2026-10-12T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "3:26 - 4th",
           "local": {
             "estadio": "Mercedes-Benz Stadium",
             "cidade": "Atlanta",
