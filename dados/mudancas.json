@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-12T11:08:12.615Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872993",
+          "jogo": "BAL @ ATL",
+          "rotulo": "Semana 5",
+          "placar": "30 x 23"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-11T23:46:19.479Z",
       "origem": "sync-espn",
       "mudancas": [
