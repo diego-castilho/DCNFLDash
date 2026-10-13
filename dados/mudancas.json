@@ -1,6 +1,32 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-13T09:35:25.563Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Seahawks @ Broncos",
+          "rotulo": "Semana 6",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-13T09:35:24.177Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872994",
+          "jogo": "BUF @ LAR",
+          "rotulo": "Semana 5",
+          "placar": "37 x 34"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-12T11:08:12.615Z",
       "origem": "sync-espn",
       "mudancas": [
