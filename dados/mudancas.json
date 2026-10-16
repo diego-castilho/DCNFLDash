@@ -1,6 +1,56 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-16T05:14:39.915Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Texans @ Jaguars",
+          "rotulo": "Semana 6",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Panthers @ Eagles",
+          "rotulo": "Semana 6",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Bills @ Raiders",
+          "rotulo": "Semana 6",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chargers @ Chiefs",
+          "rotulo": "Semana 6",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Cowboys @ Packers",
+          "rotulo": "Semana 6",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-16T05:14:37.747Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872995",
+          "jogo": "SEA @ DEN",
+          "rotulo": "Semana 6",
+          "placar": "14 x 17"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-13T09:35:25.563Z",
       "origem": "sync-grade-br",
       "mudancas": [

@@ -284,8 +284,8 @@
       "canais": [
         "sportv"
       ],
-      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
-      "url": "",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-10-16",
       "confianca": "confirmado"
     },
@@ -968,6 +968,59 @@
       "fonte": "agenda ge.globo",
       "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-10-14",
+      "confianca": "confirmado"
+    },
+    "6:HOU@JAX": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "HOU",
+      "mandante": "JAX",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-16",
+      "confianca": "confirmado"
+    },
+    "6:CAR@PHI": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "CAR",
+      "mandante": "PHI",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-16",
+      "confianca": "confirmado"
+    },
+    "6:BUF@LV": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "BUF",
+      "mandante": "LV",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-16",
+      "confianca": "confirmado"
+    },
+    "6:LAC@KC": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "LAC",
+      "mandante": "KC",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-16",
       "confianca": "confirmado"
     }
   }
