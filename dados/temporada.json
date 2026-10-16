@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-13T09:35:24.174Z",
+  "atualizadoEm": "2026-10-16T00:52:41.963Z",
   "verificadoEm": "2026-10-15",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -2362,9 +2362,9 @@
           "mandante": "DEN",
           "kickoff": "2026-10-16T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "14:17 - 2nd",
           "local": {
             "estadio": "Empower Field at Mile High",
             "cidade": "Denver",
