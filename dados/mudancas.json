@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-17T04:43:28.905Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Commanders @ 49ers",
+          "rotulo": "Semana 6",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-17T00:01:18.811Z",
       "origem": "sync-grade-br",
       "mudancas": [
