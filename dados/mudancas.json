@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-17T00:01:18.811Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Chargers @ Chiefs",
+          "rotulo": "Semana 6",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-16T05:14:39.915Z",
       "origem": "sync-grade-br",
       "mudancas": [
