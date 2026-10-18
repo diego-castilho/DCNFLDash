@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-18T19:48:17.216Z",
+  "atualizadoEm": "2026-10-18T21:59:57.076Z",
   "verificadoEm": "2026-10-18",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -2420,9 +2420,12 @@
           "mandante": "ATL",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "10:41 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 31,
+            "mandante": 23
+          },
+          "parcial": null,
           "local": {
             "estadio": "Mercedes-Benz Stadium",
             "cidade": "Atlanta",
@@ -2446,9 +2449,12 @@
           "mandante": "CLE",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:59 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 13
+          },
+          "parcial": null,
           "local": {
             "estadio": "Huntington Bank Field",
             "cidade": "Cleveland",
@@ -2472,9 +2478,12 @@
           "mandante": "IND",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "5:19 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 20
+          },
+          "parcial": null,
           "local": {
             "estadio": "Lucas Oil Stadium",
             "cidade": "Indianapolis",
@@ -2498,9 +2507,12 @@
           "mandante": "NE",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "6:30 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 19,
+            "mandante": 26
+          },
+          "parcial": null,
           "local": {
             "estadio": "Gillette Stadium",
             "cidade": "Foxborough",
@@ -2524,9 +2536,12 @@
           "mandante": "NYG",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "8:29 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 27
+          },
+          "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
             "cidade": "East Rutherford",
@@ -2550,9 +2565,12 @@
           "mandante": "PHI",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "12:47 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 25,
+            "mandante": 14
+          },
+          "parcial": null,
           "local": {
             "estadio": "Lincoln Financial Field",
             "cidade": "Philadelphia",
@@ -2576,9 +2594,12 @@
           "mandante": "TB",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "7:03 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 19
+          },
+          "parcial": null,
           "local": {
             "estadio": "Raymond James Stadium",
             "cidade": "Tampa",
@@ -2602,9 +2623,9 @@
           "mandante": "LAR",
           "kickoff": "2026-10-18T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "2:39 - 3rd",
           "local": {
             "estadio": "SoFi Stadium",
             "cidade": "Inglewood",
@@ -2628,9 +2649,9 @@
           "mandante": "KC",
           "kickoff": "2026-10-18T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "Halftime",
           "local": {
             "estadio": "Arrowhead Stadium",
             "cidade": "Kansas City",
@@ -2654,9 +2675,9 @@
           "mandante": "LV",
           "kickoff": "2026-10-18T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "14:53 - 3rd",
           "local": {
             "estadio": "Allegiant Stadium",
             "cidade": "Las Vegas",

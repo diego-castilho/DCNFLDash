@@ -1,6 +1,61 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-18T21:59:57.080Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872999",
+          "jogo": "CHI @ ATL",
+          "rotulo": "Semana 6",
+          "placar": "31 x 23"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872997",
+          "jogo": "BAL @ CLE",
+          "rotulo": "Semana 6",
+          "placar": "10 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873003",
+          "jogo": "TEN @ IND",
+          "rotulo": "Semana 6",
+          "placar": "26 x 20"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873001",
+          "jogo": "NYJ @ NE",
+          "rotulo": "Semana 6",
+          "placar": "19 x 26"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873000",
+          "jogo": "NO @ NYG",
+          "rotulo": "Semana 6",
+          "placar": "34 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872998",
+          "jogo": "CAR @ PHI",
+          "rotulo": "Semana 6",
+          "placar": "25 x 14"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873002",
+          "jogo": "PIT @ TB",
+          "rotulo": "Semana 6",
+          "placar": "26 x 19"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-18T17:38:09.658Z",
       "origem": "sync-espn",
       "mudancas": [
