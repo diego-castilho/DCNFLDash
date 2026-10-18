@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-18T21:59:57.076Z",
+  "atualizadoEm": "2026-10-18T23:57:22.074Z",
   "verificadoEm": "2026-10-18",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -2623,9 +2623,12 @@
           "mandante": "LAR",
           "kickoff": "2026-10-18T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "2:39 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 18,
+            "mandante": 16
+          },
+          "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
             "cidade": "Inglewood",
@@ -2649,9 +2652,12 @@
           "mandante": "KC",
           "kickoff": "2026-10-18T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "Halftime",
+          "estado": "final",
+          "placar": {
+            "visitante": 6,
+            "mandante": 22
+          },
+          "parcial": null,
           "local": {
             "estadio": "Arrowhead Stadium",
             "cidade": "Kansas City",
@@ -2675,9 +2681,12 @@
           "mandante": "LV",
           "kickoff": "2026-10-18T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "14:53 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 33,
+            "mandante": 30
+          },
+          "parcial": null,
           "local": {
             "estadio": "Allegiant Stadium",
             "cidade": "Las Vegas",

@@ -1,6 +1,33 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-18T23:57:22.076Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873004",
+          "jogo": "ARI @ LAR",
+          "rotulo": "Semana 6",
+          "placar": "18 x 16"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873006",
+          "jogo": "LAC @ KC",
+          "rotulo": "Semana 6",
+          "placar": "6 x 22"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873005",
+          "jogo": "BUF @ LV",
+          "rotulo": "Semana 6",
+          "placar": "33 x 30"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-18T21:59:57.080Z",
       "origem": "sync-espn",
       "mudancas": [
