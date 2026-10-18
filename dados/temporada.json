@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-16T05:14:37.745Z",
+  "atualizadoEm": "2026-10-18T14:12:52.552Z",
   "verificadoEm": "2026-10-18",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -2391,9 +2391,9 @@
           "mandante": "JAX",
           "kickoff": "2026-10-18T13:30Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "15:00 - 2nd",
           "local": {
             "estadio": "Wembley Stadium",
             "cidade": "London",
