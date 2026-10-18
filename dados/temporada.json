@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-18T14:12:52.552Z",
+  "atualizadoEm": "2026-10-18T14:43:00.989Z",
   "verificadoEm": "2026-10-18",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -2393,7 +2393,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "15:00 - 2nd",
+          "parcial": "4:16 - 2nd",
           "local": {
             "estadio": "Wembley Stadium",
             "cidade": "London",
