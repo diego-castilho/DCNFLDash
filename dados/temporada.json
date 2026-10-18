@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-18T17:38:09.655Z",
+  "atualizadoEm": "2026-10-18T19:48:17.216Z",
   "verificadoEm": "2026-10-18",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -2422,7 +2422,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "14:45 - 2nd",
+          "parcial": "10:41 - 4th",
           "local": {
             "estadio": "Mercedes-Benz Stadium",
             "cidade": "Atlanta",
@@ -2448,7 +2448,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "1:04 - 1st",
+          "parcial": "1:59 - 4th",
           "local": {
             "estadio": "Huntington Bank Field",
             "cidade": "Cleveland",
@@ -2474,7 +2474,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "15:00 - 2nd",
+          "parcial": "5:19 - 4th",
           "local": {
             "estadio": "Lucas Oil Stadium",
             "cidade": "Indianapolis",
@@ -2500,7 +2500,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "2:34 - 1st",
+          "parcial": "6:30 - 4th",
           "local": {
             "estadio": "Gillette Stadium",
             "cidade": "Foxborough",
@@ -2526,7 +2526,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "15:00 - 2nd",
+          "parcial": "8:29 - 4th",
           "local": {
             "estadio": "MetLife Stadium",
             "cidade": "East Rutherford",
@@ -2552,7 +2552,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "3:53 - 1st",
+          "parcial": "12:47 - 4th",
           "local": {
             "estadio": "Lincoln Financial Field",
             "cidade": "Philadelphia",
@@ -2578,7 +2578,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "1:50 - 1st",
+          "parcial": "7:03 - 4th",
           "local": {
             "estadio": "Raymond James Stadium",
             "cidade": "Tampa",
