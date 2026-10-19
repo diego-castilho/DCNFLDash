@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-19T08:12:46.553Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873007",
+          "jogo": "DAL @ GB",
+          "rotulo": "Semana 6",
+          "placar": "13 x 23"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-18T23:57:22.076Z",
       "origem": "sync-espn",
       "mudancas": [
