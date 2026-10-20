@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-19T08:12:46.552Z",
-  "verificadoEm": "2026-10-19",
+  "atualizadoEm": "2026-10-20T05:03:06.637Z",
+  "verificadoEm": "2026-10-20",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -2739,8 +2739,11 @@
           "mandante": "SF",
           "kickoff": "2026-10-20T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
             "estadio": "Levi's Stadium",

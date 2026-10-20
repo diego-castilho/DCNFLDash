@@ -1,6 +1,32 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-20T05:03:08.426Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Patriots @ Bears",
+          "rotulo": "Semana 7",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-20T05:03:06.639Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873008",
+          "jogo": "WAS @ SF",
+          "rotulo": "Semana 6",
+          "placar": "17 x 23"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-19T08:12:46.553Z",
       "origem": "sync-espn",
       "mudancas": [
