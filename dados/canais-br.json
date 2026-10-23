@@ -324,8 +324,8 @@
       "canais": [
         "sportv"
       ],
-      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
-      "url": "",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-10-23",
       "confianca": "confirmado"
     },
@@ -1023,6 +1023,47 @@
       "fonte": "agenda ge.globo",
       "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-10-21",
+      "confianca": "confirmado"
+    },
+    "7:PIT@NO": {
+      "fase": "regular",
+      "semana": 7,
+      "visitante": "PIT",
+      "mandante": "NO",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-23",
+      "confianca": "confirmado"
+    },
+    "7:SF@ATL": {
+      "fase": "regular",
+      "semana": 7,
+      "visitante": "SF",
+      "mandante": "ATL",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-23",
+      "confianca": "confirmado"
+    },
+    "7:GB@DET": {
+      "fase": "regular",
+      "semana": 7,
+      "visitante": "GB",
+      "mandante": "DET",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-23",
       "confianca": "confirmado"
     }
   }

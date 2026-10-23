@@ -1,6 +1,50 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-23T07:45:47.729Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Steelers @ Saints",
+          "rotulo": "Semana 7",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "49ers @ Falcons",
+          "rotulo": "Semana 7",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Packers @ Lions",
+          "rotulo": "Semana 7",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Chiefs @ Seahawks",
+          "rotulo": "Semana 7",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-23T07:45:46.251Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873010",
+          "jogo": "NE @ CHI",
+          "rotulo": "Semana 7",
+          "placar": "24 x 30"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-20T05:03:08.426Z",
       "origem": "sync-grade-br",
       "mudancas": [
