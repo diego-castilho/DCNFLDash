@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-24T07:27:49.703Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Cowboys @ Eagles",
+          "rotulo": "Semana 7",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-23T07:45:47.729Z",
       "origem": "sync-grade-br",
       "mudancas": [
