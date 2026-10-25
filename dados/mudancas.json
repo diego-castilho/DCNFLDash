@@ -1,6 +1,61 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-25T21:05:22.488Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873017",
+          "jogo": "SF @ ATL",
+          "rotulo": "Semana 7",
+          "placar": "20 x 29"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873012",
+          "jogo": "CIN @ BAL",
+          "rotulo": "Semana 7",
+          "placar": "35 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873018",
+          "jogo": "TB @ CAR",
+          "rotulo": "Semana 7",
+          "placar": "43 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873016",
+          "jogo": "NYG @ HOU",
+          "rotulo": "Semana 7",
+          "placar": "27 x 21"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873014",
+          "jogo": "IND @ MIN",
+          "rotulo": "Semana 7",
+          "placar": "10 x 16"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873015",
+          "jogo": "MIA @ NYJ",
+          "rotulo": "Semana 7",
+          "placar": "28 x 25"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873013",
+          "jogo": "CLE @ TEN",
+          "rotulo": "Semana 7",
+          "placar": "27 x 24"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-25T18:29:14.098Z",
       "origem": "sync-espn",
       "mudancas": [
