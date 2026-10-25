@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-25T18:29:14.098Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873011",
+          "jogo": "PIT @ NO",
+          "rotulo": "Semana 7",
+          "placar": "16 x 10"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-24T07:27:49.703Z",
       "origem": "sync-grade-br",
       "mudancas": [
