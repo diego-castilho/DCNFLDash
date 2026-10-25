@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-25T21:05:22.486Z",
+  "atualizadoEm": "2026-10-25T23:23:14.852Z",
   "verificadoEm": "2026-10-25",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -3041,7 +3041,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "12:25 - 2nd",
+          "parcial": "1:54 - 4th",
           "local": {
             "estadio": "State Farm Stadium",
             "cidade": "Glendale",
@@ -3067,7 +3067,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "13:23 - 2nd",
+          "parcial": "2:00 - 4th",
           "local": {
             "estadio": "Ford Field",
             "cidade": "Detroit",
@@ -3093,7 +3093,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "End of 1st",
+          "parcial": "4:11 - 4th",
           "local": {
             "estadio": "Allegiant Stadium",
             "cidade": "Las Vegas",
