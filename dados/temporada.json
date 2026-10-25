@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-23T07:45:46.249Z",
+  "atualizadoEm": "2026-10-25T14:42:28.017Z",
   "verificadoEm": "2026-10-25",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -2807,9 +2807,9 @@
           "mandante": "NO",
           "kickoff": "2026-10-25T13:30Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "2:00 - 2nd",
           "local": {
             "estadio": "Stade de France",
             "cidade": "Saint-Denis",
