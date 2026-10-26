@@ -1,6 +1,33 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-26T01:24:39.877Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873019",
+          "jogo": "DEN @ ARI",
+          "rotulo": "Semana 7",
+          "placar": "30 x 16"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873020",
+          "jogo": "GB @ DET",
+          "rotulo": "Semana 7",
+          "placar": "17 x 20"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873021",
+          "jogo": "LAR @ LV",
+          "rotulo": "Semana 7",
+          "placar": "35 x 21"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-25T21:05:22.488Z",
       "origem": "sync-espn",
       "mudancas": [

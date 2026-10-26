@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-25T23:23:14.852Z",
+  "atualizadoEm": "2026-10-26T01:24:39.875Z",
   "verificadoEm": "2026-10-25",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -3039,9 +3039,12 @@
           "mandante": "ARI",
           "kickoff": "2026-10-25T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:54 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 16
+          },
+          "parcial": null,
           "local": {
             "estadio": "State Farm Stadium",
             "cidade": "Glendale",
@@ -3065,9 +3068,12 @@
           "mandante": "DET",
           "kickoff": "2026-10-25T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "2:00 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 20
+          },
+          "parcial": null,
           "local": {
             "estadio": "Ford Field",
             "cidade": "Detroit",
@@ -3091,9 +3097,12 @@
           "mandante": "LV",
           "kickoff": "2026-10-25T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "4:11 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 35,
+            "mandante": 21
+          },
+          "parcial": null,
           "local": {
             "estadio": "Allegiant Stadium",
             "cidade": "Las Vegas",
@@ -3117,9 +3126,9 @@
           "mandante": "SEA",
           "kickoff": "2026-10-26T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "1:54 - 2nd",
           "local": {
             "estadio": "Lumen Field",
             "cidade": "Seattle",
