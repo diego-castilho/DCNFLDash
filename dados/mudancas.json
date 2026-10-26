@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-26T06:31:42.500Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873022",
+          "jogo": "KC @ SEA",
+          "rotulo": "Semana 7",
+          "placar": "3 x 20"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-26T01:24:39.877Z",
       "origem": "sync-espn",
       "mudancas": [

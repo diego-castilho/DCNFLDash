@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-26T01:24:39.875Z",
-  "verificadoEm": "2026-10-25",
+  "atualizadoEm": "2026-10-26T06:31:42.497Z",
+  "verificadoEm": "2026-10-26",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -3126,9 +3126,12 @@
           "mandante": "SEA",
           "kickoff": "2026-10-26T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:54 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 3,
+            "mandante": 20
+          },
+          "parcial": null,
           "local": {
             "estadio": "Lumen Field",
             "cidade": "Seattle",
