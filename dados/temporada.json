@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-26T06:31:42.497Z",
+  "atualizadoEm": "2026-10-27T02:13:21.676Z",
   "verificadoEm": "2026-10-26",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -3155,9 +3155,9 @@
           "mandante": "PHI",
           "kickoff": "2026-10-27T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "5:55 - 3rd",
           "local": {
             "estadio": "Lincoln Financial Field",
             "cidade": "Philadelphia",
