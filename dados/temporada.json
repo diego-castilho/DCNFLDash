@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-10-27T08:05:01.510Z",
+  "atualizadoEm": "2026-10-27T16:07:39.085Z",
   "verificadoEm": "2026-10-27",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -3818,32 +3818,6 @@
           "nota": ""
         },
         {
-          "id": "401873047",
-          "fase": "regular",
-          "semana": 9,
-          "rotulo": "Semana 9",
-          "aDefinir": false,
-          "visitante": "LV",
-          "mandante": "SF",
-          "kickoff": "2026-11-08T21:05Z",
-          "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
-          "parcial": null,
-          "local": {
-            "estadio": "Levi's Stadium",
-            "cidade": "Santa Clara",
-            "uf": "CA",
-            "pais": "USA"
-          },
-          "emissoraEua": "CBS",
-          "emissoras": [
-            "cbs"
-          ],
-          "pacote": null,
-          "nota": ""
-        },
-        {
           "id": "401873049",
           "fase": "regular",
           "semana": 9,
@@ -3886,6 +3860,32 @@
             "estadio": "Lumen Field",
             "cidade": "Seattle",
             "uf": "WA",
+            "pais": "USA"
+          },
+          "emissoraEua": "Fox",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
+          "nota": ""
+        },
+        {
+          "id": "401873047",
+          "fase": "regular",
+          "semana": 9,
+          "rotulo": "Semana 9",
+          "aDefinir": false,
+          "visitante": "LV",
+          "mandante": "SF",
+          "kickoff": "2026-11-08T21:25Z",
+          "horarioAConfirmar": false,
+          "estado": "agendado",
+          "placar": null,
+          "parcial": null,
+          "local": {
+            "estadio": "Levi's Stadium",
+            "cidade": "Santa Clara",
+            "uf": "CA",
             "pais": "USA"
           },
           "emissoraEua": "Fox",

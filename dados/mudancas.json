@@ -1,6 +1,20 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-27T16:07:39.087Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "horário alterado",
+          "id": "401873047",
+          "jogo": "LV @ SF",
+          "rotulo": "Semana 9",
+          "de": "2026-11-08T21:05Z",
+          "para": "2026-11-08T21:25Z"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-27T08:05:05.007Z",
       "origem": "sync-grade-br",
       "mudancas": [
