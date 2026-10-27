@@ -1,6 +1,32 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-27T08:05:05.007Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Panthers @ Packers",
+          "rotulo": "Semana 8",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-27T08:05:01.513Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873009",
+          "jogo": "DAL @ PHI",
+          "rotulo": "Semana 7",
+          "placar": "38 x 21"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-26T06:31:42.500Z",
       "origem": "sync-espn",
       "mudancas": [
