@@ -364,8 +364,8 @@
       "canais": [
         "sportv"
       ],
-      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
-      "url": "",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
@@ -1065,6 +1065,46 @@
       "fonte": "agenda ge.globo",
       "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-10-28",
+      "confianca": "confirmado"
+    },
+    "8:MIN@DET": {
+      "fase": "regular",
+      "semana": 8,
+      "visitante": "MIN",
+      "mandante": "DET",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-30",
+      "confianca": "confirmado"
+    },
+    "8:KC@DEN": {
+      "fase": "regular",
+      "semana": 8,
+      "visitante": "KC",
+      "mandante": "DEN",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-30",
+      "confianca": "confirmado"
+    },
+    "8:NE@MIA": {
+      "fase": "regular",
+      "semana": 8,
+      "visitante": "NE",
+      "mandante": "MIA",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     }
   }

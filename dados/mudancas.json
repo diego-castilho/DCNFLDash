@@ -1,6 +1,50 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-30T09:12:36.481Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Vikings @ Lions",
+          "rotulo": "Semana 8",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chiefs @ Broncos",
+          "rotulo": "Semana 8",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Patriots @ Dolphins",
+          "rotulo": "Semana 8",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Eagles @ Commanders",
+          "rotulo": "Semana 8",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-30T09:12:35.064Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873023",
+          "jogo": "CAR @ GB",
+          "rotulo": "Semana 8",
+          "placar": "19 x 27"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-27T16:07:39.087Z",
       "origem": "sync-espn",
       "mudancas": [
