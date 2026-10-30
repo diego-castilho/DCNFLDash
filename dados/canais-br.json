@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "2026-10-29",
+  "atualizadoEm": "2026-10-30",
   "jogos": {
     "1:NE@SEA": {
       "semana": 1,
@@ -246,7 +246,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "5:BUF@LAR": {
@@ -259,7 +259,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "6:SEA@DEN": {
@@ -353,7 +353,7 @@
       ],
       "fonte": "agenda ge.globo",
       "url": "https://ge.globo.com/agenda/",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "8:PHI@WAS": {
@@ -366,7 +366,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "8:CHI@SEA": {
@@ -379,7 +379,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "9:JAX@BAL": {
@@ -392,7 +392,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "9:TB@CHI": {
@@ -405,7 +405,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "9:BUF@MIN": {
@@ -418,7 +418,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "10:WAS@NYG": {
@@ -431,7 +431,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "10:PIT@CIN": {
@@ -444,7 +444,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "10:LAC@BAL": {
@@ -457,7 +457,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "11:IND@HOU": {
@@ -470,7 +470,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "11:MIN@SF": {
@@ -483,7 +483,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "11:CIN@WAS": {
@@ -496,7 +496,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "12:GB@LAR": {
@@ -509,7 +509,7 @@
       ],
       "fonte": "regra fixa · Netflix transmite globalmente",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "12:NE@LAC": {
@@ -522,7 +522,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "12:CAR@TB": {
@@ -535,7 +535,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "13:KC@LAR": {
@@ -548,7 +548,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "13:HOU@PIT": {
@@ -561,7 +561,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "13:DAL@SEA": {
@@ -574,7 +574,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "14:MIN@NE": {
@@ -587,7 +587,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "14:BUF@GB": {
@@ -600,7 +600,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "14:PIT@JAX": {
@@ -613,7 +613,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "15:SF@LAC": {
@@ -626,7 +626,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "15:DET@MIN": {
@@ -639,7 +639,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "15:NE@KC": {
@@ -652,7 +652,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "16:HOU@PHI": {
@@ -665,7 +665,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "16:GB@CHI": {
@@ -678,7 +678,7 @@
       ],
       "fonte": "regra fixa · Netflix transmite globalmente",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "16:BUF@DEN": {
@@ -691,7 +691,7 @@
       ],
       "fonte": "regra fixa · Netflix transmite globalmente",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "16:JAX@DAL": {
@@ -704,7 +704,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "16:NYG@DET": {
@@ -717,7 +717,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "17:BAL@CIN": {
@@ -730,7 +730,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "17:PHI@SF": {
@@ -743,7 +743,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "17:HOU@GB": {
@@ -756,7 +756,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-10-29",
+      "checadoEm": "2026-10-30",
       "confianca": "confirmado"
     },
     "2:PIT@NE": {
