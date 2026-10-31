@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-10-31T05:59:50.032Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Bears @ Seahawks",
+          "rotulo": "Semana 8",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-30T09:12:36.481Z",
       "origem": "sync-grade-br",
       "mudancas": [
