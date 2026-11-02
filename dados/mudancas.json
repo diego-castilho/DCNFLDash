@@ -1,6 +1,75 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-02T00:00:01.332Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873026",
+          "jogo": "BAL @ BUF",
+          "rotulo": "Semana 8",
+          "placar": "10 x 36"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873031",
+          "jogo": "TEN @ CIN",
+          "rotulo": "Semana 8",
+          "placar": "36 x 43"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873024",
+          "jogo": "ARI @ DAL",
+          "rotulo": "Semana 8",
+          "placar": "33 x 30"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873030",
+          "jogo": "MIN @ DET",
+          "rotulo": "Semana 8",
+          "placar": "15 x 19"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873028",
+          "jogo": "IND @ JAX",
+          "rotulo": "Semana 8",
+          "placar": "7 x 42"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873029",
+          "jogo": "LV @ NYJ",
+          "rotulo": "Semana 8",
+          "placar": "38 x 33"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873027",
+          "jogo": "CLE @ PIT",
+          "rotulo": "Semana 8",
+          "placar": "6 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873025",
+          "jogo": "ATL @ TB",
+          "rotulo": "Semana 8",
+          "placar": "0 x 16"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873032",
+          "jogo": "LAC @ LAR",
+          "rotulo": "Semana 8",
+          "placar": "9 x 24"
+        }
+      ]
+    },
+    {
       "quando": "2026-10-31T05:59:50.032Z",
       "origem": "sync-grade-br",
       "mudancas": [

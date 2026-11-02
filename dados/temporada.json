@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-01T20:39:20.011Z",
+  "atualizadoEm": "2026-11-02T00:00:01.330Z",
   "verificadoEm": "2026-11-01",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -3223,9 +3223,12 @@
           "mandante": "BUF",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "1:11 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 36
+          },
+          "parcial": null,
           "local": {
             "estadio": "Highmark Stadium",
             "cidade": "Orchard Park",
@@ -3249,9 +3252,12 @@
           "mandante": "CIN",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "14:28 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 36,
+            "mandante": 43
+          },
+          "parcial": null,
           "local": {
             "estadio": "Paycor Stadium",
             "cidade": "Cincinnati",
@@ -3275,9 +3281,12 @@
           "mandante": "DAL",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "10:03 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 33,
+            "mandante": 30
+          },
+          "parcial": null,
           "local": {
             "estadio": "AT&T Stadium",
             "cidade": "Arlington",
@@ -3301,9 +3310,12 @@
           "mandante": "DET",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "12:54 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 15,
+            "mandante": 19
+          },
+          "parcial": null,
           "local": {
             "estadio": "Ford Field",
             "cidade": "Detroit",
@@ -3327,9 +3339,12 @@
           "mandante": "JAX",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "11:53 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 7,
+            "mandante": 42
+          },
+          "parcial": null,
           "local": {
             "estadio": "EverBank Stadium",
             "cidade": "Jacksonville",
@@ -3353,9 +3368,12 @@
           "mandante": "NYJ",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "8:35 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 38,
+            "mandante": 33
+          },
+          "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
             "cidade": "East Rutherford",
@@ -3379,9 +3397,12 @@
           "mandante": "PIT",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "12:06 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 6,
+            "mandante": 27
+          },
+          "parcial": null,
           "local": {
             "estadio": "Acrisure Stadium",
             "cidade": "Pittsburgh",
@@ -3405,9 +3426,12 @@
           "mandante": "TB",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "3:28 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 0,
+            "mandante": 16
+          },
+          "parcial": null,
           "local": {
             "estadio": "Raymond James Stadium",
             "cidade": "Tampa",
@@ -3431,8 +3455,11 @@
           "mandante": "LAR",
           "kickoff": "2026-11-01T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 9,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
@@ -3457,9 +3484,9 @@
           "mandante": "DEN",
           "kickoff": "2026-11-01T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "13:13 - 4th",
           "local": {
             "estadio": "Empower Field at Mile High",
             "cidade": "Denver",
@@ -3483,9 +3510,9 @@
           "mandante": "MIA",
           "kickoff": "2026-11-01T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "10:31 - 4th",
           "local": {
             "estadio": "Hard Rock Stadium",
             "cidade": "Miami Gardens",
