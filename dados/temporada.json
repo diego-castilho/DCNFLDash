@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-02T00:00:01.330Z",
-  "verificadoEm": "2026-11-01",
+  "atualizadoEm": "2026-11-02T04:55:59.968Z",
+  "verificadoEm": "2026-11-02",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -3484,9 +3484,12 @@
           "mandante": "DEN",
           "kickoff": "2026-11-01T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "13:13 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 28
+          },
+          "parcial": null,
           "local": {
             "estadio": "Empower Field at Mile High",
             "cidade": "Denver",
@@ -3510,9 +3513,12 @@
           "mandante": "MIA",
           "kickoff": "2026-11-01T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "10:31 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 19
+          },
+          "parcial": null,
           "local": {
             "estadio": "Hard Rock Stadium",
             "cidade": "Miami Gardens",
@@ -3536,8 +3542,11 @@
           "mandante": "WAS",
           "kickoff": "2026-11-02T01:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Northwest Stadium",

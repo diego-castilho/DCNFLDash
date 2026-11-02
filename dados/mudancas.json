@@ -1,6 +1,33 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-02T04:55:59.970Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873033",
+          "jogo": "KC @ DEN",
+          "rotulo": "Semana 8",
+          "placar": "24 x 28"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873034",
+          "jogo": "NE @ MIA",
+          "rotulo": "Semana 8",
+          "placar": "24 x 19"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873035",
+          "jogo": "PHI @ WAS",
+          "rotulo": "Semana 8",
+          "placar": "10 x 27"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-02T00:00:01.332Z",
       "origem": "sync-espn",
       "mudancas": [
