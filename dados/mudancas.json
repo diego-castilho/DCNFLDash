@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-03T11:26:43.082Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873036",
+          "jogo": "CHI @ SEA",
+          "rotulo": "Semana 8",
+          "placar": "34 x 17"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-02T04:55:59.970Z",
       "origem": "sync-espn",
       "mudancas": [
