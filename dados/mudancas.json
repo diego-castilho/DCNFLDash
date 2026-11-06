@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-06T21:40:44.962Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Packers @ Patriots",
+          "rotulo": "Semana 9",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-06T08:41:08.030Z",
       "origem": "sync-grade-br",
       "mudancas": [
