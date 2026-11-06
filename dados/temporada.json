@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-06T01:52:42.106Z",
-  "verificadoEm": "2026-11-05",
+  "atualizadoEm": "2026-11-06T08:41:06.565Z",
+  "verificadoEm": "2026-11-06",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -3609,9 +3609,12 @@
           "mandante": "BAL",
           "kickoff": "2026-11-06T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "15:00 - 2nd",
+          "estado": "final",
+          "placar": {
+            "visitante": 33,
+            "mandante": 10
+          },
+          "parcial": null,
           "local": {
             "estadio": "M&T Bank Stadium",
             "cidade": "Baltimore",

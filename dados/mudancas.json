@@ -1,6 +1,62 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-06T08:41:08.030Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Bengals @ Falcons",
+          "rotulo": "Semana 9",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Jets @ Chiefs",
+          "rotulo": "Semana 9",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Broncos @ Panthers",
+          "rotulo": "Semana 9",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Packers @ Patriots",
+          "rotulo": "Semana 9",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Raiders @ 49ers",
+          "rotulo": "Semana 9",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Buccaneers @ Bears",
+          "rotulo": "Semana 9",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-06T08:41:06.568Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873037",
+          "jogo": "JAX @ BAL",
+          "rotulo": "Semana 9",
+          "placar": "33 x 10"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-03T11:26:43.082Z",
       "origem": "sync-espn",
       "mudancas": [
