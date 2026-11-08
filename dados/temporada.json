@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-08T15:25:20.299Z",
+  "atualizadoEm": "2026-11-08T16:52:33.385Z",
   "verificadoEm": "2026-11-08",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -3640,7 +3640,7 @@
           "horarioAConfirmar": false,
           "estado": "andamento",
           "placar": null,
-          "parcial": "10:46 - 2nd",
+          "parcial": "15:00 - 4th",
           "local": {
             "estadio": "Santiago Bernabéu",
             "cidade": "Madrid",
