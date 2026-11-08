@@ -1,6 +1,61 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-08T23:15:35.380Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873041",
+          "jogo": "DEN @ CAR",
+          "rotulo": "Semana 9",
+          "placar": "26 x 21"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873040",
+          "jogo": "DAL @ IND",
+          "rotulo": "Semana 9",
+          "placar": "27 x 23"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873045",
+          "jogo": "NYJ @ KC",
+          "rotulo": "Semana 9",
+          "placar": "12 x 35"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873042",
+          "jogo": "DET @ MIA",
+          "rotulo": "Semana 9",
+          "placar": "19 x 9"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873039",
+          "jogo": "CLE @ NO",
+          "rotulo": "Semana 9",
+          "placar": "22 x 23"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873044",
+          "jogo": "NYG @ PHI",
+          "rotulo": "Semana 9",
+          "placar": "19 x 11"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873043",
+          "jogo": "LAR @ WAS",
+          "rotulo": "Semana 9",
+          "placar": "20 x 13"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-08T19:49:48.757Z",
       "origem": "sync-espn",
       "mudancas": [
