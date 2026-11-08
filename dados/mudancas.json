@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-08T19:49:48.757Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873038",
+          "jogo": "CIN @ ATL",
+          "rotulo": "Semana 9",
+          "placar": "34 x 17"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-07T07:24:49.025Z",
       "origem": "sync-grade-br",
       "mudancas": [

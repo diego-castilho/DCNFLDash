@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-08T16:52:33.385Z",
+  "atualizadoEm": "2026-11-08T19:49:48.754Z",
   "verificadoEm": "2026-11-08",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -3638,9 +3638,12 @@
           "mandante": "ATL",
           "kickoff": "2026-11-08T14:30Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "15:00 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 17
+          },
+          "parcial": null,
           "local": {
             "estadio": "Santiago Bernabéu",
             "cidade": "Madrid",
@@ -3664,9 +3667,9 @@
           "mandante": "CAR",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "12:13 - 3rd",
           "local": {
             "estadio": "Bank of America Stadium",
             "cidade": "Charlotte",
@@ -3690,9 +3693,9 @@
           "mandante": "IND",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "Halftime",
           "local": {
             "estadio": "Lucas Oil Stadium",
             "cidade": "Indianapolis",
@@ -3716,9 +3719,9 @@
           "mandante": "KC",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "11:50 - 3rd",
           "local": {
             "estadio": "Arrowhead Stadium",
             "cidade": "Kansas City",
@@ -3742,18 +3745,18 @@
           "mandante": "MIA",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "8:00 - 3rd",
           "local": {
             "estadio": "Hard Rock Stadium",
             "cidade": "Miami Gardens",
             "uf": "FL",
             "pais": "USA"
           },
-          "emissoraEua": "Fox",
+          "emissoraEua": "CBS",
           "emissoras": [
-            "fox"
+            "cbs"
           ],
           "pacote": null,
           "nota": ""
@@ -3768,9 +3771,9 @@
           "mandante": "NO",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "9:01 - 3rd",
           "local": {
             "estadio": "Caesars Superdome",
             "cidade": "New Orleans",
@@ -3794,9 +3797,9 @@
           "mandante": "PHI",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "Halftime",
           "local": {
             "estadio": "Lincoln Financial Field",
             "cidade": "Philadelphia",
@@ -3820,9 +3823,9 @@
           "mandante": "WAS",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "11:29 - 3rd",
           "local": {
             "estadio": "Northwest Stadium",
             "cidade": "Landover",
