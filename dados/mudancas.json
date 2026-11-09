@@ -1,6 +1,40 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-09T02:48:10.771Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873046",
+          "jogo": "HOU @ LAC",
+          "rotulo": "Semana 9",
+          "placar": "44 x 22"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873049",
+          "jogo": "GB @ NE",
+          "rotulo": "Semana 9",
+          "placar": "45 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873048",
+          "jogo": "ARI @ SEA",
+          "rotulo": "Semana 9",
+          "placar": "3 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873047",
+          "jogo": "LV @ SF",
+          "rotulo": "Semana 9",
+          "placar": "17 x 38"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-08T23:15:35.380Z",
       "origem": "sync-espn",
       "mudancas": [

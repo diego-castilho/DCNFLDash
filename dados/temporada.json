@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-08T23:15:35.378Z",
+  "atualizadoEm": "2026-11-09T02:48:10.769Z",
   "verificadoEm": "2026-11-08",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -3870,9 +3870,12 @@
           "mandante": "LAC",
           "kickoff": "2026-11-08T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "8:21 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 44,
+            "mandante": 22
+          },
+          "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
             "cidade": "Inglewood",
@@ -3896,9 +3899,12 @@
           "mandante": "NE",
           "kickoff": "2026-11-08T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "Halftime",
+          "estado": "final",
+          "placar": {
+            "visitante": 45,
+            "mandante": 27
+          },
+          "parcial": null,
           "local": {
             "estadio": "Gillette Stadium",
             "cidade": "Foxborough",
@@ -3922,9 +3928,12 @@
           "mandante": "SEA",
           "kickoff": "2026-11-08T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "11:25 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 3,
+            "mandante": 17
+          },
+          "parcial": null,
           "local": {
             "estadio": "Lumen Field",
             "cidade": "Seattle",
@@ -3948,9 +3957,12 @@
           "mandante": "SF",
           "kickoff": "2026-11-08T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "6:17 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 38
+          },
+          "parcial": null,
           "local": {
             "estadio": "Levi's Stadium",
             "cidade": "Santa Clara",
@@ -3974,9 +3986,9 @@
           "mandante": "CHI",
           "kickoff": "2026-11-09T01:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "0:30 - 2nd",
           "local": {
             "estadio": "Soldier Field",
             "cidade": "Chicago",
