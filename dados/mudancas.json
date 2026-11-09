@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-09T10:31:54.919Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873050",
+          "jogo": "TB @ CHI",
+          "rotulo": "Semana 9",
+          "placar": "24 x 27"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-09T02:48:10.771Z",
       "origem": "sync-espn",
       "mudancas": [
