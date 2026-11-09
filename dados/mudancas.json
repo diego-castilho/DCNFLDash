@@ -1,6 +1,28 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-09T21:13:48.949Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "horário alterado",
+          "id": "401873076",
+          "jogo": "PIT @ PHI",
+          "rotulo": "Semana 11",
+          "de": "2026-11-22T21:25Z",
+          "para": "2026-11-22T18:00Z"
+        },
+        {
+          "tipo": "horário alterado",
+          "id": "401873069",
+          "jogo": "JAX @ NYG",
+          "rotulo": "Semana 11",
+          "de": "2026-11-22T18:00Z",
+          "para": "2026-11-22T21:25Z"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-09T10:31:54.919Z",
       "origem": "sync-espn",
       "mudancas": [

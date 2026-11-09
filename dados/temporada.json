@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-09T10:31:54.916Z",
+  "atualizadoEm": "2026-11-09T21:13:48.947Z",
   "verificadoEm": "2026-11-09",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4459,9 +4459,9 @@
             "uf": "NY",
             "pais": "USA"
           },
-          "emissoraEua": "Fox",
+          "emissoraEua": "CBS",
           "emissoras": [
-            "fox"
+            "cbs"
           ],
           "pacote": null,
           "nota": ""
@@ -4563,9 +4563,9 @@
             "uf": "MI",
             "pais": "USA"
           },
-          "emissoraEua": "CBS",
+          "emissoraEua": "Fox",
           "emissoras": [
-            "cbs"
+            "fox"
           ],
           "pacote": null,
           "nota": ""
@@ -4597,22 +4597,22 @@
           "nota": ""
         },
         {
-          "id": "401873069",
+          "id": "401873076",
           "fase": "regular",
           "semana": 11,
           "rotulo": "Semana 11",
           "aDefinir": false,
-          "visitante": "JAX",
-          "mandante": "NYG",
+          "visitante": "PIT",
+          "mandante": "PHI",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
           "estado": "agendado",
           "placar": null,
           "parcial": null,
           "local": {
-            "estadio": "MetLife Stadium",
-            "cidade": "East Rutherford",
-            "uf": "NJ",
+            "estadio": "Lincoln Financial Field",
+            "cidade": "Philadelphia",
+            "uf": "PA",
             "pais": "USA"
           },
           "emissoraEua": "CBS",
@@ -4675,22 +4675,22 @@
           "nota": ""
         },
         {
-          "id": "401873076",
+          "id": "401873069",
           "fase": "regular",
           "semana": 11,
           "rotulo": "Semana 11",
           "aDefinir": false,
-          "visitante": "PIT",
-          "mandante": "PHI",
+          "visitante": "JAX",
+          "mandante": "NYG",
           "kickoff": "2026-11-22T21:25Z",
           "horarioAConfirmar": false,
           "estado": "agendado",
           "placar": null,
           "parcial": null,
           "local": {
-            "estadio": "Lincoln Financial Field",
-            "cidade": "Philadelphia",
-            "uf": "PA",
+            "estadio": "MetLife Stadium",
+            "cidade": "East Rutherford",
+            "uf": "NJ",
             "pais": "USA"
           },
           "emissoraEua": "CBS",
