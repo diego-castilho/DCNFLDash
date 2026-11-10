@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-10T11:55:05.538Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873051",
+          "jogo": "BUF @ MIN",
+          "rotulo": "Semana 9",
+          "placar": "23 x 6"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-10T03:39:47.099Z",
       "origem": "sync-grade-br",
       "mudancas": [

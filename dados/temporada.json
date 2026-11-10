@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-10T03:39:44.568Z",
+  "atualizadoEm": "2026-11-10T11:55:05.536Z",
   "verificadoEm": "2026-11-10",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4015,9 +4015,12 @@
           "mandante": "MIN",
           "kickoff": "2026-11-10T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "2:24 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 6
+          },
+          "parcial": null,
           "local": {
             "estadio": "U.S. Bank Stadium",
             "cidade": "Minneapolis",
