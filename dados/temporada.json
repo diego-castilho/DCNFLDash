@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-13T03:01:14.572Z",
+  "atualizadoEm": "2026-11-13T11:17:43.748Z",
   "verificadoEm": "2026-11-13",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4054,9 +4054,12 @@
           "mandante": "NYG",
           "kickoff": "2026-11-13T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "10:22 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 21
+          },
+          "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
             "cidade": "East Rutherford",

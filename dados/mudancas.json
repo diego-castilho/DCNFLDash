@@ -1,6 +1,62 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-13T11:17:45.117Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Patriots @ Lions",
+          "rotulo": "Semana 10",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Vikings @ Packers",
+          "rotulo": "Semana 10",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chiefs @ Falcons",
+          "rotulo": "Semana 10",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Seahawks @ Raiders",
+          "rotulo": "Semana 10",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "49ers @ Cowboys",
+          "rotulo": "Semana 10",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Steelers @ Bengals",
+          "rotulo": "Semana 10",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-13T11:17:43.750Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873052",
+          "jogo": "WAS @ NYG",
+          "rotulo": "Semana 10",
+          "placar": "24 x 21"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-10T11:55:05.538Z",
       "origem": "sync-espn",
       "mudancas": [
