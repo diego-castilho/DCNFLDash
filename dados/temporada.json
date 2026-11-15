@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-13T11:17:43.748Z",
+  "atualizadoEm": "2026-11-15T16:40:53.493Z",
   "verificadoEm": "2026-11-15",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4083,9 +4083,9 @@
           "mandante": "DET",
           "kickoff": "2026-11-15T14:30Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "8:16 - 3rd",
           "local": {
             "estadio": "FC Bayern Munich Stadium",
             "cidade": "Munich",
