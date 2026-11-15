@@ -1,6 +1,68 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-15T21:23:58.499Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873053",
+          "jogo": "NE @ DET",
+          "rotulo": "Semana 10",
+          "placar": "10 x 35"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873058",
+          "jogo": "KC @ ATL",
+          "rotulo": "Semana 10",
+          "placar": "35 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873056",
+          "jogo": "HOU @ CLE",
+          "rotulo": "Semana 10",
+          "placar": "24 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873060",
+          "jogo": "MIN @ GB",
+          "rotulo": "Semana 10",
+          "placar": "30 x 10"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873059",
+          "jogo": "MIA @ IND",
+          "rotulo": "Semana 10",
+          "placar": "22 x 24"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873055",
+          "jogo": "CAR @ NO",
+          "rotulo": "Semana 10",
+          "placar": "20 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873054",
+          "jogo": "BUF @ NYJ",
+          "rotulo": "Semana 10",
+          "placar": "31 x 12"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873057",
+          "jogo": "JAX @ TEN",
+          "rotulo": "Semana 10",
+          "placar": "40 x 23"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-13T11:17:45.117Z",
       "origem": "sync-grade-br",
       "mudancas": [

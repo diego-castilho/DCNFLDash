@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-15T17:30:21.883Z",
+  "atualizadoEm": "2026-11-15T21:23:58.497Z",
   "verificadoEm": "2026-11-15",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4083,9 +4083,12 @@
           "mandante": "DET",
           "kickoff": "2026-11-15T14:30Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "3:28 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 35
+          },
+          "parcial": null,
           "local": {
             "estadio": "FC Bayern Munich Stadium",
             "cidade": "Munich",
@@ -4109,8 +4112,11 @@
           "mandante": "ATL",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 35,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "Mercedes-Benz Stadium",
@@ -4135,8 +4141,11 @@
           "mandante": "CLE",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Huntington Bank Field",
@@ -4161,8 +4170,11 @@
           "mandante": "GB",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 10
+          },
           "parcial": null,
           "local": {
             "estadio": "Lambeau Field",
@@ -4187,8 +4199,11 @@
           "mandante": "IND",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 22,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "Lucas Oil Stadium",
@@ -4213,8 +4228,11 @@
           "mandante": "NO",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 20,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "Caesars Superdome",
@@ -4239,8 +4257,11 @@
           "mandante": "NYJ",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 31,
+            "mandante": 12
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -4265,8 +4286,11 @@
           "mandante": "TEN",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 40,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
             "estadio": "Nissan Stadium",
@@ -4291,9 +4315,9 @@
           "mandante": "ARI",
           "kickoff": "2026-11-15T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "7:23 - 1st",
           "local": {
             "estadio": "State Farm Stadium",
             "cidade": "Glendale",
@@ -4317,9 +4341,9 @@
           "mandante": "LV",
           "kickoff": "2026-11-15T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "5:37 - 1st",
           "local": {
             "estadio": "Allegiant Stadium",
             "cidade": "Las Vegas",
