@@ -1,6 +1,33 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-16T01:12:19.887Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873061",
+          "jogo": "LAR @ ARI",
+          "rotulo": "Semana 10",
+          "placar": "34 x 6"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873062",
+          "jogo": "SEA @ LV",
+          "rotulo": "Semana 10",
+          "placar": "21 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873063",
+          "jogo": "SF @ DAL",
+          "rotulo": "Semana 10",
+          "placar": "46 x 40"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-15T21:23:58.499Z",
       "origem": "sync-espn",
       "mudancas": [

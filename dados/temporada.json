@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-15T21:23:58.497Z",
+  "atualizadoEm": "2026-11-16T01:12:19.883Z",
   "verificadoEm": "2026-11-15",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4315,9 +4315,12 @@
           "mandante": "ARI",
           "kickoff": "2026-11-15T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "7:23 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 6
+          },
+          "parcial": null,
           "local": {
             "estadio": "State Farm Stadium",
             "cidade": "Glendale",
@@ -4341,9 +4344,12 @@
           "mandante": "LV",
           "kickoff": "2026-11-15T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "5:37 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 21,
+            "mandante": 13
+          },
+          "parcial": null,
           "local": {
             "estadio": "Allegiant Stadium",
             "cidade": "Las Vegas",
@@ -4367,8 +4373,11 @@
           "mandante": "DAL",
           "kickoff": "2026-11-15T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 46,
+            "mandante": 40
+          },
           "parcial": null,
           "local": {
             "estadio": "AT&T Stadium",
