@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-16T08:07:43.306Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873064",
+          "jogo": "PIT @ CIN",
+          "rotulo": "Semana 10",
+          "placar": "18 x 38"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-16T01:12:19.887Z",
       "origem": "sync-espn",
       "mudancas": [

@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-16T01:12:19.883Z",
-  "verificadoEm": "2026-11-15",
+  "atualizadoEm": "2026-11-16T08:07:43.303Z",
+  "verificadoEm": "2026-11-16",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -4402,8 +4402,11 @@
           "mandante": "CIN",
           "kickoff": "2026-11-16T01:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 18,
+            "mandante": 38
+          },
           "parcial": null,
           "local": {
             "estadio": "Paycor Stadium",
