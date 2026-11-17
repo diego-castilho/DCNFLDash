@@ -1242,6 +1242,19 @@
       "url": "https://ge.globo.com/agenda/",
       "checadoEm": "2026-11-17",
       "confianca": "confirmado"
+    },
+    "12:LV@CLE": {
+      "fase": "regular",
+      "semana": 12,
+      "visitante": "LV",
+      "mandante": "CLE",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-11-17",
+      "confianca": "confirmado"
     }
   }
 }

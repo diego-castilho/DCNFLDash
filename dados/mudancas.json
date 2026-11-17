@@ -1,6 +1,36 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-17T19:29:48.552Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "horário alterado",
+          "id": "401873090",
+          "jogo": "TEN @ JAX",
+          "rotulo": "Semana 12",
+          "de": "2026-11-29T21:05Z",
+          "para": "2026-11-29T18:00Z"
+        },
+        {
+          "tipo": "horário alterado",
+          "id": "401873093",
+          "jogo": "NE @ LAC",
+          "rotulo": "Semana 12",
+          "de": "2026-11-30T01:20Z",
+          "para": "2026-11-29T21:05Z"
+        },
+        {
+          "tipo": "horário alterado",
+          "id": "401873086",
+          "jogo": "LV @ CLE",
+          "rotulo": "Semana 12",
+          "de": "2026-11-29T18:00Z",
+          "para": "2026-11-30T01:20Z"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-17T10:53:22.839Z",
       "origem": "sync-grade-br",
       "mudancas": [

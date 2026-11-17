@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-17T10:53:20.625Z",
+  "atualizadoEm": "2026-11-17T19:29:48.550Z",
   "verificadoEm": "2026-11-17",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4963,32 +4963,6 @@
           "nota": ""
         },
         {
-          "id": "401873086",
-          "fase": "regular",
-          "semana": 12,
-          "rotulo": "Semana 12",
-          "aDefinir": false,
-          "visitante": "LV",
-          "mandante": "CLE",
-          "kickoff": "2026-11-29T18:00Z",
-          "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
-          "parcial": null,
-          "local": {
-            "estadio": "Huntington Bank Field",
-            "cidade": "Cleveland",
-            "uf": "OH",
-            "pais": "USA"
-          },
-          "emissoraEua": "Fox",
-          "emissoras": [
-            "fox"
-          ],
-          "pacote": null,
-          "nota": ""
-        },
-        {
           "id": "401873085",
           "fase": "regular",
           "semana": 12,
@@ -5031,6 +5005,32 @@
             "estadio": "Lucas Oil Stadium",
             "cidade": "Indianapolis",
             "uf": "IN",
+            "pais": "USA"
+          },
+          "emissoraEua": "Fox",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
+          "nota": ""
+        },
+        {
+          "id": "401873090",
+          "fase": "regular",
+          "semana": 12,
+          "rotulo": "Semana 12",
+          "aDefinir": false,
+          "visitante": "TEN",
+          "mandante": "JAX",
+          "kickoff": "2026-11-29T18:00Z",
+          "horarioAConfirmar": false,
+          "estado": "agendado",
+          "placar": null,
+          "parcial": null,
+          "local": {
+            "estadio": "EverBank Stadium",
+            "cidade": "Jacksonville",
+            "uf": "FL",
             "pais": "USA"
           },
           "emissoraEua": "Fox",
@@ -5093,22 +5093,22 @@
           "nota": ""
         },
         {
-          "id": "401873090",
+          "id": "401873093",
           "fase": "regular",
           "semana": 12,
           "rotulo": "Semana 12",
           "aDefinir": false,
-          "visitante": "TEN",
-          "mandante": "JAX",
+          "visitante": "NE",
+          "mandante": "LAC",
           "kickoff": "2026-11-29T21:05Z",
           "horarioAConfirmar": false,
           "estado": "agendado",
           "placar": null,
           "parcial": null,
           "local": {
-            "estadio": "EverBank Stadium",
-            "cidade": "Jacksonville",
-            "uf": "FL",
+            "estadio": "SoFi Stadium",
+            "cidade": "Inglewood",
+            "uf": "CA",
             "pais": "USA"
           },
           "emissoraEua": "CBS",
@@ -5171,22 +5171,22 @@
           "nota": ""
         },
         {
-          "id": "401873093",
+          "id": "401873086",
           "fase": "regular",
           "semana": 12,
           "rotulo": "Semana 12",
           "aDefinir": false,
-          "visitante": "NE",
-          "mandante": "LAC",
+          "visitante": "LV",
+          "mandante": "CLE",
           "kickoff": "2026-11-30T01:20Z",
           "horarioAConfirmar": false,
           "estado": "agendado",
           "placar": null,
           "parcial": null,
           "local": {
-            "estadio": "SoFi Stadium",
-            "cidade": "Inglewood",
-            "uf": "CA",
+            "estadio": "Huntington Bank Field",
+            "cidade": "Cleveland",
+            "uf": "OH",
             "pais": "USA"
           },
           "emissoraEua": "NBC",
