@@ -1,6 +1,32 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-17T10:53:22.839Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Colts @ Texans",
+          "rotulo": "Semana 11",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-17T10:53:20.627Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873065",
+          "jogo": "LAC @ BAL",
+          "rotulo": "Semana 10",
+          "placar": "23 x 20"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-16T08:07:43.306Z",
       "origem": "sync-espn",
       "mudancas": [
