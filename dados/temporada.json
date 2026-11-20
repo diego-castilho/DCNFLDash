@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-17T19:29:48.550Z",
-  "verificadoEm": "2026-11-19",
+  "atualizadoEm": "2026-11-20T04:41:54.793Z",
+  "verificadoEm": "2026-11-20",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -4469,8 +4469,11 @@
           "mandante": "HOU",
           "kickoff": "2026-11-20T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 3,
+            "mandante": 26
+          },
           "parcial": null,
           "local": {
             "estadio": "Reliant Stadium",

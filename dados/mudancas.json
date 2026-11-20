@@ -1,6 +1,56 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-20T04:41:56.541Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Cardinals @ Chiefs",
+          "rotulo": "Semana 11",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Buccaneers @ Lions",
+          "rotulo": "Semana 11",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Raiders @ Broncos",
+          "rotulo": "Semana 11",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Jaguars @ Giants",
+          "rotulo": "Semana 11",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Vikings @ 49ers",
+          "rotulo": "Semana 11",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-20T04:41:54.796Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873066",
+          "jogo": "IND @ HOU",
+          "rotulo": "Semana 11",
+          "placar": "3 x 26"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-17T19:29:48.552Z",
       "origem": "sync-espn",
       "mudancas": [
