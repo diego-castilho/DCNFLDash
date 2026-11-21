@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-21T10:23:38.856Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Bengals @ Commanders",
+          "rotulo": "Semana 11",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-20T04:41:56.541Z",
       "origem": "sync-grade-br",
       "mudancas": [
