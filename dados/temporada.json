@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-22T18:09:58.019Z",
+  "atualizadoEm": "2026-11-22T23:06:26.328Z",
   "verificadoEm": "2026-11-22",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4498,9 +4498,12 @@
           "mandante": "BUF",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "11:04 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 9,
+            "mandante": 26
+          },
+          "parcial": null,
           "local": {
             "estadio": "Highmark Stadium",
             "cidade": "Orchard Park",
@@ -4524,9 +4527,12 @@
           "mandante": "CAR",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "12:22 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 33,
+            "mandante": 35
+          },
+          "parcial": null,
           "local": {
             "estadio": "Bank of America Stadium",
             "cidade": "Charlotte",
@@ -4550,9 +4556,12 @@
           "mandante": "CHI",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "10:43 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 13,
+            "mandante": 21
+          },
+          "parcial": null,
           "local": {
             "estadio": "Soldier Field",
             "cidade": "Chicago",
@@ -4576,9 +4585,12 @@
           "mandante": "DAL",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "10:19 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 51
+          },
+          "parcial": null,
           "local": {
             "estadio": "AT&T Stadium",
             "cidade": "Arlington",
@@ -4602,9 +4614,12 @@
           "mandante": "DET",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "12:46 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 21,
+            "mandante": 31
+          },
+          "parcial": null,
           "local": {
             "estadio": "Ford Field",
             "cidade": "Detroit",
@@ -4628,9 +4643,12 @@
           "mandante": "KC",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "10:31 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 7,
+            "mandante": 34
+          },
+          "parcial": null,
           "local": {
             "estadio": "Arrowhead Stadium",
             "cidade": "Kansas City",
@@ -4654,9 +4672,12 @@
           "mandante": "PHI",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "10:01 - 1st",
+          "estado": "final",
+          "placar": {
+            "visitante": 16,
+            "mandante": 19
+          },
+          "parcial": null,
           "local": {
             "estadio": "Lincoln Financial Field",
             "cidade": "Philadelphia",
@@ -4680,9 +4701,9 @@
           "mandante": "LAC",
           "kickoff": "2026-11-22T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "15:00 - 4th",
           "local": {
             "estadio": "SoFi Stadium",
             "cidade": "Inglewood",
@@ -4706,9 +4727,9 @@
           "mandante": "DEN",
           "kickoff": "2026-11-22T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "Halftime",
           "local": {
             "estadio": "Empower Field at Mile High",
             "cidade": "Denver",
@@ -4732,9 +4753,9 @@
           "mandante": "NYG",
           "kickoff": "2026-11-22T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "Halftime",
           "local": {
             "estadio": "MetLife Stadium",
             "cidade": "East Rutherford",

@@ -1,6 +1,61 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-22T23:06:26.330Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873070",
+          "jogo": "MIA @ BUF",
+          "rotulo": "Semana 11",
+          "placar": "9 x 26"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873068",
+          "jogo": "BAL @ CAR",
+          "rotulo": "Semana 11",
+          "placar": "33 x 35"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873071",
+          "jogo": "NO @ CHI",
+          "rotulo": "Semana 11",
+          "placar": "13 x 21"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873073",
+          "jogo": "TEN @ DAL",
+          "rotulo": "Semana 11",
+          "placar": "30 x 51"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873072",
+          "jogo": "TB @ DET",
+          "rotulo": "Semana 11",
+          "placar": "21 x 31"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873067",
+          "jogo": "ARI @ KC",
+          "rotulo": "Semana 11",
+          "placar": "7 x 34"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873076",
+          "jogo": "PIT @ PHI",
+          "rotulo": "Semana 11",
+          "placar": "16 x 19"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-21T10:23:38.856Z",
       "origem": "sync-grade-br",
       "mudancas": [
