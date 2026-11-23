@@ -58,11 +58,13 @@ jobs:
       - name: Validar antes de gravar
         run: node scripts/validar.mjs
 
+      # O commit sai pela API, e não por git push, para ser assinado pelo GitHub
+      # (Verified). Ver scripts/commit-assinado.mjs.
       - name: Commitar se algo mudou
         id: commit
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
-          git config user.name "dcnfldash-bot"
-          git config user.email "actions@github.com"
           if git diff --quiet -- dados/; then
             echo "nada mudou"
             echo "mudou=false" >> "$GITHUB_OUTPUT"
@@ -78,11 +80,9 @@ jobs:
             const p=[[c('placar final'),'placar(es)'],[c('canal confirmado'),'canal(is)'],[c('canal alterado'),'canal(is) alterado(s)'],[c('horário alterado'),'horário(s)'],[c('jogo novo'),'jogo(s) novo(s)']];
             console.log(p.filter(x=>x[0]).map(x=>x.join(' ')).join(', ') || 'verificação diária');
           ")
-          git add dados/
-          git commit -m "dados: sync ESPN — $resumo"
-          git push
+          node scripts/commit-assinado.mjs main dados/ "dados: sync ESPN — $resumo"
 
-  # O push acima é feito com o GITHUB_TOKEN e por isso não dispara o workflow de
+  # O commit acima é feito com o GITHUB_TOKEN e por isso não dispara o workflow de
   # publicação sozinho. Chamamos ele aqui, explicitamente.
   publicar:
     needs: sync
