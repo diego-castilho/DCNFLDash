@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-23T13:47:36.319Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873077",
+          "jogo": "MIN @ SF",
+          "rotulo": "Semana 11",
+          "placar": "10 x 35"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-23T03:50:50.985Z",
       "origem": "sync-espn",
       "mudancas": [

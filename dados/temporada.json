@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-23T03:50:50.983Z",
+  "atualizadoEm": "2026-11-23T13:47:36.316Z",
   "verificadoEm": "2026-11-23",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4788,9 +4788,12 @@
           "mandante": "SF",
           "kickoff": "2026-11-23T01:20Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "14:18 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 35
+          },
+          "parcial": null,
           "local": {
             "estadio": "Estadio Banorte",
             "cidade": "Mexico City",
