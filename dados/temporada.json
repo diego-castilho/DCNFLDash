@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-22T23:06:26.328Z",
-  "verificadoEm": "2026-11-22",
+  "atualizadoEm": "2026-11-23T03:50:50.983Z",
+  "verificadoEm": "2026-11-23",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -4701,9 +4701,12 @@
           "mandante": "LAC",
           "kickoff": "2026-11-22T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "15:00 - 4th",
+          "estado": "final",
+          "placar": {
+            "visitante": 27,
+            "mandante": 24
+          },
+          "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
             "cidade": "Inglewood",
@@ -4727,9 +4730,12 @@
           "mandante": "DEN",
           "kickoff": "2026-11-22T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "Halftime",
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 38
+          },
+          "parcial": null,
           "local": {
             "estadio": "Empower Field at Mile High",
             "cidade": "Denver",
@@ -4753,9 +4759,12 @@
           "mandante": "NYG",
           "kickoff": "2026-11-22T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "Halftime",
+          "estado": "final",
+          "placar": {
+            "visitante": 18,
+            "mandante": 23
+          },
+          "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
             "cidade": "East Rutherford",
@@ -4779,9 +4788,9 @@
           "mandante": "SF",
           "kickoff": "2026-11-23T01:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "14:18 - 4th",
           "local": {
             "estadio": "Estadio Banorte",
             "cidade": "Mexico City",

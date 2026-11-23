@@ -1,6 +1,33 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-23T03:50:50.985Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873074",
+          "jogo": "NYJ @ LAC",
+          "rotulo": "Semana 11",
+          "placar": "27 x 24"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873075",
+          "jogo": "LV @ DEN",
+          "rotulo": "Semana 11",
+          "placar": "24 x 38"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873069",
+          "jogo": "JAX @ NYG",
+          "rotulo": "Semana 11",
+          "placar": "18 x 23"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-22T23:06:26.330Z",
       "origem": "sync-espn",
       "mudancas": [
