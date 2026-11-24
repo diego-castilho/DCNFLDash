@@ -126,6 +126,13 @@ está nele, então a linha faltando não gera erro de sintaxe nem aviso — só 
 frente, com uma mensagem que aponta para o lugar errado. Para confirmar, abra o log do job
 e procure o grupo "GITHUB_TOKEN Permissions": se não houver `Actions: read`, é isso.
 
+Há um segundo motivo, e ele é intermitente: a listagem de artefatos do run não fica
+disponível no mesmo instante em que o upload termina. Se o `deploy-pages` pergunta antes
+de o índice alcançar, recebe zero resultados e dá exatamente a mesma mensagem — apesar de
+o artefato aparecer normalmente na API segundos depois. Por isso existe o passo "Esperar o
+artefato aparecer na API" entre o upload e o deploy. Começou em 22/11/2026, intermitente,
+e virou regra em 24/11.
+
 O sintoma secundário também vale conhecer. O `deploy-pages@v4` consulta o
 endpoint por **tentativa** (`/runs/{id}/attempts/{n}/artifacts`), que neste repositório
 responde 404, enquanto o endpoint por **run** (`/runs/{id}/artifacts`) devolve o artefato

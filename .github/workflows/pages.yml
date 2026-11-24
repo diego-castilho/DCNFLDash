@@ -62,6 +62,31 @@ jobs:
 
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
+
+      # O deploy-pages localiza o artefato consultando a API de artefatos do run, e essa
+      # listagem não fica disponível no mesmo instante em que o upload termina. Quando o
+      # deploy pergunta antes de o índice alcançar, ele recebe zero resultados e falha
+      # dizendo que o artefato não existe — apesar de o upload ter dado certo e de o
+      # arquivo aparecer normalmente segundos depois.
+      #
+      # Começou a acontecer em 22/11/2026, de forma intermitente, e virou regra em 24/11.
+      # Este passo só espera a API enxergar o que acabou de ser enviado. Se o tempo
+      # estourar, deixa seguir assim mesmo: o deploy dá a sua própria mensagem de erro,
+      # e é melhor do que mascarar um problema diferente.
+      - name: Esperar o artefato aparecer na API
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 20); do
+            n=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts?name=github-pages" -q .total_count 2>/dev/null || echo 0)
+            if [ "${n:-0}" -ge 1 ]; then
+              echo "artefato visível na API na tentativa $i"
+              exit 0
+            fi
+            echo "ainda não indexado (tentativa $i de 20) — esperando 5s"
+            sleep 5
+          done
+          echo "::warning::o artefato não apareceu na API em 100s; seguindo para o deploy mesmo assim"
         with: { path: _site }
       - id: deploy
         uses: actions/deploy-pages@v5
