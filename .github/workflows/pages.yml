@@ -62,6 +62,7 @@ jobs:
 
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
+        with: { path: _site }
 
       # O deploy-pages localiza o artefato consultando a API de artefatos do run, e essa
       # listagem não fica disponível no mesmo instante em que o upload termina. Quando o
@@ -87,6 +88,5 @@ jobs:
             sleep 5
           done
           echo "::warning::o artefato não apareceu na API em 100s; seguindo para o deploy mesmo assim"
-        with: { path: _site }
       - id: deploy
         uses: actions/deploy-pages@v5
