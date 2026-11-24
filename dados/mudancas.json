@@ -1,6 +1,43 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-24T05:29:23.531Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Bears @ Lions",
+          "rotulo": "Semana 12",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Eagles @ Cowboys",
+          "rotulo": "Semana 12",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chiefs @ Bills",
+          "rotulo": "Semana 12",
+          "canais": "sportv, getv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-24T05:29:21.899Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873078",
+          "jogo": "CIN @ WAS",
+          "rotulo": "Semana 11",
+          "placar": "20 x 22"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-23T13:47:36.319Z",
       "origem": "sync-espn",
       "mudancas": [
