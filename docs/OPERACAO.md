@@ -120,7 +120,13 @@ Em novembro de 2026 a publicação passou a falhar com *No artifacts named "gith
 were found for this workflow run* — apesar de o passo de upload ter terminado com sucesso
 e o artefato existir no run (a API do GitHub o lista normalmente).
 
-A causa é a forma como cada versão procura o artefato. O `deploy-pages@v4` consulta o
+A causa é permissão, não versão: o job precisa de `actions: read` para o `deploy-pages`
+conseguir LISTAR o artefato do run. Declarar um bloco `permissions:` zera tudo que não
+está nele, então a linha faltando não gera erro de sintaxe nem aviso — só a falha lá na
+frente, com uma mensagem que aponta para o lugar errado. Para confirmar, abra o log do job
+e procure o grupo "GITHUB_TOKEN Permissions": se não houver `Actions: read`, é isso.
+
+O sintoma secundário também vale conhecer. O `deploy-pages@v4` consulta o
 endpoint por **tentativa** (`/runs/{id}/attempts/{n}/artifacts`), que neste repositório
 responde 404, enquanto o endpoint por **run** (`/runs/{id}/artifacts`) devolve o artefato
 sem problema. Como diagnosticar em trinta segundos:
