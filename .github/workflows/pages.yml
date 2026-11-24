@@ -19,6 +19,11 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  # actions: read é o que o deploy-pages usa para LISTAR o artefato do run. Sem ele a
+  # API responde vazio e a action falha dizendo que não achou o "github-pages" — mesmo
+  # com o upload bem-sucedido e o artefato visível na interface. Declarar um bloco de
+  # permissions zera tudo que não está listado, então esquecer esta linha é silencioso.
+  actions: read
 
 concurrency:
   group: pages
