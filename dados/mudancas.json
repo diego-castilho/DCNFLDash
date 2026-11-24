@@ -1,6 +1,1934 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-23T13:47:36.319Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873077",
+          "jogo": "MIN @ SF",
+          "rotulo": "Semana 11",
+          "placar": "10 x 35"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-23T03:50:50.985Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873074",
+          "jogo": "NYJ @ LAC",
+          "rotulo": "Semana 11",
+          "placar": "27 x 24"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873075",
+          "jogo": "LV @ DEN",
+          "rotulo": "Semana 11",
+          "placar": "24 x 38"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873069",
+          "jogo": "JAX @ NYG",
+          "rotulo": "Semana 11",
+          "placar": "18 x 23"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-22T23:06:26.330Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873070",
+          "jogo": "MIA @ BUF",
+          "rotulo": "Semana 11",
+          "placar": "9 x 26"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873068",
+          "jogo": "BAL @ CAR",
+          "rotulo": "Semana 11",
+          "placar": "33 x 35"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873071",
+          "jogo": "NO @ CHI",
+          "rotulo": "Semana 11",
+          "placar": "13 x 21"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873073",
+          "jogo": "TEN @ DAL",
+          "rotulo": "Semana 11",
+          "placar": "30 x 51"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873072",
+          "jogo": "TB @ DET",
+          "rotulo": "Semana 11",
+          "placar": "21 x 31"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873067",
+          "jogo": "ARI @ KC",
+          "rotulo": "Semana 11",
+          "placar": "7 x 34"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873076",
+          "jogo": "PIT @ PHI",
+          "rotulo": "Semana 11",
+          "placar": "16 x 19"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-21T10:23:38.856Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Bengals @ Commanders",
+          "rotulo": "Semana 11",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-20T04:41:56.541Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Cardinals @ Chiefs",
+          "rotulo": "Semana 11",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Buccaneers @ Lions",
+          "rotulo": "Semana 11",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Raiders @ Broncos",
+          "rotulo": "Semana 11",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Jaguars @ Giants",
+          "rotulo": "Semana 11",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Vikings @ 49ers",
+          "rotulo": "Semana 11",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-20T04:41:54.796Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873066",
+          "jogo": "IND @ HOU",
+          "rotulo": "Semana 11",
+          "placar": "3 x 26"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-17T19:29:48.552Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "horário alterado",
+          "id": "401873090",
+          "jogo": "TEN @ JAX",
+          "rotulo": "Semana 12",
+          "de": "2026-11-29T21:05Z",
+          "para": "2026-11-29T18:00Z"
+        },
+        {
+          "tipo": "horário alterado",
+          "id": "401873093",
+          "jogo": "NE @ LAC",
+          "rotulo": "Semana 12",
+          "de": "2026-11-30T01:20Z",
+          "para": "2026-11-29T21:05Z"
+        },
+        {
+          "tipo": "horário alterado",
+          "id": "401873086",
+          "jogo": "LV @ CLE",
+          "rotulo": "Semana 12",
+          "de": "2026-11-29T18:00Z",
+          "para": "2026-11-30T01:20Z"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-17T10:53:22.839Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Colts @ Texans",
+          "rotulo": "Semana 11",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-17T10:53:20.627Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873065",
+          "jogo": "LAC @ BAL",
+          "rotulo": "Semana 10",
+          "placar": "23 x 20"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-16T08:07:43.306Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873064",
+          "jogo": "PIT @ CIN",
+          "rotulo": "Semana 10",
+          "placar": "18 x 38"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-16T01:12:19.887Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873061",
+          "jogo": "LAR @ ARI",
+          "rotulo": "Semana 10",
+          "placar": "34 x 6"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873062",
+          "jogo": "SEA @ LV",
+          "rotulo": "Semana 10",
+          "placar": "21 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873063",
+          "jogo": "SF @ DAL",
+          "rotulo": "Semana 10",
+          "placar": "46 x 40"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-15T21:23:58.499Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873053",
+          "jogo": "NE @ DET",
+          "rotulo": "Semana 10",
+          "placar": "10 x 35"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873058",
+          "jogo": "KC @ ATL",
+          "rotulo": "Semana 10",
+          "placar": "35 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873056",
+          "jogo": "HOU @ CLE",
+          "rotulo": "Semana 10",
+          "placar": "24 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873060",
+          "jogo": "MIN @ GB",
+          "rotulo": "Semana 10",
+          "placar": "30 x 10"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873059",
+          "jogo": "MIA @ IND",
+          "rotulo": "Semana 10",
+          "placar": "22 x 24"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873055",
+          "jogo": "CAR @ NO",
+          "rotulo": "Semana 10",
+          "placar": "20 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873054",
+          "jogo": "BUF @ NYJ",
+          "rotulo": "Semana 10",
+          "placar": "31 x 12"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873057",
+          "jogo": "JAX @ TEN",
+          "rotulo": "Semana 10",
+          "placar": "40 x 23"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-13T11:17:45.117Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Patriots @ Lions",
+          "rotulo": "Semana 10",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Vikings @ Packers",
+          "rotulo": "Semana 10",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chiefs @ Falcons",
+          "rotulo": "Semana 10",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Seahawks @ Raiders",
+          "rotulo": "Semana 10",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "49ers @ Cowboys",
+          "rotulo": "Semana 10",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Steelers @ Bengals",
+          "rotulo": "Semana 10",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-13T11:17:43.750Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873052",
+          "jogo": "WAS @ NYG",
+          "rotulo": "Semana 10",
+          "placar": "24 x 21"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-10T11:55:05.538Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873051",
+          "jogo": "BUF @ MIN",
+          "rotulo": "Semana 9",
+          "placar": "23 x 6"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-10T03:39:47.099Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Commanders @ Giants",
+          "rotulo": "Semana 10",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-09T21:13:48.949Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "horário alterado",
+          "id": "401873076",
+          "jogo": "PIT @ PHI",
+          "rotulo": "Semana 11",
+          "de": "2026-11-22T21:25Z",
+          "para": "2026-11-22T18:00Z"
+        },
+        {
+          "tipo": "horário alterado",
+          "id": "401873069",
+          "jogo": "JAX @ NYG",
+          "rotulo": "Semana 11",
+          "de": "2026-11-22T18:00Z",
+          "para": "2026-11-22T21:25Z"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-09T10:31:54.919Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873050",
+          "jogo": "TB @ CHI",
+          "rotulo": "Semana 9",
+          "placar": "24 x 27"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-09T02:48:10.771Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873046",
+          "jogo": "HOU @ LAC",
+          "rotulo": "Semana 9",
+          "placar": "44 x 22"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873049",
+          "jogo": "GB @ NE",
+          "rotulo": "Semana 9",
+          "placar": "45 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873048",
+          "jogo": "ARI @ SEA",
+          "rotulo": "Semana 9",
+          "placar": "3 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873047",
+          "jogo": "LV @ SF",
+          "rotulo": "Semana 9",
+          "placar": "17 x 38"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-08T23:15:35.380Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873041",
+          "jogo": "DEN @ CAR",
+          "rotulo": "Semana 9",
+          "placar": "26 x 21"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873040",
+          "jogo": "DAL @ IND",
+          "rotulo": "Semana 9",
+          "placar": "27 x 23"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873045",
+          "jogo": "NYJ @ KC",
+          "rotulo": "Semana 9",
+          "placar": "12 x 35"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873042",
+          "jogo": "DET @ MIA",
+          "rotulo": "Semana 9",
+          "placar": "19 x 9"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873039",
+          "jogo": "CLE @ NO",
+          "rotulo": "Semana 9",
+          "placar": "22 x 23"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873044",
+          "jogo": "NYG @ PHI",
+          "rotulo": "Semana 9",
+          "placar": "19 x 11"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873043",
+          "jogo": "LAR @ WAS",
+          "rotulo": "Semana 9",
+          "placar": "20 x 13"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-08T19:49:48.757Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873038",
+          "jogo": "CIN @ ATL",
+          "rotulo": "Semana 9",
+          "placar": "34 x 17"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-07T07:24:49.025Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Bills @ Vikings",
+          "rotulo": "Semana 9",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-06T21:40:44.962Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Packers @ Patriots",
+          "rotulo": "Semana 9",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-06T08:41:08.030Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Bengals @ Falcons",
+          "rotulo": "Semana 9",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Jets @ Chiefs",
+          "rotulo": "Semana 9",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Broncos @ Panthers",
+          "rotulo": "Semana 9",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Packers @ Patriots",
+          "rotulo": "Semana 9",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Raiders @ 49ers",
+          "rotulo": "Semana 9",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Buccaneers @ Bears",
+          "rotulo": "Semana 9",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-06T08:41:06.568Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873037",
+          "jogo": "JAX @ BAL",
+          "rotulo": "Semana 9",
+          "placar": "33 x 10"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-03T11:26:43.082Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873036",
+          "jogo": "CHI @ SEA",
+          "rotulo": "Semana 8",
+          "placar": "34 x 17"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-02T04:55:59.970Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873033",
+          "jogo": "KC @ DEN",
+          "rotulo": "Semana 8",
+          "placar": "24 x 28"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873034",
+          "jogo": "NE @ MIA",
+          "rotulo": "Semana 8",
+          "placar": "24 x 19"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873035",
+          "jogo": "PHI @ WAS",
+          "rotulo": "Semana 8",
+          "placar": "10 x 27"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-02T00:00:01.332Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873026",
+          "jogo": "BAL @ BUF",
+          "rotulo": "Semana 8",
+          "placar": "10 x 36"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873031",
+          "jogo": "TEN @ CIN",
+          "rotulo": "Semana 8",
+          "placar": "36 x 43"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873024",
+          "jogo": "ARI @ DAL",
+          "rotulo": "Semana 8",
+          "placar": "33 x 30"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873030",
+          "jogo": "MIN @ DET",
+          "rotulo": "Semana 8",
+          "placar": "15 x 19"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873028",
+          "jogo": "IND @ JAX",
+          "rotulo": "Semana 8",
+          "placar": "7 x 42"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873029",
+          "jogo": "LV @ NYJ",
+          "rotulo": "Semana 8",
+          "placar": "38 x 33"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873027",
+          "jogo": "CLE @ PIT",
+          "rotulo": "Semana 8",
+          "placar": "6 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873025",
+          "jogo": "ATL @ TB",
+          "rotulo": "Semana 8",
+          "placar": "0 x 16"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873032",
+          "jogo": "LAC @ LAR",
+          "rotulo": "Semana 8",
+          "placar": "9 x 24"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-31T05:59:50.032Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Bears @ Seahawks",
+          "rotulo": "Semana 8",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-30T09:12:36.481Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Vikings @ Lions",
+          "rotulo": "Semana 8",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chiefs @ Broncos",
+          "rotulo": "Semana 8",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Patriots @ Dolphins",
+          "rotulo": "Semana 8",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Eagles @ Commanders",
+          "rotulo": "Semana 8",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-30T09:12:35.064Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873023",
+          "jogo": "CAR @ GB",
+          "rotulo": "Semana 8",
+          "placar": "19 x 27"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-27T16:07:39.087Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "horário alterado",
+          "id": "401873047",
+          "jogo": "LV @ SF",
+          "rotulo": "Semana 9",
+          "de": "2026-11-08T21:05Z",
+          "para": "2026-11-08T21:25Z"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-27T08:05:05.007Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Panthers @ Packers",
+          "rotulo": "Semana 8",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-27T08:05:01.513Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873009",
+          "jogo": "DAL @ PHI",
+          "rotulo": "Semana 7",
+          "placar": "38 x 21"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-26T06:31:42.500Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873022",
+          "jogo": "KC @ SEA",
+          "rotulo": "Semana 7",
+          "placar": "3 x 20"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-26T01:24:39.877Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873019",
+          "jogo": "DEN @ ARI",
+          "rotulo": "Semana 7",
+          "placar": "30 x 16"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873020",
+          "jogo": "GB @ DET",
+          "rotulo": "Semana 7",
+          "placar": "17 x 20"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873021",
+          "jogo": "LAR @ LV",
+          "rotulo": "Semana 7",
+          "placar": "35 x 21"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-25T21:05:22.488Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873017",
+          "jogo": "SF @ ATL",
+          "rotulo": "Semana 7",
+          "placar": "20 x 29"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873012",
+          "jogo": "CIN @ BAL",
+          "rotulo": "Semana 7",
+          "placar": "35 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873018",
+          "jogo": "TB @ CAR",
+          "rotulo": "Semana 7",
+          "placar": "43 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873016",
+          "jogo": "NYG @ HOU",
+          "rotulo": "Semana 7",
+          "placar": "27 x 21"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873014",
+          "jogo": "IND @ MIN",
+          "rotulo": "Semana 7",
+          "placar": "10 x 16"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873015",
+          "jogo": "MIA @ NYJ",
+          "rotulo": "Semana 7",
+          "placar": "28 x 25"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873013",
+          "jogo": "CLE @ TEN",
+          "rotulo": "Semana 7",
+          "placar": "27 x 24"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-25T18:29:14.098Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873011",
+          "jogo": "PIT @ NO",
+          "rotulo": "Semana 7",
+          "placar": "16 x 10"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-24T07:27:49.703Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Cowboys @ Eagles",
+          "rotulo": "Semana 7",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-23T07:45:47.729Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Steelers @ Saints",
+          "rotulo": "Semana 7",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "49ers @ Falcons",
+          "rotulo": "Semana 7",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Packers @ Lions",
+          "rotulo": "Semana 7",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Chiefs @ Seahawks",
+          "rotulo": "Semana 7",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-23T07:45:46.251Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873010",
+          "jogo": "NE @ CHI",
+          "rotulo": "Semana 7",
+          "placar": "24 x 30"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-20T05:03:08.426Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Patriots @ Bears",
+          "rotulo": "Semana 7",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-20T05:03:06.639Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873008",
+          "jogo": "WAS @ SF",
+          "rotulo": "Semana 6",
+          "placar": "17 x 23"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-19T08:12:46.553Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873007",
+          "jogo": "DAL @ GB",
+          "rotulo": "Semana 6",
+          "placar": "13 x 23"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-18T23:57:22.076Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873004",
+          "jogo": "ARI @ LAR",
+          "rotulo": "Semana 6",
+          "placar": "18 x 16"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873006",
+          "jogo": "LAC @ KC",
+          "rotulo": "Semana 6",
+          "placar": "6 x 22"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873005",
+          "jogo": "BUF @ LV",
+          "rotulo": "Semana 6",
+          "placar": "33 x 30"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-18T21:59:57.080Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872999",
+          "jogo": "CHI @ ATL",
+          "rotulo": "Semana 6",
+          "placar": "31 x 23"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872997",
+          "jogo": "BAL @ CLE",
+          "rotulo": "Semana 6",
+          "placar": "10 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873003",
+          "jogo": "TEN @ IND",
+          "rotulo": "Semana 6",
+          "placar": "26 x 20"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873001",
+          "jogo": "NYJ @ NE",
+          "rotulo": "Semana 6",
+          "placar": "19 x 26"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873000",
+          "jogo": "NO @ NYG",
+          "rotulo": "Semana 6",
+          "placar": "34 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872998",
+          "jogo": "CAR @ PHI",
+          "rotulo": "Semana 6",
+          "placar": "25 x 14"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873002",
+          "jogo": "PIT @ TB",
+          "rotulo": "Semana 6",
+          "placar": "26 x 19"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-18T17:38:09.658Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872996",
+          "jogo": "HOU @ JAX",
+          "rotulo": "Semana 6",
+          "placar": "34 x 31"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-17T04:43:28.905Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Commanders @ 49ers",
+          "rotulo": "Semana 6",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-17T00:01:18.811Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Chargers @ Chiefs",
+          "rotulo": "Semana 6",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-16T05:14:39.915Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Texans @ Jaguars",
+          "rotulo": "Semana 6",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Panthers @ Eagles",
+          "rotulo": "Semana 6",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Bills @ Raiders",
+          "rotulo": "Semana 6",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chargers @ Chiefs",
+          "rotulo": "Semana 6",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Cowboys @ Packers",
+          "rotulo": "Semana 6",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-16T05:14:37.747Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872995",
+          "jogo": "SEA @ DEN",
+          "rotulo": "Semana 6",
+          "placar": "14 x 17"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-13T09:35:25.563Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Seahawks @ Broncos",
+          "rotulo": "Semana 6",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-13T09:35:24.177Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872994",
+          "jogo": "BUF @ LAR",
+          "rotulo": "Semana 5",
+          "placar": "37 x 34"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-12T11:08:12.615Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872993",
+          "jogo": "BAL @ ATL",
+          "rotulo": "Semana 5",
+          "placar": "30 x 23"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-11T23:46:19.479Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872988",
+          "jogo": "NYG @ WAS",
+          "rotulo": "Semana 5",
+          "placar": "27 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872989",
+          "jogo": "DEN @ LAC",
+          "rotulo": "Semana 5",
+          "placar": "23 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872991",
+          "jogo": "DET @ ARI",
+          "rotulo": "Semana 5",
+          "placar": "45 x 21"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872992",
+          "jogo": "SF @ SEA",
+          "rotulo": "Semana 5",
+          "placar": "32 x 29"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-11T20:25:01.272Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872981",
+          "jogo": "PHI @ JAX",
+          "rotulo": "Semana 5",
+          "placar": "17 x 19"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872990",
+          "jogo": "CHI @ GB",
+          "rotulo": "Semana 5",
+          "placar": "7 x 31"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872982",
+          "jogo": "CIN @ MIA",
+          "rotulo": "Semana 5",
+          "placar": "31 x 24"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872986",
+          "jogo": "LV @ NE",
+          "rotulo": "Semana 5",
+          "placar": "17 x 45"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872987",
+          "jogo": "MIN @ NO",
+          "rotulo": "Semana 5",
+          "placar": "23 x 13"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872983",
+          "jogo": "CLE @ NYJ",
+          "rotulo": "Semana 5",
+          "placar": "12 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872985",
+          "jogo": "IND @ PIT",
+          "rotulo": "Semana 5",
+          "placar": "22 x 34"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872984",
+          "jogo": "HOU @ TEN",
+          "rotulo": "Semana 5",
+          "placar": "26 x 3"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-09T08:06:54.797Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Eagles @ Jaguars",
+          "rotulo": "Semana 5",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Bears @ Packers",
+          "rotulo": "Semana 5",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Raiders @ Patriots",
+          "rotulo": "Semana 5",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Broncos @ Chargers",
+          "rotulo": "Semana 5",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "49ers @ Seahawks",
+          "rotulo": "Semana 5",
+          "canais": "sportv, getv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-09T08:06:53.507Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872980",
+          "jogo": "TB @ DAL",
+          "rotulo": "Semana 5",
+          "placar": "24 x 16"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-06T08:15:47.748Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Buccaneers @ Cowboys",
+          "rotulo": "Semana 5",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-06T08:15:45.459Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872979",
+          "jogo": "ATL @ NO",
+          "rotulo": "Semana 4",
+          "placar": "45 x 24"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-05T05:58:07.291Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872978",
+          "jogo": "DET @ CAR",
+          "rotulo": "Semana 4",
+          "placar": "26 x 32"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-05T00:17:28.205Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872974",
+          "jogo": "MIA @ MIN",
+          "rotulo": "Semana 4",
+          "placar": "10 x 15"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872976",
+          "jogo": "KC @ LV",
+          "rotulo": "Semana 4",
+          "placar": "30 x 27"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872977",
+          "jogo": "LAC @ SEA",
+          "rotulo": "Semana 4",
+          "placar": "23 x 30"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872975",
+          "jogo": "DEN @ SF",
+          "rotulo": "Semana 4",
+          "placar": "14 x 24"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-04T21:41:54.079Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872973",
+          "jogo": "TEN @ BAL",
+          "rotulo": "Semana 4",
+          "placar": "18 x 24"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872971",
+          "jogo": "NE @ BUF",
+          "rotulo": "Semana 4",
+          "placar": "29 x 26"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872972",
+          "jogo": "NYJ @ CHI",
+          "rotulo": "Semana 4",
+          "placar": "12 x 23"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872969",
+          "jogo": "JAX @ CIN",
+          "rotulo": "Semana 4",
+          "placar": "22 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872967",
+          "jogo": "DAL @ HOU",
+          "rotulo": "Semana 4",
+          "placar": "34 x 30"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872966",
+          "jogo": "ARI @ NYG",
+          "rotulo": "Semana 4",
+          "placar": "24 x 36"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872970",
+          "jogo": "LAR @ PHI",
+          "rotulo": "Semana 4",
+          "placar": "24 x 20"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872968",
+          "jogo": "GB @ TB",
+          "rotulo": "Semana 4",
+          "placar": "17 x 14"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-04T18:16:33.375Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872965",
+          "jogo": "IND @ WAS",
+          "rotulo": "Semana 4",
+          "placar": "30 x 13"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-03T07:12:40.269Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Falcons @ Saints",
+          "rotulo": "Semana 4",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-02T18:57:34.664Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Colts @ Commanders",
+          "rotulo": "Semana 4",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-02T07:08:10.197Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Colts @ Commanders",
+          "rotulo": "Semana 4",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Patriots @ Bills",
+          "rotulo": "Semana 4",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Broncos @ 49ers",
+          "rotulo": "Semana 4",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chargers @ Seahawks",
+          "rotulo": "Semana 4",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Lions @ Panthers",
+          "rotulo": "Semana 4",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-10-02T07:08:06.705Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872964",
+          "jogo": "PIT @ CLE",
+          "rotulo": "Semana 4",
+          "placar": "24 x 27"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-30T16:34:43.311Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "horário alterado",
+          "id": "401872990",
+          "jogo": "CHI @ GB",
+          "rotulo": "Semana 5",
+          "de": "2026-10-11T20:25Z",
+          "para": "2026-10-11T17:00Z"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-29T06:22:29.622Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Steelers @ Browns",
+          "rotulo": "Semana 4",
+          "canais": "sportv, getv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-29T06:22:28.210Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872963",
+          "jogo": "PHI @ CHI",
+          "rotulo": "Semana 3",
+          "placar": "7 x 27"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-28T06:15:14.276Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872962",
+          "jogo": "LAR @ DEN",
+          "rotulo": "Semana 3",
+          "placar": "26 x 30"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-28T00:57:22.388Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872958",
+          "jogo": "ARI @ SF",
+          "rotulo": "Semana 3",
+          "placar": "30 x 36"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872959",
+          "jogo": "MIN @ TB",
+          "rotulo": "Semana 3",
+          "placar": "23 x 16"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872960",
+          "jogo": "BAL @ DAL",
+          "rotulo": "Semana 3",
+          "placar": "34 x 31"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872961",
+          "jogo": "LV @ NO",
+          "rotulo": "Semana 3",
+          "placar": "35 x 27"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-27T22:23:46.399Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872953",
+          "jogo": "LAC @ BUF",
+          "rotulo": "Semana 3",
+          "placar": "16 x 24"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872949",
+          "jogo": "CAR @ CLE",
+          "rotulo": "Semana 3",
+          "placar": "18 x 21"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872954",
+          "jogo": "NYJ @ DET",
+          "rotulo": "Semana 3",
+          "placar": "24 x 31"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872951",
+          "jogo": "HOU @ IND",
+          "rotulo": "Semana 3",
+          "placar": "17 x 19"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872957",
+          "jogo": "NE @ JAX",
+          "rotulo": "Semana 3",
+          "placar": "6 x 35"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872952",
+          "jogo": "KC @ MIA",
+          "rotulo": "Semana 3",
+          "placar": "24 x 10"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872956",
+          "jogo": "TEN @ NYG",
+          "rotulo": "Semana 3",
+          "placar": "7 x 12"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872950",
+          "jogo": "CIN @ PIT",
+          "rotulo": "Semana 3",
+          "placar": "27 x 30"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872955",
+          "jogo": "SEA @ WAS",
+          "rotulo": "Semana 3",
+          "placar": "31 x 33"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-25T08:00:00.620Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Chargers @ Bills",
+          "rotulo": "Semana 3",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Bengals @ Steelers",
+          "rotulo": "Semana 3",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Vikings @ Buccaneers",
+          "rotulo": "Semana 3",
+          "canais": "espn"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-25T07:59:57.217Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872948",
+          "jogo": "ATL @ GB",
+          "rotulo": "Semana 3",
+          "placar": "35 x 14"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-22T07:49:05.651Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872947",
+          "jogo": "NYG @ LAR",
+          "rotulo": "Semana 2",
+          "placar": "6 x 28"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-21T05:10:22.322Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872945",
+          "jogo": "IND @ KC",
+          "rotulo": "Semana 2",
+          "placar": "30 x 33"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-21T00:19:44.584Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872935",
+          "jogo": "CLE @ TB",
+          "rotulo": "Semana 2",
+          "placar": "23 x 19"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872940",
+          "jogo": "JAX @ DEN",
+          "rotulo": "Semana 2",
+          "placar": "13 x 20"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872941",
+          "jogo": "LV @ LAC",
+          "rotulo": "Semana 2",
+          "placar": "26 x 14"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872943",
+          "jogo": "SEA @ ARI",
+          "rotulo": "Semana 2",
+          "placar": "31 x 7"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872944",
+          "jogo": "WAS @ DAL",
+          "rotulo": "Semana 2",
+          "placar": "20 x 37"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872942",
+          "jogo": "MIA @ SF",
+          "rotulo": "Semana 2",
+          "placar": "13 x 35"
+        }
+      ]
+    },
+    {
+      "quando": "2026-09-20T22:00:29.493Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401872933",
+          "jogo": "CAR @ ATL",
+          "rotulo": "Semana 2",
+          "placar": "34 x 3"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872938",
+          "jogo": "NO @ BAL",
+          "rotulo": "Semana 2",
+          "placar": "24 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872937",
+          "jogo": "MIN @ CHI",
+          "rotulo": "Semana 2",
+          "placar": "9 x 3"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872934",
+          "jogo": "CIN @ HOU",
+          "rotulo": "Semana 2",
+          "placar": "20 x 6"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872946",
+          "jogo": "PIT @ NE",
+          "rotulo": "Semana 2",
+          "placar": "3 x 20"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872936",
+          "jogo": "GB @ NYJ",
+          "rotulo": "Semana 2",
+          "placar": "20 x 17"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401872939",
+          "jogo": "PHI @ TEN",
+          "rotulo": "Semana 2",
+          "placar": "24 x 20"
+        }
+      ]
+    },
+    {
       "quando": "2026-09-18T04:17:13.851Z",
       "origem": "sync-grade-br",
       "mudancas": [

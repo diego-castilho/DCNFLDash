@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "2026-09-18",
+  "atualizadoEm": "2026-11-24",
   "jogos": {
     "1:NE@SEA": {
       "semana": 1,
@@ -188,11 +188,12 @@
       "visitante": "PIT",
       "mandante": "CLE",
       "canais": [
-        "sportv"
+        "sportv",
+        "getv"
       ],
-      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-04",
       "confianca": "confirmado"
     },
     "4:DET@CAR": {
@@ -203,9 +204,9 @@
       "canais": [
         "sportv"
       ],
-      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-06",
       "confianca": "confirmado"
     },
     "4:ATL@NO": {
@@ -216,9 +217,9 @@
       "canais": [
         "espn"
       ],
-      "fonte": "regra fixa · Monday Night · pacote da ESPN",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-08",
       "confianca": "confirmado"
     },
     "5:TB@DAL": {
@@ -227,11 +228,12 @@
       "visitante": "TB",
       "mandante": "DAL",
       "canais": [
-        "sportv"
+        "sportv",
+        "getv"
       ],
-      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-10",
       "confianca": "confirmado"
     },
     "5:BAL@ATL": {
@@ -244,7 +246,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "5:BUF@LAR": {
@@ -257,7 +259,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "6:SEA@DEN": {
@@ -266,11 +268,12 @@
       "visitante": "SEA",
       "mandante": "DEN",
       "canais": [
-        "sportv"
+        "sportv",
+        "getv"
       ],
-      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-18",
       "confianca": "confirmado"
     },
     "6:DAL@GB": {
@@ -281,9 +284,9 @@
       "canais": [
         "sportv"
       ],
-      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-21",
       "confianca": "confirmado"
     },
     "6:WAS@SF": {
@@ -294,9 +297,9 @@
       "canais": [
         "espn"
       ],
-      "fonte": "regra fixa · Monday Night · pacote da ESPN",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-22",
       "confianca": "confirmado"
     },
     "7:NE@CHI": {
@@ -305,11 +308,12 @@
       "visitante": "NE",
       "mandante": "CHI",
       "canais": [
-        "sportv"
+        "sportv",
+        "getv"
       ],
-      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-25",
       "confianca": "confirmado"
     },
     "7:KC@SEA": {
@@ -320,9 +324,9 @@
       "canais": [
         "sportv"
       ],
-      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-28",
       "confianca": "confirmado"
     },
     "7:DAL@PHI": {
@@ -333,9 +337,9 @@
       "canais": [
         "espn"
       ],
-      "fonte": "regra fixa · Monday Night · pacote da ESPN",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-29",
       "confianca": "confirmado"
     },
     "8:CAR@GB": {
@@ -344,11 +348,12 @@
       "visitante": "CAR",
       "mandante": "GB",
       "canais": [
-        "sportv"
+        "sportv",
+        "getv"
       ],
-      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-01",
       "confianca": "confirmado"
     },
     "8:PHI@WAS": {
@@ -359,9 +364,9 @@
       "canais": [
         "sportv"
       ],
-      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-03",
       "confianca": "confirmado"
     },
     "8:CHI@SEA": {
@@ -372,9 +377,9 @@
       "canais": [
         "espn"
       ],
-      "fonte": "regra fixa · Monday Night · pacote da ESPN",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-05",
       "confianca": "confirmado"
     },
     "9:JAX@BAL": {
@@ -387,7 +392,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "9:TB@CHI": {
@@ -398,9 +403,9 @@
       "canais": [
         "sportv"
       ],
-      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-10",
       "confianca": "confirmado"
     },
     "9:BUF@MIN": {
@@ -411,9 +416,9 @@
       "canais": [
         "espn"
       ],
-      "fonte": "regra fixa · Monday Night · pacote da ESPN",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-12",
       "confianca": "confirmado"
     },
     "10:WAS@NYG": {
@@ -422,11 +427,12 @@
       "visitante": "WAS",
       "mandante": "NYG",
       "canais": [
-        "sportv"
+        "sportv",
+        "getv"
       ],
-      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-15",
       "confianca": "confirmado"
     },
     "10:PIT@CIN": {
@@ -437,9 +443,9 @@
       "canais": [
         "sportv"
       ],
-      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-18",
       "confianca": "confirmado"
     },
     "10:LAC@BAL": {
@@ -452,7 +458,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "11:IND@HOU": {
@@ -461,11 +467,12 @@
       "visitante": "IND",
       "mandante": "HOU",
       "canais": [
-        "sportv"
+        "sportv",
+        "getv"
       ],
-      "fonte": "regra fixa · Thursday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-22",
       "confianca": "confirmado"
     },
     "11:MIN@SF": {
@@ -476,9 +483,9 @@
       "canais": [
         "sportv"
       ],
-      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "11:CIN@WAS": {
@@ -489,9 +496,9 @@
       "canais": [
         "espn"
       ],
-      "fonte": "regra fixa · Monday Night · pacote da ESPN",
-      "url": "",
-      "checadoEm": "2026-09-18",
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "12:GB@LAR": {
@@ -504,7 +511,7 @@
       ],
       "fonte": "regra fixa · Netflix transmite globalmente",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "12:NE@LAC": {
@@ -517,7 +524,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-17",
       "confianca": "confirmado"
     },
     "12:CAR@TB": {
@@ -530,7 +537,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "13:KC@LAR": {
@@ -543,7 +550,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "13:HOU@PIT": {
@@ -556,7 +563,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "13:DAL@SEA": {
@@ -569,7 +576,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "14:MIN@NE": {
@@ -582,7 +589,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "14:BUF@GB": {
@@ -595,7 +602,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "14:PIT@JAX": {
@@ -608,7 +615,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "15:SF@LAC": {
@@ -621,7 +628,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "15:DET@MIN": {
@@ -634,7 +641,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "15:NE@KC": {
@@ -647,7 +654,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "16:HOU@PHI": {
@@ -660,7 +667,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "16:GB@CHI": {
@@ -673,7 +680,7 @@
       ],
       "fonte": "regra fixa · Netflix transmite globalmente",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "16:BUF@DEN": {
@@ -686,7 +693,7 @@
       ],
       "fonte": "regra fixa · Netflix transmite globalmente",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "16:JAX@DAL": {
@@ -699,7 +706,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "16:NYG@DET": {
@@ -712,7 +719,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "17:BAL@CIN": {
@@ -725,7 +732,7 @@
       ],
       "fonte": "regra fixa · Thursday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "17:PHI@SF": {
@@ -738,7 +745,7 @@
       ],
       "fonte": "regra fixa · Sunday Night · pacote do SporTV",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "17:HOU@GB": {
@@ -751,7 +758,7 @@
       ],
       "fonte": "regra fixa · Monday Night · pacote da ESPN",
       "url": "",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     },
     "2:PIT@NE": {
@@ -764,7 +771,7 @@
       ],
       "fonte": "agenda ge.globo",
       "url": "https://ge.globo.com/agenda/",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-09-23",
       "confianca": "confirmado"
     },
     "2:MIN@CHI": {
@@ -777,7 +784,7 @@
       ],
       "fonte": "agenda ge.globo",
       "url": "https://ge.globo.com/agenda/",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-09-23",
       "confianca": "confirmado"
     },
     "2:JAX@DEN": {
@@ -791,7 +798,7 @@
       ],
       "fonte": "agenda ge.globo",
       "url": "https://ge.globo.com/agenda/",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-09-23",
       "confianca": "confirmado"
     },
     "2:WAS@DAL": {
@@ -804,7 +811,502 @@
       ],
       "fonte": "agenda ge.globo",
       "url": "https://ge.globo.com/agenda/",
-      "checadoEm": "2026-09-18",
+      "checadoEm": "2026-09-23",
+      "confianca": "confirmado"
+    },
+    "3:LAC@BUF": {
+      "fase": "regular",
+      "semana": 3,
+      "visitante": "LAC",
+      "mandante": "BUF",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-09-30",
+      "confianca": "confirmado"
+    },
+    "3:CIN@PIT": {
+      "fase": "regular",
+      "semana": 3,
+      "visitante": "CIN",
+      "mandante": "PIT",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-09-30",
+      "confianca": "confirmado"
+    },
+    "3:MIN@TB": {
+      "fase": "regular",
+      "semana": 3,
+      "visitante": "MIN",
+      "mandante": "TB",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-09-30",
+      "confianca": "confirmado"
+    },
+    "4:IND@WAS": {
+      "fase": "regular",
+      "semana": 4,
+      "visitante": "IND",
+      "mandante": "WAS",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-06",
+      "confianca": "confirmado"
+    },
+    "4:NE@BUF": {
+      "fase": "regular",
+      "semana": 4,
+      "visitante": "NE",
+      "mandante": "BUF",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-06",
+      "confianca": "confirmado"
+    },
+    "4:DEN@SF": {
+      "fase": "regular",
+      "semana": 4,
+      "visitante": "DEN",
+      "mandante": "SF",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-06",
+      "confianca": "confirmado"
+    },
+    "4:LAC@SEA": {
+      "fase": "regular",
+      "semana": 4,
+      "visitante": "LAC",
+      "mandante": "SEA",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-06",
+      "confianca": "confirmado"
+    },
+    "5:PHI@JAX": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "PHI",
+      "mandante": "JAX",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-14",
+      "confianca": "confirmado"
+    },
+    "5:CHI@GB": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "CHI",
+      "mandante": "GB",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-14",
+      "confianca": "confirmado"
+    },
+    "5:LV@NE": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "LV",
+      "mandante": "NE",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-14",
+      "confianca": "confirmado"
+    },
+    "5:DEN@LAC": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "DEN",
+      "mandante": "LAC",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-14",
+      "confianca": "confirmado"
+    },
+    "5:SF@SEA": {
+      "fase": "regular",
+      "semana": 5,
+      "visitante": "SF",
+      "mandante": "SEA",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-14",
+      "confianca": "confirmado"
+    },
+    "6:HOU@JAX": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "HOU",
+      "mandante": "JAX",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-21",
+      "confianca": "confirmado"
+    },
+    "6:CAR@PHI": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "CAR",
+      "mandante": "PHI",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-21",
+      "confianca": "confirmado"
+    },
+    "6:BUF@LV": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "BUF",
+      "mandante": "LV",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-21",
+      "confianca": "confirmado"
+    },
+    "6:LAC@KC": {
+      "fase": "regular",
+      "semana": 6,
+      "visitante": "LAC",
+      "mandante": "KC",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-21",
+      "confianca": "confirmado"
+    },
+    "7:PIT@NO": {
+      "fase": "regular",
+      "semana": 7,
+      "visitante": "PIT",
+      "mandante": "NO",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-28",
+      "confianca": "confirmado"
+    },
+    "7:SF@ATL": {
+      "fase": "regular",
+      "semana": 7,
+      "visitante": "SF",
+      "mandante": "ATL",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-28",
+      "confianca": "confirmado"
+    },
+    "7:GB@DET": {
+      "fase": "regular",
+      "semana": 7,
+      "visitante": "GB",
+      "mandante": "DET",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-10-28",
+      "confianca": "confirmado"
+    },
+    "8:MIN@DET": {
+      "fase": "regular",
+      "semana": 8,
+      "visitante": "MIN",
+      "mandante": "DET",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-03",
+      "confianca": "confirmado"
+    },
+    "8:KC@DEN": {
+      "fase": "regular",
+      "semana": 8,
+      "visitante": "KC",
+      "mandante": "DEN",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-03",
+      "confianca": "confirmado"
+    },
+    "8:NE@MIA": {
+      "fase": "regular",
+      "semana": 8,
+      "visitante": "NE",
+      "mandante": "MIA",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-03",
+      "confianca": "confirmado"
+    },
+    "9:CIN@ATL": {
+      "fase": "regular",
+      "semana": 9,
+      "visitante": "CIN",
+      "mandante": "ATL",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-10",
+      "confianca": "confirmado"
+    },
+    "9:NYJ@KC": {
+      "fase": "regular",
+      "semana": 9,
+      "visitante": "NYJ",
+      "mandante": "KC",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-10",
+      "confianca": "confirmado"
+    },
+    "9:DEN@CAR": {
+      "fase": "regular",
+      "semana": 9,
+      "visitante": "DEN",
+      "mandante": "CAR",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-10",
+      "confianca": "confirmado"
+    },
+    "9:GB@NE": {
+      "fase": "regular",
+      "semana": 9,
+      "visitante": "GB",
+      "mandante": "NE",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-10",
+      "confianca": "confirmado"
+    },
+    "9:LV@SF": {
+      "fase": "regular",
+      "semana": 9,
+      "visitante": "LV",
+      "mandante": "SF",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-10",
+      "confianca": "confirmado"
+    },
+    "10:NE@DET": {
+      "fase": "regular",
+      "semana": 10,
+      "visitante": "NE",
+      "mandante": "DET",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-18",
+      "confianca": "confirmado"
+    },
+    "10:MIN@GB": {
+      "fase": "regular",
+      "semana": 10,
+      "visitante": "MIN",
+      "mandante": "GB",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-18",
+      "confianca": "confirmado"
+    },
+    "10:KC@ATL": {
+      "fase": "regular",
+      "semana": 10,
+      "visitante": "KC",
+      "mandante": "ATL",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-18",
+      "confianca": "confirmado"
+    },
+    "10:SEA@LV": {
+      "fase": "regular",
+      "semana": 10,
+      "visitante": "SEA",
+      "mandante": "LV",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-18",
+      "confianca": "confirmado"
+    },
+    "10:SF@DAL": {
+      "fase": "regular",
+      "semana": 10,
+      "visitante": "SF",
+      "mandante": "DAL",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-18",
+      "confianca": "confirmado"
+    },
+    "12:LV@CLE": {
+      "fase": "regular",
+      "semana": 12,
+      "visitante": "LV",
+      "mandante": "CLE",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "regra fixa · Sunday Night · pacote do SporTV",
+      "url": "",
+      "checadoEm": "2026-11-24",
+      "confianca": "confirmado"
+    },
+    "11:ARI@KC": {
+      "fase": "regular",
+      "semana": 11,
+      "visitante": "ARI",
+      "mandante": "KC",
+      "canais": [
+        "sportv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-24",
+      "confianca": "confirmado"
+    },
+    "11:TB@DET": {
+      "fase": "regular",
+      "semana": 11,
+      "visitante": "TB",
+      "mandante": "DET",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-24",
+      "confianca": "confirmado"
+    },
+    "11:LV@DEN": {
+      "fase": "regular",
+      "semana": 11,
+      "visitante": "LV",
+      "mandante": "DEN",
+      "canais": [
+        "espn"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-24",
+      "confianca": "confirmado"
+    },
+    "11:JAX@NYG": {
+      "fase": "regular",
+      "semana": 11,
+      "visitante": "JAX",
+      "mandante": "NYG",
+      "canais": [
+        "sportv",
+        "getv"
+      ],
+      "fonte": "agenda ge.globo",
+      "url": "https://ge.globo.com/agenda/",
+      "checadoEm": "2026-11-24",
       "confianca": "confirmado"
     }
   }

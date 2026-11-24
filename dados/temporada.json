@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-09-18T04:15:58.545Z",
-  "verificadoEm": "2026-09-18",
+  "atualizadoEm": "2026-11-24T01:19:15.295Z",
+  "verificadoEm": "2026-11-23",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -92,7 +92,7 @@
             "uf": "NC",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -121,7 +121,7 @@
             "uf": "OH",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -150,7 +150,7 @@
             "uf": "MI",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -266,7 +266,7 @@
             "uf": "PA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -353,7 +353,7 @@
             "uf": "NV",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -411,7 +411,7 @@
             "uf": "PA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -525,8 +525,11 @@
           "mandante": "ATL",
           "kickoff": "2026-09-20T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 3
+          },
           "parcial": null,
           "local": {
             "estadio": "Mercedes-Benz Stadium",
@@ -534,7 +537,7 @@
             "uf": "GA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -551,8 +554,11 @@
           "mandante": "BAL",
           "kickoff": "2026-09-20T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "M&T Bank Stadium",
@@ -577,8 +583,11 @@
           "mandante": "CHI",
           "kickoff": "2026-09-20T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 9,
+            "mandante": 3
+          },
           "parcial": null,
           "local": {
             "estadio": "Soldier Field",
@@ -586,7 +595,7 @@
             "uf": "IL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -603,8 +612,11 @@
           "mandante": "HOU",
           "kickoff": "2026-09-20T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 20,
+            "mandante": 6
+          },
           "parcial": null,
           "local": {
             "estadio": "Reliant Stadium",
@@ -629,8 +641,11 @@
           "mandante": "NE",
           "kickoff": "2026-09-20T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 3,
+            "mandante": 20
+          },
           "parcial": null,
           "local": {
             "estadio": "Gillette Stadium",
@@ -655,8 +670,11 @@
           "mandante": "NYJ",
           "kickoff": "2026-09-20T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 20,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -664,7 +682,7 @@
             "uf": "NJ",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -681,8 +699,11 @@
           "mandante": "TB",
           "kickoff": "2026-09-20T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 19
+          },
           "parcial": null,
           "local": {
             "estadio": "Raymond James Stadium",
@@ -707,8 +728,11 @@
           "mandante": "TEN",
           "kickoff": "2026-09-20T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 20
+          },
           "parcial": null,
           "local": {
             "estadio": "Nissan Stadium",
@@ -716,7 +740,7 @@
             "uf": "TN",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -733,8 +757,11 @@
           "mandante": "DEN",
           "kickoff": "2026-09-20T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 13,
+            "mandante": 20
+          },
           "parcial": null,
           "local": {
             "estadio": "Empower Field at Mile High",
@@ -759,8 +786,11 @@
           "mandante": "LAC",
           "kickoff": "2026-09-20T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 14
+          },
           "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
@@ -785,8 +815,11 @@
           "mandante": "ARI",
           "kickoff": "2026-09-20T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 31,
+            "mandante": 7
+          },
           "parcial": null,
           "local": {
             "estadio": "State Farm Stadium",
@@ -794,7 +827,7 @@
             "uf": "AZ",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -811,8 +844,11 @@
           "mandante": "DAL",
           "kickoff": "2026-09-20T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 20,
+            "mandante": 37
+          },
           "parcial": null,
           "local": {
             "estadio": "AT&T Stadium",
@@ -820,7 +856,7 @@
             "uf": "TX",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -837,8 +873,11 @@
           "mandante": "SF",
           "kickoff": "2026-09-20T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 13,
+            "mandante": 35
+          },
           "parcial": null,
           "local": {
             "estadio": "Levi's Stadium",
@@ -846,7 +885,7 @@
             "uf": "CA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -863,8 +902,11 @@
           "mandante": "KC",
           "kickoff": "2026-09-21T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 33
+          },
           "parcial": null,
           "local": {
             "estadio": "Arrowhead Stadium",
@@ -889,8 +931,11 @@
           "mandante": "LAR",
           "kickoff": "2026-09-22T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 6,
+            "mandante": 28
+          },
           "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
@@ -925,8 +970,11 @@
           "mandante": "GB",
           "kickoff": "2026-09-25T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 35,
+            "mandante": 14
+          },
           "parcial": null,
           "local": {
             "estadio": "Lambeau Field",
@@ -951,8 +999,11 @@
           "mandante": "BUF",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 16,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "Highmark Stadium",
@@ -960,7 +1011,7 @@
             "uf": "NY",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -977,8 +1028,11 @@
           "mandante": "CLE",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 18,
+            "mandante": 21
+          },
           "parcial": null,
           "local": {
             "estadio": "Huntington Bank Field",
@@ -986,7 +1040,7 @@
             "uf": "OH",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1003,8 +1057,11 @@
           "mandante": "DET",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 31
+          },
           "parcial": null,
           "local": {
             "estadio": "Ford Field",
@@ -1012,7 +1069,7 @@
             "uf": "MI",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1029,8 +1086,11 @@
           "mandante": "IND",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 19
+          },
           "parcial": null,
           "local": {
             "estadio": "Lucas Oil Stadium",
@@ -1055,8 +1115,11 @@
           "mandante": "JAX",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 6,
+            "mandante": 35
+          },
           "parcial": null,
           "local": {
             "estadio": "EverBank Stadium",
@@ -1081,8 +1144,11 @@
           "mandante": "MIA",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 10
+          },
           "parcial": null,
           "local": {
             "estadio": "Hard Rock Stadium",
@@ -1107,8 +1173,11 @@
           "mandante": "NYG",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 7,
+            "mandante": 12
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -1133,8 +1202,11 @@
           "mandante": "PIT",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 27,
+            "mandante": 30
+          },
           "parcial": null,
           "local": {
             "estadio": "Acrisure Stadium",
@@ -1159,8 +1231,11 @@
           "mandante": "WAS",
           "kickoff": "2026-09-27T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 31,
+            "mandante": 33
+          },
           "parcial": null,
           "local": {
             "estadio": "Northwest Stadium",
@@ -1168,7 +1243,7 @@
             "uf": "MD",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1185,8 +1260,11 @@
           "mandante": "SF",
           "kickoff": "2026-09-27T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 36
+          },
           "parcial": null,
           "local": {
             "estadio": "Levi's Stadium",
@@ -1194,7 +1272,7 @@
             "uf": "CA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1211,8 +1289,11 @@
           "mandante": "TB",
           "kickoff": "2026-09-27T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 16
+          },
           "parcial": null,
           "local": {
             "estadio": "Raymond James Stadium",
@@ -1220,7 +1301,7 @@
             "uf": "FL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1237,8 +1318,11 @@
           "mandante": "DAL",
           "kickoff": "2026-09-27T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 31
+          },
           "parcial": null,
           "local": {
             "estadio": "Maracanã Stadium",
@@ -1263,8 +1347,11 @@
           "mandante": "NO",
           "kickoff": "2026-09-27T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 35,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Caesars Superdome",
@@ -1289,8 +1376,11 @@
           "mandante": "DEN",
           "kickoff": "2026-09-28T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 30
+          },
           "parcial": null,
           "local": {
             "estadio": "Empower Field at Mile High",
@@ -1315,8 +1405,11 @@
           "mandante": "CHI",
           "kickoff": "2026-09-29T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 7,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Soldier Field",
@@ -1351,8 +1444,11 @@
           "mandante": "CLE",
           "kickoff": "2026-10-02T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Huntington Bank Field",
@@ -1377,8 +1473,11 @@
           "mandante": "WAS",
           "kickoff": "2026-10-04T13:30Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "Tottenham Hotspur Stadium",
@@ -1403,8 +1502,11 @@
           "mandante": "BAL",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 18,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "M&T Bank Stadium",
@@ -1429,8 +1531,11 @@
           "mandante": "BUF",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 29,
+            "mandante": 26
+          },
           "parcial": null,
           "local": {
             "estadio": "Highmark Stadium",
@@ -1455,8 +1560,11 @@
           "mandante": "CHI",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 12,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
             "estadio": "Soldier Field",
@@ -1464,7 +1572,7 @@
             "uf": "IL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1481,8 +1589,11 @@
           "mandante": "CIN",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 22,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "Paycor Stadium",
@@ -1507,8 +1618,11 @@
           "mandante": "HOU",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 30
+          },
           "parcial": null,
           "local": {
             "estadio": "Reliant Stadium",
@@ -1516,7 +1630,7 @@
             "uf": "TX",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1533,8 +1647,11 @@
           "mandante": "NYG",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 36
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -1559,8 +1676,11 @@
           "mandante": "PHI",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 20
+          },
           "parcial": null,
           "local": {
             "estadio": "Lincoln Financial Field",
@@ -1568,7 +1688,7 @@
             "uf": "PA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1585,8 +1705,11 @@
           "mandante": "TB",
           "kickoff": "2026-10-04T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 14
+          },
           "parcial": null,
           "local": {
             "estadio": "Raymond James Stadium",
@@ -1594,7 +1717,7 @@
             "uf": "FL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1611,8 +1734,11 @@
           "mandante": "MIN",
           "kickoff": "2026-10-04T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 15
+          },
           "parcial": null,
           "local": {
             "estadio": "U.S. Bank Stadium",
@@ -1620,7 +1746,7 @@
             "uf": "MN",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1637,8 +1763,11 @@
           "mandante": "LV",
           "kickoff": "2026-10-04T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Allegiant Stadium",
@@ -1663,8 +1792,11 @@
           "mandante": "SEA",
           "kickoff": "2026-10-04T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 30
+          },
           "parcial": null,
           "local": {
             "estadio": "Lumen Field",
@@ -1689,8 +1821,11 @@
           "mandante": "SF",
           "kickoff": "2026-10-04T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 14,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "Levi's Stadium",
@@ -1715,8 +1850,11 @@
           "mandante": "CAR",
           "kickoff": "2026-10-05T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 32
+          },
           "parcial": null,
           "local": {
             "estadio": "Bank of America Stadium",
@@ -1741,8 +1879,11 @@
           "mandante": "NO",
           "kickoff": "2026-10-06T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 45,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "Caesars Superdome",
@@ -1776,8 +1917,11 @@
           "mandante": "DAL",
           "kickoff": "2026-10-09T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 16
+          },
           "parcial": null,
           "local": {
             "estadio": "AT&T Stadium",
@@ -1802,8 +1946,11 @@
           "mandante": "JAX",
           "kickoff": "2026-10-11T13:30Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 19
+          },
           "parcial": null,
           "local": {
             "estadio": "Tottenham Hotspur Stadium",
@@ -1819,6 +1966,35 @@
           "nota": "NFL London Games"
         },
         {
+          "id": "401872990",
+          "fase": "regular",
+          "semana": 5,
+          "rotulo": "Semana 5",
+          "aDefinir": false,
+          "visitante": "CHI",
+          "mandante": "GB",
+          "kickoff": "2026-10-11T17:00Z",
+          "horarioAConfirmar": false,
+          "estado": "final",
+          "placar": {
+            "visitante": 7,
+            "mandante": 31
+          },
+          "parcial": null,
+          "local": {
+            "estadio": "Lambeau Field",
+            "cidade": "Green Bay",
+            "uf": "WI",
+            "pais": "USA"
+          },
+          "emissoraEua": "Fox",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
+          "nota": ""
+        },
+        {
           "id": "401872982",
           "fase": "regular",
           "semana": 5,
@@ -1828,8 +2004,11 @@
           "mandante": "MIA",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 31,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "Hard Rock Stadium",
@@ -1837,7 +2016,7 @@
             "uf": "FL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1854,8 +2033,11 @@
           "mandante": "NE",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 45
+          },
           "parcial": null,
           "local": {
             "estadio": "Gillette Stadium",
@@ -1880,8 +2062,11 @@
           "mandante": "NO",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "Caesars Superdome",
@@ -1889,7 +2074,7 @@
             "uf": "LA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -1906,8 +2091,11 @@
           "mandante": "NYJ",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 12,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -1932,8 +2120,11 @@
           "mandante": "PIT",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 22,
+            "mandante": 34
+          },
           "parcial": null,
           "local": {
             "estadio": "Acrisure Stadium",
@@ -1958,8 +2149,11 @@
           "mandante": "TEN",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 3
+          },
           "parcial": null,
           "local": {
             "estadio": "Nissan Stadium",
@@ -1984,8 +2178,11 @@
           "mandante": "WAS",
           "kickoff": "2026-10-11T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 27,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Northwest Stadium",
@@ -1993,7 +2190,7 @@
             "uf": "MD",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2010,8 +2207,11 @@
           "mandante": "LAC",
           "kickoff": "2026-10-11T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
@@ -2036,8 +2236,11 @@
           "mandante": "ARI",
           "kickoff": "2026-10-11T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 45,
+            "mandante": 21
+          },
           "parcial": null,
           "local": {
             "estadio": "State Farm Stadium",
@@ -2045,33 +2248,7 @@
             "uf": "AZ",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
-          "emissoras": [
-            "fox"
-          ],
-          "pacote": null,
-          "nota": ""
-        },
-        {
-          "id": "401872990",
-          "fase": "regular",
-          "semana": 5,
-          "rotulo": "Semana 5",
-          "aDefinir": false,
-          "visitante": "CHI",
-          "mandante": "GB",
-          "kickoff": "2026-10-11T20:25Z",
-          "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
-          "parcial": null,
-          "local": {
-            "estadio": "Lambeau Field",
-            "cidade": "Green Bay",
-            "uf": "WI",
-            "pais": "USA"
-          },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2088,8 +2265,11 @@
           "mandante": "SEA",
           "kickoff": "2026-10-11T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 32,
+            "mandante": 29
+          },
           "parcial": null,
           "local": {
             "estadio": "Lumen Field",
@@ -2097,7 +2277,7 @@
             "uf": "WA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2114,8 +2294,11 @@
           "mandante": "ATL",
           "kickoff": "2026-10-12T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
             "estadio": "Mercedes-Benz Stadium",
@@ -2140,8 +2323,11 @@
           "mandante": "LAR",
           "kickoff": "2026-10-13T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 37,
+            "mandante": 34
+          },
           "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
@@ -2176,8 +2362,11 @@
           "mandante": "DEN",
           "kickoff": "2026-10-16T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 14,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "Empower Field at Mile High",
@@ -2202,8 +2391,11 @@
           "mandante": "JAX",
           "kickoff": "2026-10-18T13:30Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 31
+          },
           "parcial": null,
           "local": {
             "estadio": "Wembley Stadium",
@@ -2228,8 +2420,11 @@
           "mandante": "ATL",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 31,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
             "estadio": "Mercedes-Benz Stadium",
@@ -2237,7 +2432,7 @@
             "uf": "GA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2254,8 +2449,11 @@
           "mandante": "CLE",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "Huntington Bank Field",
@@ -2263,7 +2461,7 @@
             "uf": "OH",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2280,8 +2478,11 @@
           "mandante": "IND",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 20
+          },
           "parcial": null,
           "local": {
             "estadio": "Lucas Oil Stadium",
@@ -2289,7 +2490,7 @@
             "uf": "IN",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2306,8 +2507,11 @@
           "mandante": "NE",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 19,
+            "mandante": 26
+          },
           "parcial": null,
           "local": {
             "estadio": "Gillette Stadium",
@@ -2332,8 +2536,11 @@
           "mandante": "NYG",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -2341,7 +2548,7 @@
             "uf": "NJ",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2358,8 +2565,11 @@
           "mandante": "PHI",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 25,
+            "mandante": 14
+          },
           "parcial": null,
           "local": {
             "estadio": "Lincoln Financial Field",
@@ -2384,8 +2594,11 @@
           "mandante": "TB",
           "kickoff": "2026-10-18T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 19
+          },
           "parcial": null,
           "local": {
             "estadio": "Raymond James Stadium",
@@ -2410,8 +2623,11 @@
           "mandante": "LAR",
           "kickoff": "2026-10-18T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 18,
+            "mandante": 16
+          },
           "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
@@ -2419,7 +2635,7 @@
             "uf": "CA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2436,8 +2652,11 @@
           "mandante": "KC",
           "kickoff": "2026-10-18T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 6,
+            "mandante": 22
+          },
           "parcial": null,
           "local": {
             "estadio": "Arrowhead Stadium",
@@ -2462,8 +2681,11 @@
           "mandante": "LV",
           "kickoff": "2026-10-18T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 33,
+            "mandante": 30
+          },
           "parcial": null,
           "local": {
             "estadio": "Allegiant Stadium",
@@ -2488,8 +2710,11 @@
           "mandante": "GB",
           "kickoff": "2026-10-19T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 13,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
             "estadio": "Lambeau Field",
@@ -2514,8 +2739,11 @@
           "mandante": "SF",
           "kickoff": "2026-10-20T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
             "estadio": "Levi's Stadium",
@@ -2550,8 +2778,11 @@
           "mandante": "CHI",
           "kickoff": "2026-10-23T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 30
+          },
           "parcial": null,
           "local": {
             "estadio": "Soldier Field",
@@ -2576,8 +2807,11 @@
           "mandante": "NO",
           "kickoff": "2026-10-25T13:30Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 16,
+            "mandante": 10
+          },
           "parcial": null,
           "local": {
             "estadio": "Stade de France",
@@ -2602,8 +2836,11 @@
           "mandante": "ATL",
           "kickoff": "2026-10-25T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 20,
+            "mandante": 29
+          },
           "parcial": null,
           "local": {
             "estadio": "Mercedes-Benz Stadium",
@@ -2611,7 +2848,7 @@
             "uf": "GA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2628,8 +2865,11 @@
           "mandante": "BAL",
           "kickoff": "2026-10-25T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 35,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "M&T Bank Stadium",
@@ -2654,8 +2894,11 @@
           "mandante": "CAR",
           "kickoff": "2026-10-25T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 43,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "Bank of America Stadium",
@@ -2663,7 +2906,7 @@
             "uf": "NC",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2680,8 +2923,11 @@
           "mandante": "HOU",
           "kickoff": "2026-10-25T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 27,
+            "mandante": 21
+          },
           "parcial": null,
           "local": {
             "estadio": "Reliant Stadium",
@@ -2689,7 +2935,7 @@
             "uf": "TX",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2706,8 +2952,11 @@
           "mandante": "MIN",
           "kickoff": "2026-10-25T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 16
+          },
           "parcial": null,
           "local": {
             "estadio": "U.S. Bank Stadium",
@@ -2732,8 +2981,11 @@
           "mandante": "NYJ",
           "kickoff": "2026-10-25T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 28,
+            "mandante": 25
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -2758,8 +3010,11 @@
           "mandante": "TEN",
           "kickoff": "2026-10-25T17:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 27,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "Nissan Stadium",
@@ -2784,8 +3039,11 @@
           "mandante": "ARI",
           "kickoff": "2026-10-25T20:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 16
+          },
           "parcial": null,
           "local": {
             "estadio": "State Farm Stadium",
@@ -2810,8 +3068,11 @@
           "mandante": "DET",
           "kickoff": "2026-10-25T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 20
+          },
           "parcial": null,
           "local": {
             "estadio": "Ford Field",
@@ -2819,7 +3080,7 @@
             "uf": "MI",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2836,8 +3097,11 @@
           "mandante": "LV",
           "kickoff": "2026-10-25T20:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 35,
+            "mandante": 21
+          },
           "parcial": null,
           "local": {
             "estadio": "Allegiant Stadium",
@@ -2845,7 +3109,7 @@
             "uf": "NV",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -2862,8 +3126,11 @@
           "mandante": "SEA",
           "kickoff": "2026-10-26T00:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 3,
+            "mandante": 20
+          },
           "parcial": null,
           "local": {
             "estadio": "Lumen Field",
@@ -2888,8 +3155,11 @@
           "mandante": "PHI",
           "kickoff": "2026-10-27T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 38,
+            "mandante": 21
+          },
           "parcial": null,
           "local": {
             "estadio": "Lincoln Financial Field",
@@ -2897,7 +3167,7 @@
             "uf": "PA",
             "pais": "USA"
           },
-          "emissoraEua": "ESPN/ABC",
+          "emissoraEua": "ESPN/ABC/Disney+",
           "emissoras": [
             "espn",
             "abc"
@@ -2924,8 +3194,11 @@
           "mandante": "GB",
           "kickoff": "2026-10-30T00:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 19,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Lambeau Field",
@@ -2950,8 +3223,11 @@
           "mandante": "BUF",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 36
+          },
           "parcial": null,
           "local": {
             "estadio": "Highmark Stadium",
@@ -2976,8 +3252,11 @@
           "mandante": "CIN",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 36,
+            "mandante": 43
+          },
           "parcial": null,
           "local": {
             "estadio": "Paycor Stadium",
@@ -3002,8 +3281,11 @@
           "mandante": "DAL",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 33,
+            "mandante": 30
+          },
           "parcial": null,
           "local": {
             "estadio": "AT&T Stadium",
@@ -3011,7 +3293,7 @@
             "uf": "TX",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3028,8 +3310,11 @@
           "mandante": "DET",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 15,
+            "mandante": 19
+          },
           "parcial": null,
           "local": {
             "estadio": "Ford Field",
@@ -3037,7 +3322,7 @@
             "uf": "MI",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3054,8 +3339,11 @@
           "mandante": "JAX",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 7,
+            "mandante": 42
+          },
           "parcial": null,
           "local": {
             "estadio": "EverBank Stadium",
@@ -3080,8 +3368,11 @@
           "mandante": "NYJ",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 38,
+            "mandante": 33
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -3089,7 +3380,7 @@
             "uf": "NJ",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3106,8 +3397,11 @@
           "mandante": "PIT",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 6,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Acrisure Stadium",
@@ -3132,8 +3426,11 @@
           "mandante": "TB",
           "kickoff": "2026-11-01T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 0,
+            "mandante": 16
+          },
           "parcial": null,
           "local": {
             "estadio": "Raymond James Stadium",
@@ -3141,7 +3438,7 @@
             "uf": "FL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3158,8 +3455,11 @@
           "mandante": "LAR",
           "kickoff": "2026-11-01T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 9,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
@@ -3167,7 +3467,7 @@
             "uf": "CA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3184,8 +3484,11 @@
           "mandante": "DEN",
           "kickoff": "2026-11-01T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 28
+          },
           "parcial": null,
           "local": {
             "estadio": "Empower Field at Mile High",
@@ -3210,8 +3513,11 @@
           "mandante": "MIA",
           "kickoff": "2026-11-01T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 19
+          },
           "parcial": null,
           "local": {
             "estadio": "Hard Rock Stadium",
@@ -3236,8 +3542,11 @@
           "mandante": "WAS",
           "kickoff": "2026-11-02T01:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Northwest Stadium",
@@ -3262,8 +3571,11 @@
           "mandante": "SEA",
           "kickoff": "2026-11-03T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "Lumen Field",
@@ -3297,8 +3609,11 @@
           "mandante": "BAL",
           "kickoff": "2026-11-06T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 33,
+            "mandante": 10
+          },
           "parcial": null,
           "local": {
             "estadio": "M&T Bank Stadium",
@@ -3323,8 +3638,11 @@
           "mandante": "ATL",
           "kickoff": "2026-11-08T14:30Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "Santiago Bernabéu",
@@ -3349,8 +3667,11 @@
           "mandante": "CAR",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 26,
+            "mandante": 21
+          },
           "parcial": null,
           "local": {
             "estadio": "Bank of America Stadium",
@@ -3375,8 +3696,11 @@
           "mandante": "IND",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 27,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
             "estadio": "Lucas Oil Stadium",
@@ -3384,7 +3708,7 @@
             "uf": "IN",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3401,8 +3725,11 @@
           "mandante": "KC",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 12,
+            "mandante": 35
+          },
           "parcial": null,
           "local": {
             "estadio": "Arrowhead Stadium",
@@ -3427,8 +3754,11 @@
           "mandante": "MIA",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 19,
+            "mandante": 9
+          },
           "parcial": null,
           "local": {
             "estadio": "Hard Rock Stadium",
@@ -3436,9 +3766,9 @@
             "uf": "FL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "CBS",
           "emissoras": [
-            "fox"
+            "cbs"
           ],
           "pacote": null,
           "nota": ""
@@ -3453,8 +3783,11 @@
           "mandante": "NO",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 22,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
             "estadio": "Caesars Superdome",
@@ -3479,8 +3812,11 @@
           "mandante": "PHI",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 19,
+            "mandante": 11
+          },
           "parcial": null,
           "local": {
             "estadio": "Lincoln Financial Field",
@@ -3488,7 +3824,7 @@
             "uf": "PA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3505,8 +3841,11 @@
           "mandante": "WAS",
           "kickoff": "2026-11-08T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 20,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "Northwest Stadium",
@@ -3514,7 +3853,7 @@
             "uf": "MD",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3531,38 +3870,15 @@
           "mandante": "LAC",
           "kickoff": "2026-11-08T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 44,
+            "mandante": 22
+          },
           "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
             "cidade": "Inglewood",
-            "uf": "CA",
-            "pais": "USA"
-          },
-          "emissoraEua": "CBS",
-          "emissoras": [
-            "cbs"
-          ],
-          "pacote": null,
-          "nota": ""
-        },
-        {
-          "id": "401873047",
-          "fase": "regular",
-          "semana": 9,
-          "rotulo": "Semana 9",
-          "aDefinir": false,
-          "visitante": "LV",
-          "mandante": "SF",
-          "kickoff": "2026-11-08T21:05Z",
-          "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
-          "parcial": null,
-          "local": {
-            "estadio": "Levi's Stadium",
-            "cidade": "Santa Clara",
             "uf": "CA",
             "pais": "USA"
           },
@@ -3583,8 +3899,11 @@
           "mandante": "NE",
           "kickoff": "2026-11-08T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 45,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Gillette Stadium",
@@ -3592,7 +3911,7 @@
             "uf": "MA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3609,8 +3928,11 @@
           "mandante": "SEA",
           "kickoff": "2026-11-08T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 3,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "Lumen Field",
@@ -3618,7 +3940,36 @@
             "uf": "WA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
+          "nota": ""
+        },
+        {
+          "id": "401873047",
+          "fase": "regular",
+          "semana": 9,
+          "rotulo": "Semana 9",
+          "aDefinir": false,
+          "visitante": "LV",
+          "mandante": "SF",
+          "kickoff": "2026-11-08T21:25Z",
+          "horarioAConfirmar": false,
+          "estado": "final",
+          "placar": {
+            "visitante": 17,
+            "mandante": 38
+          },
+          "parcial": null,
+          "local": {
+            "estadio": "Levi's Stadium",
+            "cidade": "Santa Clara",
+            "uf": "CA",
+            "pais": "USA"
+          },
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3635,8 +3986,11 @@
           "mandante": "CHI",
           "kickoff": "2026-11-09T01:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Soldier Field",
@@ -3661,8 +4015,11 @@
           "mandante": "MIN",
           "kickoff": "2026-11-10T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 6
+          },
           "parcial": null,
           "local": {
             "estadio": "U.S. Bank Stadium",
@@ -3697,8 +4054,11 @@
           "mandante": "NYG",
           "kickoff": "2026-11-13T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 21
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -3723,8 +4083,11 @@
           "mandante": "DET",
           "kickoff": "2026-11-15T14:30Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 35
+          },
           "parcial": null,
           "local": {
             "estadio": "FC Bayern Munich Stadium",
@@ -3732,7 +4095,7 @@
             "uf": "",
             "pais": "Germany"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3749,8 +4112,11 @@
           "mandante": "ATL",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 35,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "Mercedes-Benz Stadium",
@@ -3775,8 +4141,11 @@
           "mandante": "CLE",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Huntington Bank Field",
@@ -3784,7 +4153,7 @@
             "uf": "OH",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3801,8 +4170,11 @@
           "mandante": "GB",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 10
+          },
           "parcial": null,
           "local": {
             "estadio": "Lambeau Field",
@@ -3810,7 +4182,7 @@
             "uf": "WI",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3827,8 +4199,11 @@
           "mandante": "IND",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 22,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "Lucas Oil Stadium",
@@ -3853,8 +4228,11 @@
           "mandante": "NO",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 20,
+            "mandante": 17
+          },
           "parcial": null,
           "local": {
             "estadio": "Caesars Superdome",
@@ -3862,7 +4240,7 @@
             "uf": "LA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3879,8 +4257,11 @@
           "mandante": "NYJ",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 31,
+            "mandante": 12
+          },
           "parcial": null,
           "local": {
             "estadio": "MetLife Stadium",
@@ -3905,8 +4286,11 @@
           "mandante": "TEN",
           "kickoff": "2026-11-15T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 40,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
             "estadio": "Nissan Stadium",
@@ -3914,7 +4298,7 @@
             "uf": "TN",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -3931,8 +4315,11 @@
           "mandante": "ARI",
           "kickoff": "2026-11-15T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 34,
+            "mandante": 6
+          },
           "parcial": null,
           "local": {
             "estadio": "State Farm Stadium",
@@ -3957,8 +4344,11 @@
           "mandante": "LV",
           "kickoff": "2026-11-15T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 21,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "Allegiant Stadium",
@@ -3983,8 +4373,11 @@
           "mandante": "DAL",
           "kickoff": "2026-11-15T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 46,
+            "mandante": 40
+          },
           "parcial": null,
           "local": {
             "estadio": "AT&T Stadium",
@@ -3992,7 +4385,7 @@
             "uf": "TX",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4009,8 +4402,11 @@
           "mandante": "CIN",
           "kickoff": "2026-11-16T01:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 18,
+            "mandante": 38
+          },
           "parcial": null,
           "local": {
             "estadio": "Paycor Stadium",
@@ -4035,8 +4431,11 @@
           "mandante": "BAL",
           "kickoff": "2026-11-17T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 23,
+            "mandante": 20
+          },
           "parcial": null,
           "local": {
             "estadio": "M&T Bank Stadium",
@@ -4070,8 +4469,11 @@
           "mandante": "HOU",
           "kickoff": "2026-11-20T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 3,
+            "mandante": 26
+          },
           "parcial": null,
           "local": {
             "estadio": "Reliant Stadium",
@@ -4096,8 +4498,11 @@
           "mandante": "BUF",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 9,
+            "mandante": 26
+          },
           "parcial": null,
           "local": {
             "estadio": "Highmark Stadium",
@@ -4105,9 +4510,9 @@
             "uf": "NY",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "CBS",
           "emissoras": [
-            "fox"
+            "cbs"
           ],
           "pacote": null,
           "nota": ""
@@ -4122,8 +4527,11 @@
           "mandante": "CAR",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 33,
+            "mandante": 35
+          },
           "parcial": null,
           "local": {
             "estadio": "Bank of America Stadium",
@@ -4131,7 +4539,7 @@
             "uf": "NC",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4148,8 +4556,11 @@
           "mandante": "CHI",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 13,
+            "mandante": 21
+          },
           "parcial": null,
           "local": {
             "estadio": "Soldier Field",
@@ -4157,7 +4568,7 @@
             "uf": "IL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4174,8 +4585,11 @@
           "mandante": "DAL",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 30,
+            "mandante": 51
+          },
           "parcial": null,
           "local": {
             "estadio": "AT&T Stadium",
@@ -4183,7 +4597,7 @@
             "uf": "TX",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4200,8 +4614,11 @@
           "mandante": "DET",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 21,
+            "mandante": 31
+          },
           "parcial": null,
           "local": {
             "estadio": "Ford Field",
@@ -4209,9 +4626,9 @@
             "uf": "MI",
             "pais": "USA"
           },
-          "emissoraEua": "CBS",
+          "emissoraEua": "Fox",
           "emissoras": [
-            "cbs"
+            "fox"
           ],
           "pacote": null,
           "nota": ""
@@ -4226,8 +4643,11 @@
           "mandante": "KC",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 7,
+            "mandante": 34
+          },
           "parcial": null,
           "local": {
             "estadio": "Arrowhead Stadium",
@@ -4243,22 +4663,25 @@
           "nota": ""
         },
         {
-          "id": "401873069",
+          "id": "401873076",
           "fase": "regular",
           "semana": 11,
           "rotulo": "Semana 11",
           "aDefinir": false,
-          "visitante": "JAX",
-          "mandante": "NYG",
+          "visitante": "PIT",
+          "mandante": "PHI",
           "kickoff": "2026-11-22T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 16,
+            "mandante": 19
+          },
           "parcial": null,
           "local": {
-            "estadio": "MetLife Stadium",
-            "cidade": "East Rutherford",
-            "uf": "NJ",
+            "estadio": "Lincoln Financial Field",
+            "cidade": "Philadelphia",
+            "uf": "PA",
             "pais": "USA"
           },
           "emissoraEua": "CBS",
@@ -4278,8 +4701,11 @@
           "mandante": "LAC",
           "kickoff": "2026-11-22T21:05Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 27,
+            "mandante": 24
+          },
           "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
@@ -4287,7 +4713,7 @@
             "uf": "CA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4304,8 +4730,11 @@
           "mandante": "DEN",
           "kickoff": "2026-11-22T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 24,
+            "mandante": 38
+          },
           "parcial": null,
           "local": {
             "estadio": "Empower Field at Mile High",
@@ -4321,22 +4750,25 @@
           "nota": ""
         },
         {
-          "id": "401873076",
+          "id": "401873069",
           "fase": "regular",
           "semana": 11,
           "rotulo": "Semana 11",
           "aDefinir": false,
-          "visitante": "PIT",
-          "mandante": "PHI",
+          "visitante": "JAX",
+          "mandante": "NYG",
           "kickoff": "2026-11-22T21:25Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 18,
+            "mandante": 23
+          },
           "parcial": null,
           "local": {
-            "estadio": "Lincoln Financial Field",
-            "cidade": "Philadelphia",
-            "uf": "PA",
+            "estadio": "MetLife Stadium",
+            "cidade": "East Rutherford",
+            "uf": "NJ",
             "pais": "USA"
           },
           "emissoraEua": "CBS",
@@ -4356,8 +4788,11 @@
           "mandante": "SF",
           "kickoff": "2026-11-23T01:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 35
+          },
           "parcial": null,
           "local": {
             "estadio": "Estadio Banorte",
@@ -4382,9 +4817,9 @@
           "mandante": "WAS",
           "kickoff": "2026-11-24T01:15Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "14:01 - 1st",
           "local": {
             "estadio": "Northwest Stadium",
             "cidade": "Landover",
@@ -4478,7 +4913,7 @@
             "uf": "TX",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4564,32 +4999,6 @@
           "nota": ""
         },
         {
-          "id": "401873086",
-          "fase": "regular",
-          "semana": 12,
-          "rotulo": "Semana 12",
-          "aDefinir": false,
-          "visitante": "LV",
-          "mandante": "CLE",
-          "kickoff": "2026-11-29T18:00Z",
-          "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
-          "parcial": null,
-          "local": {
-            "estadio": "Huntington Bank Field",
-            "cidade": "Cleveland",
-            "uf": "OH",
-            "pais": "USA"
-          },
-          "emissoraEua": "FOX",
-          "emissoras": [
-            "fox"
-          ],
-          "pacote": null,
-          "nota": ""
-        },
-        {
           "id": "401873085",
           "fase": "regular",
           "semana": 12,
@@ -4634,7 +5043,33 @@
             "uf": "IN",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
+          "emissoras": [
+            "fox"
+          ],
+          "pacote": null,
+          "nota": ""
+        },
+        {
+          "id": "401873090",
+          "fase": "regular",
+          "semana": 12,
+          "rotulo": "Semana 12",
+          "aDefinir": false,
+          "visitante": "TEN",
+          "mandante": "JAX",
+          "kickoff": "2026-11-29T18:00Z",
+          "horarioAConfirmar": false,
+          "estado": "agendado",
+          "placar": null,
+          "parcial": null,
+          "local": {
+            "estadio": "EverBank Stadium",
+            "cidade": "Jacksonville",
+            "uf": "FL",
+            "pais": "USA"
+          },
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4686,7 +5121,7 @@
             "uf": "MN",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4694,22 +5129,22 @@
           "nota": ""
         },
         {
-          "id": "401873090",
+          "id": "401873093",
           "fase": "regular",
           "semana": 12,
           "rotulo": "Semana 12",
           "aDefinir": false,
-          "visitante": "TEN",
-          "mandante": "JAX",
+          "visitante": "NE",
+          "mandante": "LAC",
           "kickoff": "2026-11-29T21:05Z",
           "horarioAConfirmar": false,
           "estado": "agendado",
           "placar": null,
           "parcial": null,
           "local": {
-            "estadio": "EverBank Stadium",
-            "cidade": "Jacksonville",
-            "uf": "FL",
+            "estadio": "SoFi Stadium",
+            "cidade": "Inglewood",
+            "uf": "CA",
             "pais": "USA"
           },
           "emissoraEua": "CBS",
@@ -4738,7 +5173,7 @@
             "uf": "AZ",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4764,7 +5199,7 @@
             "uf": "CA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4772,22 +5207,22 @@
           "nota": ""
         },
         {
-          "id": "401873093",
+          "id": "401873086",
           "fase": "regular",
           "semana": 12,
           "rotulo": "Semana 12",
           "aDefinir": false,
-          "visitante": "NE",
-          "mandante": "LAC",
+          "visitante": "LV",
+          "mandante": "CLE",
           "kickoff": "2026-11-30T01:20Z",
           "horarioAConfirmar": false,
           "estado": "agendado",
           "placar": null,
           "parcial": null,
           "local": {
-            "estadio": "SoFi Stadium",
-            "cidade": "Inglewood",
-            "uf": "CA",
+            "estadio": "Huntington Bank Field",
+            "cidade": "Cleveland",
+            "uf": "OH",
             "pais": "USA"
           },
           "emissoraEua": "NBC",
@@ -4903,7 +5338,7 @@
             "uf": "IL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4955,7 +5390,7 @@
             "uf": "LA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -4981,7 +5416,7 @@
             "uf": "NJ",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5059,7 +5494,7 @@
             "uf": "AZ",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5085,7 +5520,7 @@
             "uf": "CO",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5251,7 +5686,7 @@
             "uf": "MD",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5329,7 +5764,7 @@
             "uf": "MI",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5407,7 +5842,7 @@
             "uf": "PA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5485,7 +5920,7 @@
             "uf": "OH",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5511,7 +5946,7 @@
             "uf": "WA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5537,7 +5972,7 @@
             "uf": "CA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5650,7 +6085,7 @@
             "uf": "PA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5702,7 +6137,7 @@
             "uf": "NC",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5728,7 +6163,7 @@
             "uf": "WI",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5832,7 +6267,7 @@
             "uf": "FL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5884,7 +6319,7 @@
             "uf": "MD",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -5910,7 +6345,7 @@
             "uf": "AZ",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -6128,7 +6563,7 @@
             "uf": "WA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -6276,7 +6711,7 @@
             "uf": "FL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -6302,7 +6737,7 @@
             "uf": "LA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -6354,7 +6789,7 @@
             "uf": "NV",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -6589,7 +7024,7 @@
             "uf": "GA",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -6615,7 +7050,7 @@
             "uf": "NC",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -6641,7 +7076,7 @@
             "uf": "OH",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -6667,7 +7102,7 @@
             "uf": "TX",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -6797,7 +7232,7 @@
             "uf": "IL",
             "pais": "USA"
           },
-          "emissoraEua": "FOX",
+          "emissoraEua": "Fox",
           "emissoras": [
             "fox"
           ],
@@ -7568,16 +8003,16 @@
     },
     {
       "fase": "playoffs",
-      "numero": 5,
-      "rotulo": "Super Bowl",
+      "numero": 4,
+      "rotulo": "Pro Bowl",
       "inicio": "2027-02-14T23:30Z",
       "fim": "2027-02-14T23:30Z",
       "jogos": [
         {
           "id": "401873270",
           "fase": "playoffs",
-          "semana": 5,
-          "rotulo": "Super Bowl",
+          "semana": 4,
+          "rotulo": "Pro Bowl",
           "aDefinir": true,
           "visitante": null,
           "mandante": null,
@@ -7592,7 +8027,7 @@
             "uf": "CA",
             "pais": "USA"
           },
-          "emissoraEua": "ESPN/ABC",
+          "emissoraEua": "ESPN/ABC/Disney+",
           "emissoras": [
             "espn",
             "abc"

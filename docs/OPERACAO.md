@@ -108,10 +108,31 @@ humano decidir.
 | Canal errado no painel | a agenda do ge mudou de formato, ou o jogo foi remanejado | rodar `node scripts/sync-grade-br.mjs` e ler a saída; entrada manual sempre vence a automática |
 | Nenhum canal sendo descoberto | a agenda do ge mudou a estrutura do JSON | o script avisa "nenhum jogo da NFL na janela"; conferir `liveWatchSources` na página |
 | Painel publicado sem atualizar, mas `dados/` em main está em dia | o sync commitou e a publicação não rodou | `gh workflow run "Sync ESPN" -f publicar=true` republica na hora; ver a nota abaixo sobre o GITHUB_TOKEN |
+| `deploy-pages` diz "No artifacts named github-pages were found" | versão da action velha demais | subir as actions; ver a nota abaixo |
 | Painel publicado sem atualizar | workflow do Pages | `gh run list --workflow="Publicar painel"` |
 
 Ordem de investigação, sempre: **primeiro o JSON, depois o script, por último o painel.**
 O `site/` não guarda dado nenhum; se um número está errado lá, ele veio errado de `dados/`.
+
+## Terceira armadilha: versão de action
+
+Em novembro de 2026 a publicação passou a falhar com *No artifacts named "github-pages"
+were found for this workflow run* — apesar de o passo de upload ter terminado com sucesso
+e o artefato existir no run (a API do GitHub o lista normalmente).
+
+A causa é a forma como cada versão procura o artefato. O `deploy-pages@v4` consulta o
+endpoint por **tentativa** (`/runs/{id}/attempts/{n}/artifacts`), que neste repositório
+responde 404, enquanto o endpoint por **run** (`/runs/{id}/artifacts`) devolve o artefato
+sem problema. Como diagnosticar em trinta segundos:
+
+```bash
+gh api "repos/<owner>/<repo>/actions/runs/<run_id>/artifacts?name=github-pages" -q .total_count
+gh api "repos/<owner>/<repo>/actions/runs/<run_id>/attempts/1/artifacts" -q .total_count
+```
+
+Se o primeiro devolve 1 e o segundo 404, é isto: a action está velha, não há nada de errado
+com os dados nem com o build. A correção é subir as versões — e vale conferir as atuais
+em vez de chutar: `gh api repos/actions/deploy-pages/releases/latest -q .tag_name`.
 
 ## Comandos do dia a dia
 

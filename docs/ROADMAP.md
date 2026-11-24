@@ -96,6 +96,12 @@
   caro na API, o script ganhou modo incremental: busca só as semanas com jogo por perto.
 - **As descobertas de canal entram no "O que mudou"** do painel, junto com os placares.
 
+## Corrigido — v0.7.1
+
+- **Publicação voltou a funcionar.** O `deploy-pages@v4` procurava o artefato no endpoint
+  por tentativa, que passou a responder 404, e falhava com "No artifacts named github-pages"
+  mesmo com o upload bem-sucedido. Todas as actions foram para a versão atual.
+
 ## Próximo — v0.8.0
 
 **Pós-jogo do Steelers.** Box score resumido do último jogo — jardas, turnovers, líderes de
