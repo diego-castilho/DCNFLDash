@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-26T23:57:23.585Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873081",
+          "jogo": "CHI @ DET",
+          "rotulo": "Semana 12",
+          "placar": "39 x 35"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-26T05:13:44.258Z",
       "origem": "sync-espn",
       "mudancas": [
