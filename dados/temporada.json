@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-26T05:13:44.256Z",
+  "atualizadoEm": "2026-11-26T19:55:54.027Z",
   "verificadoEm": "2026-11-26",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4884,9 +4884,9 @@
           "mandante": "DET",
           "kickoff": "2026-11-26T18:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
+          "estado": "andamento",
           "placar": null,
-          "parcial": null,
+          "parcial": "Halftime",
           "local": {
             "estadio": "Ford Field",
             "cidade": "Detroit",
