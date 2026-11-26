@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-24T05:29:21.897Z",
-  "verificadoEm": "2026-11-25",
+  "atualizadoEm": "2026-11-26T05:13:44.256Z",
+  "verificadoEm": "2026-11-26",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -4855,8 +4855,11 @@
           "mandante": "LAR",
           "kickoff": "2026-11-26T01:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 13,
+            "mandante": 26
+          },
           "parcial": null,
           "local": {
             "estadio": "SoFi Stadium",
