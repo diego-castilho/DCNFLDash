@@ -1,7 +1,7 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-26T23:57:23.582Z",
-  "verificadoEm": "2026-11-26",
+  "atualizadoEm": "2026-11-27T06:19:00.622Z",
+  "verificadoEm": "2026-11-27",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
   "semanas": [
@@ -4913,9 +4913,12 @@
           "mandante": "DAL",
           "kickoff": "2026-11-26T21:30Z",
           "horarioAConfirmar": false,
-          "estado": "andamento",
-          "placar": null,
-          "parcial": "10:39 - 3rd",
+          "estado": "final",
+          "placar": {
+            "visitante": 39,
+            "mandante": 38
+          },
+          "parcial": null,
           "local": {
             "estadio": "AT&T Stadium",
             "cidade": "Arlington",
@@ -4939,8 +4942,11 @@
           "mandante": "BUF",
           "kickoff": "2026-11-27T01:20Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 10,
+            "mandante": 13
+          },
           "parcial": null,
           "local": {
             "estadio": "Highmark Stadium",

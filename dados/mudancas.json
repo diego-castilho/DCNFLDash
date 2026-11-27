@@ -1,6 +1,63 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-27T06:19:02.802Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Falcons @ Vikings",
+          "rotulo": "Semana 12",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Saints @ Bengals",
+          "rotulo": "Semana 12",
+          "canais": "sportv"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Seahawks @ 49ers",
+          "rotulo": "Semana 12",
+          "canais": "espn"
+        },
+        {
+          "tipo": "canal confirmado",
+          "jogo": "Commanders @ Cardinals",
+          "rotulo": "Semana 12",
+          "canais": "sportv, getv"
+        },
+        {
+          "tipo": "canal alterado",
+          "jogo": "Raiders @ Browns",
+          "rotulo": "Semana 12",
+          "canais": "sportv",
+          "de": "sportv"
+        }
+      ]
+    },
+    {
+      "quando": "2026-11-27T06:19:00.623Z",
+      "origem": "sync-espn",
+      "mudancas": [
+        {
+          "tipo": "placar final",
+          "id": "401873080",
+          "jogo": "PHI @ DAL",
+          "rotulo": "Semana 12",
+          "placar": "39 x 38"
+        },
+        {
+          "tipo": "placar final",
+          "id": "401873082",
+          "jogo": "KC @ BUF",
+          "rotulo": "Semana 12",
+          "placar": "10 x 13"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-26T23:57:23.585Z",
       "origem": "sync-espn",
       "mudancas": [
