@@ -1,6 +1,6 @@
 {
   "temporada": 2026,
-  "atualizadoEm": "2026-11-27T06:19:00.622Z",
+  "atualizadoEm": "2026-11-28T00:16:43.454Z",
   "verificadoEm": "2026-11-27",
   "fonte": "ESPN scoreboard API",
   "totalJogos": 285,
@@ -4971,8 +4971,11 @@
           "mandante": "PIT",
           "kickoff": "2026-11-27T20:00Z",
           "horarioAConfirmar": false,
-          "estado": "agendado",
-          "placar": null,
+          "estado": "final",
+          "placar": {
+            "visitante": 5,
+            "mandante": 27
+          },
           "parcial": null,
           "local": {
             "estadio": "Acrisure Stadium",
