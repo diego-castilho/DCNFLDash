@@ -1,6 +1,19 @@
 {
   "entradas": [
     {
+      "quando": "2026-11-28T08:11:37.985Z",
+      "origem": "sync-grade-br",
+      "mudancas": [
+        {
+          "tipo": "canal alterado",
+          "jogo": "Panthers @ Buccaneers",
+          "rotulo": "Semana 12",
+          "canais": "espn",
+          "de": "espn"
+        }
+      ]
+    },
+    {
       "quando": "2026-11-28T00:16:43.457Z",
       "origem": "sync-espn",
       "mudancas": [
